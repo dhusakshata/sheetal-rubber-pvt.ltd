@@ -1,10 +1,18 @@
+* {
+  font-family: 'Arial', sans-serif; 
+  font-style: normal; 
+
+  margin: 0; 
+  padding: 0; 
+}
+
 .page {
   display: flex;
-  justify-content: center; /* Center the entire content horizontally */
-  align-items: center; /* Align content vertically */
+  justify-content: center; 
+  align-items: center;
   background-color: #f9f9f9; /* Light background color */
   padding: 50px 20px; /* Add spacing around the content */
-  min-height: 100vh; /* Full-height layout for the page */
+  min-height: 40vh; /* Full-height layout for the page */
 
   font-weight: bold;
 }
@@ -20,13 +28,20 @@
  color: white;
   background-color: rgb(37, 35, 35);
 }
-
+.container:hover {
+  background-color: #fea286; 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover */
+  color:black
+}
 .container h1 {
-  text-align: center; /* Center-align the heading */
-  font-size: 4rem;
-  margin-bottom: 30px;
+  padding: 20px;
   font-weight: bold;
+  font-size: 2.5rem;
+  color: white;
+  margin-top: -15px;
+  text-align: center;
   text-decoration: underline;
+  
   
 }
 
@@ -37,26 +52,26 @@
   align-items: flex-start; /* Align items at the top */
   gap: 30px; /* Spacing between image and text */
   flex-wrap: wrap; /* Enable wrapping for smaller screens */
+
 }
 
 .image {
-  width: 40%; /* Adjust image width */
+  width: 30%; /* Adjust image width */
   max-width: 400px; /* Restrict maximum size */
-  height: auto; /* Maintain aspect ratio */
+  height: 400px; /* Maintain aspect ratio */
   border-radius: 8px; /* Optional: Rounded corners for the image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 .content p {
-  font-size: 1rem;
- 
+  font-size: 14px;
   line-height: 1.6; /* Improve readability */
   text-align: justify; /* Justify text for neat alignment */
   flex: 1; /* Allow the text area to grow flexibly */
 }
 
 .content h3 {
-  font-size: 1.5rem;
+  font-size: 16px;
   font-weight: bold;
   margin-top: 20px; /* Add space above the subheading */
   text-align: left; /* Align subheading to the left */
@@ -70,7 +85,7 @@
 
 .content ul li {
   margin-bottom: 10px; /* Add space between list items */
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.5; /* Enhance readability */
 }
 

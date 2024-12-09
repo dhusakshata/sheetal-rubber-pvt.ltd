@@ -48,7 +48,7 @@ function Footer() {
           <li><Link to="/turbochargerhose">Turbocharger and CAC Hoses</Link></li>
           <li><Link to="/coolant-air-charger-hoses">Coolant Air Charger Hoses</Link></li>
           <li><Link to="/epdm">EPDM Rubber Hoses</Link></li>
-          <li><Link to="/organic">Other Organic Rubber Hoses (for Lower Temperature applications)</Link></li>
+          <li><Link to="/organic"> Organic Rubber Hoses</Link></li>
           <li><Link to="/marinewethose">Marine Wet Exhaust Hoses</Link></li>
           <li><Link to="/Assembly">Assembly / Branch Hoses</Link></li>
           <li><Link to="/wired">Wire Reinforced Hoses</Link></li>
@@ -71,9 +71,9 @@ function Footer() {
 
 
       <div className="footer-bottom-text">
-        <p>
+        {/* <p>
           <Link to="/privacy-policy">Privacy Policy</Link> | <Link to="/terms-and-conditions">Terms and Conditions</Link>
-        </p>
+        </p> */}
         <p>Copyright 2024 Sheetal Rubber Products(p)ltd. - All rights reserved  | Designed by Bitshine Infotech</p>
       </div>
     </div>

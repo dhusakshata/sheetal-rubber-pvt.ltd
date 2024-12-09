@@ -1,6 +1,4 @@
 
-
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./header.css";
@@ -69,7 +67,7 @@ function Header() {
           <button onClick={handleSearch}>Search</button>
         </div>
 
-        {/* Language Dropdown */}
+        {/* Language Dropdown
         <div className="language-dropdown">
           <select>
             <option value="en">🇺🇸 English</option>
@@ -78,12 +76,12 @@ function Header() {
             <option value="es">🇪🇸 Spanish</option>
           </select>
         </div>
-
+ */}
         {/* Contact Info */}
         <div className="contact-info">
           <div className="contact-item">
             <FaPhoneAlt />
-            <span>+91 – 20 – 2713 0244</span>
+            <span>+91 –(20) 2713 0244</span>
           </div>
           <div className="contact-item">
             <FaEnvelope />
@@ -133,6 +131,7 @@ HOSES
       </div>
     </div>
 
+<Link to="/news">NEWS & BLOGS</Link>
           <Link to="/career">CAREERS</Link>
         <Link to="/contact">CONTACT US</Link>
         </nav>

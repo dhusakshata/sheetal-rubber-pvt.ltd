@@ -17,7 +17,8 @@ import logo6 from "../../Images/client6.png";
 import logo7 from "../../Images/client7.png";
 // Import the video file
 import rubberWorld from "../../video/rubber-world.mp4";
-import ProductionNarrat from "../../video/production.mp4";
+import ProductionNarrat from "../../video/production2.mp4";
+ 
 
 import Silicon from "../../Images/Silicon.png"
 import Turbocharger from "../../Images/Turbo-charger.png";
@@ -125,45 +126,44 @@ facility.
   <h1>Our Products</h1>
   <div className="products-gallery">
     <div className="product-card">
-      <img src={Silicon} alt="Silicon-Polyester Hoses" />
+      <img src={Silicon} alt="Silicon-Polyester Hoses" className="product-images" />
       <Link to="/siliconpolyester"> <h3>Silicon-Polyester Hoses</h3></Link>
      
     </div>
     <div className="product-card">
-      <img src={Turbocharger} alt="Turbocharger & CAC Hoses" />
+      <img src={Turbocharger} alt="Turbocharger & CAC Hoses" className="product-images"/>
       <Link to="/turbochargerhose"><h3>Turbocharger & CAC Hoses</h3></Link>
       
     </div>
     <div className="product-card">
-      <img src={Marine} alt="Marine Wet Exhaust Hoses" />
+      <img src={Marine} alt="Marine Wet Exhaust Hoses" className="product-images"/>
       <Link to="/marinewethose"> <h3>Marine Wet Exhaust Hoses</h3></Link>
      
     </div>
     <div className="product-card">
-      <img src={EPDM} alt="EPDM Rubber Hoses" />
+      <img src={EPDM} alt="EPDM Rubber Hoses" className="product-images" />
       <Link to="/epdm"> <h3>EPDM Rubber Hoses</h3></Link>
      
     </div>
-    </div>
-    <div className="product-gallery2">
+   
     <div className="product-card">
-      <img src={Organic} alt="Organic Rubber Hoses" />
+      <img src={Organic} alt="Organic Rubber Hoses" className="product-images"/>
       <Link to="/organic"><h3>Organic Rubber Hoses</h3></Link>
       
     </div>
 
     <div className="product-card">
-      <img src={Assembly} alt="Assembly Hoses" />
+      <img src={Assembly} alt="Assembly Hoses" className="product-images"/>
       <Link to="/Assembly"> <h3>Assembly Hoses</h3></Link>
      
     </div>
     <div className="product-card">
-      <img src={Wired} alt="Wire Reinforced Hoses" />
+      <img src={Wired} alt="Wire Reinforced Hoses" className="product-images"/>
       <Link to="/wired"><h3>Wire Reinforced Hoses</h3></Link>
       
     </div>
     <div className="product-card">
-      <img src={FuelTube} alt="Fuel Tubes" />
+      <img src={FuelTube} alt="Fuel Tubes" className="product-images"/>
       <Link to="/fueltube"> <h3>Fuel Tubes</h3></Link>
      
     </div>
@@ -203,7 +203,7 @@ Our latest change
  </div>
  
  <div className="logo-container">
-  <h3>ESTIMATED ClIENTS</h3>
+  <h1>ESTIMATED ClIENTS</h1>
  <div className="logo-world">
     <img src={logo1} alt="Logo 1" className="logo-item" />
     <img src={logo2} alt="Logo 2" className="logo-item" />
@@ -223,7 +223,7 @@ Application Area */}
   <div className="application-head">
     <h1>OUR OFFERINGS</h1>
   </div>
-      <div className="button-container">
+      {/* <div className="button-container">
         {buttons.map((button, index) => (
           <button
             key={index}
@@ -238,7 +238,25 @@ Application Area */}
       </div>
       <div className="image-display">
         <img src={selectedImage} alt="Selected Application" />
-      </div>
+      </div> */}
+      <div className="button-container">
+  {buttons.map((button, index) => (
+    <button
+      key={index}
+      className={`app-button ${
+        selectedImage === button.img ? "active" : ""
+      }`}
+      onClick={() => setSelectedImage(button.img)} // Update image on click
+      onMouseEnter={() => setSelectedImage(button.img)} // Update image on hover
+    >
+      {button.label}
+    </button>
+  ))}
+</div>
+<div className="image-display">
+  <img src={selectedImage} alt="Selected Application" />
+</div>
+
 </div>
 
 

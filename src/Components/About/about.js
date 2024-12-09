@@ -1,19 +1,12 @@
 
-
-
 import React from "react";
-
-
 import Building from "../../Images/building.png";
-
-
 import "./about.css"; // Import styles
 
 function about() {
   return (
     <div className="about-section">
   
-
 <div className="about-head">
   <h1>All About Sheetal Rubber Pvt Ltd.</h1>
 </div>
