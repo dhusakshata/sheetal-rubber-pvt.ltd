@@ -56,6 +56,11 @@ function Footer() {
           <li><Link to="/moulded">Moulded Hoses</Link></li>
         </ul>
       </div>
+
+      {/* news Letter */}
+      <div className='news-letter'>
+
+      </div>
  {/* Add the map iframe below here */}
  <div className="map-container">
   <iframe 
