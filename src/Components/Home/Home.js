@@ -124,45 +124,45 @@ facility.
 {/* products */}
 <div className="our-products">
   <h1>Our Products</h1>
-  <div className="products-gallery">
-    <div className="product-card">
+  <div className="products-gallerys">
+    <div className="product-cards">
       <img src={Silicon} alt="Silicon-Polyester Hoses" className="product-images" />
       <Link to="/siliconpolyester"> <h3>Silicon-Polyester Hoses</h3></Link>
      
     </div>
-    <div className="product-card">
+    <div className="product-cards">
       <img src={Turbocharger} alt="Turbocharger & CAC Hoses" className="product-images"/>
       <Link to="/turbochargerhose"><h3>Turbocharger & CAC Hoses</h3></Link>
       
     </div>
-    <div className="product-card">
+    <div className="product-cards">
       <img src={Marine} alt="Marine Wet Exhaust Hoses" className="product-images"/>
       <Link to="/marinewethose"> <h3>Marine Wet Exhaust Hoses</h3></Link>
      
     </div>
-    <div className="product-card">
+    <div className="product-cards">
       <img src={EPDM} alt="EPDM Rubber Hoses" className="product-images" />
       <Link to="/epdm"> <h3>EPDM Rubber Hoses</h3></Link>
      
     </div>
    
-    <div className="product-card">
+    <div className="product-cards">
       <img src={Organic} alt="Organic Rubber Hoses" className="product-images"/>
       <Link to="/organic"><h3>Organic Rubber Hoses</h3></Link>
       
     </div>
 
-    <div className="product-card">
+    <div className="product-cards">
       <img src={Assembly} alt="Assembly Hoses" className="product-images"/>
       <Link to="/Assembly"> <h3>Assembly Hoses</h3></Link>
      
     </div>
-    <div className="product-card">
+    <div className="product-cards">
       <img src={Wired} alt="Wire Reinforced Hoses" className="product-images"/>
       <Link to="/wired"><h3>Wire Reinforced Hoses</h3></Link>
       
     </div>
-    <div className="product-card">
+    <div className="product-cards">
       <img src={FuelTube} alt="Fuel Tubes" className="product-images"/>
       <Link to="/fueltube"> <h3>Fuel Tubes</h3></Link>
      
