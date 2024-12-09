@@ -1,0 +1,119 @@
+.footer-section {
+  display: flex;
+  flex-direction: row; /* Align children in a row */
+  justify-content: space-evenly; /* Distribute space between items */
+  align-items: flex-start; /* Align items at the top */
+  background-color: #000;
+  color: white;
+  padding: 20px 20px;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  gap: 20px; /* Add space between items */
+  margin-left:0;
+}
+.address {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center align text */
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo img {
+  width: 150px; /* Adjust as per requirement */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Add spacing below the logo */
+}
+
+.address-section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 15px; /* Space between sections */
+}
+
+.address-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.address-info p {
+  font-size: 16px;
+  margin: 5px 0; /* Spacing between lines */
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center; /* Center the social media icons */
+  gap: 15px; /* Space between icons */
+  margin-top: 15px; /* Add spacing above the icons */
+}
+
+.social-icon {
+  width: 30px; /* Size of the icons */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth animation */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  opacity: 0.8; /* Dim the icon on hover */
+}
+
+/* Quick Links Section */
+.quick-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.quick-links h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 8px;
+}
+
+.quick-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.quick-links a:hover {
+  color: #1e90ff;
+}
+
+/* Map Section */
+.map-container {
+  flex: 1;
+  max-width: 400px; /* Optional: Control the width */
+  height: 300px; /* Adjust the height */
+  border: 2px solid white;
+  border-radius: 8px;
+  overflow: hidden; /* Hide iframe overflow */
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+
+.footer-bottom-text {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; /* Ensure it spans the full width */
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Add some space above the text */
+  padding-top: 10px; /* Optional: Padding for separation */
+  border-top: 1px solid #fff; /* Optional: Add a dividing line above */
+  font-size: 14px; /* Font size for footer text */
+  color: #fff; /* Text color */
+}
