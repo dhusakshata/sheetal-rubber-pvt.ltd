@@ -58,9 +58,19 @@ function Footer() {
       </div>
 
       {/* news Letter */}
-      <div className='news-letter'>
+      <div className="news-letter">
+  <p>Subscribe to our Newsletter</p>
+  <form className="newsletter-form">
+    <input
+      type="email"
+      placeholder="Enter your email address"
+      className="email-input"
+      required
+    />
+    <button type="submit" className="subscribe-button">Subscribe</button>
+  </form>
+</div>
 
-      </div>
  {/* Add the map iframe below here */}
  <div className="map-container">
   <iframe 

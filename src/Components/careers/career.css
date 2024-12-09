@@ -15,11 +15,12 @@
 }
 
 .career-page h1 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
+  color:black;
+ margin-top: -20px;
   font-weight: bold;
-  color: #333;
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
 }
 
 .career-form {
