@@ -41,6 +41,8 @@
   align-items: center;
   gap: 10px; /* Add gap between input and button */
   z-index: 10; /* Ensure it stays above other content */
+  margin-top: -5px;
+  
 }
 
 .search-bar input {
@@ -94,6 +96,11 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
   .search-bar {
     top: 5px; /* Move search bar higher on small screens */
     right: 10px;
@@ -207,7 +214,7 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 786px) {
   /* Header adjustments for smaller screens */
   .header {
     flex-direction: column;

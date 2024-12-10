@@ -7,7 +7,7 @@
 }
 
 .footer-section {
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: row; 
   justify-content: space-between; 
