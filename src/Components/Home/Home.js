@@ -25,7 +25,7 @@ import logo6 from "../../Images/client6.png";
 import logo7 from "../../Images/client7.png";
 // Import the video file
 import rubberWorld from "../../video/rubber-world.mp4";
-import ProductionNarrat from "../../video/production2.mp4";
+import ProductionNarrat from "../../video/production4.mp4";
  
 
 import Silicon from "../../Images/Silicon.png"
@@ -108,10 +108,11 @@ facility.
         </button>
       </div>
       <div className="about-us-video">
-        <video controls className="about-us-video-element">
-          <source src={rubberWorld} type="video/mp4" />
-        </video>
-      </div>
+  <video className="about-us-video-element" autoPlay muted loop>
+    <source src={rubberWorld} type="video/mp4" />
+  </video>
+</div>
+
     </div>
   </section>
 

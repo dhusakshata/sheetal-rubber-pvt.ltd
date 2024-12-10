@@ -2,9 +2,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
+import { FaSearch } from 'react-icons/fa';
+
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "./header.css";
+
 import { Link } from "react-router-dom";
 import logo from "../../Images/sheetal-rubber-logo.webp";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
@@ -67,7 +71,7 @@ function Header() {
             value={searchInput}
             onChange={handleInputChange}
           />
-          <button onClick={handleSearch}>Search</button>
+          <button onClick={handleSearch}> <FaSearch /></button>
         </div>
 
         {/* Contact Info */}

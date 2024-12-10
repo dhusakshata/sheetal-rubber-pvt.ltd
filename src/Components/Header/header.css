@@ -7,15 +7,15 @@
 }
 .header {
   display: flex;
-  justify-content: space-between; /* Ensure spacing between logo and other elements */
+  justify-content: space-between; 
   align-items: center;
   background-color: whitesmoke;
   color: black;
   position: sticky;
-  top: 0; /* Add this if you want the sticky effect */
-  z-index: 100; /* Ensure the header stays on top */
+  top: 0; 
+  z-index: 100; 
   margin: 0;
-  padding: 0 20px; /* Add padding for breathing room */
+  padding: 0 20px; 
 }
 
 /* Logo styling */
@@ -32,15 +32,15 @@
 
 /* Search bar styling */
 .search-bar {
-  width: auto; /* Adjust width to fit content */
+  width: auto; 
   position: absolute;
-  top: 10px; /* Set to top-right corner */
-  right: 10px; /* Align to the right side */
+  top: 10px; 
+  right: 10px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px; /* Add gap between input and button */
-  z-index: 10; /* Ensure it stays above other content */
+  gap: 10px; 
+  z-index: 10;
   margin-top: -5px;
   
 }
@@ -50,23 +50,23 @@
   height: 40px;
   padding: 0 8px;
   border: 1px solid gray;
-  border-radius: 20px 0 0 20px;
+
   margin: 0;
   box-sizing: border-box;
 }
 
 .search-bar button {
-  width: 60px;
+  width: 30px;
   height: 40px;
   background-color: #ff5722;
   color: white;
   border: 1px solid gray;
   border-left: none;
-  border-radius: 0 20px 20px 0;
   cursor: pointer;
   margin-left: -30px;
   font-size: 16px;
   box-sizing: border-box;
+ 
 
 }
 
@@ -83,6 +83,7 @@
   flex-direction: column;
   gap: 5px;
   z-index: 10; /* Ensure it stays above other content */
+  position: sticky;
 }
 
 .contact-item {
@@ -113,10 +114,6 @@
     font-size: 14px; /* Slightly reduce font size */
   }
 }
-
-
-
-
 /* Navigation Styles */
 .Navbar {
   background-color: #000; 
@@ -132,7 +129,7 @@
 
 .nav {
   display: flex;
-  gap: 4rem;
+  gap: 5px;
   font-weight: bold;
   font-size: 14px;
   min-width: 100%; /* Prevents the nav container from shrinking too much */
