@@ -1,9 +1,17 @@
 
-
 import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Link } from "react-router-dom";
+
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules"; // Correct way to import Navigation
+import "swiper/css";
+import "swiper/css/navigation";
+import { Pagination } from 'swiper'
 
 
 import "./Home.css";
@@ -28,7 +36,7 @@ import Organic from "../../Images/organic-rubber.png";
 import Assembly from "../../Images/Assembly-rubber.png";
 import Wired from "../../Images/wired-reinforced.png";
 import FuelTube from "../../Images/Fuel-Tubes.png";
-import Moulded from "../../Images/Moulded.png";
+
 
 // Application Area Images
 import Img1 from "../../Images/Image1.png";
@@ -39,7 +47,7 @@ import Img5 from "../../Images/Image5.jpg";
 import Img6 from "../../Images/Image6.jpg";
 
 function Home() {
-
+  
  
 
   const buttons = [
@@ -54,30 +62,21 @@ function Home() {
   // // State to track the selected image
    const [selectedImage, setSelectedImage] = useState(buttons[0].img);
 
+  
+   const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
+   
   return (
     <div className="home">
-     <div className="video-container">
-     
-      <video className="production-video" src={ProductionNarrat} type="video/mp4" controls autoPlay muted loop>
-        Your browser does not support the video tag.
-      </video>
+  <section className="video-container">
+    <video className="production-video" src={ProductionNarrat} controls autoPlay muted loop></video>
+  </section>
+
+  <section className="about-us-container">
+    <div className="about-us-title">
+      <h1>About Us</h1>
     </div>
-     
-
-      {/* About Section */}
-
-      <div className="about-us-title">
-    <h1>About Us</h1>
-  </div>
-      <div className="about-us-container">
-  {/* Title Section */}
-  
-
-  {/* Content Section */}
-  <div className="about-us-content">
-    {/* Info Section */}
-    
-    <div className="about-us-info">
+    <div className="about-us-content">
+      <div className="about-us-info">
       <p>
       For over two decades, Sheetal Rubber Products has been a trusted leader in the
 manufacturing of high-quality rubber products with 50,000 sq. ft. of manufacturing
@@ -93,7 +92,7 @@ facility.
       rigorous testing, and strict quality controls has established us as a preferred partner for
       major manufacturers in India and a favored exporter internationally.
       </p>
-      <p>
+   
         <ul>
           <li>Committed towards continual improvement, quality control and customer
           satisfaction.</li>
@@ -104,22 +103,18 @@ facility.
         </ul>
 
 
-      </p>
-
-      <button className="read-more"  >
-              <Link to="/about">Read More</Link>
-            </button>
+        <button className="read-more">
+          <Link to="/about">Read More</Link>
+        </button>
+      </div>
+      <div className="about-us-video">
+        <video controls className="about-us-video-element">
+          <source src={rubberWorld} type="video/mp4" />
+        </video>
+      </div>
     </div>
+  </section>
 
-    {/* Video Section */}
-    <div className="about-us-video">
-      <video controls className="about-us-video-element">
-        <source src={rubberWorld} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-</div>
 
 {/* products */}
 <div className="our-products">
@@ -174,48 +169,26 @@ facility.
     </div> */}
   
 </div>
+<div className="logo-container">
+      <h1>ESTEEMED CLIENTS</h1>
+      <Swiper
+        modules={[Navigation]}
+        slidesPerView={4}
+        spaceBetween={15}
+        navigation={true}
+        pagination={{ clickable: true }} // Enable pagination
+       
+        loop={true}
 
-
-{/* 
-Trusted Client */}
-<div className="trusted-world">
-   <div className="trusted-content">
-    
-   <h1>
-   TRUSTED BY THE WORLD'S LARGEST
-   </h1>
- <p>Completely Dedicated to Success - Our dedicated team conducts thorough quality
-checks at every stage, including incoming materials, in-process operations, and
-outgoing products. Each batch of raw materials is inspected, and detailed records
-are meticulously maintained.</p>
-
-<p>
-Stringent Performance Measurement - A completely dedicated in-house Testing
-and Validation facility, equipped with sophisticated testing equipment’s.
-Partnered with Top Companies - We are a regular certified supplier to
-manufacturing companies like Tata Motors Ltd, Tata Toyo Radiators, Banco
-Radiators, Kirloskar Oil Engine, EV Commercial Vehicles Ltd. and also exporting to
-European.
-Our latest change
-
- </p>
-   </div>
- </div>
+      >
+        {logos.map((logo, index) => (
+          <SwiperSlide key={index}>
+            <img src={logo} alt={`Logo ${index + 1}`} className="logo-item" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
  
- <div className="logo-container">
-  <h1>ESTIMATED ClIENTS</h1>
- <div className="logo-world">
-    <img src={logo1} alt="Logo 1" className="logo-item" />
-    <img src={logo2} alt="Logo 2" className="logo-item" />
-    <img src={logo3} alt="Logo 3" className="logo-item" />
-    <img src={logo4} alt="Logo 4" className="logo-item" />
-    <img src={logo5} alt="Logo 5" className="logo-item" />
-    <img src={logo6} alt="Logo 6" className="logo-item" />
-    <img src={logo7} alt="Logo 7" className="logo-item" />
-  
-</div>
-
- </div>
 {/* 
 Application Area */}
 
@@ -223,22 +196,7 @@ Application Area */}
   <div className="application-head">
     <h1>OUR OFFERINGS</h1>
   </div>
-      {/* <div className="button-container">
-        {buttons.map((button, index) => (
-          <button
-            key={index}
-            className={`app-button ${
-              selectedImage === button.img ? "active" : ""
-            }`}
-            onClick={() => setSelectedImage(button.img)}
-          >
-            {button.label}
-          </button>
-        ))}
-      </div>
-      <div className="image-display">
-        <img src={selectedImage} alt="Selected Application" />
-      </div> */}
+      
       <div className="button-container">
   {buttons.map((button, index) => (
     <button

@@ -7,13 +7,14 @@
 }
 
 .footer-section {
+  height: auto;
   display: flex;
   flex-direction: row; 
   justify-content: space-between; 
   align-items: flex-start; 
   background-color: #000;
   color: white;
-  padding: 10px 10px;
+  padding: 40px 40px;
   flex-wrap: wrap; 
   gap: 20px; 
   
@@ -181,6 +182,48 @@
   text-align: center; 
   margin-top: -30px; 
   padding-top: 5px; 
+  border-top: 1px solid #fff; 
+  font-size: 14px; 
+  color: #fff; 
+}
+
+
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  .footer-section {
+    flex-direction: column; /* Switch layout to column */
+    align-items: center; /* Center align items */
+  }
+
+  .address,
+  .quick-links,
+  .news-letter,
+  .map-container {
+    width: 100%; /* Take full width */
+    margin: 10px 0; /* Add spacing between sections */
+    text-align: center; /* Center align text */
+  }
+
+  .news-letter {
+    margin-left: 0; /* Reset left margin */
+  }
+
+  .map-container {
+    height: 250px; /* Reduce height on smaller screens */
+    margin-right: 0; /* Reset right margin */
+  }
+}
+
+/* Footer Bottom Text */
+.footer-bottom-text {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center align text */
+  width: 100%; 
+  text-align: center; 
+  margin-top: 20px; 
+  padding-top: 10px; 
   border-top: 1px solid #fff; 
   font-size: 14px; 
   color: #fff; 

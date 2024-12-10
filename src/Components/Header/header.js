@@ -1,6 +1,9 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./header.css";
 import { Link } from "react-router-dom";
 import logo from "../../Images/sheetal-rubber-logo.webp";
@@ -67,16 +70,6 @@ function Header() {
           <button onClick={handleSearch}>Search</button>
         </div>
 
-        {/* Language Dropdown
-        <div className="language-dropdown">
-          <select>
-            <option value="en">🇺🇸 English</option>
-            <option value="fr">🇫🇷 French</option>
-            <option value="de">🇩🇪 German</option>
-            <option value="es">🇪🇸 Spanish</option>
-          </select>
-        </div>
- */}
         {/* Contact Info */}
         <div className="contact-info">
           <div className="contact-item">
@@ -93,7 +86,7 @@ function Header() {
       {/* Navbar Section */}
 
       <div className="Navbar">
-        <nav className="nav">
+        <nav className="nav ">
           <Link to="/">HOME</Link>
           <Link to="/about">ABOUT US</Link>
 
@@ -107,8 +100,8 @@ function Header() {
         <Link to="/siliconpolyester">SLICONE - POLYESTER HOSES</Link>
         <Link to="/turbochargerhose">TURBOCHARGER AND
         CAC HOSES</Link>
-        <Link to="/marinewethose">Marine Wet
-        Exhaust Hoses</Link>
+        <Link to="/marinewethose">MARINE WET
+        EXHAUST HOSES</Link>
         <Link to="/epdm">EPDM RUBBER HOSES
         </Link>
         <Link to="/organic">ORGANIC RUBBER
