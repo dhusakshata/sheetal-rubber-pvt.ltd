@@ -120,8 +120,7 @@
 
 .news-letter h2 {
   font-size: 14px;
-
-  color: white;
+   color: white;
 }
 
 .newsletter-form {
@@ -187,13 +186,12 @@
   color: #fff; 
 }
 
-
-
-/* Media Query for Small Screens */
+/* Media Query for Small Screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .footer-section {
-    flex-direction: column; /* Switch layout to column */
+    flex-direction: column; /* Change to column layout */
     align-items: center; /* Center align items */
+    padding: 20px; /* Reduce padding */
   }
 
   .address,
@@ -202,29 +200,56 @@
   .map-container {
     width: 100%; /* Take full width */
     margin: 10px 0; /* Add spacing between sections */
-    text-align: center; /* Center align text */
   }
 
-  .news-letter {
-    margin-left: 0; /* Reset left margin */
+  .newsletter-form {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 10px;
   }
 
   .map-container {
-    height: 250px; /* Reduce height on smaller screens */
-    margin-right: 0; /* Reset right margin */
+    height: 250px; /* Adjust height for small screens */
   }
 }
 
-/* Footer Bottom Text */
-.footer-bottom-text {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center align text */
-  width: 100%; 
-  text-align: center; 
-  margin-top: 20px; 
-  padding-top: 10px; 
-  border-top: 1px solid #fff; 
-  font-size: 14px; 
-  color: #fff; 
+/* Media Query for Extra Small Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .footer-section {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px; 
+    padding: 10px;
+  }
+
+  .address,
+  .quick-links,
+  .news-letter,
+  .map-container {
+    width: 100%; /* Full width for all sections */
+    text-align: center; /* Center-align content */
+  }
+
+  .map-container {
+    height: 200px; /* Reduce height for extra small screens */
+    margin: 0; /* Reset margin */
+  }
+
+  .newsletter-form {
+    gap: 5px; /* Reduce gap between input and button */
+  }
+
+  .email-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .subscribe-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .footer-bottom-text {
+    font-size: 12px;
+    padding-top: 5px;
+  }
 }
