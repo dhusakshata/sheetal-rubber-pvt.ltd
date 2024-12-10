@@ -169,8 +169,10 @@ facility.
     </div> */}
   
 </div>
+
+{/* Logo container */}
 <div className="logo-container">
-      <h1>ESTEEMED CLIENTS</h1>
+      <div className="logo-title"><h1>ESTEEMED CLIENTS</h1></div>
       <Swiper
         modules={[Navigation]}
         slidesPerView={4}

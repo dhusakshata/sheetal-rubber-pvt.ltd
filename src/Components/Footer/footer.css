@@ -191,15 +191,16 @@
   .footer-section {
     flex-direction: column; /* Change to column layout */
     align-items: center; /* Center align items */
-    padding: 20px; /* Reduce padding */
+  justify-content: center;
   }
 
-  .address,
+  .address,s
   .quick-links,
   .news-letter,
   .map-container {
     width: 100%; /* Take full width */
     margin: 10px 0; /* Add spacing between sections */
+font-size: 10px;
   }
 
   .newsletter-form {
@@ -216,8 +217,9 @@
 @media screen and (max-width: 480px) {
   .footer-section {
     flex-direction: column; 
-    align-items: center; 
-    gap: 15px; 
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Adjust spacing between sections */
     padding: 10px;
   }
 
@@ -227,6 +229,7 @@
   .map-container {
     width: 100%; /* Full width for all sections */
     text-align: center; /* Center-align content */
+    font-size: 10px;
   }
 
   .map-container {
@@ -251,5 +254,49 @@
   .footer-bottom-text {
     font-size: 12px;
     padding-top: 5px;
+  }
+}
+
+/* Media Query for Ultra Small Screens (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  .footer-section {
+    gap: 10px; /* Reduce gaps for ultra-small screens */
+    padding: 10px;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .address,
+  .quick-links,
+  .news-letter,
+  .map-container {
+    width: 100%; /* Ensure full width */
+    margin: 5px 0; /* Reduce spacing */
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 5px; 
+  }
+
+  .email-input {
+    font-size: 12px;
+    padding: 8px; /* Compact padding */
+  }
+
+  .subscribe-button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .footer-bottom-text {
+    font-size: 10px; 
+    padding-top: 5px;
+  }
+
+  .map-container {
+    height: 150px; 
   }
 }

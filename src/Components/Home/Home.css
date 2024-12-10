@@ -150,7 +150,9 @@
 
 /* Products Section */
 .our-products {
+  margin: 20px;
   width: 100%;
+  height: auto;
   text-align: center;
   background-color: whitesmoke;
   color: black;
@@ -237,20 +239,22 @@
 
 
 .logo-container {
+  margin-top: 20px;
   border: 1px solid gray;
   width: 100%;
-  height: 75%;
+ 
   text-align: center;
-  padding: 20px 0;
-  background-color: whitesmoke;
-  height:40vh;
+  padding: 40px 0;
+  background-color: rgb(37, 35, 35);
+ 
 }
 
 .logo-container h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: black;
+  color: white;
+  padding: 20px;
 }
 
 .swiper {
@@ -337,22 +341,21 @@
 }
 
 
-
-
-
 /* Application Area */
 .application-area {
-  margin-top: -50px;
+  margin: 20px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 0px;
-  padding: 10px;
+  padding: 20px;
   background-color:whitesmoke;
   color: black;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
   
 }
 .application-head {
