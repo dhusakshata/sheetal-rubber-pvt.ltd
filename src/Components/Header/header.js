@@ -13,7 +13,7 @@ const data = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Products", link: "/product" },
   { id: 3, name: "Facilities", link: "/facilities" },
-  { id: 4, name: "Careers", link: "/careers" },
+  { id: 4, name: "Careers", link: "/career" },
   { id: 5, name: "About Us", link: "/about" },
   { id: 6, name: "Contact Us", link: "/contact" },
   { id: 7, name: "manufacturing", link: "/manufacturing" },

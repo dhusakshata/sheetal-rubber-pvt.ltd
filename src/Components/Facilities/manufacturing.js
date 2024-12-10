@@ -9,7 +9,7 @@ import Facility6 from "../../Images/facility6.png"; // Replace with your image p
 const manufacturing = () => {
   return (
     <div className="facilities-container">
-      <h1>Manufacturing Facilities</h1>
+      <h1>MANUFACTURINF FACILITIES</h1>
       {/* Image Section */}
       <div className="facilities-images">
        
