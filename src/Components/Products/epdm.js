@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import "./product2.css";
 import EPDM from "../../Images/EPDM-rubber.png";
 
@@ -7,11 +7,38 @@ const epdm = () => {
   return (
     <div className="page">
       <div className="container">
-        <h1>EPDM RUBBER HOSES
-        </h1>
+      <motion.h1
+          animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+          transition={{
+            duration: 5,
+            delay: 0.3,
+            ease: [0.5, 0.71, 1, 1.5],
+          }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileHover={{ scale: 1.2 }}
+        >EPDM RUBBER HOSES
+      </motion.h1>
+
         <div className="content">
-          <img src={EPDM} alt="Silicone Polyester" className="image" />
-          <p>
+
+         <motion.img
+            src={EPDM}
+            alt="..."
+            className="image"
+            initial={{ opacity: 0, y: -50 }} // Initial state: hidden, above
+            animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
+            transition={{ duration: 1 }} // Transition duration
+          />
+         <motion.p
+            animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+            transition={{
+              duration: 5,
+              delay: 0.3,
+              ease: [0.5, 0.71, 1, 1.5],
+            }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileHover={{ scale: 1.2 }}
+          >
           High-performance hoses for radiator and cooling
 systems, built to DIN73411 & SAEJ20 Class D
 standards for durability, flexibility, and heat
@@ -39,7 +66,7 @@ construction, mining, and agriculture.
            
           </ul>
           </div>
-          </p>
+          </motion.p>
           
         </div>
       </div>

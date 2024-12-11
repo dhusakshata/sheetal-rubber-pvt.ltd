@@ -1,17 +1,44 @@
 import React from "react";
 import "./product2.css";
-
+import { motion } from "framer-motion";
 import Moulded from "../../Images/Moulded.png";
 
 const moulded = () => {
   return (
     <div className="page">
     <div className="container">
-      <h1>MOULDED HOSES
-      </h1>
+    <motion.h1
+          animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+          transition={{
+            duration: 5,
+            delay: 0.3,
+            ease: [0.5, 0.71, 1, 1.5],
+          }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileHover={{ scale: 1.2 }}
+        >MOULDED HOSES
+      </motion.h1>
       <div className="content">
-        <img src={Moulded} alt="organic" className="image" />
-        <p>
+
+      <motion.img
+            src={Moulded}
+            alt="..."
+            className="image"
+            initial={{ opacity: 0, y: -50 }} // Initial state: hidden, above
+            animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
+            transition={{ duration: 1 }} // Transition duration
+          />
+
+<motion.p
+            animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+            transition={{
+              duration: 5,
+              delay: 0.3,
+              ease: [0.5, 0.71, 1, 1.5],
+            }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileHover={{ scale: 1.2 }}
+          >
         Engineered for safe and efficient fluid
 transfer in automotive and industrial
 systems, with inner diameters ranging from
@@ -46,7 +73,7 @@ testing.
           
         </ul>
         </div>
-        </p>
+        </motion.p>
        
         
       </div>

@@ -129,7 +129,7 @@
 
 .nav {
   display: flex;
-  gap: 5px;
+  gap: 2px;
   font-weight: bold;
   font-size: 14px;
   min-width: 100%; /* Prevents the nav container from shrinking too much */

@@ -1,16 +1,44 @@
 import React from "react";
 import "./product2.css";
+import { motion } from "framer-motion";
 import Organic from "../../Images/organic-rubber.png";
 
 const organic = () => {
   return (
     <div className="page">
       <div className="container">
-        <h1>ORGANIC RUBBER
-        HOSES</h1>
+      <motion.h1
+          animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+          transition={{
+            duration: 5,
+            delay: 0.3,
+            ease: [0.5, 0.71, 1, 1.5],
+          }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileHover={{ scale: 1.2 }}
+        >
+        ORGANIC RUBBER
+        HOSES</motion.h1>
         <div className="content">
-          <img src={Organic} alt="organic" className="image" />
-          <p>
+
+          <motion.img
+            src={Organic}
+            alt="..."
+            className="image"
+            initial={{ opacity: 0, y: -50 }} // Initial state: hidden, above
+            animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
+            transition={{ duration: 1 }} // Transition duration
+          />
+         <motion.p
+            animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+            transition={{
+              duration: 5,
+              delay: 0.3,
+              ease: [0.5, 0.71, 1, 1.5],
+            }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileHover={{ scale: 1.2 }}
+          >
           Designed for low-temperature air, water, and fuel
            transfer, with material options like SBR,
           PVC/NBR, Neoprene, Vamac, and NBR for
@@ -31,7 +59,7 @@ const organic = () => {
           </li>
           </ul>
           </div>
-          </p>
+          </motion.p>
          
           
         </div>

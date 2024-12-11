@@ -5,8 +5,10 @@ const contact = () => {
   return (
     <div className="contact-page">
       {/* First Section: Address and Contact Info */}
+      
       <div className="section row">
         <div className="address-info">
+          <p><strong>Sheetal Rubber Products (p) Ltd. </strong></p>
           <p><strong>Address:</strong> J-395, MIDC, Bhosari, Pune - 411026, INDIA</p>
           <p><strong>Phone:</strong> +91 -20 -27130244</p>
           <p><strong>Email:</strong> info@sheetalrubber.com</p>

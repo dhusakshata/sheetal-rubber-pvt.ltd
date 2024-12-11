@@ -1,15 +1,48 @@
 import React from "react";
  import "./product2.css";
 import Silicon from "../../Images/Silicon.png";
+import { motion } from 'framer-motion';
 
 function siliconpolyester() {
   return (
     <div className="page">
       <div className="container">
-        <h1>Silicone-Polyester Hoses</h1>
+      <motion.h1
+          animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+          transition={{
+            duration: 5,
+            delay: 0.3,
+            ease: [0.5, 0.71, 1, 1.5],
+          }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileHover={{ scale: 1.2 }}
+        >
+        Silicone-Polyester Hoses
+        </motion.h1>
+
         <div className="content">
-          <img src={Silicon} alt="Silicone Polyester" className="image" />
-          <p>
+
+          < motion.img 
+          src={Silicon} 
+          alt="Silicone Polyester" 
+          className="image" 
+          initial={{ opacity: 0, y: -50 }} // Initial state: hidden, above
+            animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
+            transition={{ duration: 1 }} // Transition duration
+          />
+
+
+          
+<motion.p
+            animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+            transition={{
+              duration: 5,
+              delay: 0.3,
+              ease: [0.5, 0.71, 1, 1.5],
+            }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileHover={{ scale: 1.2 }}
+          >
           Silicone-Polyester hoses are designed specifically for use in demanding radiator, heater,
           and coolant transfer applications. Constructed from high-quality silicone reinforced with
           durable polyester fabric, these hoses offer excellent resilience and a reliable performance
@@ -32,7 +65,7 @@ function siliconpolyester() {
           </li>
           </ul>
           </div>
-          </p>
+          </motion.p>
          
           
         </div>

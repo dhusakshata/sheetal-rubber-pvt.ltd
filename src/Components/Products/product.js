@@ -91,7 +91,7 @@ Nylon/Polyester: Flexible.
 Aramid/Kevlar: High-strength, heatresistant.
 Peroxide-Cured: Heat, ozone, and aging
 resistant.
-Reinforced/Non-Reinforced: High or lowpressure use.
+Reinforced/Non-Reinforced:High or lowpressure use.
 <button className="read-more"  >
               <Link to="/epdm">Read More</Link>
             </button>

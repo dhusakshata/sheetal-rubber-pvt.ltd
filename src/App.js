@@ -2,9 +2,13 @@
 
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+import ScrollToTop from "./Components/Scrolltotop.js";
 
 import "./App.css";
 
@@ -40,7 +44,7 @@ import ArrowToggle from "./Components/Arrowtoggle/arrowtoggle.js";
 const App = () => {
   return (
     <Router>
-      
+        <ScrollToTop /> {/* Ensure it's placed above your routes */}
       <Header /> 
 
 

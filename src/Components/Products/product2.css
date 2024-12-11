@@ -10,9 +10,9 @@
   display: flex;
   justify-content: center; 
   align-items: center;
-  background-color: #f9f9f9; /* Light background color */
+  background-color: rgb(51, 50, 50); 
   padding: 50px 20px; /* Add spacing around the content */
-  min-height: 40vh; /* Full-height layout for the page */
+ 
 
   font-weight: bold;
 }
@@ -22,29 +22,30 @@
   flex-direction: column; /* Stack the heading and content */
   max-width: 1200px; /* Restrict container width */
   width: 100%; /* Allow flexibility for responsiveness */
+  height: 100vh;
   padding: 20px; /* Add padding for content spacing */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  box-shadow: 0 4px 12px rgba(243, 229, 229, 0.1); /* Add shadow for depth */
   border-radius: 8px; /* Round container corners */
  color: white;
-  background-color: rgb(37, 35, 35);
+  /* background-color: rgb(37, 35, 35); */
 }
-.container:hover {
+/* .container:hover {
   background-color: #fea286; 
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover 
   color:black
-}
+} */
 .container h1 {
   padding: 20px;
   font-weight: bold;
   font-size: 2.5rem;
   color: white;
-  margin-top: -15px;
+  margin-top: -25px;
+  padding: 20px;
   text-align: center;
   text-decoration: underline;
   
   
 }
-
 .content {
   display: flex;
   flex-direction: row; /* Arrange image and text in a row */
@@ -61,10 +62,11 @@
   height: 400px; /* Maintain aspect ratio */
   border-radius: 8px; /* Optional: Rounded corners for the image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  margin-top: -20px;
 }
 
 .content p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6; /* Improve readability */
   text-align: justify; /* Justify text for neat alignment */
   flex: 1; /* Allow the text area to grow flexibly */

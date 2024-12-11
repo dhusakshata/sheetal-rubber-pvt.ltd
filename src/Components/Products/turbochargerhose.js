@@ -1,19 +1,49 @@
 import React from "react";
 import "./product2.css";
 import Turbocharger from "../../Images/Turbo-charger.png";
+import { motion } from "framer-motion";
 
 function turbocharger() {
   return (
     <div className="page">
       <div className="container">
-        <h1>TURBOCHARGER AND CAC HOSES</h1>
+       {/* Applying Framer Motion to the h1 text */}
+       <motion.h1
+          animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+          transition={{
+            duration: 5,
+            delay: 0.3,
+            ease: [0.5, 0.71, 1, 1.5],
+          }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileHover={{ scale: 1.2 }}
+        >
+          TURBOCHARGER AND CAC HOSES
+        </motion.h1>
         <div className="content">
-          <img src={Turbocharger} alt="Silicone Polyester" className="image" />
-          <p>
-          Engineered for high-performance connections in
-          turbocharger and charge air cooler systems,
-          ensuring durability in demanding automotive and
-          industrial applications.
+          {/* Image with Framer Motion effects */}
+          <motion.img
+            src={Turbocharger}
+            alt="..."
+            className="image"
+            initial={{ opacity: 0, y: -50 }} // Initial state: hidden, above
+            animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
+            transition={{ duration: 1 }} // Transition duration
+          />
+           <motion.p
+            animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+            transition={{
+              duration: 5,
+              delay: 0.3,
+              ease: [0.5, 0.71, 1, 1.5],
+            }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileHover={{ scale: 1.2 }}
+          >
+            Engineered for high-performance connections in turbocharger and
+            charge air cooler systems, ensuring durability in demanding automotive
+            and industrial applications.
+          
           <div>
           <h3>Key Features and Benefits:</h3>
           <ul>
@@ -35,7 +65,7 @@ and exhaust gases.
            
           </ul>
           </div>
-          </p>
+          </motion.p>
           
         </div>
       </div>
