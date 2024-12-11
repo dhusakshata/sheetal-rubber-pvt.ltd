@@ -91,7 +91,7 @@ Nylon/Polyester: Flexible.
 Aramid/Kevlar: High-strength, heatresistant.
 Peroxide-Cured: Heat, ozone, and aging
 resistant.
-Reinforced/Non-Reinforced:High or low pressure use.
+Reinforced/Non-Reinforced:High or low pressure.
 <button className="read-more"  >
               <Link to="/epdm">Read More</Link>
             </button>
@@ -174,8 +174,7 @@ and gases.
        Applications:
         Multilayer Fuel Tubes: Fuelresistant for automotive systems.
         Fuel Tubes with Sleeves: Heat and abrasion-resistant.
-        Fuel Flow Tubes: Minimize pressure
-        drop.
+        Fuel FlowTubes: Minimize pressure drop.
         <button className="read-more"  >
               <Link to="/fueltube">Read More</Link>
             </button>

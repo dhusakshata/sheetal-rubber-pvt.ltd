@@ -82,7 +82,10 @@ function Header() {
           </div>
           <div className="contact-item">
             <FaEnvelope />
-            <span>sheetalrubber@gmail.com</span>
+            <a href="mailto:sheetalrubber@gmail.com" className="email-button">
+      sheetalrubber@gmail.com
+    </a>
+            {/* <span>sheetalrubber@gmail.com</span> */}
           </div>
         </div>
       </header>

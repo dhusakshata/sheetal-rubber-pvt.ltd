@@ -1,108 +1,138 @@
+/* General Reset */
 * {
-  font-family: 'Arial', sans-serif; 
-  font-style: normal; 
-
-  margin: 0; 
-  padding: 0; 
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding/margin doesn't mess with sizes */
 }
 
 .page {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  background-color: rgb(51, 50, 50); 
-  padding: 50px 20px; /* Add spacing around the content */
+  background-color: rgb(51, 50, 50);
+  padding: 20px;
   font-weight: bold;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height to prevent squeezing */
+  overflow: hidden;
 }
 
 .container {
   display: flex;
-  flex-direction: column; /* Stack the heading and content */
-  max-width: 1200px; /* Restrict container width */
-  width: 100%; /* Allow flexibility for responsiveness */
-  height: 100vh;
-  padding: 20px; /* Add padding for content spacing */
-  box-shadow: 0 4px 12px rgba(243, 229, 229, 0.1); /* Add shadow for depth */
-  border-radius: 8px; /* Round container corners */
- color: white;
-  /* background-color: rgb(37, 35, 35); */
-}
-/* .container:hover {
-  background-color: #fea286; 
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover 
-  color:black
-} */
-.container h1 {
+  flex-direction: column;
+  max-width: 1500px; /* Restrict maximum width for large screens */
+  box-sizing: border-box; 
+  width: 100%;
+  min-height: 100%; /* Allow flexible height */
   padding: 20px;
+  box-shadow: 0 4px 12px rgba(243, 229, 229, 0.1);
+  border-radius: 8px;
+  color: white;
+}
+
+.container h1 {
   font-weight: bold;
   font-size: 2.5rem;
   color: white;
-  margin-top: -25px;
-  padding: 20px;
   text-align: center;
   text-decoration: underline;
-  
-  
+  margin-bottom: 20px; /* Add spacing below the heading */
 }
+
 .content {
   display: flex;
-  flex-direction: row; /* Arrange image and text in a row */
-  justify-content: space-between; /* Space between image and text */
-  align-items: flex-start; /* Align items at the top */
-  gap: 30px; /* Spacing between image and text */
-  flex-wrap: wrap; /* Enable wrapping for smaller screens */
-
+  flex-direction: row; /* Row for desktop view */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px; /* Spacing between text and image */
+  flex-wrap: wrap; /* Wrap content for smaller screens */
+  width: 100%;
 }
 
 .image {
-  width: 30%; /* Adjust image width */
-  max-width: 400px; /* Restrict maximum size */
-  height: 400px; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: Rounded corners for the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-  margin-top: -20px;
+  width: 30%; /* Restrict image size for desktop */
+  max-width: 400px;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
 }
 
 .content p {
   font-size: 16px;
-  line-height: 1.6; /* Improve readability */
-  text-align: justify; /* Justify text for neat alignment */
-  flex: 1; /* Allow the text area to grow flexibly */
+  line-height: 1.6;
+  text-align: justify;
+  flex: 1;
+  margin-top: 10px; /* Add spacing for better 
+  readability */
+  word-wrap: break-word; /* Break long words to prevent cutting */
+  overflow-wrap: break-word; /* Ensure long text doesn’t overflow */
 }
 
 .content h3 {
   font-size: 16px;
   font-weight: bold;
-  margin-top: 20px; /* Add space above the subheading */
-  text-align: left; /* Align subheading to the left */
+  margin-top: 20px;
 }
 
 .content ul {
-  list-style-type: disc; /* Use bullets for list items */
+  list-style-type: disc;
   margin-top: 20px;
-  padding-left: 20px; /* Indent the list */
+  padding-left: 20px;
 }
 
 .content ul li {
-  margin-bottom: 10px; /* Add space between list items */
+  margin-bottom: 10px;
   font-size: 14px;
-  line-height: 1.5; /* Enhance readability */
+  line-height: 1.5;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .content {
-    flex-direction: column; /* Stack image and text on smaller screens */
+    flex-direction: column; /* Stack image and text */
     align-items: center; /* Center-align the content */
   }
 
   .image {
-    width: 80%; /* Reduce image size for smaller screens */
+    width: 80%; /* Reduce image width */
+    
+    margin: 0 auto; /* Center the image */
+  }
+  .content p {
+    font-size: 14px; /* Adjust text size for smaller screens */
+    text-align: left; /* Center-align text */
+    padding: 0 10px; /* Add padding to prevent cutting */
+  }
+ 
+
+  .content ul {
+    padding-left: 0; /* Remove indentation on mobile */
+    text-align:center;
   }
 
-  .content p,
-  .content ul {
-    text-align: center; /* Center text for better alignment */
+  .container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .container h1 {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    width: 90%; /* Further reduce image width for very small screens */
+  }
+
+  .content p {
+    font-size: 14px; /* Reduce text size for readability */
+    padding: 0 15px;
+  }
+
+  .content h3 {
+    font-size: 14px;
   }
 }

@@ -94,6 +94,14 @@
 .contact-item svg {
   color: #080201;
 }
+.email-button {
+  
+  padding: 8px 12px; 
+  text-decoration: none; 
+  color: black;
+}
+
+
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
