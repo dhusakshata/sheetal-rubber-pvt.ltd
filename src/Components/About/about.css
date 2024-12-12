@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   margin: 10px;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
  
@@ -35,9 +35,8 @@
   align-items: center;
   justify-content: space-between;
   margin-top: -90px;
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
-  background: rgba(0, 0, 0, 0.6); 
   padding: 20px;
   border-radius: 10px;
 }
@@ -45,13 +44,13 @@
   font-size: 1rem;
 font-weight: bold;
 }
-
+/* 
 .about-content:hover {
   background-color: #fea286; 
-    transform: scale(1.05); /* Slightly enlarge content */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow */
-    color: #000; /* Optional: Change text color */
-  }
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    color: #000; 
+  } */
 
 /* Text content */
 .about-info {
@@ -63,11 +62,12 @@ font-weight: bold;
 .about-image {
   flex: 1; /* Take up equal space */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: 400px;
   object-fit: cover;
   overflow: hidden;
+ margin: 10px;
 }
 
 .image-animation {

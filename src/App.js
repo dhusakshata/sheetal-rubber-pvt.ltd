@@ -9,7 +9,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 import ScrollToTop from "./Components/Scrolltotop.js";
-
 import "./App.css";
 
 import Header from "./Components/Header/header.js";

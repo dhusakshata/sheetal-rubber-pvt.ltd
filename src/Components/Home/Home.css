@@ -26,8 +26,8 @@
   flex-direction: column; 
   margin: 0 auto; /* Center-align and reset margins */
   padding: 20px; /* Add padding for better spacing */
-  background-color: rgb(37, 35, 35);
-  color: white;
+  background-color: whitesmoke;
+  color: black;
 }
 
 /* About Us Title */
@@ -77,14 +77,11 @@
   flex: 1; 
   padding: 20px;
   border-radius: 8px;
-  background-color: rgb(37, 35, 35); /* Match background color */
+  color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
 }
 
-.about-us-info {
-  color: white; /* Text color */
-}
 
 .about-us-video-element {
   width: 100%;
@@ -150,9 +147,11 @@
 /* Products Section */
 /* Products Section */
 .our-products {
-  padding: 20px;
+  background-color: #ff782b;
+  padding: 40px;
+  margin-bottom: 40px;
   text-align: center;
-  height: auto;
+  height: 100%;
 }
 
 .our-products h1 {
@@ -162,7 +161,9 @@
 }
 
 .our-products h3 {
-  font-size: 16px;
+  position: relative;
+  top: -50px;
+  font-size: 18px;
   text-decoration: none;
   color: black;
 }
@@ -180,7 +181,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  gap: 5px;
+  gap: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: calc(33.33% - 20px); /* Default for larger screens (3 cards per row) */
@@ -199,7 +200,7 @@
 }
 
 .product-cards:hover img {
-  transform: scale(1.1); /* Image zoom effect */
+  transform: scale(1.0); /* Image zoom effect */
 }
 
 .product-cards h3 {
@@ -207,7 +208,7 @@
 }
 
 .product-cards:hover h3 {
-  color: #ff5722; /* Change color on hover */
+  color: #0f5286; /* Change color on hover */
 }
 
 .slick-slide {
@@ -250,10 +251,10 @@
   margin-top: 20px;
   border: 1px solid gray;
   width: 100%;
- 
+  height: 100%;
   text-align: center;
   padding: 40px 0;
-  background-color: rgb(37, 35, 35);
+  background-color:whitesmoke;
  
 }
 
@@ -261,7 +262,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: white;
+  color: black;
   padding: 20px;
 }
 
@@ -292,10 +293,8 @@
 
 /* Hover Effect: Scale, Shadow, and Border Color Change */
 .logo-item:hover {
-  transform: scale(1.1); /* Slightly enlarge the image */
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Soft shadow around the logo */
-  opacity: 0.8; /* Slightly fade the image */
-  border-color: #3498db; /* Change border color on hover (e.g., blue) */
+  
+  border-color: #3498db; 
 }
 
 /* Optional: Adjust navigation buttons */
@@ -331,7 +330,7 @@
 /* For smaller screens (smartphones) */
 @media (max-width: 768px) {
   .logo-item {
-    width: 80px; /* Even smaller logos for mobile screens */
+    width: 80px; 
     height: 80px;
   }
 }
@@ -394,7 +393,7 @@
 }
 
 .app-button {
-  background-color: #333;
+  background-color:#0f5286;
   color: white;
   border: none;
   padding: 15px 20px;
@@ -412,7 +411,7 @@
 }
 
 .app-button.active {
-  background-color: #555; /* Highlight active button */
+  background-color:#288bd7; /* Highlight active button */
 }
 
 .image-display {

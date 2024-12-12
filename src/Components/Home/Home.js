@@ -26,7 +26,7 @@ import logo5 from "../../Images/client5.png";
 import logo6 from "../../Images/client6.png";
 import logo7 from "../../Images/client7.png";
 // Import the video file
-import rubberWorld from "../../video/rubber-world.mp4";
+import rubberWorld from "../../video/about.mp4";
 import ProductionNarrat from "../../video/production4.mp4";
  
 
@@ -102,40 +102,25 @@ function Home() {
     </div>
     <div className="about-us-content">
       <div className="about-us-info">
-      <motion.p
-              
-                whileHover={{ scale: 1.2 }}
-            >
+      <p>
       For over two decades, Sheetal Rubber Products has been a trusted leader in the
 manufacturing of high-quality rubber products with 50,000 sq. ft. of manufacturing
 facility.
-      </motion.p>
-      <motion.p
-              
-                whileHover={{ scale: 1.2 }}
+      </p>
+      <p    
             >
       We specialize in manufacturing a full range of low-pressure hoses, including
       platinum silicone-lined, FMK-lined fuel cell hoses, flame-retardant hoses, and various
       moulded components.
-      </motion.p>
-      <motion.p
-              
-                whileHover={{ scale: 1.2 }}
+      </p>
+      <p  
             >
       Our commitment to product expertise, engineering excellence,
       rigorous testing, and strict quality controls has established us as a preferred partner for
       major manufacturers in India and a favored exporter internationally.
-      </motion.p>
+      </p>
    
-      <motion.ul
-            animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-            transition={{
-              duration: 5,
-              delay: 0.5,
-              ease: [0.5, 0.71, 1, 1.5],
-            }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileHover={{ scale: 1.2 }}
+      <ul
           >
           <li>Committed towards continual improvement, quality control and customer
           satisfaction.</li>
@@ -143,7 +128,7 @@ facility.
           <li>Fully fledged traceability system (Raw material to Finished goods).</li>
           <li> 
           All Raw Materials are tested, before being used, based on their Quality Policy.</li>
-        </motion.ul>
+        </ul>
 
 
         <button className="read-more">
@@ -211,10 +196,13 @@ facility.
             <h3>Fuel Tubes</h3>
           </Link>
         </div>
-        <div className="product-card">
-    <Link to="/moulded"><img src={Moulded} alt="Moulded Hoses" /></Link>
-      <Link to="/moulded"><h3>Moulded Hoses</h3> </Link>
-    </div>
+        <div className="product-cards">
+  <Link to="/moulded">
+    <img src={Moulded} alt="Moulded Hoses" className="product-images" />
+    <h3>Moulded Hoses</h3>
+  </Link>
+</div>
+
       </Slider>
     </div>
 

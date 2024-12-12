@@ -12,7 +12,7 @@
   flex-direction: column;
   gap: 50px;
   padding: 40px 20px;
-  background-color:gray;
+  background-color:whitesmoke;
   padding: 20px;
   text-align: center;
 }
@@ -106,8 +106,8 @@
 }
 
 .facilities-info:hover{
-  background-color: #fea286; 
- 
+  background-color:#fb8c4b; 
+
 }
 .facilities-info p {
   font-size: 16px;

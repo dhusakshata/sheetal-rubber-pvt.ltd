@@ -1,110 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
 * {
-  font-family: 'Arial', sans-serif; 
-  font-style: normal; 
-
-  margin: 0; 
-  padding: 0; 
-}
-.header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  background-color: whitesmoke;
-  color: black;
-  position: sticky;
-  top: 0; 
-  z-index: 100; 
-  margin: 0;
-  padding: 5px 0 0 20px  ; 
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
 }
 
-/* Logo styling */
-.logo {
-  flex-shrink: 0; /* Prevent the logo from resizing in the flexbox */
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
 }
 
-.logo img {
-  width: 200px; /* Adjust the width of the logo */
-  height: 100px; /* Maintain aspect ratio */
-  margin: 0; /* Ensure no extra space around the logo */
-  padding: 0;
-}
-.top-right {
-  position: absolute; /* Position the container absolutely */
-  top: 10px; /* Shift it 20px from the top of the page */
-  right: 20px; /* Shift it 20px from the right of the page */
-  display: flex; /* Arrange search bar and contact info in a row */
-  justify-content: flex-end; /* Align both elements to the right */
-  align-items: flex-start; /* Align items at the top */
-  gap: 20px; /* Space between search bar and contact info */
-  width: auto; /* Make width auto to adjust based on content */
-  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-}
-/* Search bar styling */
-.search-bar {
-  display: flex; /* Align input and button in a row */
-  gap: 10px; /* Space between input and button */
-  align-items: center;
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
 }
 
-.search-bar input {
-  width: 200px;
-  height: 40px;
-  padding: 0 8px;
-  border: 1px solid gray;
-
-  margin: 0;
-  box-sizing: border-box;
+nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
 }
 
-.search-bar button {
-  width: 30px;
-  height: 40px;
-  background-color: #ff5722;
-  color: white;
-  border: 1px solid gray;
-  border-left: none;
-  cursor: pointer;
-  margin-left: -30px;
-  font-size: 16px;
-  box-sizing: border-box;
- 
-
+nav a:hover {
+	color: var(--secondaryColor);
 }
 
-.search-bar button:hover {
-  background-color: #9a2b0a;
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
 }
 
-/* Contact info styling */
-.contact-info {
-  display: flex; /* Arrange contact items in a column */
-  flex-direction: column; /* Stack phone and email vertically */
-  align-items: flex-start; /* Align items to the right */
-  gap: 5px; /* Space between phone and email */
-  margin-top: 10px;
-  position: relative;
-  top:-14px;
+header div,
+nav {
+	display: flex;
+	align-items: center;
 }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
- 
-}
-/* .landline{
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
 
-} */
-.contact-item svg {
-  color: #080201;
- gap:10px;
-}
-.email-button {
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+	}
 
-  text-decoration: none; 
-  color: black;
-  margin-left: 5px; 
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
 }
 
 

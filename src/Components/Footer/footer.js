@@ -7,7 +7,7 @@ import { FaLink } from "react-icons/fa"; // Importing icon from react-icons
 import twitter from "../../Images/twitter image.webp";
 import linkedin from "../../Images/linked in image.webp";
 
-import logo from "../../Images/sheetal-rubber-logo.webp"; 
+import Logos from "../../Images/logo1.png"; 
 
 function Footer() {
   return (
@@ -15,13 +15,13 @@ function Footer() {
       <div className="address">
         <div className="logo">
           
-        <img src={logo} alt="Sheetal Rubber Industries" />
+        <img src={Logos} alt="Sheetal Rubber Industries" />
         </div>
-      
+       
       
         <div className="address-section">
         <div className="address-info">
-          <h3>Sheetal Rubber Products(p)ltd.</h3>
+          <h3>Sheetal Rubber Products (P) Ltd.</h3>
           <p>J-395,MIDC,Bhosari</p>
           <p>Pune-411026(INDIA)</p>
           <p>+91 -20 -27130244</p>
@@ -89,7 +89,13 @@ function Footer() {
         {/* <p>
           <Link to="/privacy-policy">Privacy Policy</Link> | <Link to="/terms-and-conditions">Terms and Conditions</Link>
         </p> */}
-        <p>Copyright 2024 Sheetal Rubber Products(p)ltd. - All rights reserved  | Designed by Bitshine Infotech</p>
+        <p>
+  Copyright 2024 Sheetal Rubber Products(p)ltd. - All rights reserved | Designed by 
+  <a href="https://bitshine.in/" class="bitshine-link" target="_blank" rel="noopener noreferrer">
+    Bitshine Infotech
+  </a>
+</p>
+
       </div>
     </div>
   );
