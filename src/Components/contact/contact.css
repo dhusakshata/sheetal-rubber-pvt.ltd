@@ -1,124 +1,94 @@
-
-* {
-  font-family: 'Arial', sans-serif; 
-  font-style: normal; 
-
-  margin: 0; 
-  padding: 0; 
-}
 .contact-page {
-  padding: 40px;
-  background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.contact-head h1{
   padding: 20px;
-  font-weight: bold;
-  font-size: 2.5rem;
-  color:black;
-  margin-top: -30px;
   text-align: center;
 }
-.section {
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- 
+
+.contact-page h1 {
+  margin-bottom: 20px; /* Reduced margin */
 }
 
-.row {
+.row-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px; /* Reduced gap between form and info/map sections */
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-}
-
-.address-info {
-  flex: 1;
-}
-
-.map-container {
-  flex: 1;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
-
+/* Form Section */
 .form-section {
-  flex-direction: column;
-  margin-top: 0;
-  margin: 0px 80px 0px 80px;
-  display: flex;
-  
-
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  flex: 1;
+  padding: 20px;
+  max-width: 500px;
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 10px; /* Reduced margin between form fields */
 }
 
-label {
-  font-size: 14px;
+.form-group label {
+  display: block;
   margin-bottom: 5px;
-  color: #666;
+  font-weight: bold;
 }
 
-input, textarea {
+.form-group input,
+.form-group textarea {
+  width: 100%;
   padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
   border-radius: 5px;
-  outline: none;
+  border: 1px solid #ccc;
 }
 
-textarea {
-  resize: none;
+.form-group textarea {
+  resize: vertical;
   height: 100px;
 }
 
-input:focus, textarea:focus {
-  border-color: #007bff;
-}
-
 .submit-button {
-  width: 150px;
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
-  font-size: 16px;
-  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
+  background-color: #333;
+  color: white;
+  border: none;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: #555;
+}
+
+/* Info and Map Section (Column Layout) */
+.info-map-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap between info and map */
+}
+
+.info-column,
+.map-column {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Map Column */
+.map-column iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .row-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section {
+    max-width: 100%;
+  }
+
+  .info-map-column {
+    width: 100%;
+  }
 }

@@ -39,16 +39,9 @@ const manufacturing = () => {
   return (
     
     <div className="facilities-container">
-       <motion.h1
-        animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-        transition={{
-          duration: 5,
-          delay: 0.3,
-          ease: [0.5, 0.71, 1, 1.5],
-        }}
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileHover={{ scale: 1.2 }}
-      >MANUFACTURINF FACILITIES</motion.h1>
+       <h1
+        
+      >MANUFACTURING FACILITIES</h1>
 
       {/* Image Section */}
      <motion.div className="facilities-images" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
@@ -73,105 +66,83 @@ const manufacturing = () => {
 
       {/* Information Section */}
       <div className="facilities-info">
-      <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
+      <p 
         >
         To help our customers with high-performance products and a cost advantage, we continually strive to improve our manufacturing and business processes, such as:
-        </motion.p>
+        </p>
         <ul>
-  <motion.li
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1, delay: 0.1 }}
+  <li
+    
   >
     Cold Feed Vended Extruders
-  </motion.li>
-  <motion.li
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1, delay: 0.2 }}
+  </li>
+  <li
+    
   >
     Dual Head Extruders for Multi-Layer Extrusion
-  </motion.li>
-  <motion.li
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1, delay: 0.3 }}
+  </li>
+  <li
+    
   >
     Outer: Neoprene (weather/abrasion resistant)
-  </motion.li>
-  <motion.li
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration:1, delay: 0.4 }}
+  </li>
+  <li
+    
   >
     Hot Feed Extruders
-  </motion.li>
-  <motion.li
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration:1, delay: 0.5 }}
+  </li>
+  <li
+   
   >
     Auto Clave Vulcanizer (Quick Lock Type)
-  </motion.li>
-  <motion.li
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1, delay: 0.6 }}
+  </li>
+  <li
+    
   >
     Dispersion Kneader
-  </motion.li>
-  <motion.li
+  </li>
+  <li
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1, delay: 0.7 }}
   >
     3 Role Calendaring Machine
-  </motion.li>
-  <motion.li
+  </li>
+  <li
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration:1, delay: 0.8 }}
   >
     Compression Transfer Moulding
-  </motion.li>
-  <motion.li
+  </li>
+  <li
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1, delay: 0.9 }}
   >
     Hydraulic Presses
-  </motion.li>
-  <motion.li
+  </li>
+  <li
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1, delay: 1 }}
   >
     Rubber Mixing Mills
-  </motion.li>
-  <motion.li
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1, delay: 1.1 }}
+  </li>
+  <li
+    
   >
     Knitting Machines
-  </motion.li>
-  <motion.li
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1, delay: 1.2 }}
+  </li>
+  <li
   >
     Braiding Machines
-  </motion.li>
-  <motion.li
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1, delay: 1.3 }}
+  </li>
+  <li
+    
   >
     Other Conventional Machines
-  </motion.li>
+  </li>
 </ul>
       </div>
     </div>

@@ -7,17 +7,9 @@ function Marine() {
   return (
     <div className="page">
       <div className="container">
-      <motion.h1
-          animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-          transition={{
-            duration: 5,
-            delay: 0.3,
-            ease: [0.5, 0.71, 1, 1.5],
-          }}
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileHover={{ scale: 1.2 }}
+      <h1
         > Marine Wet
-        Exhaust Hoses </motion.h1>
+        Exhaust Hoses </h1>
 
         <div className="content">
 
@@ -30,15 +22,7 @@ function Marine() {
             transition={{ duration: 1 }} // Transition duration
           />
 
-<motion.p
-            animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-            transition={{
-              duration: 5,
-              delay: 0.3,
-              ease: [0.5, 0.71, 1, 1.5],
-            }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileHover={{ scale: 1.2 }}
+<p
           >
           Sheetal Rubber provides high-quality Marine Wet
 Exhaust Hoses for engine and generator systems
@@ -70,7 +54,7 @@ systems.
             </li>
           </ul>
           </div>
-          </motion.p>
+          </p>
           
         </div>
       </div>

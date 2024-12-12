@@ -7,7 +7,7 @@ const wired = () => {
   return (
     <div className="page">
     <div className="container">
-    <motion.h1
+    <h1
           animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
           transition={{
             duration: 5,
@@ -17,7 +17,7 @@ const wired = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           whileHover={{ scale: 1.2 }}
         >WIRE REINFORCED
-      HOSES</motion.h1>
+      HOSES</h1>
 
       <div className="content">
       <motion.img
@@ -28,15 +28,8 @@ const wired = () => {
             animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
             transition={{ duration: 1 }} // Transition duration
           />
-        <motion.p
-            animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-            transition={{
-              duration: 5,
-              delay: 0.3,
-              ease: [0.5, 0.71, 1, 1.5],
-            }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileHover={{ scale: 1.2 }}
+        <p
+            
           >
         Engineered for reliability in demanding
 environments, with a temperature range of
@@ -61,7 +54,7 @@ and gases.
           
         </ul>
         </div>
-        </motion.p>
+        </p>
        
         
       </div>

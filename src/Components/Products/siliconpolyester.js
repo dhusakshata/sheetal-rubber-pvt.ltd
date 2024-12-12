@@ -7,18 +7,10 @@ function siliconpolyester() {
   return (
     <div className="page">
       <div className="container">
-      <motion.h1
-          animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-          transition={{
-            duration: 5,
-            delay: 0.3,
-            ease: [0.5, 0.71, 1, 1.5],
-          }}
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileHover={{ scale: 1.2 }}
+      <h1
         >
         Silicone-Polyester Hoses
-        </motion.h1>
+        </h1>
 
         <div className="content">
 
@@ -30,18 +22,8 @@ function siliconpolyester() {
             animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
             transition={{ duration: 1 }} // Transition duration
           />
-
-
-          
-<motion.p
-            animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-            transition={{
-              duration: 5,
-              delay: 0.3,
-              ease: [0.5, 0.71, 1, 1.5],
-            }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileHover={{ scale: 1.2 }}
+   
+<p
           >
           Silicone-Polyester hoses are designed specifically for use in demanding radiator, heater,
           and coolant transfer applications. Constructed from high-quality silicone reinforced with
@@ -65,7 +47,7 @@ function siliconpolyester() {
           </li>
           </ul>
           </div>
-          </motion.p>
+          </p>
          
           
         </div>

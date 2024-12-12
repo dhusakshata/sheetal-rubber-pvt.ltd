@@ -7,17 +7,10 @@ const epdm = () => {
   return (
     <div className="page">
       <div className="container">
-      <motion.h1
-          animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-          transition={{
-            duration: 5,
-            delay: 0.3,
-            ease: [0.5, 0.71, 1, 1.5],
-          }}
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileHover={{ scale: 1.2 }}
+      <h1
+          
         >EPDM RUBBER HOSES
-      </motion.h1>
+      </h1>
 
         <div className="content">
 
@@ -29,15 +22,7 @@ const epdm = () => {
             animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
             transition={{ duration: 1 }} // Transition duration
           />
-         <motion.p
-            animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
-            transition={{
-              duration: 5,
-              delay: 0.3,
-              ease: [0.5, 0.71, 1, 1.5],
-            }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileHover={{ scale: 1.2 }}
+         <p
           >
           High-performance hoses for radiator and cooling
 systems, built to DIN73411 & SAEJ20 Class D
@@ -66,7 +51,7 @@ construction, mining, and agriculture.
            
           </ul>
           </div>
-          </motion.p>
+          </p>
           
         </div>
       </div>
