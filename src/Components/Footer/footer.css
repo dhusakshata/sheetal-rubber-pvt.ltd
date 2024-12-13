@@ -38,13 +38,33 @@ right: 20px;
 .address-info h3 {
   font-size: 16px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .address-info p {
   font-size: 14px;
   margin: 5px 0;
 }
+.icon {
+  margin-right: 8px;
+  color: white; /* Adjust color */
+}
 
+.address-info p {
+  display: flex;
+  align-items: center;
+}
+
+.email-link {
+  color: white; /* Make the email link blue */
+  
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: #f18043; 
+ 
+}
 /* Social Media Links */
 .social-media-links {
   display: flex;

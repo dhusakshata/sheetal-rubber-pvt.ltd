@@ -1,6 +1,6 @@
 
 import React from "react";
-import Building from "../../Images/sheetal-building.png";
+import Building from "../../Images/building2.jpeg";
 import "./about.css"; // Import styles
 
 function about() {
@@ -53,9 +53,6 @@ facility.
       </div>
 
 <div className="misson-vision">
-  <h1>
-MISSION & VISION
-</h1>
 
 <div className="Mission">
 

@@ -3,7 +3,8 @@ import React from 'react';
 import './footer.css'; // Custom CSS for Footer
 import { Link } from "react-router-dom";
 import { FaLink } from "react-icons/fa"; // Importing icon from react-icons
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhone,faEnvelope  } from '@fortawesome/free-solid-svg-icons';
 import twitter from "../../Images/twitter image.webp";
 import linkedin from "../../Images/linked in image.webp";
 
@@ -20,10 +21,21 @@ function Footer() {
         <div className="address-section">
         <div className="address-info">
           <h3>Sheetal Rubber Products (P) Ltd.</h3>
-          <p>J-395,MIDC,Bhosari</p>
-          <p>Pune-411026(INDIA)</p>
-          <p>+91 -20 -27130244</p>
-          <p>+91 -20 -27130794</p>
+          <p> <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />J-395,MIDC,Bhosari</p>
+          <p>
+          <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> Pune-411026 (INDIA)
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faPhone} className="icon" /> +91 -20 -27130244
+        </p>
+
+        <p>
+          <FontAwesomeIcon icon={faPhone} className="icon" /> +91 -20 -27130794
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faEnvelope} className="icon" /> 
+          <a href="mailto:info@sheetalrubber.com" className="email-link">sheetalrubber@gmail.com</a>
+        </p>
         </div>
 
         <div className="social-media-links">

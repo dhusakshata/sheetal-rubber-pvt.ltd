@@ -89,11 +89,13 @@ function Home() {
         settings: { slidesToShow: 1 },
       },
     ],
+    prevArrow: <div className="custom-prev-arrow"></div>,  // Custom left arrow
+    nextArrow: <div className="custom-next-arrow"></div>,  // Custom right arrow
   };
   return (
     <div className="home">
   <section className="video-container">
-    <video className="production-video" src={ProductionNarrat} controls autoPlay muted loop></video>
+    <video className="production-video" src={ProductionNarrat} autoPlay muted loop></video>
   </section>
 
   <section className="about-us-container">

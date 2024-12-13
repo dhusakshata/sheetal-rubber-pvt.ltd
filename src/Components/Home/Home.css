@@ -165,9 +165,6 @@
   color: white; /* White text on hover */
 }
 
-
-
-
 /* Products Section */
 .our-products {
   background-color: #ff782b;
@@ -242,7 +239,22 @@
 .slick-dots {
   bottom: -20px;
 }
+/*style for arrow*/
+/* Hide the default "Prev" and "Next" text */
+.slick-prev:before, .slick-next:before {
+  content: ""; /* Removes the text */
+  font-size: 36px; /* Adjust size */
+  color: #000; /* Color of the arrow */
+  /* Optional: add some padding to make the arrow appear bigger */
+  padding: 10px;
+}
 
+/* Optional: Hover effect */
+.slick-prev:hover:before, .slick-next:hover:before {
+  color: #ff5722; /* Change color on hover */
+}
+
+/**/
 /* Responsive Adjustments */
 @media screen and (max-width: 1200px) {
   .product-cards {
