@@ -580,7 +580,7 @@ function Header() {
  onMouseLeave={() => setActiveDropdown(null)} // Hide on mouse leave
   >
   <span className="dropdown-trigger">
-  <Link to="/facilities">FACILITIES</Link>
+  <Link >FACILITIES</Link>
   </span>
   {activeDropdown === "facilities" && (
  <div className="dropdown-menu">

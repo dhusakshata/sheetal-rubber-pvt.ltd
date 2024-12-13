@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css"; // Slick Theme CSS
 
 import Facility4 from "../../Images/facility4.png"; // Replace with your image path
 import Facility5 from "../../Images/facility5.png"; // Replace with your image path
-import Facility6 from "../../Images/facility6.png"; // Replace with your image path
+import Facility6 from "../../Images/facility7.png"; // Replace with your image path
 
 const manufacturing = () => {
   // Slider settings for react-slick

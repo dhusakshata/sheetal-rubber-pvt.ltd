@@ -14,7 +14,7 @@ function siliconpolyester() {
         animate={{ opacity: 1, y: 0 }}    // End position (normal)
         transition={{ duration: 1 }}      // Duration of animation
       ><h1>
-      Silicone-Polyester Hoses
+      SILICON-POLYESTER HOSES
       </h1>
       </motion.div>
       <hr className="product-hr"/>

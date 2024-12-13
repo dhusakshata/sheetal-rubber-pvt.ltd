@@ -8,9 +8,9 @@ import "slick-carousel/slick/slick-theme.css"; // Slick Theme CSS
 
 import "./facilities.css"; // Your custom CSS
 
-import Facility1 from "../../Images/facilities1.png";
-import Facility2 from "../../Images/facilities2.png";
-import Facility3 from "../../Images/facilities3.png";
+import Facility1 from "../../Images/facility1.png";
+import Facility2 from "../../Images/facility2.png";
+import Facility3 from "../../Images/facility3.png";
 
 const Inhouse = () => {
   // Slider settings for react-slick
@@ -62,16 +62,18 @@ const Inhouse = () => {
           <div className="product-card">
           <h3>Burst Pressure Test Machine</h3>
             <img src={Facility1} alt="Burst Pressure" />
-           
+            className="facility-image"
           </div>
           <div className="product-card">
           <h3>Heating Ovens</h3>
             <img src={Facility2} alt="Heating Ovens" />
-            
+            className="facility-image"
           </div>
           <div className="product-card">
           <h3>UTM - Universal Testing Machine</h3>
-            <img src={Facility3} alt="UTM" />
+            <img src={Facility3} alt="UTM" 
+            className="facility-image"
+            />
             
           </div>
         </Slider>
