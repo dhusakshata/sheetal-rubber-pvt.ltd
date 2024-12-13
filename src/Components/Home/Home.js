@@ -234,7 +234,7 @@ Application Area */}
 
 <div className="application-area">
   <div className="application-head">
-    <h1>OUR OFFERINGS</h1>
+    <h1>OUR APPLICATIONS</h1>
   </div>
       
       <div className="button-container">
