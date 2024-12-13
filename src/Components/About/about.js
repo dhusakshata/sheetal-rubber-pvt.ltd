@@ -17,23 +17,9 @@ function about() {
         <div className="about-info">
           
         <p>
-      For over two decades, Sheetal Rubber Products has been a trusted leader in the
-manufacturing of high-quality rubber products with 50,000 sq. ft. of manufacturing
-facility.
+        For over two decades, Sheetal Rubber Products has been a trusted leader in the manufacturing of high-quality rubber products with 50,000 sq. ft. of manufacturing facility. We specialize in manufacturing a full range of low-pressure hoses, including platinum silicone-lined, FMK-lined fuel cell hoses, flame-retardant hoses, and various moulded components. Our commitment to product expertise, engineering excellence, rigorous testing, and strict quality controls has established us as a preferred partner for major manufacturers in India and a favored exporter internationally. 
       </p>
-      <p    
-            >
-      We specialize in manufacturing a full range of low-pressure hoses, including
-      platinum silicone-lined, FMK-lined fuel cell hoses, flame-retardant hoses, and various
-      moulded components.
-      </p>
-      <p  
-            >
-      Our commitment to product expertise, engineering excellence,
-      rigorous testing, and strict quality controls has established us as a preferred partner for
-      major manufacturers in India and a favored exporter internationally.
-      </p>
-   
+      
       <ul
           >
           <li>Committed towards continual improvement, quality control and customer
@@ -59,15 +45,14 @@ facility.
 <h2>OUR MISSION</h2>
 <hr></hr>
 <p>
-To become the leading manufacturer of elastomeric products supplying to world’s prominent industries, aspiring to be the “preferred OEM” to all Tire I and II suppliers, committing to superior service and high quality
+To become the leading manufacturer of elastomeric products supplying to world’s prominent industries, aspiring to be the “preferred OEM” to all Tire I and II suppliers, committing to superior service and high quality.
 </p>
 </div>
 <div className="vision">
 <h2>OUR VISION</h2>
 <hr></hr>
     <p>
-    To become the leading manufacturer of elastomeric products supplying to world’s prominent 
-    industries, aspiring to be the “preferred OEM” to all Tire I and II suppliers, committing to superior service and high quality
+    	To be the “Manufacturer of choice”, delivering superior customer value, embracing our technology – leadership and commitment to quality.
     </p>
     </div>
 </div>

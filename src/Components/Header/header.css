@@ -13,9 +13,10 @@
   justify-content: space-between;
   align-items: center;
   background-color:whitesmoke;
-  padding: 10px 20px;
+   padding: 10px 10px;
   position: sticky; 
   top: 0;
+  margin: 0px;
   z-index: 1000;
 overflow: visible;
 }
@@ -34,12 +35,12 @@ overflow: visible;
 }
 .top-right {
   position: absolute; /* Position the container absolutely */
-  top: 10px; /* Shift it 20px from the top of the page */
-  right: 20px; /* Shift it 20px from the right of the page */
+  top: 30px; 
+  right:50px; /* Shift it 20px from the right of the page */
   display: flex; /* Arrange search bar and contact info in a row */
   justify-content: flex-end; /* Align both elements to the right */
   align-items: flex-start; /* Align items at the top */
-  gap: 20px; /* Space between search bar and contact info */
+  gap: 40px; /* Space between search bar and contact info */
   width: auto; /* Make width auto to adjust based on content */
   flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
 }
@@ -51,7 +52,7 @@ overflow: visible;
 }
 
 .search-bar input {
-  width: 200px;
+  width: 300px;
   height: 40px;
   padding: 0 8px;
   border: 1px solid gray;
@@ -109,6 +110,22 @@ overflow: visible;
   color: black;
   margin-left: 5px; 
 }
+
+
+.social-icons {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+ background-color:  #0f5286;
+}
+
+.social-icons:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  color: #ff5722;  /* Hover color */
+}
+
 
 
 /* Navigation Styles */

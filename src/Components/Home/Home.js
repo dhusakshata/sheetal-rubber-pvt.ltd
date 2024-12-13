@@ -105,32 +105,19 @@ function Home() {
     <div className="about-us-content">
       <div className="about-us-info">
       <p>
-      For over two decades, Sheetal Rubber Products has been a trusted leader in the
-manufacturing of high-quality rubber products with 50,000 sq. ft. of manufacturing
-facility.
+      Welcome to Sheetal Rubber Products, where innovation meets quality in the manufacturing of rubber solutions. Established with a vision to provide superior rubber products, we specialize in a wide range of offerings, including  moulded hoses, silicone hoses, fuel tubes, assembly hoses, and wire-reinforced hoses.
       </p>
       <p    
-            >
-      We specialize in manufacturing a full range of low-pressure hoses, including
-      platinum silicone-lined, FMK-lined fuel cell hoses, flame-retardant hoses, and various
-      moulded components.
+            >Our commitment to excellence is reflected in our state-of-the-art manufacturing processes and rigorous quality control measures. 
       </p>
       <p  
             >
-      Our commitment to product expertise, engineering excellence,
-      rigorous testing, and strict quality controls has established us as a preferred partner for
-      major manufacturers in India and a favored exporter internationally.
+   With years of experience in the industry, our team of skilled professionals is dedicated to delivering customized solutions tailored to meet the specific needs of our clients. We take pride in our ability to understand client requirements and provide innovative products that enhance efficiency and reliability.
       </p>
    
-      <ul
-          >
-          <li>Committed towards continual improvement, quality control and customer
-          satisfaction.</li>
-          <li>Believes in the concept of Total Quality Management.</li>
-          <li>Fully fledged traceability system (Raw material to Finished goods).</li>
-          <li> 
-          All Raw Materials are tested, before being used, based on their Quality Policy.</li>
-        </ul>
+    <p>
+    At Sheetal Rubber Products, customer satisfaction is our top priority. We believe in building long-term relationships with our clients by offering exceptional service, timely delivery, and continuous support.
+    </p>
 
 
         <button className="read-more">

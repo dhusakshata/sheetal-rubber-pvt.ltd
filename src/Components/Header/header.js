@@ -449,6 +449,8 @@ import { FaSearch, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Logos from "../../Images/logo1.png";
 import "./header.css";
+import twitter from "../../Images/twitter image.webp";
+import linkedin from "../../Images/linked in image.webp";
 
 const data = [
   { id: 1, name: "Home", link: "/" },
@@ -518,6 +520,16 @@ function Header() {
               <a href="mailto:sheetalrubber@gmail.com" className="email-button">
                 sheetalrubber@gmail.com
               </a>
+           
+           
+            </div>
+            <div className="contact-item">
+            <a href="https://twitter.com/yourTwitterHandle" target="_blank" rel="noopener noreferrer">
+            <img src={twitter} alt="twitter" className="social-icons" />
+          </a>
+          <a href="https://linkedin.com/company/yourLinkedInHandle" target="_blank" rel="noopener noreferrer">
+            <img src={linkedin} alt="LinkedIn" className="social-icons" />
+          </a>
             </div>
           </div>
         </div>
