@@ -52,7 +52,13 @@ To become the leading manufacturer of elastomeric products supplying to world’
 <h2>OUR VISION</h2>
 <hr></hr>
     <p>
-    	To be the “Manufacturer of choice”, delivering superior customer value, embracing our technology – leadership and commitment to quality.
+    • To be the “Manufacturer of choice”, delivering superior customer value, embracing our technology – leadership and commitment to quality.
+    </p>
+    <p>
+    •	To respect team members as instrumental part of organization’s growth, ensuring their active involvement and continuous progress. 
+    </p>
+    <p>
+    •	To respect team members as instrumental part of organization’s growth, ensuring their active involvement and continuous progress. 
     </p>
     </div>
 </div>

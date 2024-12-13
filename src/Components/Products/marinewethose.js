@@ -5,31 +5,44 @@ import Marinewet from "../../Images/Marine-wet.png";
 
 function Marine() {
   return (
-    <div className="page">
-      <div className="container">
-      <h1
+    <div className="product-page">
+          {/* Heading with Bounce Animation */}
+          <motion.div
+            className="product-head"
+            initial={{ opacity: 0, y: -100 }} // Start position (top)
+            animate={{ opacity: 1, y: 0 }}    // End position (normal)
+            transition={{ duration: 1 }}      // Duration of animation
+          >
+            <h1
         > Marine Wet
         Exhaust Hoses </h1>
-
-        <div className="content">
-
-        <motion.img
-            src={Marinewet}
-            alt="..."
-            className="image"
-            initial={{ opacity: 0, y: -50 }} // Initial state: hidden, above
-            animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
-            transition={{ duration: 1 }} // Transition duration
-          />
-
-<p
-          >
+</motion.div>
+      <hr className="product-hr"/>
+      
+      <div className="product-container">
+        {/* Left Side: Image */}
+        <motion.div
+          className="content-image"
+          initial={{ opacity: 0, x: -100 }} // Start position (left)
+          animate={{ opacity: 1, x: 0 }}    // End position (center)
+          transition={{ duration:1 }}      // Duration of animation
+        >
+          <img src={Marinewet} alt="Assembly Hoses" />
+        </motion.div>
+    
+ {/* Right Side: Info */}
+        <motion.div
+          className="content-info"
+          initial={{ opacity: 0, x: 100 }} // Start position (right)
+          animate={{ opacity: 1, x: 0 }}    // End position (center)
+          transition={{ duration: 1 }}      // Duration of animation
+        >
+          <p>
           Sheetal Rubber provides high-quality Marine Wet
 Exhaust Hoses for engine and generator systems
 in in-board pleasure boats, ensuring durability and
 top performance in marine environments.
 
-          <div>
           <h3>Key Features and Benefits:</h3>
           <ul>
             <li>Standard Hoses: Operate up to +180°C.
@@ -53,12 +66,12 @@ systems.
 
             </li>
           </ul>
-          </div>
           </p>
-          
+       </motion.div>
+        
+          </div>
         </div>
-      </div>
-    </div>
+     
   );
 }
 

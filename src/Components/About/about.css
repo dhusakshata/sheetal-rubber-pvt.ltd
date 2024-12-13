@@ -173,7 +173,7 @@
 .vision {
   width: 100%;
   max-width: 1000px;
-  height: 200px;
+  height: 250px;
   background-color:#0f5286;
   color: white;
   padding: 1.5rem;
@@ -184,7 +184,9 @@
   transform: translateY(50px); /* Start slightly below */
   animation: bounceFade 2s ease-out forwards; /* Bounce fade animation */
 }
-
+.vision{
+  margin: 30px;
+}
 .Mission:hover,
 .vision:hover {
   transform: translateY(-5px);
@@ -196,7 +198,9 @@
 }
 
 .vision {
-  animation-delay: 1s; /* Delay for Vision */
+  animation-delay: 1s; /* Delay for
+   Vision */
+
 }
 hr {
   width: 50%;
@@ -227,11 +231,11 @@ hr {
 @keyframes bounceFade {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(-90px);
   }
   50% {
     opacity: 0.7;
-    transform: translateY(-20px);
+    transform: translateY(40px);
   }
   100% {
     opacity: 1;

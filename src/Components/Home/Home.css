@@ -10,8 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: #000; 
-    overflow: hidden; 
+ overflow: visible;
+    background-color: #f4f4f4;
+
   }
   
   .production-video {

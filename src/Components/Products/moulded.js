@@ -5,24 +5,42 @@ import Moulded from "../../Images/Moulded.png";
 
 const moulded = () => {
   return (
-    <div className="page">
-    <div className="container">
-    <h1
-        >MOULDED HOSES
-      </h1>
-      <div className="content">
-
-      <motion.img
-            src={Moulded}
-            alt="..."
-            className="image"
-            initial={{ opacity: 0, y: -50 }} // Initial state: hidden, above
-            animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
-            transition={{ duration: 1 }} // Transition duration
-          />
-
-<p
+    <div className="product-page">
+          {/* Heading with Bounce Animation */}
+          <motion.div
+            className="product-head"
+            initial={{ opacity: 0, y: -100 }} // Start position (top)
+            animate={{ opacity: 1, y: 0 }}    // End position (normal)
+            transition={{ duration: 1 }}      // Duration of animation
           >
+          <h1
+              >MOULDED HOSES
+            </h1>
+          </motion.div>
+          <hr className="product-hr"/>
+          
+          <div className="product-container">
+            {/* Left Side: Image */}
+            <motion.div
+              className="content-image"
+              initial={{ opacity: 0, x: -100 }} // Start position (left)
+              animate={{ opacity: 1, x: 0 }}    // End position (center)
+              transition={{ duration:1 }}      // Duration of animation
+            >
+  
+  <img src={Moulded} alt="Assembly Hoses" />
+  </motion.div>
+
+  
+          {/* Right Side: Info */}
+          <motion.div
+            className="content-info"
+            initial={{ opacity: 0, x: 100 }} // Start position (right)
+            animate={{ opacity: 1, x: 0 }}    // End position (center)
+            transition={{ duration: 1 }}      // Duration of animation
+          >
+
+<p>
         Engineered for safe and efficient fluid
 transfer in automotive and industrial
 systems, with inner diameters ranging from
@@ -32,7 +50,6 @@ industries, using materials like SBR,
 EPDM, PVC/NBR, Silicone, Neoprene,
 and more.
 
-         <div>
         <h3>Key Features and Benefits:</h3>
         <ul>
           <li>Applications:
@@ -54,11 +71,9 @@ testing.
           </li>
           
         </ul>
-        </div>
-        </p>
-       
         
-      </div>
+        </p>
+        </motion.div>
     </div>
   </div>
   );

@@ -35,31 +35,42 @@ const manufacturing = () => {
         settings: { slidesToShow: 1 }, // 1 image in a row for smaller screens
       },
     ],
+    prevArrow: <div className="custom-prev-arrow"></div>,  // Custom left arrow
+    nextArrow: <div className="custom-next-arrow"></div>,  // Custom right arrow
   };
   return (
     
     <div className="facilities-container">
+       {/* Title Section */}
+           <motion.div className="facility-head"
+           initial={{ opacity: 0, y: -100 }} // Start position (top)
+           animate={{ opacity: 1, y: 0 }}    // End position (normal)
+           transition={{ duration: 1 }}      // Duration of animation
+           >
        <h1
-        
       >MANUFACTURING FACILITIES</h1>
-
+</motion.div>
+<hr className="facility-hr"/>
       {/* Image Section */}
      <motion.div className="facilities-images" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
        
      <Slider {...settings}>
      {/* Slider Images */}
     <div className="product-card">
+    <h3>Cold Feed Extruder</h3>
       <img src={Facility4} alt="Burst pressure" />
-      <h3>Cold Feed Extruder</h3>
+     
     </div>
     <div className="product-card">
+    <h3>Auto Clave Vulcanizar
+    (Quick Lock Type)</h3>
       <img src={Facility5} alt="heating ovens" />
-      <h3>Auto Clave Vulcanizar
-      (Quick Lock Type)</h3>
+      
     </div>
     <div className="product-card">
+    <h3>Hydraulic Presses</h3>
       <img src={Facility6} alt="UTM" />
-      <h3>Hydraulic Presses</h3>
+     
     </div>
     </Slider>
     </motion.div>

@@ -21,7 +21,13 @@
  text-align: center;
 
 }
-
+.contact-hr{
+  border: 0;
+  height: 3px;
+  background-color: black;
+  width: 50%;
+  margin: 20px auto;
+}
 /* Row for Form and Info + Map */
 .row-container {
   display: flex;

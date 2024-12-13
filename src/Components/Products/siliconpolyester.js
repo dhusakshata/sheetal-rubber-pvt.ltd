@@ -5,23 +5,38 @@ import { motion } from 'framer-motion';
 
 function siliconpolyester() {
   return (
-    <div className="page">
-      <div className="container">
-      <h1
+
+<div className="product-page">
+      {/* Heading with Bounce Animation */}
+      <motion.div
+        className="product-head"
+        initial={{ opacity: 0, y: -100 }} // Start position (top)
+        animate={{ opacity: 1, y: 0 }}    // End position (normal)
+        transition={{ duration: 1 }}      // Duration of animation
+      ><h1>
+      Silicone-Polyester Hoses
+      </h1>
+      </motion.div>
+      <hr className="product-hr"/>
+      
+      <div className="product-container">
+        {/* Left Side: Image */}
+        <motion.div
+          className="content-image"
+          initial={{ opacity: 0, x: -100 }} // Start position (left)
+          animate={{ opacity: 1, x: 0 }}    // End position (center)
+          transition={{ duration:1 }}      // Duration of animation
         >
-        Silicone-Polyester Hoses
-        </h1>
+          <img src={Silicon} alt="Assembly Hoses" />
+        </motion.div>
 
-        <div className="content">
-
-          < motion.img 
-          src={Silicon} 
-          alt="Silicone Polyester" 
-          className="image" 
-          initial={{ opacity: 0, y: -50 }} // Initial state: hidden, above
-            animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
-            transition={{ duration: 1 }} // Transition duration
-          />
+        {/* Right Side: Info */}
+        <motion.div
+          className="content-info"
+          initial={{ opacity: 0, x: 100 }} // Start position (right)
+          animate={{ opacity: 1, x: 0 }}    // End position (center)
+          transition={{ duration: 1 }}      // Duration of animation
+        >
    
 <p
           >
@@ -32,7 +47,7 @@ function siliconpolyester() {
           This combination of versatility, durability, and adaptability to extreme environments makes
           Silicone-Polyester hoses a premium choice for automotive, industrial, and other
           applications requiring reliable coolant and heat transfer solutions.
-           <div>
+          
           <h3>Key Features and Benefits:</h3>
           <ul>
             <li>Durable & Weather-Resistant: Good resistance to weather and ozone and resists
@@ -46,11 +61,11 @@ function siliconpolyester() {
             <li>Customized hoses with Liners: Options for Fluorosilicone (oil/fuel) or FKM/Viton liner in column diesel combustion by product/exhaust gas recycle.
           </li>
           </ul>
-          </div>
+        
           </p>
          
           
-        </div>
+        </motion.div>
       </div>
     </div>
   );

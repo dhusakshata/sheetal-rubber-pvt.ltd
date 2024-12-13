@@ -5,30 +5,45 @@ import EPDM from "../../Images/EPDM-rubber.png";
 
 const epdm = () => {
   return (
-    <div className="page">
-      <div className="container">
-      <h1
-          
-        >EPDM RUBBER HOSES
-      </h1>
+    <div className="product-page">
+      {/* Heading with Bounce Animation */}
+            <motion.div
+              className="product-head"
+              initial={{ opacity: 0, y: -100 }} // Start position (top)
+              animate={{ opacity: 1, y: 0 }}    // End position (normal)
+              transition={{ duration: 1 }}      // Duration of animation
+            >
+              <h1>EPDM RUBBER HOSES</h1>
+            </motion.div>
+            <hr className="product-hr"/>
 
-        <div className="content">
+      
+      <div className="product-container">
+      
+       {/* Left Side: Image */}
+               <motion.div
+                 className="content-image"
+                 initial={{ opacity: 0, x: -100 }} // Start position (left)
+                 animate={{ opacity: 1, x: 0 }}    // End position (center)
+                 transition={{ duration:1 }}      // Duration of animation
+               >
+                 <img src={EPDM} alt="Assembly Hoses" />
+                 </motion.div>
 
-         <motion.img
-            src={EPDM}
-            alt="..."
-            className="image"
-            initial={{ opacity: 0, y: -50 }} // Initial state: hidden, above
-            animate={{ opacity: 1, y: 0 }} // Animate to visible, normal position
-            transition={{ duration: 1 }} // Transition duration
-          />
-         <p
-          >
+                 
+                         {/* Right Side: Info */}
+                  <motion.div
+                    className="content-info"
+                           initial={{ opacity: 0, x: 100 }} // Start position (right)
+                           animate={{ opacity: 1, x: 0 }}    // End position (center)
+                           transition={{ duration: 1 }}      // Duration of animation
+                         >
+   <p>
           High-performance hoses for radiator and cooling
 systems, built to DIN73411 & SAEJ20 Class D
 standards for durability, flexibility, and heat
 resistance.
-          <div>
+</p>
           <h3>Key Features and Benefits:</h3>
           <ul>
             <li>Nylon/Polyester: Flexible.
@@ -50,12 +65,12 @@ construction, mining, and agriculture.
             </li>
            
           </ul>
+            </motion.div>
           </div>
-          </p>
+          
           
         </div>
-      </div>
-    </div>
+      
   );
 };
 

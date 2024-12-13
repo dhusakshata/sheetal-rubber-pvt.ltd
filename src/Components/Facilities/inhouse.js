@@ -36,17 +36,25 @@ const Inhouse = () => {
         settings: { slidesToShow: 1 }, // 1 image in a row for smaller screens
       },
     ],
+    prevArrow: <div className="custom-prev-arrow"></div>,  // Custom left arrow
+    nextArrow: <div className="custom-next-arrow"></div>,  // Custom right arrow
   };
 
   return (
     <div className="facilities-container">
       {/* Title Section */}
-      <h1
-        
-      >
+     <motion.div className="facility-head"
+     initial={{ opacity: 0, y: -100 }} // Start position (top)
+     animate={{ opacity: 1, y: 0 }}    // End position (normal)
+     transition={{ duration: 1 }}      // Duration of animation
+     >
+
+     <h1 >
         INHOUSE TESTING FACILITIES
       </h1>
 
+     </motion.div>
+     <hr className="facility-hr"/>
       {/* Image Section */}
       <motion.div className="facilities-images" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Slider {...settings}>

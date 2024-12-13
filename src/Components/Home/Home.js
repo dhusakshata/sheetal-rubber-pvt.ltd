@@ -3,14 +3,14 @@ import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules"; // Correct way to import Navigation
 import "swiper/css";
 import "swiper/css/navigation";
-import { Pagination } from 'swiper'
+
 
 import Slider from "react-slick"; 
 import "slick-carousel/slick/slick.css";
@@ -95,7 +95,9 @@ function Home() {
   return (
     <div className="home">
   <section className="video-container">
-    <video className="production-video" src={ProductionNarrat} autoPlay muted loop></video>
+    <video className="production-video" src={ProductionNarrat} autoPlay muted loop
+    preload="auto" 
+    ></video>
   </section>
 
   <section className="about-us-container">
