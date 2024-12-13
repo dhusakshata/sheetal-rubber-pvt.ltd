@@ -54,10 +54,13 @@
 }
 
 .phone-input span {
+  display: flex;
+  flex-direction: row;
   background-color: #e9ecef;
-  padding: 0.8rem;
+  width: 80px;
+  padding: 10px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 14px;
   border: 1px solid #ccc;
 }
 

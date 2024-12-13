@@ -14,8 +14,8 @@ function Marine() {
             transition={{ duration: 1 }}      // Duration of animation
           >
             <h1
-        > Marine Wet
-        Exhaust Hoses </h1>
+        > MARINE WET
+        EXHAUST HOSES </h1>
 </motion.div>
       <hr className="product-hr"/>
       

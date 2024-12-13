@@ -566,7 +566,7 @@ function Header() {
                   EPDM RUBBER HOSES
                 </Link>
                 <Link to="/organic" onClick={handleLinkClick}>ORGANIC RUBBER HOSES</Link>
- <Link to="/Assembly" onClick={handleLinkClick}>ASEMBLY HOSES</Link>
+ <Link to="/Assembly" onClick={handleLinkClick}>ASSEMBLY HOSES</Link>
   <Link to="/wired" onClick={handleLinkClick}>WIRE REINFORCED HOSES</Link>
   <Link to="/fueltube" onClick={handleLinkClick}>FUEL TUBES / HOSES</Link>
  <Link to="/moulded" onClick={handleLinkClick}>MOULDED HOSES</Link>

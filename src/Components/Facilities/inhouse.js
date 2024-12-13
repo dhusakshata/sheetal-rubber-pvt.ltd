@@ -61,13 +61,16 @@ const Inhouse = () => {
           {/* Slider Images */}
           <div className="product-card">
           <h3>Burst Pressure Test Machine</h3>
-            <img src={Facility1} alt="Burst Pressure" />
-            className="facility-image"
+            <img src={Facility1} alt="Burst Pressure" 
+            className="facility-image"/>
+            
           </div>
           <div className="product-card">
           <h3>Heating Ovens</h3>
-            <img src={Facility2} alt="Heating Ovens" />
+            <img src={Facility2} alt="Heating Ovens" 
             className="facility-image"
+            />
+            
           </div>
           <div className="product-card">
           <h3>UTM - Universal Testing Machine</h3>

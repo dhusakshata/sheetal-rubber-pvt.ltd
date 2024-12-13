@@ -21,7 +21,7 @@ function CareerPage() {
         <div className="form-group">
           <label htmlFor="phone">Phone *</label>
           <div className="phone-input">
-            <span>India +91</span>
+            <span>IN +91</span>
             <input
               type="tel"
               id="phone"
