@@ -12,13 +12,11 @@ import Logos from "../../Images/logo1.png";
 function Footer() {
   return (
     <div className="footer-section">
-      <div className="address">
-        <div className="logo">
+      <div className="footer-logo">
           
-        <img src={Logos} alt="Sheetal Rubber Industries" />
-        </div>
-       
-      
+          <img src={Logos} alt="Sheetal Rubber Industries" />
+          </div>
+   
         <div className="address-section">
         <div className="address-info">
           <h3>Sheetal Rubber Products (P) Ltd.</h3>
@@ -38,7 +36,7 @@ function Footer() {
         </div>
         
       </div>
-      </div>
+     
 
 
       <div className="quick-links">
@@ -90,7 +88,7 @@ function Footer() {
           <Link to="/privacy-policy">Privacy Policy</Link> | <Link to="/terms-and-conditions">Terms and Conditions</Link>
         </p> */}
         <p>
-  Copyright 2024 Sheetal Rubber Products(p)ltd. - All rights reserved | Designed by 
+  Copyright 2024 Sheetal Rubber Products (P) Ltd. - All rights reserved | Designed by 
   <a href="https://bitshine.in/" class="bitshine-link" target="_blank" rel="noopener noreferrer">
     Bitshine Infotech
   </a>

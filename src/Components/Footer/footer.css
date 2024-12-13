@@ -4,28 +4,29 @@
   font-style: normal;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Footer Section Base */
 .footer-section {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   background-color: #0f5286;
   color: white;
   padding: 40px;
-  gap: 30px;
   flex-wrap: wrap;
-  box-sizing: border-box;
+  gap: 10px;
+
 }
 
-/* Address Section */
-.address {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 25%;
+.footer-logo img{
+  position: relative;
+  top:-10px;
+  width: 200px; /* Adjust the width of the logo */
+  padding: 5px;
+right: 20px;
 }
 
 .address-section {
@@ -56,6 +57,7 @@
   width: 30px;
   height: auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
+ 
 }
 
 .social-icon:hover {
@@ -68,12 +70,13 @@
   width: 25%;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .quick-links h3 {
   font-size: 16px;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .quick-links ul {
@@ -98,28 +101,36 @@
 
 /* Newsletter Section */
 .news-letter {
-  width: 25%;
+  
+  max-width: 600px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   color: #fff;
-  padding: 10px;
+  padding: 0 20px 0 0;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 20px;
+  margin-right: 10px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
+  margin-left: -120px;
 }
 
 .news-letter p {
-  font-size: 16px;
+font-size: 16px;
 text-align: center;
+color: white;
 }
 
 .newsletter-form {
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 10px;
   width: 100%;
   max-width: 400px;
+  margin: 10px;
 }
 
 .email-input {
@@ -146,7 +157,7 @@ text-align: center;
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  margin-left: 100px;
+   margin-left: 100px; 
 }
 
 .subscribe-button:hover {
@@ -155,12 +166,14 @@ text-align: center;
 
 /* Map Section */
 .map-container {
-  width: 25%;
+  flex: 1;
+  max-width: 600px; 
   height: 300px;
   border: 2px solid white;
   border-radius: 8px;
   overflow: hidden;
   margin-top: 20px;
+  margin-right: 30px;
 }
 
 /* Footer Bottom Text */

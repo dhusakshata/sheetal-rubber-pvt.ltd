@@ -27,7 +27,7 @@ import logo6 from "../../Images/client6.png";
 import logo7 from "../../Images/client7.png";
 // Import the video file
 import rubberWorld from "../../video/about.mp4";
-import ProductionNarrat from "../../video/production4.mp4";
+import ProductionNarrat from "../../video/production5.mp4";
  
 
 import Silicon from "../../Images/Silicon.png"
@@ -211,8 +211,8 @@ facility.
       <div className="logo-title"><h1>ESTEEMED CLIENTS</h1></div>
       <Swiper
         modules={[Navigation]}
-        slidesPerView={4}
-        spaceBetween={15}
+        slidesPerView={5}
+        spaceBetween={5}
         navigation={true}
         pagination={{ clickable: true }} // Enable pagination
        

@@ -38,7 +38,7 @@
 
 .about-us-title h1 {
   font-size: 2.5rem; /* Adjust for better spacing */
-  margin: 0 auto; /* Remove extra space */
+  margin: 0 auto; 
   font-weight: bold;
 }
 
@@ -81,6 +81,27 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
 }
+
+/*Fade effect for info*/
+.about-us-info {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeLeft 1s ease-out forwards;
+}
+
+/* Keyframes for fade-left effect */
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
 
 
 .about-us-video-element {
@@ -255,7 +276,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
   background-color:whitesmoke;
  
 }
@@ -275,20 +296,20 @@
 }
 
 .swiper-slide {
-  display: flex; /* Flexbox for centering content */
+  display: flex; 
   justify-content: center;
   align-items: center;
 }
 .logo-item {
-  width: 200px; /* Set a fixed width */
+  width: 250px; /* Set a fixed width */
   height: 150px; /* Set a fixed height */
   display: block;
-  margin: 0 auto; /* Center the logo in the slide */
-  padding: 10px; /* Add spacing around logos */
-  box-sizing: border-box; /* Include padding in total size */
-  border-radius: 15px; /* Rounded corners for a smooth look */
+  margin: 0 auto; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  border-radius: 15px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-  object-fit: contain; /* Maintain the aspect ratio of logos */
+  object-fit: contain; 
   border: 3px solid #ddd; /* Beautiful light border */
   background-color: white; /* White background for logo items */
 }
@@ -303,7 +324,7 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: #888; /* Lighter gray for better contrast */
-  font-size: 5px; /* Adjust button size */
+  font-size: 2px; /* Adjust button size */
 }
 
 /* Pagination dots for swiper */
