@@ -15,7 +15,7 @@ const epdm = () => {
             >
               <h1>EPDM RUBBER HOSES</h1>
             </motion.div>
-            <hr className="product-hr"/>
+            {/* <hr className="product-hr"/> */}
 
       
       <div className="product-container">

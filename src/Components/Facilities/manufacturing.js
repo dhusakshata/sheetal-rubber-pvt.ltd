@@ -50,7 +50,7 @@ const manufacturing = () => {
        <h1
       >MANUFACTURING FACILITIES</h1>
 </motion.div>
-<hr className="facility-hr"/>
+{/* <hr className="facility-hr"/> */}
       {/* Image Section */}
      <motion.div className="facilities-images" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
        

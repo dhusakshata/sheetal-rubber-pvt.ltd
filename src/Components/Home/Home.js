@@ -26,7 +26,7 @@ import logo5 from "../../Images/client5.png";
 import logo6 from "../../Images/client6.png";
 import logo7 from "../../Images/client7.png";
 // Import the video file
-import rubberWorld from "../../video/about.mp4";
+import rubberWorld from "../../video/about1.mp4";
 import ProductionNarrat from "../../video/production5.mp4";
  
 

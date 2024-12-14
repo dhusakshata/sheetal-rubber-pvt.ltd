@@ -18,8 +18,8 @@ const organic = () => {
           ORGANIC RUBBER
           HOSES</h1>
           </motion.div>
-          <hr className="product-hr"/>
-          
+          {/* <hr className="product-hr"/>
+           */}
           <div className="product-container">
             {/* Left Side: Image */}
             <motion.div

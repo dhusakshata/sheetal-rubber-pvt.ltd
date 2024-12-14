@@ -279,7 +279,7 @@
   }
 
   .search-bar input {
-    width: 100%; /* Input spans full width */
+    width: 50%; /* Input spans full width */
     font-size: 14px;
   }
 
@@ -347,37 +347,147 @@ nav button {
 
 
 @media screen and (max-width: 480px) {
-  /* Additional fine-tuning for very small screens */
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 10px; /* Add spacing between items */
+    padding: 10px 5px; /* Adjust padding */
+    position: sticky;
+  }
+
   .logo img {
-    width: 120px; /* Scale down further */
+    width: 120px; /* Reduce logo size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .top-right {
+    position: static; /* Remove absolute positioning */
+    display: flex;
+    flex-direction: column; /* Stack search bar and contact info vertically */
+    align-items: center; /* Center-align the items */
+    gap: 10px; /* Add spacing between the elements */
+    width: 100%; /* Ensure it spans the width of the screen */
   }
 
   .search-bar {
-    padding: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    margin-right: -400px;
+    flex-direction: row; /* Stack input and button vertically */
+    align-items: center; /* Center-align the elements */
+    width: 70%; /* Allow the search bar to adapt to screen width */
+    gap:0;
   }
 
   .search-bar input {
-    font-size: 14px;
+    width: 90%; /* Take up most of the screen width */
+    font-size: 14px; /* Adjust font size for smaller screens */
   }
 
   .search-bar button {
-    font-size: 14px;
+    width: 30%; /* Adjust button width */
+    margin: 5px 0; /* Add spacing above and below the button */
+    padding: 8px;
+    font-size: 12px; /* Adjust font size for smaller screens */
   }
 
   .contact-info {
-    font-size: 14px;
+   
+    align-items: center; /* Center-align contact items */
+    text-align: center; /* Center-align text */
+    gap: 5px; /* Add spacing between contact items */
+    width: 100%; /* Ensure it spans the width of the screen */
+  }
+
+  .contact-item {
+    justify-content: center; /* Center-align icons and text */
+    gap: 8px; /* Adjust spacing between icons and text */
+  }
+
+  .social-icons {
+    width: 24px; /* Reduce icon size */
+    height: 24px; /* Keep square aspect ratio */
+  }
+
+  .Navbar {
+    padding: 5px 0; /* Adjust padding for navbar */
+    height: auto; /* Allow the navbar height to adapt */
   }
 
   .nav {
-    font-size: 14px;
-  }
-
-  .nav a {
-    font-size: 14px;
+    font-size: 10px; /* Reduce font size for nav links */
+    gap: 10px; /* Adjust spacing between nav links */
+    justify-content: center; /* Center-align nav links */
   }
 }
 
+/*for smaller screen*/
+@media screen and (max-width: 300px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 10px; /* Add spacing between items */
+    padding: 10px 5px; /* Adjust padding */
+  }
+
+  .logo img {
+    width: 120px; /* Reduce logo size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .top-right {
+    position: static; /* Remove absolute positioning */
+    display: flex;
+    flex-direction: column; /* Stack search bar and contact info vertically */
+    align-items: center; /* Center-align the items */
+    gap: 10px; /* Add spacing between the elements */
+    width: 100%; /* Ensure it spans the width of the screen */
+  }
+
+  .search-bar {
+    margin-right: -400px;
+    flex-direction: row; /* Stack input and button vertically */
+    align-items: center; /* Center-align the elements */
+    width: 70%; /* Allow the search bar to adapt to screen width */
+    gap:0;
+  }
+
+  .search-bar input {
+    width: 90%; /* Take up most of the screen width */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .search-bar button {
+    width: 30%; /* Adjust button width */
+    margin: 5px 0; /* Add spacing above and below the button */
+    padding: 8px;
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .contact-info {
+   
+    align-items: center; /* Center-align contact items */
+    text-align: center; /* Center-align text */
+    gap: 5px; /* Add spacing between contact items */
+    width: 100%; /* Ensure it spans the width of the screen */
+  }
+
+  .contact-item {
+    justify-content: center; /* Center-align icons and text */
+    gap: 8px; /* Adjust spacing between icons and text */
+  }
+
+  .social-icons {
+    width: 24px; /* Reduce icon size */
+    height: 24px; /* Keep square aspect ratio */
+  }
+
+  .Navbar {
+    padding: 5px 0; /* Adjust padding for navbar */
+    height: auto; /* Allow the navbar height to adapt */
+  }
+
+  .nav {
+    font-size: 10px; /* Reduce font size for nav links */
+    gap: 10px; /* Adjust spacing between nav links */
+    justify-content: center; /* Center-align nav links */
+  }
+}

@@ -17,7 +17,7 @@ const fueltube = () => {
    <h1
         >FUEL TUBES / HOSES</h1>
             </motion.div>
-            <hr className="product-hr"/>
+            {/* <hr className="product-hr"/> */}
 
   <div className="product-container">
         {/* Left Side: Image */}
