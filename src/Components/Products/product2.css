@@ -19,8 +19,37 @@
 .product-head {
   text-align: center; /* Center the heading */
   margin-bottom: 10px; /* Add spacing below the heading */
+
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 250px;
+  border-radius: 10px;
+  /* padding: 20px;
+  margin-bottom: 30px; */
+  /* background-color:orangered; */
+  opacity: 0;  
+  transform: translateY(60px); /* Start slightly below */
+  animation: bounceFade 2s ease-out forwards; /* Bounce fade animation */
+  animation-delay: 0.5s; /* Delay for Mission */
 }
 
+/* Bounce Fade Animation */
+@keyframes bounceFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(40px);
+  }
+  /* 100% {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+}
 .product-head h1 {
   font-size: 2.5rem;
   color: black;
@@ -42,7 +71,7 @@
   border: 0;
   height: 3px;
   background-color: black;
-  width: 50%;
+  width: 70%;
   margin: 10px auto; /* Center the horizontal rule */
 }
 
@@ -51,7 +80,7 @@
   display: flex;
   justify-content: center; /* Keep image and info in a row */
   align-items: center; /* Align items vertically */
-  gap: 90px; /* Minimal gap between image and info */
+  gap: 60px; /* Minimal gap between image and info */
   padding-top: 20px;
  
 }
@@ -76,15 +105,16 @@
 /* Info Section */
 .content-info {
   flex: 1; /* Take equal space */
-  max-width: 45%; /* Restrict maximum width */
+  max-width: 100%; /* Restrict maximum width */
   text-align: left;
   margin-bottom: 200px;
+  font-weight:600;
 }
 
 .content-info p {
   font-size: 16px;
   color: black;
-  line-height: 1.6; /* Improve readability */
+  line-height: 1.6;
   margin-bottom: 10px;
 }
 
@@ -93,6 +123,7 @@
   margin-top: 15px;
   margin-bottom: 10px;
   color: black;
+  font-weight:600;
 }
 
 .content-info ul {

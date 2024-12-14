@@ -55,28 +55,34 @@ const Inhouse = () => {
 
      </motion.div>
      <hr className="facility-hr"/>
+
       {/* Image Section */}
       <motion.div className="facilities-images" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Slider {...settings}>
           {/* Slider Images */}
-          <div className="product-card">
+          <div className="products-card">
           <h3>Burst Pressure Test Machine</h3>
             <img src={Facility1} alt="Burst Pressure" 
-            className="facility-image"/>
+            className="facility-image"
+            style={{height:"320px",width:"300px"}}
+            />
             
           </div>
-          <div className="product-card">
+          <div className="products-card">
           <h3>Heating Ovens</h3>
             <img src={Facility2} alt="Heating Ovens" 
             className="facility-image"
+            style={{height:"320px"}}
             />
             
           </div>
-          <div className="product-card">
+          <div className="products-card">
           <h3>UTM - Universal Testing Machine</h3>
             <img src={Facility3} alt="UTM" 
             className="facility-image"
-            />
+           style={{height:"250px",width:"300px"}}
+           
+           />
             
           </div>
         </Slider>

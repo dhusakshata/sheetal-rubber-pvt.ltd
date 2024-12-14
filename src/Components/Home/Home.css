@@ -10,8 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center; 
- overflow: visible;
-    background-color: #f4f4f4;
 
   }
   
@@ -102,12 +100,41 @@
   }
 }
 
+/*Style for video bounce*/
+/* Bounce Fade Animation for Video */
+@keyframes bounceFadeTopToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); /* Start above the viewport */
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(20px); /* Slight bounce effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
+}
 
+/* Styling the Video Container */
+.about-us-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden; /* Prevent overflow outside the container */
+ 
+}
 
 
 .about-us-video-element {
   width: 100%;
   border-radius: 8px;
+  max-width: 800px; /* Set a max width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0; /* Start with opacity 0 */
+  animation: bounceFadeTopToBottom 2s ease-out forwards; /* Apply the animation */
 }
 
 @media (max-width: 768px) {

@@ -176,32 +176,32 @@
   height: 250px;
   background-color:#0f5286;
   color: white;
-  padding: 1.5rem;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  opacity: 0; /* Initial opacity for fade effect */
-  transform: translateY(50px); /* Start slightly below */
-  animation: bounceFade 2s ease-out forwards; /* Bounce fade animation */
+margin-top: -50px;
+  transform: translateY(80px);
+  animation: bounceFade 2s ease-out forwards; 
+  animation-fill-mode: forwards;  
 }
 .vision{
   margin: 30px;
 }
-.Mission:hover,
+/* .Mission:hover,
 .vision:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
 
-.Mission {
-  animation-delay: 0.5s; /* Delay for Mission */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+} */
+
+ .Mission {
+  animation-delay: 0.5s;  
 }
 
 .vision {
-  animation-delay: 1s; /* Delay for
-   Vision */
+  animation-delay: 1s; 
+} 
 
-}
 hr {
   width: 50%;
   margin: 0.5rem auto 1rem auto;
@@ -223,25 +223,25 @@ hr {
   font-size: 16px;
   color: white;
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.4;
   text-align: left;
 }
 
 /* Bounce Fade Animation */
-@keyframes bounceFade {
+ @keyframes bounceFade {
   0% {
     opacity: 0;
-    transform: translateY(-90px);
+    transform: translateY(-80px);
   }
   50% {
     opacity: 0.7;
-    transform: translateY(40px);
+    transform: translateY(50px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} 
 
 /* Responsiveness */
 @media screen and (max-width: 768px) {

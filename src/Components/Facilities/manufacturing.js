@@ -56,18 +56,18 @@ const manufacturing = () => {
        
      <Slider {...settings}>
      {/* Slider Images */}
-    <div className="product-card">
+    <div className="products-card">
     <h3>Cold Feed Extruder</h3>
       <img src={Facility4} alt="Burst pressure" />
      
     </div>
-    <div className="product-card">
+    <div className="products-card">
     <h3>Auto Clave Vulcanizar
     (Quick Lock Type)</h3>
       <img src={Facility5} alt="heating ovens" />
       
     </div>
-    <div className="product-card">
+    <div className="products-card">
     <h3>Hydraulic Presses</h3>
       <img src={Facility6} alt="UTM" />
      

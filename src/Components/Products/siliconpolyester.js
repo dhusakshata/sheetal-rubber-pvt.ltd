@@ -27,7 +27,10 @@ function siliconpolyester() {
           animate={{ opacity: 1, x: 0 }}    // End position (center)
           transition={{ duration:1 }}      // Duration of animation
         >
-          <img src={Silicon} alt="Assembly Hoses" />
+          <img src={Silicon} alt="Assembly Hoses"
+          style={{height:"600px"}}
+          
+          />
         </motion.div>
 
         {/* Right Side: Info */}
