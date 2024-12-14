@@ -48,16 +48,16 @@ const organic = () => {
           
           <h3>Key Features and Benefits:</h3>
           <ul>
-            <li>Reinforcement: Polyester/Nylon (standard),
+            <li><b>Reinforcement:</b> Polyester/Nylon (standard),
             Kevlar/Aramid (high-strength).</li>
-            <li>Inner: Nitrile (oil/fuel resistant).</li>
-            <li>Outer: Neoprene (weather/abrasion
+            <li><b>Inner:</b> Nitrile (oil/fuel resistant).</li>
+            <li><b>Outer:</b> Neoprene (weather/abrasion
               resistant).
             </li>
-            <li>Variants: Reinforced (high pressure) or
+            <li><b>Variants:</b> Reinforced (high pressure) or
             non-reinforced (low pressure).
             </li>
-            <li>Extruded: Non-reinforced shapes for lowpressure use
+            <li><b>Extruded:</b> Non-reinforced shapes for lowpressure use
           </li>
           </ul>
       

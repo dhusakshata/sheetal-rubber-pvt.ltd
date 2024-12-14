@@ -40,13 +40,13 @@ const Assembly = () => {
           <h3>Key Features and Benefits:</h3>
           <ul>
             <li>
-              Assembly Options: Crimping: High-pressure durability.
-              CPC Clamps: Leak-free in high-vibration setups.
+            <b>  Crimping:</b> High-pressure durability.
             </li>
-            <li>Oil Resistant: For engines, fuel, and oil.</li>
-            <li>Engine: Heat-resistant connections.</li>
-            <li>Suction: Maintains vacuum integrity.</li>
-            <li>Radiator: Heat and pressure-resistant for cooling.</li>
+            <li> <b> CPC Clamps:</b> Leak-free in high-vibration setups.</li>
+            <li><b>Oil Resistant:</b> For engines, fuel, and oil.</li>
+            <li><b>Engine:</b> Heat-resistant connections.</li>
+            <li><b>Suction:</b> Maintains vacuum integrity.</li>
+            <li><b>Radiator:</b> Heat and pressure-resistant for cooling.</li>
           </ul>
         </motion.div>
       </div>

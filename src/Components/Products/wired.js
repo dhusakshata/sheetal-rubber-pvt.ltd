@@ -45,17 +45,17 @@ environments, with a temperature range of
       
         <h3>Key Features and Benefits:</h3>
         <ul>
-          <li>Suction Hose: Vacuum integrity
+          <li><b>Suction Hose:</b> Vacuum integrity
 for fluid/air transfer.
 </li>
-          <li>Air Filter Hose: Durable for clean
+          <li><b>Air Filter Hose: </b>Durable for clean
 engine air intake.
 </li>
-          <li>Flexible Hose: Versatile for fluids
+          <li><b>Flexible Hose:</b> Versatile for fluids
 and gases.
 
           </li>
-          <li>Exhaust Hose: Heat-resistant for
+          <li><b>Exhaust Hose:</b> Heat-resistant for
           exhaust gases.
           </li>
           

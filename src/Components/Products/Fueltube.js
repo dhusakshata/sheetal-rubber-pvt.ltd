@@ -46,21 +46,21 @@ systems, with inner diameters ranging from
         
         <h3>Key Features and Benefits:</h3>
         <ul>
-          <li>Multilayer Fuel Tubes: Fuelresistant for automotive systems.
+          <li><b>Multilayer Fuel Tubes:</b> Fuelresistant for automotive systems.
 </li>
-          <li>Fuel Tubes with Sleeves: Heat and
+          <li><b>Fuel Tubes with Sleeves: </b>Heat and
           abrasion-resistant.
 </li>
           <li>
-          Fuel Flow Tubes: Minimize pressure drop.
+         <b> Fuel Flow Tubes: </b>Minimize pressure drop.
 
 
           </li>
-          <li>Oil Flow Tubes: Durable for hightemp lubricants.
+          <li><b>Oil Flow Tubes:</b> Durable for hightemp lubricants.
 
           </li>
           <li>
-          Air Flow Tubes: Reliable for intake
+        <b>  Air Flow Tubes:</b> Reliable for intake
 and exhaust systems.
 
           </li>

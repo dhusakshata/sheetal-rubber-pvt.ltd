@@ -33,7 +33,7 @@ import ProductionNarrat from "../../video/production5.mp4";
 import Silicon from "../../Images/Silicon.png"
 import Turbocharger from "../../Images/Turbo-charger.png";
 import Marine from "../../Images/Marine-wet.png";
-import EPDM from "../../Images/EPDM-rubber.png";
+import EPDM from "../../Images/EPDM-rubber1.png";
 import Organic from "../../Images/organic-rubber.png";
 import Assembly from "../../Images/Assembly-rubber.png";
 import Wired from "../../Images/wired-reinforced.png";
@@ -159,7 +159,8 @@ function Home() {
         </div>
         <div className="product-cards">
           <Link to="/epdm">
-            <img src={EPDM} alt="EPDM Rubber Hoses" className="product-images" />
+            <img src={EPDM} alt="EPDM Rubber Hoses" className="product-images"
+            />
             <h3>EPDM Rubber Hoses</h3>
           </Link>
         </div>
@@ -177,7 +178,9 @@ function Home() {
         </div>
         <div className="product-cards">
           <Link to="/wired">
-            <img src={Wired} alt="Wire Reinforced Hoses" className="product-images" />
+            <img src={Wired} alt="Wire Reinforced Hoses" className="product-images" 
+            style={{backgroundColor:"white"}}
+            />
             <h3>Wire Reinforced Hoses</h3>
           </Link>
         </div>

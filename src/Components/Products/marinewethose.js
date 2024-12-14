@@ -45,21 +45,21 @@ top performance in marine environments.
 
           <h3>Key Features and Benefits:</h3>
           <ul>
-            <li>Standard Hoses: Operate up to +180°C.
+            <li><b>Standard Hoses:</b> Operate up to +180°C.
 
            </li>
-            <li>HT Hoses: Withstand up to +230°C for
+            <li><b>HT Hoses:</b> Withstand up to +230°C for
             turbocharged applications.
             </li>
             <li>
-            Standards Compliance: SAE J2006 R3 (Wet
+           <b> Standards Compliance:</b> SAE J2006 R3 (Wet
 Exhaust), SAE J2006 R2 (EPDM).
 
             </li>
-            <li>Heat Resistance: Handles extreme
+            <li><b>Heat Resistance:</b> Handles extreme
             temperatures.
             </li>
-            <li>Durability: Resists water, salt, and
+            <li><b>Durability:</b> Resists water, salt, and
 chemicals.
 Ideal for reliable, high-performance marine
 systems.

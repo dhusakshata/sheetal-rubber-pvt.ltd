@@ -46,19 +46,19 @@ function turbocharger() {
        
           <h3>Key Features and Benefits:</h3>
           <ul>
-            <li>Wide Temperature Range: Operates from
+            <li><b>Wide Temperature Range:</b> Operates from
          -50°C to +230°C.
            </li>
             <li>Meets SAE J20 Class A standards.
             </li>
-            <li>Reinforced Options:
+            <li><b>Reinforced Options:</b>
                Polyester: Standard flexibility and durability.
                Aramid: High tensile strength and heat
                resistance.
             </li>
-            <li>Special Linings:
-                 Fluorosilicone: Resistant to oil, acids, and fuels.
-                  FKM/Viton: Withstands diesel by-products
+            <li>
+                 <b>Fluorosilicone:</b> Resistant to oil, acids, and fuels.
+                 <b> FKM/Viton:</b> Withstands diesel by-products
 and exhaust gases.
             </li>
            

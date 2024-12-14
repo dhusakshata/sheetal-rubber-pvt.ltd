@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Silicon from "../../Images/Silicon.png"
 import Turbocharger from "../../Images/Turbo-charger.png";
 import Marine from "../../Images/Marine-wet.png";
-import EPDM from "../../Images/EPDM-rubber.png";
+import EPDM from "../../Images/EPDM-rubber1.png";
 import Organic from "../../Images/organic-rubber.png";
 import Assembly from "../../Images/Assembly-rubber.png";
 import Wired from "../../Images/wired-reinforced.png";

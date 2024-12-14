@@ -52,7 +52,7 @@ and more.
 
         <h3>Key Features and Benefits:</h3>
         <ul>
-          <li>Applications:
+          <li><b>Application:</b>
 Grommets: Wire and cable
 protection.
 Gaskets & Seals: Reliable sealing
@@ -60,11 +60,11 @@ under pressure.
 Vibration Dampeners: Noise
 reduction and shock absorption.
 </li>
-          <li>Part Range: 0.5 grams to 5 kg, with
+          <li><b>Part Range: </b>0.5 grams to 5 kg, with
           press sizes up to 480 mm.
 </li>
           <li>
-          Facility: In-house lab for quality and
+        <b>  Facility: </b>In-house lab for quality and
 testing.
 
 

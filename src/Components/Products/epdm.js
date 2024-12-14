@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
-import EPDM from "../../Images/EPDM-rubber.png";
+import EPDM from "../../Images/EPDM-rubber1.png";
 
 const epdm = () => {
   return (
@@ -46,21 +46,20 @@ resistance.
 </p>
           <h3>Key Features and Benefits:</h3>
           <ul>
-            <li>Nylon/Polyester: Flexible.
+            <li><b>Nylon/Polyester:</b> Flexible.
            </li>
-            <li>Meets SAE J20 Class A standards.Aramid/Kevlar: High-strength, heatresistant
+            <li><b>Meets SAE J20 Class A standards.Aramid/Kevlar:</b> High-strength, heatresistant
             </li>
-            <li>Peroxide-Cured: Heat, ozone, and aging
+            <li><b>Peroxide-Cured:</b> Heat, ozone, and aging
            resistant.
-           Reinforced/Non-Reinforced: High or lowpressure use.
-
             </li>
-            <li>Applications:
-Automotive: Radiators and charge air
+            <li><b>Reinforced/Non-Reinforced:</b> High or lowpressure use.</li>
+            <li><b>Applications:</b>
+<b>Automotive: </b>Radiators and charge air
 coolers.
-Industrial: Cooling systems in generators
+<b>Industrial:</b> Cooling systems in generators
 and compressors.
-Heavy Equipment: Engines in
+<b>Heavy Equipment: </b>Engines in
 construction, mining, and agriculture.
             </li>
            
