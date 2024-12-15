@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules"; // Correct way to import Navigation
+import { Navigation,Autoplay } from "swiper/modules"; // Correct way to import Navigation
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -33,7 +33,7 @@ import ProductionNarrat from "../../video/production5.mp4";
 import Silicon from "../../Images/Silicon.png"
 import Turbocharger from "../../Images/Turbo-charger.png";
 import Marine from "../../Images/Marine-wet.png";
-import EPDM from "../../Images/EPDM-rubber1.png";
+import EPDM from "../../Images/EPDM-rubber.png";
 import Organic from "../../Images/organic-rubber.png";
 import Assembly from "../../Images/Assembly-rubber.png";
 import Wired from "../../Images/wired-reinforced.png";
@@ -204,12 +204,16 @@ function Home() {
 <div className="logo-container">
       <div className="logo-title"><h1>ESTEEMED CLIENTS</h1></div>
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation,Autoplay]}
         slidesPerView={5}
         spaceBetween={5}
         navigation={true}
         pagination={{ clickable: true }} // Enable pagination
-       
+       autoplay={{
+             delay: 1000, // Slide every 2 seconds
+             disableOnInteraction: false, // Prevent autoplay from pausing on user interaction
+           }}
+
         loop={true}
 
       >

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Silicon from "../../Images/Silicon.png"
 import Turbocharger from "../../Images/Turbo-charger.png";
 import Marine from "../../Images/Marine-wet.png";
-import EPDM from "../../Images/EPDM-rubber1.png";
+import EPDM from "../../Images/EPDM-rubber.png";
 import Organic from "../../Images/organic-rubber.png";
 import Assembly from "../../Images/Assembly-rubber.png";
 import Wired from "../../Images/wired-reinforced.png";
@@ -36,9 +36,7 @@ function product() {
             <h3>Silicon-Polyester Hoses</h3>
           
               <p>
-              Silicone-Polyester hoses are designed specifically for use in demanding radiator, heater,and coolant transfer applications. Constructed from high-quality silicone reinforced with
-              durable polyester fabric, these hoses offer excellent resilience and a reliable performance
-              in harsh conditions.
+              Silicone-Polyester hoses are designed specifically for use in demanding radiator, heater,and coolant transfer applications. 
 
               <button className="read-more"  >
               <Link to="/siliconpolyester">Read More</Link>

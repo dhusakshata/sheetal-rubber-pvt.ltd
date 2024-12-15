@@ -14,6 +14,8 @@ import "./App.css";
 import Header from "./Components/Header/header.js";
 import Footer from "./Components/Footer/footer.js";
 import AboutUs from "./Components/About/about.js";
+
+
 import Home from "./Components/Home/Home.js";
 import Product from "./Components/Products/product.js";
 import Career from "./Components/careers/career.js";
@@ -45,11 +47,12 @@ const App = () => {
     <Router>
         <ScrollToTop /> {/* Ensure it's placed above your routes */}
       <Header /> 
-
+       
 
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
+      
         <Route path="/product" element={<Product />} />
         <Route path="/manufacturing" element={<ManufacturingFacilities/>} />
         <Route path="/inhouse" element={<Inhousefacilities/>} />

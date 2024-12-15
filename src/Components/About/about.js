@@ -1,10 +1,29 @@
 
-import React from "react";
+import React,{useEffect} from "react";
+
 import Building from "../../Images/building2.jpeg";
+import imageSource from "../../Images/mv.jpg";
+import imageSource2 from "../../Images/mission-vision.jpg";
+
 import "./about.css"; // Import styles
 
-function about() {
+
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS CSS
+
+function About() {
+
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1200, // Animation duration
+      offset: 200, // Offset to trigger animation earlier or later
+      once: true, // Animation runs only once
+    });
+  }, []);
   return (
+
+
     <div className="about-section">
   
 <div className="about-head">
@@ -13,9 +32,16 @@ function about() {
       {/* Content Section */}
 
       <div className="about-content">
+
+         {/* Image with Animation */}
+         <div className="about-image">
+          <img src={Building} alt="About Sheetal Rubber" className="building-image"
+           
+          />
+        </div>
         {/* Text Content */}
-        <div className="about-info">
-          
+        <div className="about-info" >
+          <h6>WHEN QUALITY & RELIABILITY ARE VITAL , SHEETAL RUBBER PRODUCTS (P) LTD. ARE YOUR BEST CHOICE.</h6>
         <p>
         For over two decades, Sheetal Rubber Products has been a trusted leader in the manufacturing of high-quality rubber products with 50,000 sq. ft. of manufacturing facility. We specialize in manufacturing a full range of low-pressure hoses, including platinum silicone-lined, FMK-lined fuel cell hoses, flame-retardant hoses, and various moulded components. Our commitment to product expertise, engineering excellence, rigorous testing, and strict quality controls has established us as a preferred partner for major manufacturers in India and a favored exporter internationally. 
       </p>
@@ -31,24 +57,27 @@ function about() {
         </ul>
         </div>
 
-        {/* Image with Animation */}
-        <div className="about-image">
-          <img src={Building} alt="About Sheetal Rubber" className="building-image" />
-        </div>
+       
 
       </div>
 
 <div className="misson-vision">
 
-<div className="Mission">
+<div className="with-image">
 
+<div className="Mission">
 <h2>OUR MISSION</h2>
 <hr></hr>
 <p>
 To become the leading manufacturer of elastomeric products supplying to world’s prominent industries, aspiring to be the “preferred OEM” to all Tire I and II suppliers, committing to superior service and high quality.
 </p>
 </div>
+</div>
+<div className="with-image">
+
+
 <div className="vision">
+
 <h2>OUR VISION</h2>
 <hr></hr>
     <p>
@@ -60,6 +89,7 @@ To become the leading manufacturer of elastomeric products supplying to world’
     <p>
     •	To respect team members as instrumental part of organization’s growth, ensuring their active involvement and continuous progress. 
     </p>
+</div>
     </div>
 </div>
       </div>
@@ -68,4 +98,4 @@ To become the leading manufacturer of elastomeric products supplying to world’
   );
 }
 
-export default about;
+export default About;

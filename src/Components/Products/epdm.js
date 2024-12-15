@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
-import EPDM from "../../Images/EPDM-rubber1.png";
+import EPDM from "../../Images/EPDM-rubber.png";
 
 const epdm = () => {
   return (

@@ -7,7 +7,7 @@
 }
 .arrow-container {
   position: fixed;
-  top: 170px;
+  top: 200px;
   left: 20px;
   background-color: #ff5722; 
   color: #fff;
@@ -19,9 +19,10 @@
   align-items: center;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
+  z-index: 10000;
   transition: transform 0.3s ease-in-out;
   font-weight: bold;
+  
 }
 
 .arrow-container:hover {

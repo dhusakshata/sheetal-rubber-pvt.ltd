@@ -6,6 +6,7 @@
   margin: 0; 
   padding: 0; 
 }
+
 .about-section {
   position: relative;
   width: 100%;
@@ -20,97 +21,178 @@
 
 }
 
+/* App.css */
+.aos-animate {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+[data-aos="fade-up"] {
+  animation: fade-up 1.5s ease-out;
+}
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.about-head {
+  background-image: url("../../Images/about-head.png"); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  margin-top: -10px;
+  text-align: center; /* Center-align the text */
+  width: 100%; /* Ensures full page width */
+  max-width: 2100px;
+  margin-left: -20px;
+  height: 200px; /* Set height of the div; adjust as needed */
+  display: flex; /* Allows centering content */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  text-align: center; /* Center the text */
+  position: relative; /* Ensure position for the overlay */
+  overflow: hidden;
+  opacity: 0.8;
+  
+
+}
+
+
+.about-head::before {
+  content: ""; /* Create a pseudo-element for blur and opacity */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.6); /* Adjust opacity with the alpha value (0.6 in this case) */
+  filter: blur(15px); /* Increased blur effect */
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+
 .about-head h1{
   padding: 10px;
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: black;
-  margin: 0;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  color:white; 
+  margin-top: 80px;
   margin-bottom: 100px;
+  z-index: 1; 
+  position: relative; 
+
+  /* Animation properties */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-300px); /* Start above the viewport */
+  animation: slideInFromTopH1 1.5s ease-out forwards; /* Trigger animation */
 }
+
+
+/* Keyframes for h1 slide-in animation */
+@keyframes slideInFromTopH1 {
+  0% {
+    transform: translateY(-300px); /* Starting position */
+    opacity: 0; /* Hidden */
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
 /* Main content container */
 .about-content {
   display: flex;
   flex-direction: row; 
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  margin-top: -90px;
-   width: 1200px;
+  margin-top: -40px;
+   width: 1400px;
   border-radius: 10px;
- gap:10px;
- 
+ gap:30px;
+ overflow: hidden; 
+ flex-wrap: wrap; 
 }
 .about-content p{
-  font-size: 16px;
-font-weight: 600;
+  font-size: 17px;
+
 }
 .about-content li{
   font-size: 16px;
-  font-weight: 600;
+ 
 }
-/* 
-.about-content:hover {
-  background-color: #fea286; 
-    transform: scale(1.05); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
-    color: #000; 
-  } */
+.about-content h6{
+font-size: 16px;
+font-weight: bold;
+color:  #ff5722;
+}
 
 /* Text content */
 .about-info {
   flex: 1; 
   padding: 20px;
-  
+  color:black; /* White text */
+  padding: 40px;
+  margin-top: 40px;
+  transform: translateX(-150px); /* Start position: Above the viewport */
+  opacity: 0; /* Initially invisible */
+  animation: slideFromLeft 1.2s ease-out forwards, rotate3D 2s infinite ease-in-out 1.2s;
 }
 
-/*Fade effect for info*/
-.about-info {
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: fadeLeft 1s ease-out forwards;
+/* Keyframes for Slide-in from Top Animation */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(150px); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0); 
+    opacity: 1; 
+  }
 }
 
-/* Keyframes for fade-left effect */
-@keyframes fadeLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+
+
 
 /* Image container */
 .about-image {
-  flex: 1; /* Take up equal space */
+  flex: 1; 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width:100%;
-  height: 400px;
+  max-width: 1000px;
+  height: 500px;
+  margin-top:40px;
+ 
   object-fit: cover;
   overflow: hidden;
-  opacity: 0; /* Start with opacity 0 */
-  transform: translateX(50px); /* Start below */
-  animation: fadeTop 1.5s ease-out forwards; /* Trigger animation */
-  animation-delay: 0.5s; /* Optional: Add delay to sync with other animations */
+  opacity: 0;
+  transform: translateX(-150px); 
+  animation: fadeTop 1.5s ease-out forwards;
+  animation-delay: 0.5s; 
  
 }
 
 .building-image{
   width: 800px; 
   height: 100%;
- 
+  transition: transform 1s ease, box-shadow 0.5s ease;
+  margin: 0px;
 }
-
 
 /* Keyframes for Fade-Top Animation */
 @keyframes fadeTop {
   0% {
     opacity: 0;
-    transform: translateX(80px); /* Start below */
+    transform: translateX(-150px); /* Start below */
   }
   100% {
     opacity: 1;
@@ -118,33 +200,53 @@ font-weight: 600;
   }
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column; /* Stack content on smaller screens */
-    gap: 10px;
+    flex-direction: column;
+    width: 700px;
+   
   }
 
-  .about-image {
-    max-width: 100%;
+  .about-info, .about-image {
+    width: 100%;
+    text-align: center;
+  }
+  .about-info p , li {
+    text-align: left;
+    padding: 10px;
+  
+  }
+
+  .misson-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Mission, .vision {
+    width: 80%;
   }
 }
-
 /* Responsive Design for Extra Small Screens */
 @media (max-width: 480px) {
   .about-content {
-    flex-direction: column; /* Stack content on smaller screens */
+    flex-direction: column; 
     gap: 10px;
+    width: 450px;
+
     
   }
   .about-info {
     text-align: center;
     padding: 5px;
+    font-size: 10px;
   }
 
   .about-info p {
-    font-size: 12px;
-    line-height: 1.2;
+    text-align: left;
+    padding: 10px;
+  
   }
 
   .building-image {
@@ -155,15 +257,33 @@ font-weight: 600;
 
 /* Mission & Vision Container */
 .misson-vision {
+  position: relative;
+  background-image: url("../../Images/mission-vision.jpg"); /* Set your background image path */
+  background-size: cover; /* Ensure the background covers the full div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* No repeating of background */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  gap: 30px;
   margin-top: 3rem;
   padding: 2rem;
-  overflow: hidden; /* Prevent animation overflow */
-  /* border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden; 
+  width: 100%;
+
+  margin: -10px;
+}
+/* Overlay for background image */
+.misson-vision::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  z-index: -1; /* Make sure overlay is behind the content */
 }
 
 .misson-vision h1 {
@@ -180,19 +300,19 @@ font-weight: 600;
   max-width: 1000px;
   height: 250px;
   background-color:#0f5286;
-  color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-margin-top: -50px;
+margin-top: 30px;
+
   transform: translateY(80px);
   animation: bounceFade 2s ease-out forwards; 
   animation-fill-mode: forwards;  
 }
-.vision{
+/* .vision{
   margin: 30px;
-}
+} */
 .Mission:hover,
 .vision:hover {
 
@@ -205,6 +325,7 @@ margin-top: -50px;
 
 .vision {
   animation-delay: 1s; 
+ 
 } 
 
 hr {
@@ -217,7 +338,7 @@ hr {
 .Mission h2,
 .vision h2 {
   font-size: 2rem;
-  color: white;
+  color:white;
   margin-bottom: 1rem;
   text-align: justify;
   font-weight: bold;
@@ -229,7 +350,7 @@ hr {
 .Mission p,
 .vision p {
   font-size: 16px;
-  color: white;
+  color:white;
   margin: 0;
   line-height: 1.4;
   text-align: left;
@@ -304,6 +425,8 @@ hr {
   .Mission,
   .vision {
     padding: 40px;
+    height: 350px;
+    
   }
 
   .Mission h2,
@@ -312,3 +435,134 @@ hr {
   }
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-info, .about-image {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px; /* Add spacing between image and text */
+  }
+
+  .misson-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Mission, .vision {
+    width: 90%; /* Reduce the width to prevent overflow */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 15px;
+  }
+
+  .about-head h1 {
+    font-size: 2em;
+  }
+
+  .about-info {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  .about-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Mission, .vision {
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  hr {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-head h1 {
+    font-size: 1.8em;
+  }
+
+  .about-info {
+    font-size: 0.9em;
+  }
+
+  .about-info ul {
+    padding-left: 15px;
+  }
+
+  .about-image {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .Mission h2, .vision h2 {
+    font-size: 1.8em;
+  }
+
+  .misson-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Mission, .vision {
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  hr {
+    width: 60%;
+  }
+}
+
+/* Responsive Design for Extra Small Screens */
+@media (max-width: 300px) {
+  .about-content {
+    flex-direction: column; 
+    gap: 10px;
+    width: 300px;
+
+    
+  }
+  .about-info {
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .about-info p {
+    text-align: left;
+    padding: 10px;
+  
+  }
+
+  .building-image {
+    width: 100%;
+    height: auto;
+  }
+  .Mission h2, .vision h2 {
+    font-size: 1.8em;
+  }
+
+  .Mission,
+  .vision {
+    padding: 40px;
+  }
+
+  .Mission p,
+  .vision p {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+}
