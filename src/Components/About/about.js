@@ -1,5 +1,5 @@
 
-import React,{useEffect} from "react";
+import React,{useEffect,useRef,useState} from "react";
 
 import Building from "../../Images/building2.jpeg";
 import imageSource from "../../Images/mv.jpg";
@@ -13,6 +13,13 @@ import 'aos/dist/aos.css'; // Import AOS CSS
 
 function About() {
 
+// Declare state variables for visibility
+const [isMissionVisible, setIsMissionVisible] = useState(false);
+const [isVisionVisible, setIsVisionVisible] = useState(false);
+
+  const missionRef = useRef(null); // Ref for the mission section
+  const visionRef = useRef(null); // Ref for the vision section
+
   useEffect(() => {
     // Initialize AOS
     AOS.init({
@@ -20,10 +27,42 @@ function About() {
       offset: 200, // Offset to trigger animation earlier or later
       once: true, // Animation runs only once
     });
+
+    // Intersection Observer
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === missionRef.current) {
+            console.log("Mission section is in view!");
+            // Trigger your function for mission
+            missionRef.current.classList.add("in-view"); 
+          } else if (entry.target === visionRef.current) {
+            console.log("Vision section is in view!");
+            // Trigger your function for vision
+            visionRef.current.classList.add("in-view");
+          }
+        }
+      });
+    };
+
+    const observerOptions = {
+      root: null, // Use the viewport
+      threshold: 0.5, // Trigger when 50% of the element is in view
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    if (missionRef.current) observer.observe(missionRef.current);
+    if (visionRef.current) observer.observe(visionRef.current);
+
+    return () => {
+      if (missionRef.current) observer.unobserve(missionRef.current);
+      if (visionRef.current) observer.unobserve(visionRef.current);
+    };
   }, []);
+
+
+
   return (
-
-
     <div className="about-section">
   
 <div className="about-head">
@@ -63,20 +102,17 @@ function About() {
 
 <div className="misson-vision">
 
-<div className="with-image">
 
-<div className="Mission">
+
+<div ref={missionRef} className={`Mission ${isMissionVisible ? "animate" : ""}`}>
 <h2>OUR MISSION</h2>
 <hr></hr>
 <p>
 To become the leading manufacturer of elastomeric products supplying to world’s prominent industries, aspiring to be the “preferred OEM” to all Tire I and II suppliers, committing to superior service and high quality.
 </p>
 </div>
-</div>
-<div className="with-image">
 
-
-<div className="vision">
+<div ref={visionRef} className={`vision ${isVisionVisible ? "animate" : ""}`}>
 
 <h2>OUR VISION</h2>
 <hr></hr>
@@ -92,7 +128,7 @@ To become the leading manufacturer of elastomeric products supplying to world’
 </div>
     </div>
 </div>
-      </div>
+     
      
     
   );

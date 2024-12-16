@@ -7,13 +7,12 @@
 }
 .arrow-container {
   position: fixed;
-  top: 200px;
+  top: 130px;
   left: 20px;
-  background-color: #ff5722; 
-  color: #fff;
+  color:white;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,13 +25,14 @@
 }
 
 .arrow-container:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+ 
 }
 
 .arrow-icon {
-  font-size: 40px; /* Adjust arrow size */
-  font-weight: bolder; /* Increase the weight for a bolder look */
-  animation: bounce 1s infinite;
+  font-size: 60px; 
+  font-weight: bolder; 
+  animation: bounce 1s infinite;line-height: 1;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
 }
 

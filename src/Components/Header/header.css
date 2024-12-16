@@ -6,7 +6,6 @@
   padding: 0; 
 }
 
-
 .header {
   width: 100%;
   display: flex;
@@ -18,24 +17,30 @@
   top: 0;
   margin: 0px;
   z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  margin-top:10px ;
 
 }
-
 
 /* Logo styling */
 .logo {
   flex-shrink: 0; /* Prevent the logo from resizing in the flexbox */
+  position: relative;
+  margin-left: -750px;
+
 }
 
 .logo img {
   width: 200px; /* Adjust the width of the logo */
-  height: 100px; /* Maintain aspect ratio */
+  height: 90px; /* Maintain aspect ratio */
   margin: 0; /* Ensure no extra space around the logo */
   padding: 0;
+
 }
 .top-right {
   position: absolute; /* Position the container absolutely */
-  top: 30px; 
+  top: 20px; 
   right:50px; /* Shift it 20px from the right of the page */
   display: flex; /* Arrange search bar and contact info in a row */
   justify-content: flex-end; /* Align both elements to the right */
@@ -113,7 +118,7 @@
 
 
 .social-icons {
-  width: 30px;
+  width: 20px;
   height: auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
 
@@ -126,8 +131,6 @@
   color: #ff5722;  /* Hover color */
 }
 
-
-
 /* Navigation Styles */
 .Navbar {
   background-color:#ff782b; 
@@ -135,11 +138,13 @@
   display: flex;
   justify-content: center; /* Center the nav links */
   align-items: center;
-  padding: 2rem 0; 
+  padding: 20px 20px; 
   width: 100%;
-  height: 70px;
+  height: 60px;
   position: sticky;
   z-index: 10000;  
+
+
 }
 
 .nav {
@@ -147,8 +152,7 @@
   gap: 2px;
   font-weight: bold;
   font-size: 14px;
-  min-width: 100%; /* Prevents the nav container from shrinking too much */
-  justify-content: center /* Align items to the left instead of center */
+  justify-content: center 
 }
 
 .nav a {
@@ -226,124 +230,81 @@
   display: block;
 }
 
-
-
-/* Responsive Design */
 @media screen and (max-width: 786px) {
-  /* Header adjustments for smaller screens */
-  .hamburger {
-    display: block;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .nav.active {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff; /* Match your navbar background color */
-    padding: 20px;
-    text-align: center;
-  }
-
-
-
   .header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    display: flex;
-    gap: 10px;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 10px; /* Add spacing between items */
+    padding: 10px 5px; /* Adjust padding */
+    position: sticky;
   }
 
   .logo img {
-    width: 150px; /* Scale down logo for smaller screens */
-    margin: 0 auto;
+    width: 120px; /* Reduce logo size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .top-right {
+    position: static; /* Remove absolute positioning */
+    display: flex;
+    flex-direction: column; /* Stack search bar and contact info vertically */
+    align-items: center; /* Center-align the items */
+    gap: 10px; /* Add spacing between the elements */
+    width: 100%; /* Ensure it spans the width of the screen */
   }
 
   .search-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: -400px;
-    width: 30%;
-    padding: 0 10px;
-    flex-grow: unset; /* Disable flex-grow on smaller screens */
-  
+    margin-right: -400px;
+    flex-direction: row; /* Stack input and button vertically */
+    align-items: center; /* Center-align the elements */
+    width: 70%; /* Allow the search bar to adapt to screen width */
+    gap:0;
   }
 
   .search-bar input {
-    width: 50%; /* Input spans full width */
-    font-size: 14px;
+    width: 90%; /* Take up most of the screen width */
+    font-size: 14px; /* Adjust font size for smaller screens */
   }
 
   .search-bar button {
-    width: 20%; /* Button takes full width */
-    margin-top: 0.5px; /* Add spacing for stacked layout */
-    padding: 4px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 30%; /* Adjust button width */
+    margin: 5px 0; /* Add spacing above and below the button */
+    padding: 8px;
+    font-size: 12px; /* Adjust font size for smaller screens */
   }
 
   .contact-info {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
    
+    align-items: center; /* Center-align contact items */
+    text-align: center; /* Center-align text */
+    gap: 5px; /* Add spacing between contact items */
+    width: 100%; /* Ensure it spans the width of the screen */
   }
 
-  /* Navbar adjustments */
+  .contact-item {
+    justify-content: center; /* Center-align icons and text */
+    gap: 8px; /* Adjust spacing between icons and text */
+  }
+
+  .social-icons {
+    width: 24px; /* Reduce icon size */
+    height: 24px; /* Keep square aspect ratio */
+  }
+
   .Navbar {
-    padding: 10px 0;
+   
+    padding: 5px 0; 
     height: auto;
   }
 
   .nav {
-    
-    flex-direction: row; 
-    align-items: center;
-    gap: 15px;
-    font-size: 16px;
-    padding: 0;
-    min-width: auto; 
-    justify-content: flex-start;
-    
-  }
-
-  .dropdown-menu {
-    width: 100%; /* Full-width dropdown menu on smaller screens */
-    position: static;
-    box-shadow: none; /* Remove shadow for clean mobile view */
-  }
-
-  .dropdown-menu a {
-    text-align: center;
-    padding: 10px;
-  }
-
-  .nav a {
-    padding: 10px 0; /* Adjust padding for better spacing */
-    font-size: 14px;
+    font-size: 10px; /* Reduce font size for nav links */
+    gap: 10px; /* Adjust spacing between nav links */
+    justify-content: center; /* Center-align nav links */
   }
 }
 
 
-/* Add this inside your App.css or a separate stylesheet */
-
-/* Hamburger button styling */
-nav button {
-  display: none;
-  /* Add more styling for your button here */
-}
 
 
 @media screen and (max-width: 480px) {
@@ -408,8 +369,9 @@ nav button {
   }
 
   .Navbar {
-    padding: 5px 0; /* Adjust padding for navbar */
-    height: auto; /* Allow the navbar height to adapt */
+    display: none;/**/
+    padding: 5px 0; 
+    height: auto;
   }
 
   .nav {

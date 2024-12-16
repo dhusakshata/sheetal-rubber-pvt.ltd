@@ -21,44 +21,23 @@
 
 }
 
-/* App.css */
-.aos-animate {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
-[data-aos="fade-up"] {
-  animation: fade-up 1.5s ease-out;
-}
-
-@keyframes fade-up {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 
 .about-head {
-  background-image: url("../../Images/about-head.png"); /* Replace with your image path */
-  background-size: cover; /* Ensures the image covers the entire div */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-image: url("../../Images/about-head.png"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
   margin-top: -10px;
-  text-align: center; /* Center-align the text */
-  width: 100%; /* Ensures full page width */
+  text-align: center; 
+  width: 100%;
   max-width: 2100px;
   margin-left: -20px;
-  height: 200px; /* Set height of the div; adjust as needed */
-  display: flex; /* Allows centering content */
-  align-items: center; /* Vertically center content */
-  justify-content: center; /* Horizontally center content */
-  text-align: center; /* Center the text */
-  position: relative; /* Ensure position for the overlay */
+  height: 200px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  position: relative; 
   overflow: hidden;
   opacity: 0.8;
   
@@ -67,13 +46,13 @@
 
 
 .about-head::before {
-  content: ""; /* Create a pseudo-element for blur and opacity */
+  content: ""; 
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(34, 34, 34, 0.6); /* Adjust opacity with the alpha value (0.6 in this case) */
+  background-color: rgba(34, 34, 34, 0.6); 
   filter: blur(15px); /* Increased blur effect */
   z-index: -1; /* Place the pseudo-element behind the content */
 }
@@ -566,3 +545,5 @@ hr {
     margin-bottom: 30px;
   }
 }
+
+

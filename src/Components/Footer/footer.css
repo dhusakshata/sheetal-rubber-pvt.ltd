@@ -17,7 +17,7 @@
   color: white;
   padding: 40px;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 
 }
 
@@ -90,7 +90,8 @@ right: 20px;
   width: 25%;
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 30px;
+  padding: 20px;
 }
 
 .quick-links h3 {
@@ -126,14 +127,14 @@ right: 20px;
   display: flex;
   flex-direction: column !important;
   color: #fff;
-  padding: 0 20px 0 0;
+  padding: 0 40px 0 0;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 20px;
   margin-right: 10px;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
+  border-radius: 8px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin-left: -120px;
 }
 
@@ -141,6 +142,7 @@ right: 20px;
 font-size: 16px;
 text-align: center;
 color: white;
+
 }
 
 .newsletter-form {
@@ -151,6 +153,7 @@ color: white;
   width: 100%;
   max-width: 400px;
   margin: 10px;
+  padding: 0 0 0  20px;
 }
 
 .email-input {

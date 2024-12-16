@@ -55,9 +55,10 @@ const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen); // Toggle men
 
 
   return (
-    <div >
+  
       <header className="header">
-        <div className="logo">
+       <div className="main-header">
+       <div className="logo">
           <img src={Logos} alt="Sheetal Rubber Industries" />
         </div>
         <div className="top-right">
@@ -95,9 +96,11 @@ const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen); // Toggle men
             </div>
           </div>
         </div>
-      </header>
+       </div>
 
-      <div className="Navbar">
+
+        
+        <div className="Navbar">
         <nav className="nav">
           <Link to="/" onClick={handleLinkClick}>
             HOME
@@ -159,7 +162,10 @@ const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen); // Toggle men
 
         </nav>
       </div>
-    </div>
+
+      </header>
+
+    
   );
 }
 
