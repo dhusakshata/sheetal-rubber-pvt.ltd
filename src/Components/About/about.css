@@ -23,16 +23,10 @@
 
 
 .about-head {
-  background-image: url("../../Images/about-head.png"); 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  margin-top: -10px;
+  
   text-align: center; 
   width: 100%;
-  max-width: 2100px;
-  margin-left: -20px;
-  height: 200px; 
+  height: 100px; 
   display: flex; 
   align-items: center; 
   justify-content: center; 
@@ -40,31 +34,18 @@
   position: relative; 
   overflow: hidden;
   opacity: 0.8;
-  
+  text-align: center;
+  position: relative; 
+  z-index: 1; 
 
-}
-
-
-.about-head::before {
-  content: ""; 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(34, 34, 34, 0.6); 
-  filter: blur(15px); /* Increased blur effect */
-  z-index: -1; /* Place the pseudo-element behind the content */
 }
 
 .about-head h1{
   padding: 10px;
   font-weight: bolder;
-  font-size: 3.5rem;
-  color:white; 
-  margin-top: 80px;
-  margin-bottom: 100px;
-  z-index: 1; 
+  font-size: 2.5rem;
+  color:black; 
+  z-index: 10; 
   position: relative; 
 
   /* Animation properties */
@@ -74,7 +55,6 @@
 }
 
 
-/* Keyframes for h1 slide-in animation */
 @keyframes slideInFromTopH1 {
   0% {
     transform: translateY(-300px); /* Starting position */
@@ -86,18 +66,21 @@
   }
 }
 
+
+
 /* Main content container */
 .about-content {
   display: flex;
   flex-direction: row; 
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: -40px;
+
    width: 1400px;
   border-radius: 10px;
  gap:30px;
  overflow: hidden; 
  flex-wrap: wrap; 
+ margin-bottom: 30px;
 }
 .about-content p{
   font-size: 17px;

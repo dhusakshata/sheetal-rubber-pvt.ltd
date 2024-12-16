@@ -13,14 +13,32 @@
 }
 
 .contact-page h1 {
-  padding: 0;
+  padding: 10px;
   font-weight: bold;
   font-size: 2.5rem;
   color:black;
-  margin: 0px;
- text-align: center;
 
+ text-align: center;
+/* Animation properties */
+opacity: 0; /* Initially hidden */
+transform: translateY(-300px); /* Start above the viewport */
+animation: slideInFromTopH1 1.5s ease-out forwards; /* Trigger animation */
 }
+
+
+/* Keyframes for h1 slide-in animation */
+@keyframes slideInFromTopH1 {
+  0% {
+    transform: translateY(-300px); /* Starting position */
+    opacity: 0; /* Hidden */
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+
 .contact-hr{
   border: 0;
   height: 3px;
@@ -42,6 +60,8 @@
 .form-section {
   flex: 1;
   max-width: 600px;
+  animation: slideInFromLeft 1.5s ease-out forwards; /* Slide-in from the left */
+
 }
 
 .form-group {
@@ -96,6 +116,20 @@
   color: white; /* White text color on hover */
 }
 
+/*form Annimation*/
+/* Form Section Animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-300px); /* Start off-screen to the left */
+    opacity: 0; /* Hidden */
+  }
+  100% {
+    transform: translateX(0); /* Final position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+
 /* Info and Map Section (Column Layout) */
 .info-map-column {
   flex: 1;
@@ -105,7 +139,7 @@
   max-width: 800px;
   justify-content: flex-start;
   align-items: center;
-  
+  animation: slideInFromRight 1.5s ease-out forwards; /* Slide-in from the right */
 }
 
 .info-column {
@@ -136,6 +170,21 @@ justify-content: flex-start;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/*Annimation for map section*/
+
+/* Info and Map Section Animation */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(300px); /* Start off-screen to the right */
+    opacity: 0; /* Hidden */
+  }
+  100% {
+    transform: translateX(0); /* Final position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
 
 @media (max-width: 768px) {
   .row-container {

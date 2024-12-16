@@ -9,45 +9,51 @@
 .header {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  background-color:white;
+  position: sticky;
+  z-index: 10000;
+   top: 0;
+  margin: 0px;
+ 
+
+}
+
+/* Main header styling */
+.main-header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:whitesmoke;
-   padding: 10px 10px;
-  position: sticky; 
-  top: 0;
-  margin: 0px;
-  z-index: 10000;
-  display: flex;
-  flex-direction: column;
-  margin-top:10px ;
-
+  padding: 10px 20px;
+ 
 }
 
 /* Logo styling */
 .logo {
-  flex-shrink: 0; /* Prevent the logo from resizing in the flexbox */
-  position: relative;
-  margin-left: -750px;
-
+  flex-shrink: 0;  
 }
 
 .logo img {
   width: 200px; /* Adjust the width of the logo */
   height: 90px; /* Maintain aspect ratio */
-  margin: 0; /* Ensure no extra space around the logo */
+  /* margin: 0;
   padding: 0;
+  margin-left: -750px; */
 
 }
 .top-right {
-  position: absolute; /* Position the container absolutely */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* position: absolute; 
   top: 20px; 
-  right:50px; /* Shift it 20px from the right of the page */
-  display: flex; /* Arrange search bar and contact info in a row */
-  justify-content: flex-end; /* Align both elements to the right */
-  align-items: flex-start; /* Align items at the top */
-  gap: 40px; /* Space between search bar and contact info */
-  width: auto; /* Make width auto to adjust based on content */
-  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  right:50px; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-start; 
+  gap: 40px; 
+  width: auto; 
+  flex-wrap: wrap;  */
 }
 /* Search bar styling */
 .search-bar {
@@ -162,6 +168,7 @@
   padding: 0.5rem 1rem; 
   transition: color 0.3s ease;
   z-index: 1; /*  text stays on top of the box */
+  font-weight: bold;
 }
 
 .nav a::before {
@@ -236,7 +243,7 @@
     align-items: center; /* Center align items */
     gap: 10px; /* Add spacing between items */
     padding: 10px 5px; /* Adjust padding */
-    position: sticky;
+
   }
 
   .logo img {
@@ -245,7 +252,6 @@
   }
 
   .top-right {
-    position: static; /* Remove absolute positioning */
     display: flex;
     flex-direction: column; /* Stack search bar and contact info vertically */
     align-items: center; /* Center-align the items */
@@ -254,45 +260,44 @@
   }
 
   .search-bar {
-    margin-right: -400px;
-    flex-direction: row; /* Stack input and button vertically */
-    align-items: center; /* Center-align the elements */
-    width: 70%; /* Allow the search bar to adapt to screen width */
+    flex-direction: row; 
+    align-items: center; 
+    width: 70%; 
     gap:0;
   }
 
   .search-bar input {
-    width: 90%; /* Take up most of the screen width */
-    font-size: 14px; /* Adjust font size for smaller screens */
+    width: 90%; 
+    font-size: 14px; 
   }
 
   .search-bar button {
-    width: 30%; /* Adjust button width */
-    margin: 5px 0; /* Add spacing above and below the button */
+    width: 30%; 
+    margin: 5px 0; 
     padding: 8px;
-    font-size: 12px; /* Adjust font size for smaller screens */
+    font-size: 12px; 
   }
 
   .contact-info {
    
-    align-items: center; /* Center-align contact items */
-    text-align: center; /* Center-align text */
-    gap: 5px; /* Add spacing between contact items */
-    width: 100%; /* Ensure it spans the width of the screen */
+    align-items: center; 
+    text-align: center; 
+    gap: 5px; 
+    width: 100%; 
   }
 
   .contact-item {
-    justify-content: center; /* Center-align icons and text */
-    gap: 8px; /* Adjust spacing between icons and text */
+    justify-content: center; 
+    gap: 8px; 
   }
 
   .social-icons {
-    width: 24px; /* Reduce icon size */
-    height: 24px; /* Keep square aspect ratio */
+    width: 24px; 
+    height: 24px; 
   }
 
   .Navbar {
-   
+
     padding: 5px 0; 
     height: auto;
   }
@@ -322,7 +327,7 @@
   }
 
   .top-right {
-    position: static; /* Remove absolute positioning */
+   
     display: flex;
     flex-direction: column; /* Stack search bar and contact info vertically */
     align-items: center; /* Center-align the items */
@@ -331,7 +336,6 @@
   }
 
   .search-bar {
-    margin-right: -400px;
     flex-direction: row; /* Stack input and button vertically */
     align-items: center; /* Center-align the elements */
     width: 70%; /* Allow the search bar to adapt to screen width */
@@ -369,7 +373,7 @@
   }
 
   .Navbar {
-    display: none;/**/
+   
     padding: 5px 0; 
     height: auto;
   }
@@ -382,7 +386,7 @@
 }
 
 /*for smaller screen*/
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .header {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center align items */
@@ -405,7 +409,7 @@
   }
 
   .search-bar {
-    margin-right: -400px;
+    
     flex-direction: row; /* Stack input and button vertically */
     align-items: center; /* Center-align the elements */
     width: 70%; /* Allow the search bar to adapt to screen width */

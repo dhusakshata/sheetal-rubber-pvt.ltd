@@ -2,8 +2,6 @@
 import React,{useEffect,useRef,useState} from "react";
 
 import Building from "../../Images/building2.jpeg";
-import imageSource from "../../Images/mv.jpg";
-import imageSource2 from "../../Images/mission-vision.jpg";
 
 import "./about.css"; // Import styles
 
