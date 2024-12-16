@@ -1,5 +1,5 @@
 
-import React, {useState} from "react";
+import React,{ useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Link } from "react-router-dom";
@@ -92,6 +92,51 @@ function Home() {
     prevArrow: <div className="custom-prev-arrow"></div>,  // Custom left arrow
     nextArrow: <div className="custom-next-arrow"></div>,  // Custom right arrow
   };
+
+
+const aboutUsRef = useRef(null);
+
+// Set up the Intersection Observer
+useEffect(() => {
+  const options = {
+    root: null, // Observing relative to the viewport
+    rootMargin: "0px",
+    threshold: 0.5, // Trigger when 50% of the element is in view
+  };
+
+  const handleIntersection = (entries, observer) => {
+    entries.forEach((entry) => {
+      const textElement = entry.target.querySelector('.about-us-info');
+      const videoElement = entry.target.querySelector('.about-us-video');
+      const headingElement = entry.target.querySelector('.about-us-title h1');
+
+      // Add 'in-view' class to trigger animation
+      if (entry.isIntersecting) {
+        textElement.classList.add('in-view');
+        videoElement.classList.add('in-view');
+        headingElement.classList.add('in-view');
+      } else {
+        // Optional: reset the animations when the element is out of view
+        textElement.classList.remove('in-view');
+        videoElement.classList.remove('in-view');
+        headingElement.classList.remove('in-view');
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(handleIntersection, options);
+
+  if (aboutUsRef.current) {
+    observer.observe(aboutUsRef.current);
+  }
+
+  return () => {
+    if (aboutUsRef.current) {
+      observer.unobserve(aboutUsRef.current);
+    }
+  };
+}, []);
+
   return (
     <div className="home">
   <section className="video-container">
@@ -100,7 +145,7 @@ function Home() {
     ></video>
   </section>
 
-  <section className="about-us-container">
+  <section className="about-us-container"ref={aboutUsRef}>
     <div className="about-us-title">
       <h1>ABOUT US</h1>
     </div>

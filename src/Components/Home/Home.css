@@ -39,7 +39,17 @@
   font-size: 2.5rem; /* Adjust for better spacing */
   margin: 0 auto; 
   font-weight: bold;
+
+  opacity: 0;
+  transform: translateY(-100%); /* Position the heading off-screen from the top */
+  transition: opacity 1s, transform 1s; /* Smooth transition for sliding down */
 }
+/* When the heading is in view, apply the 'in-view' class */
+.about-us-title h1.in-view {
+  opacity: 1;
+  transform: translateY(0); /* Move the heading to its original position */
+}
+
 
 /* Reduce Gap Between Video and About Section */
 .about-us-content {
@@ -58,17 +68,17 @@
   }
 }
 /* Define the animation */
-@keyframes slideInFade {
+/* @keyframes slideInFade {
   0% {
     opacity: 0;
-    transform: translateY(-50px); /* Slide down effect */
+    transform: translateY(-50px); 
     
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* End at normal position */
+    transform: translateY(0);
   }
-}
+} */
 
 
 .about-us-info,
@@ -82,14 +92,14 @@
 }
 
 /*Fade effect for info*/
-.about-us-info {
+/* .about-us-info {
   opacity: 0;
   transform: translateX(-50px);
   animation: fadeLeft 1s ease-out forwards;
-}
+} */
 
 /* Keyframes for fade-left effect */
-@keyframes fadeLeft {
+/* @keyframes fadeLeft {
   from {
     opacity: 0;
     transform: translateX(-50px);
@@ -98,22 +108,36 @@
     opacity: 1;
     transform: translateX(0);
   }
+} */
+
+/* Add an initial hidden state to the text */
+.about-us-info {
+  opacity: 0;
+  transform: translateX(-100%); /* Move text off-screen to the left initially */
+  transition: opacity 1s, transform 1s; /* Smooth transition for the effect */
 }
+
+/* When the section is in view, apply the 'in-view' class to trigger animation */
+.about-us-info.in-view {
+  opacity: 1;
+  transform: translateX(0); /* Move text to its original position */
+}
+
 
 /*Style for video bounce*/
 /* Bounce Fade Animation for Video */
 @keyframes bounceFadeTopToBottom {
   0% {
     opacity: 0;
-    transform: translateY(-50px); /* Start above the viewport */
+    transform: translateY(-50px); 
   }
   50% {
     opacity: 0.5;
-    transform: translateY(20px); /* Slight bounce effect */
+    transform: translateY(20px); 
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* End at normal position */
+    transform: translateY(0); 
   }
 }
 

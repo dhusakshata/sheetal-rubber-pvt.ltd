@@ -136,6 +136,22 @@
   opacity: 0.8;
   color: #ff5722;  /* Hover color */
 }
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.hamburger-menu button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
 
 /* Navigation Styles */
 .Navbar {
@@ -149,7 +165,8 @@
   height: 60px;
   position: sticky;
   z-index: 10000;  
-
+  display: flex;
+  flex-direction: row;
 
 }
 
