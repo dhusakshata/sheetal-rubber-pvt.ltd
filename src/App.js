@@ -49,7 +49,7 @@ import Facility3 from "./Components/Facilities/facility3.js";
 import Facility4 from "./Components/Facilities/facility4.js";
 import Facility5 from "./Components/Facilities/facility5.js";
 import Facility6 from "./Components/Facilities/facility6.js";
-import Facility7 from "./Components/Facilities/facility7.js";
+// import Facility7 from "./Components/Facilities/facility7.js";
 import Facility8 from "./Components/Facilities/facility8.js";
 import Facility9 from "./Components/Facilities/facility9.js";
 import Facility10 from "./Components/Facilities/facility10.js";
@@ -91,7 +91,7 @@ const App = () => {
         <Route path="/facility4" element={<Facility4 />} />
         <Route path="/facility5" element={<Facility5 />} />
         <Route path="/facility6" element={<Facility6 />} />
-        <Route path="/facility7" element={<Facility7 />} />
+        {/* <Route path="/facility7" element={<Facility7 />} /> */}
         <Route path="/facility8" element={<Facility8 />} />
         <Route path="/facility9" element={<Facility9 />} />
         <Route path="/facility10" element={<Facility10 />} />

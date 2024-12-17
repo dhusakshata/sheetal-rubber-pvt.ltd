@@ -3,7 +3,7 @@
   padding: 20px;
   background-color: #f8f9fa;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: black;
 }
 
 .facility-header3 {
@@ -13,10 +13,10 @@
 
 .facility-header3 h1 {
   font-size: 2.5rem;
-  color: #f28c38;
-  margin: 0;
-  padding-bottom: 10px;
+  color: black;
+  border-bottom: 3px solid #f28c38;
   display: inline-block;
+  padding-bottom: 10px;
 }
 
 /* Paragraph Section */
@@ -44,7 +44,7 @@
   flex: 2;
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color:black;
 }
 
 /* Content Overview Styling */
@@ -62,7 +62,7 @@
 .facility-content3 h1 {
   font-size: 2rem;
   text-align: center;
-  color: #333;
+  color: black;
   margin-bottom: 10px;
   
   display: inline-block;
@@ -95,7 +95,7 @@
 .info-boxe3 p,
 .info-boxe3 ul {
   font-size: 1rem;
-  color: #555;
+  color:black;
   line-height: 1.6;
   margin: 0;
 }

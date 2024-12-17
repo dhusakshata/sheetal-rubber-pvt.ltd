@@ -3,38 +3,69 @@ import { Link } from 'react-router-dom';
 import './SubFacility.css';
 const Facility6 = () => {
   return (
-    <div className="facility-container">
-      <div className="facility-header">
+    <div className="facility-container6">
+      <div className="facility-header6">
         <h1>Compression Transfer Molding</h1> {/* Main heading */}
       </div>
 
-      <div className="facility-paragraph">
+      <div className="facility-paragraph6">
         <p>
         Our production line utilizes Compression Transfer Molding, a highly efficient process for shaping rubber compounds into finished products. This method involves placing pre-measured rubber material into a heated mold, where it is subjected to pressure to achieve the desired shape and density. Compression transfer molding ensures uniform material distribution and optimal curing, resulting in high-quality rubber components with consistent properties. This process is ideal for producing complex shapes and larger quantities, enhancing production efficiency while maintaining rigorous quality standards in our finished products.
         </p>
-      </div>
-
-      <div className="facility-content">
-        {/* Left Side Image */}
-        <div className="facility-image">
+        <div className="facility-image6">
           <img src="facility1-image.jpg" alt="Facility 1" />
         </div>
-
-        {/* Right Side Content */}
-        <div className="facility-right">
-          <h2>Facility Overview</h2>
-          <div className="facility-info">
-            <div className="facility-info-left">
-              <div className="info-box">Info Box 1</div>
-              <div className="info-box">Info Box 2</div>
-            </div>
-            <div className="facility-info-right">
-              <div className="info-box">Info Box 3</div>
-              <div className="info-box">Info Box 4</div>
-            </div>
-          </div>
-        </div>
       </div>
+      <div className="facility-content6">
+      <h3>Compression Transfer Molding Overview:</h3>
+<p><b>Purpose: </b>
+Compression transfer molding is a vital process for shaping rubber compounds into high-quality, complex products using heat and pressure.
+</p>
+<p><b>Process:</b>
+Pre-measured rubber material is placed in a transfer pot, heated, and forced into mold cavities through runners, ensuring even material distribution and curing.
+</p>
+
+         <h2>Advantages:</h2>
+        <ul>
+        <li><b>Versatility: </b>Accommodates various rubber compounds for tailored properties.</li>
+          <li><b>Precision:  </b>Ensures uniform thickness and density for reliable performance.</li>
+          <li><b>Complex Shapes:</b>Capable of producing intricate designs.</li>
+         
+          <li><b>Reduced Waste: </b>Minimizes scrap, leading to cost savings.</li>
+        </ul>
+
+        <h2>Applications:</h2>
+        <ul>
+          <li><b>Automotive Components:  </b> Seals, gaskets, and vibration isolators.
+          </li>
+          <li><b>Industrial Products: </b> O-rings, bushings, and grommets.</li>
+          <li><b>Consumer Goods:  </b>Grips, handles, and flooring mats.</li>
+          <li><b>Electrical Insulation:  </b>Insulating components for safety and performance.</li>
+        </ul>
+        
+        <h2>Production Process:</h2>
+        <ul>
+          <li><b>Material Preparation: </b>  Pre-measured rubber compounds.
+          </li>
+          <li><b>Loading:</b>Rubber is placed into the transfer pot.</li>
+          <li><b>Molding: </b> The mold is closed, heat is applied, and pressure forces the rubber into cavities.</li>
+          <li><b>Cooling and Ejection:</b> Finished products are cooled and ejected for inspection.</li>
+          
+        </ul>
+            
+        <h2>Benefits:</h2>
+        <ul>
+          <li><b>Enhanced Quality: </b>Produces high-quality, reliable components.
+          </li>
+          <li><b>Efficiency</b>Increases throughput and reduces lead times.</li>
+          <li><b>Customization:  </b> Easily modified for different formulations and designs.</li>
+          
+        </ul>
+        <h2>Conclusion:
+        </h2>
+        <p><b>Compression Transfer Molding </b>is essential for producing efficient, precise, and high-quality rubber components, making it a key process in rubber manufacturing.</p>
+      </div>
+    
     </div>
   );
 };

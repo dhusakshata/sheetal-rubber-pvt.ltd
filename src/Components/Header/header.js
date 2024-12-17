@@ -188,9 +188,9 @@ const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen); // Toggle men
       <Link to="/facility6" onClick={() => setManufacturingDropdown(false)}>
         Compression Transfer Molding
       </Link>
-      <Link to="/facility7" onClick={() => setManufacturingDropdown(false)}>
+      {/* <Link to="/facility7" onClick={() => setManufacturingDropdown(false)}>
         Hydraulic Presses
-      </Link>
+      </Link> */}
       <Link to="/facility8" onClick={() => setManufacturingDropdown(false)}>
         Rubber Mixing Mills
       </Link>
