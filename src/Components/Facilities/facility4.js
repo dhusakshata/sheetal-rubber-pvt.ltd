@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';
+import Dispenser from "../../Images/25-litres-rubber-dispersion-kneader-machine-250x250.jpg";
+import Stock from "../../Images/stock blender.jpg";
 const Facility4 = () => {
   return (
     <div className="facility-container4">
@@ -25,7 +27,7 @@ const Facility4 = () => {
 
 <div className='dispenser'>
 <div className="facility-image4">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={Dispenser}alt="Facility 1" />
         </div>
   <h3>Dispersion Kneader:</h3>
   <p>  <b>purpose:</b>   The dispersion kneader is the first step in the rubber mixing process. It is responsible for pre-mixing the base rubber with various additives such as fillers (e.g., carbon black, silica), oils, accelerators, and other chemicals. This machine ensures that the materials are evenly distributed within the rubber matrix before moving to the next stage.</p>
@@ -95,7 +97,7 @@ It prevents overheating of the compound, which could cause scorching (premature 
 Stock blenders are especially useful in rubber processing plants where continuous mixing is required, ensuring uniform texture and quality in the finished product.
 </p>
 <div className="facility-image4">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={Stock} alt="Facility 1" />
         </div>
 </div>
 

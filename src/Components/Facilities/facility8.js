@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';
+import RubberMixing from "../../Images/uni-drive-rubber-mixing-mill-12x30-removebg-preview-1.webp";
 
 const Facility8 = () => {
   return (
@@ -14,7 +15,7 @@ const Facility8 = () => {
         Our production line is equipped with Rubber Mixing Mills, which are essential for the thorough blending of rubber compounds. These mills utilize two or more heavy rollers to process raw materials, ensuring a uniform mixture and optimal consistency. The efficient operation of rubber mixing mills allows for precise control over the mixing process, resulting in high-quality rubber products with desired properties. By facilitating the preparation of various rubber formulations, these mills enhance production efficiency while maintaining stringent quality standards in our finished products.
         </p>
         <div className="facility-image">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={RubberMixing} alt="Facility 1" />
         </div>
       </div>
 

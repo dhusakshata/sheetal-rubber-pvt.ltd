@@ -1,5 +1,6 @@
 import React from 'react';
 import "./subfacility3.css";
+import Autoclave from "../../Images/Autoclave-Vulcanizers-2-1.avif";
 
 const Facility3 = () => {
   return (
@@ -10,14 +11,14 @@ const Facility3 = () => {
 
       <div className="facility-paragraph3">
         <div className="facility-image3">
-          <img src="facility3-image.jpg" alt="Auto Clave Vulcanizer" />
+          <img src={Autoclave} alt="Auto Clave Vulcanizer" />
         </div>
         <p>
           Our production line features Auto Clave Vulcanizers (Quick Lock Type), designed for precise and efficient vulcanization of rubber products. These advanced vulcanizers utilize high pressure and heat to cure rubber compounds, ensuring optimal strength, elasticity, and durability in the finished products. The Quick Lock mechanism enables fast and secure loading and unloading of materials, significantly reducing cycle times while maintaining stringent quality control.
         </p>
       </div>
 
-      <div className="facility-content3">
+      <div className="facility-content3 contents">
         <h1>Auto Clave Vulcanizer (Quick Lock Type) Overview:</h1>
         <div className="info-boxe3 ">
 

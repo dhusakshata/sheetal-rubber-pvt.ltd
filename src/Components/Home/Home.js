@@ -157,8 +157,6 @@ useEffect(() => {
 }, []);
 
 
-
-
   return (
     <div className="home">
   <section className="video-container">
@@ -207,11 +205,7 @@ useEffect(() => {
      <div className="product-h1 animate-slide-top"> <h1>OUR PRODUCTS</h1></div>
 <div className="product-info animate-slide-top">
   <p >
-  At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including <b> Silicon Polyester Hoses,Turbocharger Hoses,Marin Wet Exhaust Hoses,EPDM Rubber Hoses,Organic Rubber Hoses,Assembly Hoses,Wire Reinforced Hoses,Fuel Hoses,Moulded Hoses</b> Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications. Our commitment to quality and precision engineering ensures reliable performance, even in the most demanding environments.
-
-
-Silicon – Polyester Hoses
-Silicon-Polyester Hoses are heat-resistant, flexible, and durable, ideal for automotive and industrial use.
+  At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including <b> Silicon Polyester Hoses,Turbocharger Hoses,Marin Wet Exhaust Hoses,EPDM Rubber Hoses,Organic Rubber Hoses,Assembly Hoses,Wire Reinforced Hoses,Fuel Hoses,Moulded Hoses .</b> Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications. Our commitment to quality and precision engineering ensures reliable performance, even in the most demanding environments.
 
   </p>
 </div>
@@ -280,8 +274,8 @@ Silicon-Polyester Hoses are heat-resistant, flexible, and durable, ideal for aut
     </div>
 
 {/* Logo container */}
-<div className="logo-container">
-      <div className="logo-title"><h1>ESTEEMED CLIENTS</h1></div>
+<div className="logo-container ">
+      <div className="logo-title animate-slide-top"><h1>ESTEEMED CLIENTS</h1></div>
       <Swiper
         modules={[Navigation,Autoplay]}
         slidesPerView={5}
@@ -308,7 +302,7 @@ Silicon-Polyester Hoses are heat-resistant, flexible, and durable, ideal for aut
 Application Area */}
 
 <div className="application-area">
-  <div className="application-head">
+  <div className="application-head animate-slide-top">
     <h1>OUR APPLICATIONS</h1>
   </div>
       

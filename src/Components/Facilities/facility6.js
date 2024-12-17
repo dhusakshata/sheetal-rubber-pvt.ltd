@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';
+import Compression from "../../Images/Compression Molding.jpg";
 const Facility6 = () => {
   return (
     <div className="facility-container6">
@@ -13,7 +14,7 @@ const Facility6 = () => {
         Our production line utilizes Compression Transfer Molding, a highly efficient process for shaping rubber compounds into finished products. This method involves placing pre-measured rubber material into a heated mold, where it is subjected to pressure to achieve the desired shape and density. Compression transfer molding ensures uniform material distribution and optimal curing, resulting in high-quality rubber components with consistent properties. This process is ideal for producing complex shapes and larger quantities, enhancing production efficiency while maintaining rigorous quality standards in our finished products.
         </p>
         <div className="facility-image6">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={Compression} alt="Facility 1" />
         </div>
       </div>
       <div className="facility-content6">

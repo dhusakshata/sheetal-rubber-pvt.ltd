@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';
+import Dualhead  from "../../Images/Extruder_Dual_Layer.png";
 const Facility2 = () => {
   return (
     <div className="facility-container2">
@@ -17,7 +18,7 @@ const Facility2 = () => {
       <div className="facility-content2">
         {/* Left Side Image */}
         <div className="facility-image2">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={Dualhead} alt="Facility 1" />
         </div>
 
         <div className='dual-head'>

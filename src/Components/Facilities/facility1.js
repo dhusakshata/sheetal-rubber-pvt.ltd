@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';// Importing the CSS for styling
+import HotFeed from "../../Images/hot-feed-rubber-extruder-machine.png";
+import ColdFeed from "../../Images/Cold Feed Extruder.jpg";
+import CoExtrusion from "../../Images/CO-EXTRUSION.webp";
 
 const Facility1 = () => {
   return (
@@ -18,7 +21,7 @@ const Facility1 = () => {
       <div className="facility-content">
         {/* Left Side Image */}
         <div className="facility-image">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={HotFeed} alt="Facility 1" />
         </div>
 
         {/* Right Side Content */}
@@ -143,7 +146,7 @@ const Facility1 = () => {
       
        {/* Left Side Image */}
        <div className="facility-image">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={ColdFeed} alt="Facility 1" />
         </div>
       
       </div>
@@ -153,7 +156,7 @@ const Facility1 = () => {
 <div className="facility-content">
         {/* Left Side Image */}
         <div className="facility-image">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={CoExtrusion} alt="Facility 1" style={{width:"500px",height:"500px"}} />
         </div>
 
         {/* Right Side Content */}

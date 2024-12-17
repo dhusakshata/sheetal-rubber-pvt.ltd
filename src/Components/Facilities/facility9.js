@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';
+import Knitting from "../../Images/Knitting-Machines.webp";
 
 const Facility9 = () => {
   return (
@@ -14,7 +15,7 @@ const Facility9 = () => {
         Our production line includes advanced Knitting Machines that play a crucial role in the production of knitted rubber components. These machines utilize precise knitting techniques to create strong and flexible rubber fabrics, ensuring consistent quality and durability. The ability to knit various patterns and thicknesses allows for customization based on specific product requirements. By streamlining the knitting process, our machines enhance production efficiency while maintaining high standards in the final rubber products, meeting the diverse needs of our customers.
         </p>
         <div className="facility-image9">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={Knitting} alt="Facility 1" />
         </div>
       </div>
 

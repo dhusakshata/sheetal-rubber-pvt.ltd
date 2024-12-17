@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';
+import Role from "../../Images/3 Role Calendaring Machine.webp";
+
 const Facility5 = () => {
   return (
     <div className="facility-container5">
@@ -13,7 +15,7 @@ const Facility5 = () => {
         Our production line is equipped with 3-Roll Calendaring Machines that play a vital role in shaping and smoothing rubber sheets. These advanced machines utilize three precisely aligned rollers to compress and control the thickness of rubber compounds, ensuring uniformity and consistency across each sheet. This calendaring process is essential for producing high-quality rubber sheets used in various applications, including conveyor belts, seals, and gaskets. By maintaining stringent quality control, our calendaring machines enhance the performance and durability of our finished products while maximizing production efficiency.
         </p>
         <div className="facility-image5">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={Role}alt="Facility 1" />
         </div>
       </div>
 

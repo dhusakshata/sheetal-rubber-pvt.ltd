@@ -1,6 +1,7 @@
 import React from 'react';
 import './SubFacility.css'; // Importing the CSS for styling
 import { Link } from 'react-router-dom';
+import Braiding from "../../Images/braiding-machine__1_-removebg-preview.png";
 
 const Facility10 = () => {
   return (
@@ -14,7 +15,7 @@ const Facility10 = () => {
         Our production line includes advanced Braiding Machines that are vital for producing reinforced rubber components. These machines braid multiple strands of rubber or other materials to create durable, high-strength hoses, cables, and other products. Braiding enhances the structural integrity and flexibility of the rubber, ensuring superior performance under pressure. This technology allows for the production of customized braided designs, providing the perfect balance between flexibility and strength in products like hydraulic hoses, automotive cables, and industrial tubing, all while maintaining high production efficiency and consistent quality.
         </p>
         <div className="facility-image10">
-          <img src="facility1-image.jpg" alt="Facility 1" />
+          <img src={Braiding}alt="Facility 1" />
         </div>
       </div>
 
