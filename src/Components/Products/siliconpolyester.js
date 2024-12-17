@@ -4,6 +4,8 @@ import Silicon from "../../Images/Silicon.png";
 import { motion } from 'framer-motion';
 
 function siliconpolyester() {
+
+  
   return (
 
 <div className="product-page">

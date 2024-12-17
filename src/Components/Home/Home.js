@@ -27,7 +27,7 @@ import logo6 from "../../Images/client6.png";
 import logo7 from "../../Images/client7.png";
 // Import the video file
 import rubberWorld from "../../video/about1.mp4";
-import ProductionNarrat from "../../video/production5.mp4";
+import ProductionNarrat from "../../video/production6.mp4";
  
 
 import Silicon from "../../Images/Silicon.png"
@@ -104,19 +104,19 @@ useEffect(() => {
     threshold: 0.5, // Trigger when 50% of the element is in view
   };
 
-  const handleIntersection = (entries, observer) => {
+  const handleIntersection = (entries) => {
     entries.forEach((entry) => {
       const textElement = entry.target.querySelector('.about-us-info');
       const videoElement = entry.target.querySelector('.about-us-video');
       const headingElement = entry.target.querySelector('.about-us-title h1');
 
-      // Add 'in-view' class to trigger animation
+     
       if (entry.isIntersecting) {
         textElement.classList.add('in-view');
         videoElement.classList.add('in-view');
         headingElement.classList.add('in-view');
       } else {
-        // Optional: reset the animations when the element is out of view
+       
         textElement.classList.remove('in-view');
         videoElement.classList.remove('in-view');
         headingElement.classList.remove('in-view');
@@ -136,6 +136,28 @@ useEffect(() => {
     }
   };
 }, []);
+//for product section annimation
+useEffect(() => {
+  const handleScroll = () => {
+    const elements = document.querySelectorAll(".animate-slide-top");
+    elements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+      if (isVisible) {
+        element.classList.add("visible"); // Trigger animation when visible
+      } else {
+        element.classList.remove("visible"); // Remove animation when out of view
+      }
+    });
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // Trigger animation on component load
+  return () => window.removeEventListener("scroll", handleScroll); // Clean up event listener
+}, []);
+
+
+
 
   return (
     <div className="home">
@@ -182,7 +204,19 @@ useEffect(() => {
 
 {/* Product Section */}
  <div className="our-products">
-      <h1>OUR PRODUCTS</h1>
+     <div className="product-h1 animate-slide-top"> <h1>OUR PRODUCTS</h1></div>
+<div className="product-info animate-slide-top">
+  <p >
+  At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including <b> Silicon Polyester Hoses,Turbocharger Hoses,Marin Wet Exhaust Hoses,EPDM Rubber Hoses,Organic Rubber Hoses,Assembly Hoses,Wire Reinforced Hoses,Fuel Hoses,Moulded Hoses</b> Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications. Our commitment to quality and precision engineering ensures reliable performance, even in the most demanding environments.
+
+
+Silicon – Polyester Hoses
+Silicon-Polyester Hoses are heat-resistant, flexible, and durable, ideal for automotive and industrial use.
+
+  </p>
+</div>
+
+      
       <Slider {...settings}>
         <div className="product-cards">
           <Link to="/siliconpolyester">

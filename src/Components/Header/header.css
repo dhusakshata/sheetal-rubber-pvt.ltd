@@ -136,22 +136,6 @@
   opacity: 0.8;
   color: #ff5722;  /* Hover color */
 }
-/* Hamburger Menu Styles */
-.hamburger-menu {
-  display: none; /* Hidden by default */
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.hamburger-menu button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #333;
-}
 
 /* Navigation Styles */
 .Navbar {
@@ -165,8 +149,7 @@
   height: 60px;
   position: sticky;
   z-index: 10000;  
-  display: flex;
-  flex-direction: row;
+
 
 }
 
@@ -185,7 +168,6 @@
   padding: 0.5rem 1rem; 
   transition: color 0.3s ease;
   z-index: 1; /*  text stays on top of the box */
-  font-weight: bold;
 }
 
 .nav a::before {
@@ -230,7 +212,7 @@
   position: absolute;
   top: 100%; 
   left: 0;
-  background-color: gray;
+  
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   z-index: 1050;
@@ -253,6 +235,37 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+/* Sub-Dropdown Menu Styling */
+.sub-dropdown-menu {
+  position: absolute;
+  top: 0; /* Align with the top of the parent dropdown */
+  left: 100%; /* Move it to the right of the main dropdown */
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1100; /* Ensure it appears above other elements */
+  display: none; /* Initially hidden */
+  min-width: 200px; /* Adjust width to fit content */
+}
+
+.sub-dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sub-dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show sub-dropdown on hover */
+.sub-dropdown:hover .sub-dropdown-menu {
+  display: block;
+}
+
 
 @media screen and (max-width: 786px) {
   .header {

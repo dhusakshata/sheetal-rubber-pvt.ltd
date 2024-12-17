@@ -67,19 +67,6 @@
     gap: 15px; /* Add slight gap for clarity */
   }
 }
-/* Define the animation */
-/* @keyframes slideInFade {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px); 
-    
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
-
 
 .about-us-info,
 .about-us-video {
@@ -91,24 +78,6 @@
   
 }
 
-/*Fade effect for info*/
-/* .about-us-info {
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: fadeLeft 1s ease-out forwards;
-} */
-
-/* Keyframes for fade-left effect */
-/* @keyframes fadeLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-} */
 
 /* Add an initial hidden state to the text */
 .about-us-info {
@@ -218,6 +187,24 @@
 }
 
 /* Products Section */
+/*Annimation Effect*/
+/* Top-to-bottom animation */
+.animate-slide-top {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-50px); /* Start position above */
+  transition: opacity 0.3s ease, transform 0.6s ease-in-out; /* Smooth transition */
+}
+
+.animate-slide-top.visible {
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* End position at normal flow */
+}
+.animate-slide-top:nth-of-type(2) {
+  transition-delay: 0.5s; /* 0.5s delay for the second element */
+}
+
+
+
 .our-products {
   background-color: #ff782b;
   padding: 40px;
@@ -229,7 +216,8 @@
 .our-products h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  color: white;
+  
 }
 
 .our-products h3 {
@@ -238,6 +226,13 @@
   font-size: 18px;
   text-decoration: none;
   color: black;
+}
+.product-info p{
+  color:white;
+  font:18px;
+  text-align:center;
+  padding:20px;
+  line-height:1.6;
 }
 
 .products-gallerys {
@@ -256,7 +251,7 @@
   gap: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: calc(33.33% - 20px); /* Default for larger screens (3 cards per row) */
+  width: calc(33.33% - 20px); 
 }
 
 .product-cards:hover {

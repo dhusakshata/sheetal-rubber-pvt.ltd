@@ -6,59 +6,71 @@ import Building from "../../Images/building2.jpeg";
 import "./about.css"; // Import styles
 
 
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS CSS
 
 function About() {
+// Function to handle scroll-triggered animations
+// const handleScroll = () => {
+//   const elements = document.querySelectorAll(".animate-on-scroll");
+//   elements.forEach((element) => {
+//     const rect = element.getBoundingClientRect();
+//     const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+//     if (isVisible) {
+//       element.classList.add("visible");
+//     } else {
+//       element.classList.remove("visible");
+//     }
+//   });
+// };
 
-// Declare state variables for visibility
-const [isMissionVisible, setIsMissionVisible] = useState(false);
-const [isVisionVisible, setIsVisionVisible] = useState(false);
+// useEffect(() => {
+//   // Add scroll event listener
+//   window.addEventListener("scroll", handleScroll);
+//   handleScroll(); // Trigger animation on component load
+//   return () => window.removeEventListener("scroll", handleScroll); // Clean up event listener
+// }, []);
 
-  const missionRef = useRef(null); // Ref for the mission section
-  const visionRef = useRef(null); // Ref for the vision section
+// Scroll-triggered animations for the about section
+const handleScrollAbout = () => {
+  const elements = document.querySelectorAll(".animate-on-scroll");
+  elements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    if (isVisible) {
+      element.classList.add("visible");
+    } else {
+      element.classList.remove("visible");
+    }
+  });
+};
 
-  useEffect(() => {
-    // Initialize AOS
-    AOS.init({
-      duration: 1200, // Animation duration
-      offset: 200, // Offset to trigger animation earlier or later
-      once: true, // Animation runs only once
-    });
+// Scroll-triggered animations for the Mission/Vision section
+const handleScrollMissionVision = () => {
+  const elements = document.querySelectorAll(".animate-bounce");
+  elements.forEach((element, index) => {
+    const rect = element.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    if (isVisible) {
+      setTimeout(() => {
+        element.classList.add("visible");
+      }, index * 600); // Delay based on index
+    } else {
+      element.classList.remove("visible");
+    }
+  });
+};
 
-    // Intersection Observer
-    const observerCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (entry.target === missionRef.current) {
-            console.log("Mission section is in view!");
-            // Trigger your function for mission
-            missionRef.current.classList.add("in-view"); 
-          } else if (entry.target === visionRef.current) {
-            console.log("Vision section is in view!");
-            // Trigger your function for vision
-            visionRef.current.classList.add("in-view");
-          }
-        }
-      });
-    };
+useEffect(() => {
+  // Add scroll event listeners
+  const handleScroll = () => {
+    handleScrollAbout();
+    handleScrollMissionVision();
+  };
 
-    const observerOptions = {
-      root: null, // Use the viewport
-      threshold: 0.5, // Trigger when 50% of the element is in view
-    };
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // Trigger animations on component load
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-    if (missionRef.current) observer.observe(missionRef.current);
-    if (visionRef.current) observer.observe(visionRef.current);
-
-    return () => {
-      if (missionRef.current) observer.unobserve(missionRef.current);
-      if (visionRef.current) observer.unobserve(visionRef.current);
-    };
-  }, []);
-
-
+  return () => window.removeEventListener("scroll", handleScroll); // Clean up event listeners
+}, []);
 
   return (
     <div className="about-section">
@@ -71,14 +83,14 @@ const [isVisionVisible, setIsVisionVisible] = useState(false);
       <div className="about-content">
 
          {/* Image with Animation */}
-         <div className="about-image">
+         <div className="about-image animate-on-scroll slide-in-left ">
           <img src={Building} alt="About Sheetal Rubber" className="building-image"
            
           />
         </div>
         {/* Text Content */}
-        <div className="about-info" >
-          <h6>WHEN QUALITY & RELIABILITY ARE VITAL , SHEETAL RUBBER PRODUCTS (P) LTD. ARE YOUR BEST CHOICE.</h6>
+        <div className="about-info animate-on-scroll slide-in-right " >
+          <h6>WHEN QUALITY & RELIABILITY IS  VITAL , SHEETAL RUBBER PRODUCTS (P) LTD. ARE YOUR BEST CHOICE.</h6>
         <p>
         For over two decades, Sheetal Rubber Products has been a trusted leader in the manufacturing of high-quality rubber products with 50,000 sq. ft. of manufacturing facility. We specialize in manufacturing a full range of low-pressure hoses, including platinum silicone-lined, FMK-lined fuel cell hoses, flame-retardant hoses, and various moulded components. Our commitment to product expertise, engineering excellence, rigorous testing, and strict quality controls has established us as a preferred partner for major manufacturers in India and a favored exporter internationally. 
       </p>
@@ -98,11 +110,11 @@ const [isVisionVisible, setIsVisionVisible] = useState(false);
 
       </div>
 
-<div className="misson-vision">
+<div className="misson-vision ">
 
 
 
-<div ref={missionRef} className={`Mission ${isMissionVisible ? "animate" : ""}`}>
+<div className="Mission   animate-bounce" >
 <h2>OUR MISSION</h2>
 <hr></hr>
 <p>
@@ -110,7 +122,7 @@ To become the leading manufacturer of elastomeric products supplying to world’
 </p>
 </div>
 
-<div ref={visionRef} className={`vision ${isVisionVisible ? "animate" : ""}`}>
+<div  className="vision animate-bounce" >
 
 <h2>OUR VISION</h2>
 <hr></hr>
@@ -121,7 +133,8 @@ To become the leading manufacturer of elastomeric products supplying to world’
     •	To respect team members as instrumental part of organization’s growth, ensuring their active involvement and continuous progress. 
     </p>
     <p>
-    •	To respect team members as instrumental part of organization’s growth, ensuring their active involvement and continuous progress. 
+    •	Firmly practice environmental friendly processes reflecting our strong belief to optimally contribute to society, promoting development of our country.
+he vision aahe 3 points
     </p>
 </div>
     </div>

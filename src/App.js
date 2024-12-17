@@ -42,6 +42,19 @@ import ArrowToggle from "./Components/Arrowtoggle/arrowtoggle.js";
 // import Contact from "./Components/Contact-us/contact.js";
 
 
+//Facility pages
+import Facility1 from "./Components/Facilities/facility1.js";
+import Facility2 from "./Components/Facilities/facility2.js";
+import Facility3 from "./Components/Facilities/facility3.js";
+import Facility4 from "./Components/Facilities/facility4.js";
+import Facility5 from "./Components/Facilities/facility5.js";
+import Facility6 from "./Components/Facilities/facility6.js";
+import Facility7 from "./Components/Facilities/facility7.js";
+import Facility8 from "./Components/Facilities/facility8.js";
+import Facility9 from "./Components/Facilities/facility9.js";
+import Facility10 from "./Components/Facilities/facility10.js";
+import Facility11 from "./Components/Facilities/facility11.js";
+
 const App = () => {
   return (
     <Router>
@@ -71,7 +84,18 @@ const App = () => {
         <Route path="/moulded" element={<Moulded />} />
      
         
-
+ {/* Facility Pages */}
+ <Route path="/facility1" element={<Facility1 />} />
+        <Route path="/facility2" element={<Facility2 />} />
+        <Route path="/facility3" element={<Facility3 />} />
+        <Route path="/facility4" element={<Facility4 />} />
+        <Route path="/facility5" element={<Facility5 />} />
+        <Route path="/facility6" element={<Facility6 />} />
+        <Route path="/facility7" element={<Facility7 />} />
+        <Route path="/facility8" element={<Facility8 />} />
+        <Route path="/facility9" element={<Facility9 />} />
+        <Route path="/facility10" element={<Facility10 />} />
+        <Route path="/facility11" element={<Facility11 />} />
         
       </Routes>
       <Footer/>

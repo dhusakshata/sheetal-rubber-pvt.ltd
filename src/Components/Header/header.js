@@ -32,6 +32,14 @@ function Header() {
   const [searchInput, setSearchInput] = useState("");
   const navigate = useNavigate();
   const [activeDropdown, setActiveDropdown] = useState(null);
+//dropdown for manufacturing
+const [manufacturingDropdown, setManufacturingDropdown] = useState(false);
+
+const handleHover = (menu) => setActiveDropdown(menu);
+const handleLeave = () => setActiveDropdown(null); // Hide dropdown
+  const handleManufacturingHover = () => setManufacturingDropdown(true); // Show sub-dropdown
+  const handleManufacturingLeave = () => setManufacturingDropdown(false);
+
 
   const handleSearch = () => {
     const query = searchInput.toLowerCase();
@@ -47,7 +55,7 @@ function Header() {
 
   const handleLinkClick = () => setActiveDropdown(null);
 
-  const handleHover = (menu) => setActiveDropdown(menu);
+ 
 // for humbarg
 const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // Track mobile menu state
 
@@ -148,8 +156,56 @@ const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen); // Toggle men
   <Link >FACILITIES</Link>
   </span>
   {activeDropdown === "facilities" && (
+
  <div className="dropdown-menu">
-  <Link to="/manufacturing" onClick={handleLinkClick}>MANUFACTURING FACILITIES</Link>
+
+  <div
+                    className="sub-dropdown"
+                    onMouseEnter={handleManufacturingHover}
+                    onMouseLeave={handleManufacturingLeave}
+                  >
+                    <span className="dropdown-trigger">
+                      <Link to="/manufacturing">MANUFACTURING FACILITIES</Link>
+                    </span>
+                    {manufacturingDropdown && (
+                     
+                     <div className="sub-dropdown-menu">
+      <Link to="/facility1" onClick={() => setManufacturingDropdown(false)}>
+        Hot Feed, Cold Feed & Co-Extrusion Extruders
+      </Link>
+      <Link to="/facility2" onClick={() => setManufacturingDropdown(false)}>
+        Dual Head Extruders for Multi-Layer Extrusion
+      </Link>
+      <Link to="/facility3" onClick={() => setManufacturingDropdown(false)}>
+        Auto Clave Vulcanizar (Quick Lock Type)
+      </Link>
+      <Link to="/facility4" onClick={() => setManufacturingDropdown(false)}>
+        Dispersion Kneader to Internal Mixer & Stock Blenders
+      </Link>
+      <Link to="/facility5" onClick={() => setManufacturingDropdown(false)}>
+        3 Role Calendaring Machine
+      </Link>
+      <Link to="/facility6" onClick={() => setManufacturingDropdown(false)}>
+        Compression Transfer Molding
+      </Link>
+      <Link to="/facility7" onClick={() => setManufacturingDropdown(false)}>
+        Hydraulic Presses
+      </Link>
+      <Link to="/facility8" onClick={() => setManufacturingDropdown(false)}>
+        Rubber Mixing Mills
+      </Link>
+      <Link to="/facility9" onClick={() => setManufacturingDropdown(false)}>
+        Knitting Machines
+      </Link>
+      <Link to="/facility10" onClick={() => setManufacturingDropdown(false)}>
+        Braiding Machines
+      </Link>
+      <Link to="/facility11" onClick={() => setManufacturingDropdown(false)}>
+        Other Conventional Machines
+      </Link>
+    </div>
+                    )}
+                  </div>
   <Link to="/inhouse" onClick={handleLinkClick}>INHOUSE TESTING FACILITIES</Link>
   </div>
   )}
