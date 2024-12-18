@@ -43,7 +43,7 @@ const ContactPage = () => {
         <div className="info-map-column">
           {/* Info Column */}
           <div className="info-column">
-            <p><strong>Sheetal Rubber Products (p) Ltd. </strong></p>
+            <p><strong>Sheetal Rubber Products (P) Ltd. </strong></p>
             <p><b>Address : </b>  J-395, MIDC, Bhosari, Pune - 411026, INDIA</p>
             <p><strong>Phone : </strong> +91 - (20) 27130244</p>
             <p><strong>Email : </strong>     info@sheetalrubber.com</p>
