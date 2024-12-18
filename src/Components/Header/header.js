@@ -94,7 +94,8 @@ const handleToggleMenu = () => {
           <div className="contact-info">
             <div className="contact-item">
               <FaPhoneAlt />
-              <span className="landline">+91 – (20) 2713 0244</span>
+              <span className="landline">+91 – (20) 2713 0244 ,+91 – (20) 27130794</span>
+             
             </div>
             <div className="contact-item">
               <FaEnvelope />

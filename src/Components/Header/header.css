@@ -108,18 +108,36 @@
   gap: 10px;
  
 }
-/* .landline{
+ .landline{
+display: flex;
+flex-direction: column;
 
-} */
+} 
 .contact-item svg {
   color: #080201;
  gap:10px;
 }
-.email-button {
+/* .email-button {
 
   text-decoration: none; 
   color: black;
   margin-left: 5px; 
+} */
+.email-button {
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+  padding: 2px;
+  border: 2px solid transparent; /* Transparent border to keep box size consistent */
+  border-radius: 4px; /* Optional, to make the edges rounded */
+  transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.email-button:hover {
+  color: white; /* Change text color to white */
+  background-color: #0f5286; 
+  border-color: #007bff; 
+  border-radius: 10px;
 }
 
 

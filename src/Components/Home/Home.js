@@ -43,7 +43,7 @@ import Moulded from "../../Images/Moulded.png";
 
 // Application Area Images
 import Img1 from "../../Images/Image1.png";
-import Img2 from "../../Images/marine.jpg";
+import Img2 from "../../Images/marine.jpeg";
 import Img3 from "../../Images/Image3.jpg";
 import Img4 from "../../Images/Image4.png";
 import Img5 from "../../Images/Image5.jpg";
@@ -339,7 +339,7 @@ Application Area */}
 </div>
 
 </div> */}
-
+{/* 
 <div className="slideshow-container">
 <div className="application-head animate-slide-top">
     <h1>OUR APPLICATIONS</h1>
@@ -357,7 +357,27 @@ Application Area */}
           ></span>
         ))}
       </div>
+    </div> */}
+<div className="slideshow-container">
+  <div className="application-head animate-slide-top">
+    <h1>OUR APPLICATIONS</h1>
+  </div>
+  <div className="slideshow-wrapper">
+    <img
+      src={images[currentIndex]}
+      alt={`Slide ${currentIndex + 1}`}
+      className="slideshow-image"
+    />
+    <div className="slideshow-dots">
+      {images.map((_, index) => (
+        <span
+          key={index}
+          className={`dot ${index === currentIndex ? "active" : ""}`}
+        ></span>
+      ))}
     </div>
+  </div>
+</div>
 
     </div>
   );

@@ -57,14 +57,19 @@ right: 20px;
 
 .email-link {
   color: white; /* Make the email link blue */
-  
+  padding: 5px;
 }
 
 .email-link:hover {
   text-decoration: underline;
-  color: #f18043; 
+   color: white; 
+    background-color:  #f18043; 
+    border-color:  #f18043; 
+    border-radius: 10px;
+  }
+  
  
-}
+
 /* Social Media Links */
 .social-media-links {
   display: flex;

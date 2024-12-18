@@ -528,12 +528,13 @@
   }
 }
 
-/*for Application area*/
+/*for Application*/
+
 /* Slideshow Container */
 .slideshow-container {
   position: relative;
   width: 100%;
-  max-width: 850px;
+  max-width: 750px;
   margin: 30px auto;
   overflow: hidden;
   border-radius: 15px;
@@ -553,7 +554,6 @@
   font-size: 2.5rem;
   color: black;
   text-transform: uppercase;
-
   display: inline-block;
   padding-bottom: 10px;
   font-weight: bold;
@@ -670,8 +670,6 @@
     transform: scale(1) translateX(0);
   }
 }
-
-
 
 /* Responsive Design for Products */
 @media screen and (max-width: 1200px) {
