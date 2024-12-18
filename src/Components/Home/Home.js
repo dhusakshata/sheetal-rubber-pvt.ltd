@@ -43,7 +43,7 @@ import Moulded from "../../Images/Moulded.png";
 
 // Application Area Images
 import Img1 from "../../Images/Image1.png";
-import Img2 from "../../Images/image2.jpg";
+import Img2 from "../../Images/marine.jpg";
 import Img3 from "../../Images/Image3.jpg";
 import Img4 from "../../Images/Image4.png";
 import Img5 from "../../Images/Image5.jpg";
@@ -51,19 +51,33 @@ import Img6 from "../../Images/Image6.jpg";
 
 function Home() {
   
- 
+ // Array of imported images
+ const images = [Img1, Img2, Img3, Img4, Img5, Img6];
 
-  const buttons = [
-    { label: "Vehicle", img: Img1 },
-     { label: "Marine", img: Img2 },
-     { label: "Automobile", img: Img3 },
-     { label: "Construction", img: Img4 },
-     { label: "Industrial", img: Img5 },
-   { label: "Agriculture", img: Img6 },
-   ];
+ const [currentIndex, setCurrentIndex] = useState(0);
 
+ // Automatically switch images every 3 seconds
+ useEffect(() => {
+   const interval = setInterval(() => {
+     setCurrentIndex((prevIndex) =>
+       prevIndex === images.length - 1 ? 0 : prevIndex + 1
+     );
+   }, 3000); // Change slide every 3 seconds
+
+   return () => clearInterval(interval); // Cleanup on component unmount
+ }, [images.length]);
+
+  // const buttons = [
+  //   { label: "Vehicle", img: Img1 },
+  //    { label: "Marine", img: Img2 },
+  //    { label: "Automobile", img: Img3 },
+  //    { label: "Construction", img: Img4 },
+  //    { label: "Industrial", img: Img5 },
+  //  { label: "Agriculture", img: Img6 },
+  //  ];
+ //  const [selectedImage, setSelectedImage] = useState(buttons[0].img);
   // // State to track the selected logo images 
-   const [selectedImage, setSelectedImage] = useState(buttons[0].img);
+ 
    const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 
    // for sliding product images
@@ -300,7 +314,7 @@ useEffect(() => {
  
 {/* 
 Application Area */}
-
+{/* 
 <div className="application-area">
   <div className="application-head animate-slide-top">
     <h1>OUR APPLICATIONS</h1>
@@ -324,9 +338,26 @@ Application Area */}
   <img src={selectedImage} alt="Selected Application" />
 </div>
 
-</div>
+</div> */}
 
-
+<div className="slideshow-container">
+<div className="application-head animate-slide-top">
+    <h1>OUR APPLICATIONS</h1>
+  </div>
+      <img
+        src={images[currentIndex]}
+        alt={`Slide ${currentIndex + 1}`}
+        className="slideshow-image"
+      />
+      <div className="slideshow-dots">
+        {images.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${index === currentIndex ? "active" : ""}`}
+          ></span>
+        ))}
+      </div>
+    </div>
 
     </div>
   );

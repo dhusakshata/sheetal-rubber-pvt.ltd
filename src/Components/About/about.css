@@ -81,9 +81,19 @@
 }
 
 
-.about-head {
-  
-  text-align: center; 
+.about-heads {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+  width: 60%;
+  background-color:#0f5286; /* Background color for the box */
+  color: white; /* Text color */
+  padding: 50px;
+  height: auto; /* Adjust if needed */
+  transform: translateY(-100%); /* Start above the viewport */
+  animation: slideInBox 1.5s ease-out forwards; /* Apply animation */
+  /* text-align: center; 
   width: 100%;
   height: 100px; 
   display: flex; 
@@ -95,36 +105,49 @@
   opacity: 0.8;
   text-align: center;
   position: relative; 
-  z-index: 1; 
+  z-index: 1;
+  background-color:#0f5286;
+  margin-bottom: 30px;
+  border-radius: 10px;
+   padding: 30px;
+  margin-bottom: 30px;   */
 
 }
-
-.about-head h1{
-  padding: 10px;
-  font-weight: bolder;
-  font-size: 2.5rem;
-  color:black; 
-  z-index: 10; 
-  position: relative; 
-
-  /* Animation properties */
-  opacity: 0; 
-  transform: translateY(-300px); 
-  animation: slideInFromTopH1 0.8s ease-out forwards; 
-}
-
-
-@keyframes slideInFromTopH1 {
+/* Animation Keyframes */
+@keyframes slideInBox {
   0% {
-    transform: translateY(-300px);
-    opacity: 0; 
+    transform: translateY(-100%); /* Start above */
+    opacity: 0; /* Invisible */
+  }
+  50% {
+    opacity: 1; /* Fade in during the animation */
   }
   100% {
-    transform: translateY(0); 
-    opacity: 1; 
+    transform: translateY(0); /* End at the original position */
   }
 }
+.about-heads h1{
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+  animation: slideInFromTop 1.5s ease-out forwards; /* Apply the animation */ 
+}
 
+
+/* Animation Keyframes */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%); /* Start above the visible area */
+    opacity: 0; /* Make it invisible */
+  }
+  50% {
+    opacity: 1; /* Fade in */
+  }
+  100% {
+    transform: translateY(0); /* End in its original position */
+  }
+}
 
 
 /* Main content container */

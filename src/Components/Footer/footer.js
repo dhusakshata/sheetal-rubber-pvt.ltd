@@ -14,11 +14,11 @@ import Logos from "../../Images/logo1.png";
 function Footer() {
   return (
     <div className="footer-section">
-      <div className="footer-logo">
+      {/* <div className="footer-logo">
           
           <img src={Logos} alt="Sheetal Rubber Industries" />
           </div>
-   
+    */}
         <div className="address-section">
         <div className="address-info">
           <h3>Sheetal Rubber Products (P) Ltd.</h3>

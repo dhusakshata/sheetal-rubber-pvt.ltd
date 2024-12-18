@@ -19,7 +19,7 @@ function product() {
   return (
     <div className="product-section">
       
-      <div className="our-product">
+      <div className="our-product  product-heading">
        <h1> OUR PRODUCTS</h1>
             </div>
 

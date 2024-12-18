@@ -6,8 +6,8 @@ import { color } from "framer-motion";
 const ContactPage = () => {
   return (
     <div className="contact-page">
-      <div><h1>CONTACT US</h1></div>
-      <hr className="contact-hr"></hr>
+      <div className="contact-head"><h1>CONTACT US</h1></div>
+      
       
       {/* Row for Form and Info + Map */}
       <div className="row-container">

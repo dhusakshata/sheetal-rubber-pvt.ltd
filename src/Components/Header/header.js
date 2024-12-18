@@ -123,7 +123,7 @@ const handleToggleMenu = () => {
 
         
         <div className="Navbar">
-        <nav className={`nav ${mobileMenuOpen ? "active" : ""}`}>
+        <nav className= "nav" >
           <Link to="/" onClick={handleLinkClick}>
             HOME
           </Link>

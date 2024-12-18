@@ -75,7 +75,7 @@ useEffect(() => {
   return (
     <div className="about-section">
   
-<div className="about-head">
+<div className="about-heads">
   <h1> ABOUT US</h1>
 </div>
       {/* Content Section */}

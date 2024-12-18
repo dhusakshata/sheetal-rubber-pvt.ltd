@@ -527,6 +527,152 @@
     opacity: 1;
   }
 }
+
+/*for Application area*/
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border: 2px solid #f28c38;
+  padding: 15px 0;
+}
+
+/* Slideshow Header Styling */
+.application-head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.application-head h1 {
+  font-size: 2.5rem;
+  color: black;
+  text-transform: uppercase;
+
+  display: inline-block;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Image Styling */
+.slideshow-image {
+  width: 100%;
+  max-width: 700px; /* Adjusted smaller size */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+  /* Animation Defaults */
+  animation: zoom-slide 1.5s ease-in-out both;
+}
+
+/* New Animation: Zoom & Slide */
+@keyframes zoom-slide {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateX(-50px); /* Start zoomed out and slide from left */
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.9) translateX(0); /* Partial zoom-in */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0); /* Final position */
+  }
+}
+
+/* Dots for Navigation */
+.slideshow-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background-color: #ccc;
+  border: 2px solid #f28c38;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dot:hover {
+  transform: scale(1.3); /* Enlarges on hover */
+}
+
+.dot.active {
+  background-color: #f28c38;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations for Header */
+@keyframes slideTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-top {
+  animation: slideTop 0.8s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slideshow-container {
+    max-width: 100%;
+  }
+
+  .application-head h1 {
+    font-size: 2rem;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .slideshow-image {
+    max-width: 100%;
+    animation: zoom-slide-mobile 1.5s ease-in-out both;
+  }
+}
+
+/* Slightly different animation for smaller screens */
+@keyframes zoom-slide-mobile {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateX(-30px); /* Start zoomed out with less slide */
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.85) translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+
+
+
 /* Responsive Design for Products */
 @media screen and (max-width: 1200px) {
   /* For larger tablets and desktops */
