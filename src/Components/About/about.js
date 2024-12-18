@@ -52,7 +52,7 @@ const handleScrollMissionVision = () => {
     if (isVisible) {
       setTimeout(() => {
         element.classList.add("visible");
-      }, index * 600); // Delay based on index
+      }, index * 700); // Delay based on index
     } else {
       element.classList.remove("visible");
     }
@@ -118,7 +118,7 @@ useEffect(() => {
 <h2>OUR MISSION</h2>
 <hr></hr>
 <p>
-To become the leading manufacturer of elastomeric products supplying to world’s prominent industries, aspiring to be the “preferred OEM” to all Tire I and II suppliers, committing to superior service and high quality.
+To become the leading manufacturer of elastomeric products supplying to world’s prominent industries, aspiring to be the “preferred OEM” to all Tire I and II suppliers, committing to superior service and high quality
 </p>
 </div>
 
