@@ -15,7 +15,7 @@ const fueltube = () => {
               transition={{ duration: 1 }}      // Duration of animation
             >
    <h1
-        >FUEL TUBES / HOSES</h1>
+        >FUEL HOSES</h1>
             </motion.div>
             {/* <hr className="product-hr"/> */}
 

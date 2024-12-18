@@ -32,13 +32,22 @@ function Header() {
   const [searchInput, setSearchInput] = useState("");
   const navigate = useNavigate();
   const [activeDropdown, setActiveDropdown] = useState(null);
+  
 //dropdown for manufacturing
 const [manufacturingDropdown, setManufacturingDropdown] = useState(false);
+//dropdown for Inhouse
+const [inhouseDropdown, setInhouseDropdown] = useState(false);
 
 const handleHover = (menu) => setActiveDropdown(menu);
 const handleLeave = () => setActiveDropdown(null); // Hide dropdown
+
   const handleManufacturingHover = () => setManufacturingDropdown(true); // Show sub-dropdown
   const handleManufacturingLeave = () => setManufacturingDropdown(false);
+
+  const handleInhouseHover = () => setInhouseDropdown(true); // Show sub-dropdown
+  const handleInhouseLeave = () => setInhouseDropdown(false); // Hide sub-dropdown
+
+
 
 
   const handleSearch = () => {
@@ -59,8 +68,9 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
 // for humbarg
 const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // Track mobile menu state
 
-const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen); // Toggle menu state
-
+const handleToggleMenu = () => {
+  setMobileMenuOpen(!mobileMenuOpen);
+};
 
   return (
   
@@ -104,12 +114,16 @@ const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen); // Toggle men
             </div>
           </div>
         </div>
+
+        {/* <button className="hamburger-menu" onClick={handleToggleMenu}>
+          {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+        </button> */}
        </div>
 
 
         
         <div className="Navbar">
-        <nav className="nav">
+        <nav className={`nav ${mobileMenuOpen ? "active" : ""}`}>
           <Link to="/" onClick={handleLinkClick}>
             HOME
           </Link>
@@ -141,7 +155,7 @@ const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen); // Toggle men
                 <Link to="/organic" onClick={handleLinkClick}>ORGANIC RUBBER HOSES</Link>
  <Link to="/Assembly" onClick={handleLinkClick}>ASSEMBLY HOSES</Link>
   <Link to="/wired" onClick={handleLinkClick}>WIRE REINFORCED HOSES</Link>
-  <Link to="/fueltube" onClick={handleLinkClick}>FUEL TUBES / HOSES</Link>
+  <Link to="/fueltube" onClick={handleLinkClick}>FUEL HOSES</Link>
  <Link to="/moulded" onClick={handleLinkClick}>MOULDED HOSES</Link>
               </div>
             )}
@@ -205,10 +219,47 @@ const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen); // Toggle men
       </Link>
     </div>
                     )}
-                  </div>
-  <Link to="/inhouse" onClick={handleLinkClick}>INHOUSE TESTING FACILITIES</Link>
   </div>
+
+  {/* <Link to="/inhouse" onClick={handleLinkClick}>INHOUSE TESTING FACILITIES</Link>
+   */}
+    {/* Inhouse Testing Facilities */}
+    <div
+                  className="sub-dropdown"
+                  onMouseEnter={handleInhouseHover}
+                  onMouseLeave={handleInhouseLeave}
+                >
+                  <span className="dropdown-trigger">
+                    <Link to="/inhouse">INHOUSE TESTING FACILITIES</Link>
+                  </span>
+                  {inhouseDropdown && (
+                    <div className="sub-dropdown-menu">
+                      <Link to="/inhouse1" onClick={handleLinkClick}>
+                      Moving Die Rheometer
+                      </Link>
+                      <Link to="/inhouse2" onClick={handleLinkClick}>
+                      Burst Pressure Test Machine (Horizontal) with Hydraulic testing facility
+                      </Link>
+                      <Link to="/inhouse3" onClick={handleLinkClick}>
+                      Ozone Test Chamber
+                      </Link>
+                      <Link to="/inhouse4" onClick={handleLinkClick}>
+                      UTM-1
+                      </Link>
+                      <Link to="/inhouse5" onClick={handleLinkClick}>
+                      Heating Ovens
+                      </Link>
+                      <Link to="/inhouse6" onClick={handleLinkClick}>
+                      Muffle Furnace
+                      </Link>
+                    </div>
+                  )}
+                </div>
+  
+  </div>
+
   )}
+
   </div>
   <Link to="/news" onClick={handleLinkClick}>NEWS & BLOGS</Link>
  <Link to="/career" onClick={handleLinkClick}>CAREERS</Link>

@@ -487,3 +487,31 @@
     justify-content: center; /* Center-align nav links */
   }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  
+  }
+
+  .dropdown-menu,
+  .sub-dropdown-menu {
+    position: static;
+    box-shadow: none;
+    min-width: 100%;
+  }
+
+  .dropdown:hover .dropdown-menu,
+  .sub-dropdown:hover .sub-dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-menu a,
+  .sub-dropdown-menu a {
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: left;
+  }
+}

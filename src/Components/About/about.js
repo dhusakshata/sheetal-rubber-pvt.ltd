@@ -90,7 +90,7 @@ useEffect(() => {
         </div>
         {/* Text Content */}
         <div className="about-info animate-on-scroll slide-in-right " >
-          <h6>WHEN QUALITY & RELIABILITY IS  VITAL , SHEETAL RUBBER PRODUCTS (P) LTD. ARE YOUR BEST CHOICE.</h6>
+          <h6>WHEN QUALITY & RELIABILITY IS  VITAL , SHEETAL RUBBER PRODUCTS (P) LTD. IS YOUR BEST CHOICE.</h6>
         <p>
         For over two decades, Sheetal Rubber Products has been a trusted leader in the manufacturing of high-quality rubber products with 50,000 sq. ft. of manufacturing facility. We specialize in manufacturing a full range of low-pressure hoses, including platinum silicone-lined, FMK-lined fuel cell hoses, flame-retardant hoses, and various moulded components. Our commitment to product expertise, engineering excellence, rigorous testing, and strict quality controls has established us as a preferred partner for major manufacturers in India and a favored exporter internationally. 
       </p>

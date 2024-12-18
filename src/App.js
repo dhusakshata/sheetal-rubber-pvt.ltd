@@ -55,6 +55,14 @@ import Facility9 from "./Components/Facilities/facility9.js";
 import Facility10 from "./Components/Facilities/facility10.js";
 import Facility11 from "./Components/Facilities/facility11.js";
 
+//Inhouse Facility
+import Inhouse1 from "./Components/Facilities/inhouse1.js";
+import Inhouse2 from "./Components/Facilities/inhouse2.js";
+import Inhouse3 from "./Components/Facilities/inhouse3.js";
+import Inhouse4 from "./Components/Facilities/inhouse4.js";
+import Inhouse5 from "./Components/Facilities/inhouse5.js";
+import Inhouse6 from "./Components/Facilities/inhouse6.js";
+
 const App = () => {
   return (
     <Router>
@@ -96,6 +104,13 @@ const App = () => {
         <Route path="/facility9" element={<Facility9 />} />
         <Route path="/facility10" element={<Facility10 />} />
         <Route path="/facility11" element={<Facility11 />} />
+
+        <Route path="/inhouse1" element={<Inhouse1 />} />
+        <Route path="/inhouse2" element={<Inhouse2 />} />
+        <Route path="/inhouse3" element={<Inhouse3 />} />
+        <Route path="/inhouse4" element={<Inhouse4 />} />
+        <Route path="/inhouse5" element={<Inhouse5 />} />
+        <Route path="/inhouse6" element={<Inhouse6 />} />
         
       </Routes>
       <Footer/>

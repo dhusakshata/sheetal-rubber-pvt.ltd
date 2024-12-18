@@ -7,7 +7,7 @@ import CoExtrusion from "../../Images/CO-EXTRUSION.webp";
 
 const Facility1 = () => {
   return (
-    <div className="facility-container">
+    <div className="facility-containers">
       <div className="facility-header">
         <h1>Hot Feed, Cold Feed & Co-Extrusion Extruders</h1> {/* Main heading */}
       </div>

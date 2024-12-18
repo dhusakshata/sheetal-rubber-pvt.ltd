@@ -13,7 +13,9 @@
   transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
-.animate-on-scroll.visible ,.animate-bounce.visible {
+
+
+.animate-on-scroll.visible,.animate-bounce.visible {
   opacity: 1;
   transform: translateX(0);
 }
@@ -41,10 +43,10 @@
 }
 
 .animate-bounce.visible {
-  animation:enhanced-bounce 4.5s cubic-bezier(0.35, 1.35, 0.8, 1.35) infinite;
+  animation:enhanced-bounce 2.5s cubic-bezier(0.35, 1.35, 0.8, 1.35) infinite;
 }
 /* Bounce keyframes */
-@keyframes bounce {
+@keyframes bounce  {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
@@ -108,7 +110,7 @@
   /* Animation properties */
   opacity: 0; 
   transform: translateY(-300px); 
-  animation: slideInFromTopH1 1.5s ease-out forwards; 
+  animation: slideInFromTopH1 0.8s ease-out forwards; 
 }
 
 
@@ -317,7 +319,7 @@ color:  #ff5722;
 .vision {
   width: 100%;
   max-width: 1000px;
-  height: 250px;
+
   background-color:#0f5286;
   padding: 20px;
   border-radius: 8px;
@@ -337,15 +339,17 @@ margin-top: 30px;
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 } 
-/* 
+
  .Mission {
-  animation-delay: 0.5s;  
+  animation-delay: 0.5s; 
+  height: 200px;
 }
 
 .vision {
   animation-delay: 1s; 
+  height: 250px;
  
-}  */
+}  
 
 hr {
   width: 50%;

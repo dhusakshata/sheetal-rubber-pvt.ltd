@@ -19,7 +19,7 @@ const Facility3 = () => {
       </div>
 
       <div className="facility-content3 contents">
-        <h1>Auto Clave Vulcanizer (Quick Lock Type) Overview:</h1>
+        <h2>Auto Clave Vulcanizer (Quick Lock Type) Overview:</h2>
         <div className="info-boxe3 ">
 
           <h2>Purpose:</h2>
