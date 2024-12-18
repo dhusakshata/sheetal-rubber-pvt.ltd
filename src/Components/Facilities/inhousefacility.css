@@ -66,14 +66,14 @@ h1, h2, h3, h4, b {
   max-width: 700px; 
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
   margin: 20px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 /* Zoom-In and Out Effect on Hover */
 .inhouse-image img:hover {
   transform: scale(1.2); /* Zoom-in effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  
 }
 
 .inhouse-paragrph {

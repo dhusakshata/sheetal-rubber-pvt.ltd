@@ -73,12 +73,12 @@ h1, h2, h3, h4, b {
   max-width: 600px;
   height: 300px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 /* Zoom-In and Out Effect on Hover */
 .facility-image3 img:hover {
   transform: scale(1.1); /* Zoom-in effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+ 
 }
 
 .paraof3{

@@ -9,7 +9,7 @@ const Inhouse5 = () => {
          <div className="inhouse-header"> <h1>Heating Ovens</h1></div>
      <div className="inhouse-container">
      <div className="inhouse-image">
-          <img src={Heatingoven} alt="inhouse 1"style={{width:"400px",height:"350px"}} />
+          <img src={Heatingoven} alt="inhouse 1"style={{width:"400px",height:"330px"}} />
         </div>
       <div className="inhouse-paragrph">
       <p>

@@ -100,14 +100,14 @@ h1, h2, h3, h4, b {
 /* Zoom-In and Out Effect on Hover */
 .facility-image img:hover {
   transform: scale(1.1); /* Zoom-in effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  
 }
 
 .facility-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  border: 2px solid #ddd;
+ 
 }
 
 .facility-right {
@@ -251,7 +251,7 @@ h1, h2, h3, h4, b {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  border: 2px solid #ddd;
+  
 }
 
 /* Section Styling */
@@ -427,11 +427,11 @@ table tr:nth-child(odd) {
   max-width: 400px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 .facility-image4 img:hover {
   transform: scale(1.1); /* Zoom-in effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  
 }
 /* Dispenser, Internal Mixer, and Stock Blender Styling */
 .dispenser, .Internal-mixer, .stock-blender {
@@ -577,11 +577,11 @@ table tr:nth-child(odd) {
   max-width: 400px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
 }
 .facility-image5 img:hover {
   transform: scale(1.2); /* Zoom-in effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+ 
 }
 
 /* Content Section Styling */
@@ -722,11 +722,11 @@ table tr:nth-child(odd) {
   max-width: 400px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 .facility-image6 img:hover {
   transform: scale(1.2); /* Zoom-in effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+ 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -870,12 +870,12 @@ table tr:nth-child(odd) {
   max-width: 400px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+  
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .facility-image8 img:hover {
   transform: scale(1.5); /* Zoom-in effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  
 }
 
 /* Content Section Styling */
@@ -1016,12 +1016,12 @@ table tr:nth-child(odd) {
   max-width: 400px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+ 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .inhouse-image img:hover {
   transform: scale(1.2); /* Zoom-in effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+ 
 }
 
 /* Content Section Styling */
@@ -1165,12 +1165,11 @@ table tr:nth-child(odd) {
   max-width: 400px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .facility-image10 img:hover {
   transform: scale(1.5); /* Zoom-in effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  
 }
 
 /* Content Section Styling */
