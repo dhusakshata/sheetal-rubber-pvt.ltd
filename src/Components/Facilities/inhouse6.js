@@ -9,7 +9,7 @@ const Inhouse6 = () => {
          <div className="inhouse-header"> <h1>Muffle Furnace</h1></div>
      <div className="inhouse-container">
      <div className="inhouse-image">
-          <img src={muffle} alt="inhouse 1" />
+          <img src={muffle} alt="inhouse 1"style={{width:"400px",height:"350px"}}  />
         </div>
       <div className="inhouse-paragrph">
       <p>

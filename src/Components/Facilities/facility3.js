@@ -13,9 +13,11 @@ const Facility3 = () => {
         <div className="facility-image3">
           <img src={Autoclave} alt="Auto Clave Vulcanizer" />
         </div>
+        <div className='paraof3'>
         <p>
           Our production line features Auto Clave Vulcanizers (Quick Lock Type), designed for precise and efficient vulcanization of rubber products. These advanced vulcanizers utilize high pressure and heat to cure rubber compounds, ensuring optimal strength, elasticity, and durability in the finished products. The Quick Lock mechanism enables fast and secure loading and unloading of materials, significantly reducing cycle times while maintaining stringent quality control.
         </p>
+        </div>
       </div>
 
       <div className="facility-content3 contents">

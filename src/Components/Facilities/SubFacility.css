@@ -32,37 +32,51 @@ h1, h2, h3, h4, b {
 .facility-header {
   text-align: center;
   margin-bottom: 30px;
+  background-color:#0f5286;
+  margin-top: -30px;
+  border-radius: 10px;
+   padding: 40px;
+   animation: slideDownEffect 1s ease-in-out;
 }
-h1{
-  animation: slideDown 1s ease-in-out;
+@keyframes slideDownEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above the viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position in its natural place */
+  }
 }
 
 .facility-header h1 {
   font-size: 2.5rem;
-  color: black;
-  border-bottom: 3px solid #f28c38;
+  color: white;
+  text-align: center;
   display: inline-block;
   padding-bottom: 10px;
   display: inline-block;
   padding-bottom: 10px;
+  font-weight: bold;
  
 }
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.facility-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
 }
 
 
 .facility-paragraph {
   text-align: justify;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   line-height: 1.6;
+  margin-top: 50px;
 }
 
 .facility-paragraph p {
@@ -174,15 +188,42 @@ h1{
 .facility-header2 {
   text-align: center;
   margin-bottom: 30px;
+  background-color:#0f5286;
+  margin-top: -10px;
+  border-radius: 10px;
+   padding: 40px;
+   animation: slideDownEffect 1s ease-in-out;
+}
+@keyframes slideDownEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above the viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position in its natural place */
+  }
 }
 
 .facility-header2 h1 {
+  text-align: center;
   font-size: 2.5rem;
-  color: black;
-  border-bottom: 3px solid #f28c38;
+  color: white;
+  font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
 }
+.facility-header2 h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
+}
+
 
 .facility-paragraph2 {
   text-align: justify;
@@ -331,16 +372,40 @@ table tr:nth-child(odd) {
 .facility-header4 {
   text-align: center;
   margin-bottom: 20px;
-}
+  background-color:#0f5286;
 
+  border-radius: 10px;
+   padding: 40px;
+   animation: slideDownEffect 1s ease-in-out;
+}
+@keyframes slideDownEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above the viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position in its natural place */
+  }
+}
 .facility-header4 h1 {
+  text-align: center;
   font-size: 2.5rem;
-  color: black;
-  border-bottom: 3px solid #f28c38;
+  color: white;
+  font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
 }
-
+.facility-header4 h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
+}
 /* Paragraph Section */
 .facility-paragraph4 {
   display: flex;
@@ -364,7 +429,10 @@ table tr:nth-child(odd) {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.facility-image4 img:hover {
+  transform: scale(1.1); /* Zoom-in effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
 /* Dispenser, Internal Mixer, and Stock Blender Styling */
 .dispenser, .Internal-mixer, .stock-blender {
   background-color: #fdfdfd;
@@ -453,16 +521,41 @@ table tr:nth-child(odd) {
 .facility-header5 {
   text-align: center;
   margin-bottom: 20px;
+  background-color:#0f5286;
+  margin-top: -10px;
+  border-radius: 10px;
+   padding: 40px;
+   animation: slideDownEffect 1s ease-in-out
 }
 
+@keyframes slideDownEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above the viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position in its natural place */
+  }
+}
 .facility-header5 h1 {
+  text-align: center;
   font-size: 2.5rem;
-  color: black;
-  border-bottom: 3px solid #f28c38;
+  color: white;
+  font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
 }
-
+.facility-header5 h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
+}
 /* Paragraph Section */
 .facility-paragraph5 {
   display: flex;
@@ -485,6 +578,10 @@ table tr:nth-child(odd) {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.facility-image5 img:hover {
+  transform: scale(1.2); /* Zoom-in effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
 /* Content Section Styling */
@@ -570,16 +667,40 @@ table tr:nth-child(odd) {
 .facility-header6 {
   text-align: center;
   margin-bottom: 20px;
+  background-color:#0f5286;
+  margin-top: -10px;
+  border-radius: 10px;
+   padding: 40px;
+   animation: slideDownEffect 1s ease-in-out;
 }
-
+@keyframes slideDownEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above the viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position in its natural place */
+  }
+}
 .facility-header6 h1 {
+  text-align: center;
   font-size: 2.5rem;
-  color: black;
-  border-bottom: 3px solid #f28c38;
+  color: white;
+  font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
 }
-
+.facility-header6 h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
+}
 /* Paragraph Section */
 .facility-paragraph6 {
   display: flex;
@@ -602,6 +723,11 @@ table tr:nth-child(odd) {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.facility-image6 img:hover {
+  transform: scale(1.2); /* Zoom-in effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 /* Content Section Styling */
@@ -688,16 +814,40 @@ table tr:nth-child(odd) {
 .facility-header8 {
   text-align: center;
   margin-bottom: 20px;
+  background-color:#0f5286;
+  margin-top: -10px;
+  border-radius: 10px;
+   padding: 40px;
+   animation: slideDownEffect 1s ease-in-out;
 }
-
+@keyframes slideDownEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above the viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position in its natural place */
+  }
+}
 .facility-header8 h1 {
+  text-align: center;
   font-size: 2.5rem;
-  color: black;
-  border-bottom: 3px solid #f28c38;
+  color: white;
+  font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
 }
-
+.facility-header8 h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
+}
 /* Paragraph Section */
 .facility-paragraph8 {
   display: flex;
@@ -712,6 +862,7 @@ table tr:nth-child(odd) {
 
 .facility-image8 {
   text-align: center;
+ 
 }
 
 .facility-image8 img {
@@ -720,6 +871,11 @@ table tr:nth-child(odd) {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.facility-image8 img:hover {
+  transform: scale(1.5); /* Zoom-in effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
 /* Content Section Styling */
@@ -806,16 +962,39 @@ table tr:nth-child(odd) {
 .facility-header9 {
   text-align: center;
   margin-bottom: 20px;
+  background-color:#0f5286;
+  margin-top: -10px;
+  border-radius: 10px;
+   padding: 40px;
+   animation: slideDownEffect 1s ease-in-out;
 }
-
+@keyframes slideDownEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above the viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position in its natural place */
+  }
+}
 .facility-header9 h1 {
   font-size: 2.5rem;
-  color: black;
-  border-bottom: 3px solid #f28c38;
+  color:white;
+  font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
 }
-
+.facility-header9 h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
+}
 /* Paragraph Section */
 .facility-paragraph9 {
   display: flex;
@@ -838,6 +1017,11 @@ table tr:nth-child(odd) {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.inhouse-image img:hover {
+  transform: scale(1.2); /* Zoom-in effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
 /* Content Section Styling */
@@ -924,14 +1108,40 @@ table tr:nth-child(odd) {
 .facility-header10 {
   text-align: center;
   margin-bottom: 20px;
+  background-color:#0f5286;
+  margin-top: -20px;
+  border-radius: 10px;
+   padding: 30px;
+   animation: slideDownEffect 1s ease-in-out;
+ 
 }
-
+@keyframes slideDownEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above the viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position in its natural place */
+  }
+}
 .facility-header10 h1 {
+  text-align: center;
   font-size: 2.5rem;
-  color: black;
-  border-bottom: 3px solid #f28c38;
+  color: white;
+  font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
+}
+.facility-header10 h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
 }
 
 /* Paragraph Section */
@@ -956,6 +1166,11 @@ table tr:nth-child(odd) {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.facility-image10 img:hover {
+  transform: scale(1.5); /* Zoom-in effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
 /* Content Section Styling */
@@ -1042,15 +1257,42 @@ table tr:nth-child(odd) {
 .facility-header11 {
   text-align: center;
   margin-bottom: 20px;
+  background-color:#0f5286;
+  margin-top: -10px;
+  border-radius: 10px;
+   padding: 40px;
+   animation: slideDownEffect 1s ease-in-out;
+}
+@keyframes slideDownEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above the viewport */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position in its natural place */
+  }
 }
 
 .facility-header11 h1 {
+  text-align: center;
   font-size: 2.5rem;
-  color: black;
-  border-bottom: 3px solid #f28c38;
+  color: white;
+  font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
 }
+.facility-header11 h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
+}
+
 
 /* Paragraph Section */
 .facility-paragraph11 {

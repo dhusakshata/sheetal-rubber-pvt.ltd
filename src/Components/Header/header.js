@@ -179,7 +179,7 @@ const handleToggleMenu = () => {
                     onMouseLeave={handleManufacturingLeave}
                   >
                     <span className="dropdown-trigger">
-                      <Link to="/manufacturing">MANUFACTURING FACILITIES</Link>
+                      <Link>MANUFACTURING FACILITIES</Link>
                     </span>
                     {manufacturingDropdown && (
                      
@@ -230,7 +230,7 @@ const handleToggleMenu = () => {
                   onMouseLeave={handleInhouseLeave}
                 >
                   <span className="dropdown-trigger">
-                    <Link to="/inhouse">INHOUSE TESTING FACILITIES</Link>
+                    <Link >INHOUSE TESTING FACILITIES</Link>
                   </span>
                   {inhouseDropdown && (
                     <div className="sub-dropdown-menu">

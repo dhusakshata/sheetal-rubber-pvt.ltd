@@ -9,7 +9,7 @@ const Inhouse4 = () => {
          <div className="inhouse-header"> <h1>UTM -Tensile machine load 200kg to 5000kg</h1></div>
      <div className="inhouse-container">
      <div className="inhouse-image">
-          <img src={utm} alt="inhouse 1" />
+          <img src={utm} alt="inhouse 1"style={{width:"400px",height:"350px"}} />
         </div>
       <div className="inhouse-paragrph">
       <p>

@@ -6,12 +6,12 @@ const Inhouse2 = () => {
     <div className="inhouse-facility-container">
          <div className="inhouse-header"> <h1>Burst Pressure Test Machine (Horizontal) with Hydraulic testing facility</h1></div>
      <div className="inhouse-container">
-     <div className="inhouse-image">
+     <div className="inhouse-image"style={{width:"450px",height:"450px"}}>
           <img src={Burst} alt="inhouse 1" />
         </div>
       <div className="inhouse-paragrph">
       <p>
-      A Burst Pressure Test Machine (Horizontal) with Hydraulic Testing Facility, ensures that both silicon and rubber hoses meet high-pressure performance requirements. This service is essential for verifying the strength, flexibility, and endurance of hoses under extreme hydraulic conditions. The horizontal configuration allows for efficient handling of long hoses, while the hydraulic system delivers precise and consistent pressure testing. This ensures that silicon and rubber hoses used in critical industries, such as automotive, medical, and industrial sectors, are durable, safe, and compliant with stringent quality standards.
+      A <b> Burst Pressure Test Machine</b> (Horizontal) with Hydraulic Testing Facility, ensures that both silicon and rubber hoses meet high-pressure performance requirements. This service is essential for verifying the strength, flexibility, and endurance of hoses under extreme hydraulic conditions. The horizontal configuration allows for efficient handling of long hoses, while the hydraulic system delivers precise and consistent pressure testing. This ensures that silicon and rubber hoses used in critical industries, such as automotive, medical, and industrial sectors, are durable, safe, and compliant with stringent quality standards.
       </p>
       </div>
      </div>

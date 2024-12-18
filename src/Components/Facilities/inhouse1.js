@@ -4,10 +4,13 @@ import './inhousefacility.css';
 const Inhouse1 = () => {
   return (
     <div className="inhouse-facility-container">
-         <div className="inhouse-header"> <h1>Moving Die Rheometer</h1></div>
+         <div className="inhouse-header"> <h1>Moving Die Rheometer
+          
+         </h1>
+         </div>
      <div className="inhouse-container">
      <div className="inhouse-image">
-          <img src={Rheometer} alt="inhouse 1" />
+          <img src={Rheometer} alt="inhouse 1" style={{width:"300px",height:"400px"}}/>
         </div>
       <div className="inhouse-paragrph">
       <p>

@@ -14,28 +14,43 @@ h1, h2, h3, h4, b {
 .inhouse-header {
   text-align: center;
   margin-bottom: 10px; /* Reduced margin for less space below the heading */
+  background-color:#0f5286;
+  margin-top: -20px;
+  border-radius: 10px;
+   padding: 30px;
+   animation: slideDownEffect 1s ease-in-out;
+ 
 }
-
-.inhouse-header h1 {
-  font-size: 2.5rem;
-  color: black;
-  border-bottom: 3px solid #f28c38; /* Orange border */
-  display: inline-block;
-  padding-bottom: 10px;
-  animation: slideDown 1s ease-in-out;
-}
-
-/* Animation for the header */
-@keyframes slideDown {
+@keyframes slideDownEffect {
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-50px); /* Start slightly above the viewport */
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /* Final position in its natural place */
   }
 }
+.inhouse-header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  padding: 20px;
+  
+}
+.inhouse-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
+}
+
 
 /* Image and paragraph section in a row with minimal gap */
 .inhouse-container {
@@ -57,7 +72,7 @@ h1, h2, h3, h4, b {
 }
 /* Zoom-In and Out Effect on Hover */
 .inhouse-image img:hover {
-  transform: scale(1.5); /* Zoom-in effect */
+  transform: scale(1.2); /* Zoom-in effect */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
@@ -104,8 +119,8 @@ h1, h2, h3, h4, b {
 }
 
 .inhouse-content p {
-  font-size: 16px; /* Slightly smaller font for compactness */
-  line-height: 1.6; /* Reduced line height for compact layout */
+  font-size: 16px; 
+  line-height: 1.6; 
   color: black;
   margin-bottom: 10px; /* Reduced space below paragraphs */
 }
