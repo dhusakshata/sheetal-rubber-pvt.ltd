@@ -18,7 +18,7 @@ const Facility6 = () => {
         </div>
       </div>
       <div className="facility-content6">
-      <h3>Compression Transfer Molding Overview:</h3>
+      <h2>Compression Transfer Molding Overview:</h2>
 <p><b>Purpose: </b>
 Compression transfer molding is a vital process for shaping rubber compounds into high-quality, complex products using heat and pressure.
 </p>
@@ -26,7 +26,7 @@ Compression transfer molding is a vital process for shaping rubber compounds int
 Pre-measured rubber material is placed in a transfer pot, heated, and forced into mold cavities through runners, ensuring even material distribution and curing.
 </p>
 
-         <h2>Advantages:</h2>
+         <h4>Advantages:</h4>
         <ul>
         <li><b>Versatility: </b>Accommodates various rubber compounds for tailored properties.</li>
           <li><b>Precision:  </b>Ensures uniform thickness and density for reliable performance.</li>
@@ -35,7 +35,7 @@ Pre-measured rubber material is placed in a transfer pot, heated, and forced int
           <li><b>Reduced Waste: </b>Minimizes scrap, leading to cost savings.</li>
         </ul>
 
-        <h2>Applications:</h2>
+        <h4>Applications:</h4>
         <ul>
           <li><b>Automotive Components:  </b> Seals, gaskets, and vibration isolators.
           </li>
@@ -44,7 +44,7 @@ Pre-measured rubber material is placed in a transfer pot, heated, and forced int
           <li><b>Electrical Insulation:  </b>Insulating components for safety and performance.</li>
         </ul>
         
-        <h2>Production Process:</h2>
+        <h4>Production Process:</h4>
         <ul>
           <li><b>Material Preparation: </b>  Pre-measured rubber compounds.
           </li>
@@ -54,7 +54,7 @@ Pre-measured rubber material is placed in a transfer pot, heated, and forced int
           
         </ul>
             
-        <h2>Benefits:</h2>
+        <h4>Benefits:</h4>
         <ul>
           <li><b>Enhanced Quality: </b>Produces high-quality, reliable components.
           </li>
@@ -62,8 +62,8 @@ Pre-measured rubber material is placed in a transfer pot, heated, and forced int
           <li><b>Customization:  </b> Easily modified for different formulations and designs.</li>
           
         </ul>
-        <h2>Conclusion:
-        </h2>
+        <h4>Conclusion:
+        </h4>
         <p><b>Compression Transfer Molding </b>is essential for producing efficient, precise, and high-quality rubber components, making it a key process in rubber manufacturing.</p>
       </div>
     

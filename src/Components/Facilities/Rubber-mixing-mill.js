@@ -20,7 +20,7 @@ const Facility8 = () => {
       </div>
 
       <div className="facility-content8">
-      <h3>Rubber Mixing Mills Overview:</h3>
+      <h2>Rubber Mixing Mills Overview:</h2>
 <p><b>Purpose: </b>
 Rubber mixing mills are essential for blending raw rubber materials with fillers and additives to create uniform rubber compounds.
 </p>
@@ -28,7 +28,7 @@ Rubber mixing mills are essential for blending raw rubber materials with fillers
 These mills consist of two or more heavy rollers that rotate in parallel, pulling rubber through a gap to create shear forces for thorough mixing.
 </p>
 
-         <h2>Advantages:</h2>
+         <h4>Advantages:</h4>
         <ul>
         <li><b>Uniform Mixing: </b>Ensures consistent properties in the final product.</li>
           <li><b>Versatility:  </b> Handles various rubber formulations with different viscosities.</li>
@@ -37,7 +37,7 @@ These mills consist of two or more heavy rollers that rotate in parallel, pullin
           <li><b>Adjustable Settings:</b>Gap between rollers can be adjusted for precise formulation control.</li>
         </ul>
 
-        <h2>Applications:</h2>
+        <h4>Applications:</h4>
         <ul>
           <li><b>Rubber Compounding: </b>  Producing compounds for tires, hoses, belts, and seals.
           </li>
@@ -46,7 +46,7 @@ These mills consist of two or more heavy rollers that rotate in parallel, pullin
         
         </ul>
         
-        <h2>Production Process:</h2>
+        <h4>Production Process:</h4>
         <ul>
           <li><b>Material Preparation: </b>  Weighing and preparing raw rubber and ingredients.
           </li>
@@ -56,7 +56,7 @@ These mills consist of two or more heavy rollers that rotate in parallel, pullin
           
         </ul>
             
-        <h2>Benefits:</h2>
+        <h4>Benefits:</h4>
         <ul>
           <li><b>Enhanced Product Quality: </b>Consistent mixing leads to reliable rubber products.
           </li>
@@ -64,7 +64,7 @@ These mills consist of two or more heavy rollers that rotate in parallel, pullin
           <li><b>Customization:  </b> Adjusts mixing processes for specific formulations.</li>
           
         </ul>
-        <h2>Examples of Products:</h2>
+        <h4>Examples of Products:</h4>
         <ul>
           <li><b>Automotive Parts: </b>Tires, gaskets, and seals.
           </li>
@@ -74,8 +74,8 @@ These mills consist of two or more heavy rollers that rotate in parallel, pullin
           
         </ul>
 
-        <h2>Conclusion:
-        </h2>
+        <h4>Conclusion:
+        </h4>
         <p><b>Rubber Mixing Mills </b>are vital for producing high-quality rubber compounds, ensuring uniformity and efficiency in the rubber manufacturing process, and meeting diverse industry needs.</p>
       </div>
     </div>

@@ -20,7 +20,7 @@ const Facility9 = () => {
       </div>
 
       <div className="facility-content9">
-      <h3>Knitting Machines Overview</h3>
+      <h2>Knitting Machines Overview</h2>
 <p><b>Purpose: </b>
 Produce knitted rubber fabrics for automotive, industrial, and consumer products.
 </p>
@@ -33,7 +33,7 @@ Produce knitted rubber fabrics for automotive, industrial, and consumer products
 </ul>
 </p>
 
-         <h2>Advantages:</h2>
+         <h4>Advantages:</h4>
         <ul>
         <li><b>Customization: </b> Diverse patterns, thicknesses, and densities.</li>
           <li><b>Flexibility:  </b> Excellent stretch and recovery.</li>
@@ -43,7 +43,7 @@ Produce knitted rubber fabrics for automotive, industrial, and consumer products
           </li>
         </ul>
 
-        <h2>Applications:</h2>
+        <h4>Applications:</h4>
         <ul>
           <li><b>Automotive</b>  Rubber mats, seals, upholstery fabrics.
           </li>
@@ -55,7 +55,7 @@ Produce knitted rubber fabrics for automotive, industrial, and consumer products
         </li>
         </ul>
         
-        <h2>Production Process:</h2>
+        <h4>Production Process:</h4>
         <ul>
           <li>Material preparation.
           </li>
@@ -65,7 +65,7 @@ Produce knitted rubber fabrics for automotive, industrial, and consumer products
           
         </ul>
             
-        <h2>Benefits:</h2>
+        <h4>Benefits:</h4>
         <ul>
           <li><b>High Quality: </b>Ensures stringent standards.
           </li>
@@ -73,7 +73,7 @@ Produce knitted rubber fabrics for automotive, industrial, and consumer products
           <li><b>Innovation:  </b>  Supports unique product development.</li>
           
         </ul>
-        <h2>Examples of Products:</h2>
+        <h4>Examples of Products:</h4>
         <ul>
           <li>Automotive upholstery, protective gear, conveyor belts, medical supports.
           </li>
@@ -83,8 +83,8 @@ Produce knitted rubber fabrics for automotive, industrial, and consumer products
           
         </ul>
 
-        <h2>Conclusion:
-        </h2>
+        <h4>Conclusion:
+        </h4>
         <p><b>Knitting machines </b>Knitting machines produce high-quality rubber fabrics efficiently, offering customization and innovation for diverse industries.</p>
       </div>
     </div>

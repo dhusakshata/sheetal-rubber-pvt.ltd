@@ -18,6 +18,7 @@ body {
 /* Uppercase for all headings and bold text */
 h1, h2, h3, h4, b {
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .facility-containers {
@@ -152,7 +153,7 @@ h1, h2, h3, h4, b {
 .info-box h4 {
   font-size: 18px;
   margin-bottom: 10px;
-  color:black;
+  color: #ff782b;
   font-weight: bold;
 }
 
@@ -178,7 +179,7 @@ h1, h2, h3, h4, b {
 }
 
 .info-box ul li b {
-  color:#ff782b;
+  color: black;
 }
 
 
@@ -269,19 +270,15 @@ h1, h2, h3, h4, b {
 
 /* Content Section Styling */
 .facility-content2 {
-  background-color: #fdfdfd;
-  border: 2px solid #ff782b;
+
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 30px;
   line-height: 1.6;
   margin-left: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
-.facility-content2:hover {
-  transform: translateY(-50px); /* Lift on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-}
+
 /* Section Styling */
 .dual-head,
 .dual-Application,
@@ -291,12 +288,16 @@ h1, h2, h3, h4, b {
   padding: 10px;
   
 }
+.dual-head h2{
+  font-size: 1.8rem;
+  color:#ff782b;
+  margin-bottom: 15px;
+}
 
-.dual-head h1,
-.dual-Application h3,
-.dual-advantages h3,
-.dual-production h3 {
-  font-size: 1.5rem;
+.dual-Application h4,
+.dual-advantages h4,
+.dual-production h4 {
+  font-size: 18px;
   color:#ff782b;
   margin-bottom: 15px;
 }
@@ -313,7 +314,7 @@ h1, h2, h3, h4, b {
 .dual-Application ul li,
 .dual-advantages ul li,
 .dual-production ul li {
-  font-size: 16px;
+  font-size: 16apx;
   color: black;
   margin-bottom: 8px;
   line-height: 1.5;
@@ -323,7 +324,8 @@ h1, h2, h3, h4, b {
 .dual-Application ul li b,
 .dual-advantages ul li b,
 .dual-production ul li b {
-  color:#ff782b;
+  color: black;
+  font-size: 16px;
 }
 
 /* Comparison Table */
@@ -462,17 +464,13 @@ table tr:nth-child(odd) {
 /* Dispenser, Internal Mixer, and Stock Blender Styling */
 .dispenser, .Internal-mixer, .stock-blender {
   background-color: #fdfdfd;
-  border: 2px solid #ff782b;
+ 
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
-.dispenser:hover, .Internal-mixer:hover, .stock-blender:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
 
 .dispenser h3, .Internal-mixer h3, .stock-blender h3 {
   font-size: 1.5rem;
@@ -489,7 +487,6 @@ table tr:nth-child(odd) {
 /* Importance Section Styling */
 .Importance {
   background-color: #ffffff;
-  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -613,29 +610,26 @@ table tr:nth-child(odd) {
 /* Content Section Styling */
 .facility-content5 {
   background-color: #fdfdfd;
-  border: 2px solid #ff782b;
+ 
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 30px;
   line-height: 1.6;
   margin-left: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
 }
 
-.facility-content5:hover {
-  transform: translateY(-50px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
 
-.facility-content5 h3 {
-  font-size: 1.5rem;
+
+.facility-content5 h2 {
+  font-size: 1.8rem;
   color: #ff782b;
   margin-bottom: 15px;
 }
 
-.facility-content5 h2 {
-  font-size: 1.8rem;
-  color: black;
+.facility-content5 h4 {
+  font-size: 18px;
+  color: #ff782b;
   margin-bottom: 10px;
 }
 
@@ -644,10 +638,7 @@ table tr:nth-child(odd) {
   line-height: 1.6;
   color:black;
 }
-.facility-content5 p b{
-  color: #ff782b;
- 
-}
+
 
 .facility-content5 ul {
   list-style-type: disc;
@@ -661,7 +652,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content5 ul li b {
-  color:#ff782b;
+  color:black;
   font-weight: bold;
 }
 
@@ -763,30 +754,25 @@ table tr:nth-child(odd) {
 /* Content Section Styling */
 .facility-content6 {
   background-color: #fdfdfd;
-  border: 2px solid #ff782b;
-  border-radius: 8px;
   padding: 20px;
   margin-bottom: 30px;
   padding: 20px;
   margin-bottom: 30px;
   line-height: 1.6;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
-.facility-content6:hover {
-  transform: translateY(-50px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
 
-.facility-content6 h3 {
-  font-size: 1.5rem;
+
+.facility-content6 h4 {
+  font-size: 18px;
   color: #ff782b;
   margin-bottom: 15px;
 }
 
 .facility-content6 h2 {
   font-size: 1.8rem;
-  color: black;
+  color: #ff782b;
   margin-bottom: 10px;
 }
 
@@ -795,10 +781,7 @@ table tr:nth-child(odd) {
   line-height: 1.6;
   color:black;
 }
-.facility-content6 p b{
-  color: #ff782b;
- 
-}
+
 
 .facility-content6 ul {
   list-style-type: disc;
@@ -812,7 +795,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content6 ul li b {
-  color: #ff782b;
+  color: black;
   font-weight: bold;
 }
 
@@ -915,30 +898,27 @@ table tr:nth-child(odd) {
 /* Content Section Styling */
 .facility-content8 {
   background-color: #fdfdfd; /* Off-white content background */
-  border: 2px solid#ff782b; /* Orange border for emphasis */
+  
   border-radius: 8px;
   
   margin-bottom: 30px;
   padding: 20px;
   margin-bottom: 30px;
   line-height: 1.6;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
-.facility-content8:hover {
-  transform: translateY(-50px); /* Lift on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-}
 
-.facility-content8 h3 {
-  font-size: 1.5rem;
+
+.facility-content8 h2 {
+  font-size: 1.8rem;
   color:#ff782b; /* Orange subheading color */
   margin-bottom: 15px;
 }
 
-.facility-content8 h2 {
-  font-size: 1.8rem;
-  color: black;
+.facility-content8 h4 {
+  font-size: 18px;
+  color:#ff782b;
   margin-bottom: 10px;
 }
 
@@ -948,7 +928,7 @@ table tr:nth-child(odd) {
   color: black;
 }
 .facility-content8 p b{
-  color: #ff782b;
+  color: black;
  
 }
 
@@ -964,7 +944,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content8 ul li b {
-  color:#ff782b; /* Highlighted text in orange */
+  color:black; /* Highlighted text in orange */
   font-weight: bold;
 }
 
@@ -1065,30 +1045,26 @@ table tr:nth-child(odd) {
 /* Content Section Styling */
 .facility-content9 {
   background-color: #fdfdfd; /* Off-white content background */
-  border: 2px solid#ff782b; /* Orange border for emphasis */
+
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 30px;
  
   margin-bottom: 30px;
   line-height: 1.6;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
 }
 
-.facility-content9:hover {
-  transform: translateY(-50px); /* Lift on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-}
 
-.facility-content9 h3 {
-  font-size: 1.5rem;
+.facility-content9 h2 {
+  font-size: 1.8rem;
   color:#ff782b; /* Orange subheading color */
   margin-bottom: 15px;
 }
 
-.facility-content9 h2 {
-  font-size: 1.8rem;
-  color: black;
+.facility-content9 h4 {
+  font-size: 18px;
+  color:#ff782b; 
   margin-bottom: 10px;
 }
 
@@ -1098,7 +1074,7 @@ table tr:nth-child(odd) {
   color: black;
 }
 .facility-content9 p b{
-  color: #ff782b;
+  color: black;
  
 }
 .facility-content9 ul {
@@ -1113,7 +1089,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content9 ul li b {
-  color: #ff782b; /* Highlighted text in orange */
+  color: black; /* Highlighted text in orange */
   font-weight: bold;
 }
 
@@ -1216,30 +1192,27 @@ table tr:nth-child(odd) {
 /* Content Section Styling */
 .facility-content10 {
   background-color: #fdfdfd; /* Off-white content background */
-  border: 2px solid #ff782b; /* Orange border for emphasis */
+ 
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 30px;
  
   margin-bottom: 30px;
   line-height: 1.6;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
 }
 
-.facility-content10:hover {
-  transform: translateY(-50px); /* Lift on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-}
 
-.facility-content10 h3 {
-  font-size: 1.5rem;
+
+.facility-content10 h2 {
+  font-size: 1.8rem;
   color:#ff782b; /* Orange subheading color */
   margin-bottom: 15px;
 }
 
-.facility-content10 h2 {
-  font-size: 1.8rem;
-  color: black;
+.facility-content10 h4 {
+  font-size: 18px;
+  color:#ff782b; /* Orange subheading color */
   margin-bottom: 10px;
 }
 
@@ -1249,7 +1222,7 @@ table tr:nth-child(odd) {
   color: black;
 }
 .facility-content10 p b{
-  color: #ff782b;
+  color:black
  
 }
 
@@ -1265,7 +1238,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content10 ul li b {
-  color:#ff782b; /* Highlighted text in orange */
+  color:black; /* Highlighted text in orange */
   font-weight: bold;
 }
 
@@ -1353,30 +1326,25 @@ table tr:nth-child(odd) {
 /* Content Section Styling */
 .facility-content11 {
   background-color: #fdfdfd; /* Off-white content background */
-  border: 2px solid#ff782b; /* Orange border for emphasis */
+  
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 30px;
  
   margin-bottom: 30px;
   line-height: 1.6;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.facility-content11:hover {
-  transform: translateY(-50px); /* Lift on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-}
 
-.facility-content11 h3 {
-  font-size: 1.5rem;
+.facility-content11 h2 {
+  font-size: 1.8rem;
   color:#ff782b; /* Orange subheading color */
   margin-bottom: 15px;
 }
 
-.facility-content11 h2 {
-  font-size: 1.8rem;
-  color: black;
+.facility-content11 h4 {
+  font-size: 18px;
+  color:#ff782b;
   margin-bottom: 10px;
 }
 
@@ -1385,10 +1353,7 @@ table tr:nth-child(odd) {
   line-height: 1.6;
   color: black;
 }
-.facility-content11 p b{
-  color: #ff782b;
- 
-}
+
 .facility-content11 ul {
   list-style-type: disc;
   padding-left: 16px;
@@ -1401,7 +1366,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content11 ul li b {
-  color: #ff782b; /* Highlighted text in orange */
+  color: black; /* Highlighted text in orange */
   font-weight: bold;
 }
 
@@ -1422,4 +1387,57 @@ table tr:nth-child(odd) {
   .facility-content11 h2 {
     font-size: 1.5rem;
   }
+}
+   /* for modal */
+   /* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 100%;
+}
+
+.modal-image {
+ margin-top: -400px;
+ width: 1000px;
+  object-fit: cover; /* Fills the container, cropping if necessary */
+  object-position: center; /* Centers the image */
+  margin: 40px;
+  padding: 40px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #ff782b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-close-button:hover {
+
+  color: black;
 }

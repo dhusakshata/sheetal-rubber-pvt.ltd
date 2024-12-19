@@ -20,7 +20,7 @@ const Facility10 = () => {
       </div>
 
       <div className="facility-content10">
-      <h3>Braiding Machines Overview</h3>
+      <h2>Braiding Machines Overview</h2>
 <p><b>Purpose: </b>
 <ul>
   <li>Weave reinforcing material around a rubber core to improve mechanical properties like strength, wear resistance, and flexibility.</li>
@@ -35,7 +35,7 @@ const Facility10 = () => {
 </ul>
 </p>
 
-         <h2>Advantages:</h2>
+         <h4>Advantages:</h4>
         <ul>
         <li><b>Enhanced Strength:</b>  Superior tensile strength, essential for hydraulic hoses and cables.</li>
           <li><b>Flexibility:  </b>Maintains flexibility despite added reinforcement.</li>
@@ -45,7 +45,7 @@ const Facility10 = () => {
           </li>
         </ul>
 
-        <h2>Applications:</h2>
+        <h4>Applications:</h4>
         <ul>
           <li><b>Hydraulic Hoses</b>   High-pressure hoses reinforced with steel or synthetic fibers.
           </li>
@@ -57,7 +57,7 @@ const Facility10 = () => {
         </li>
         </ul>
         
-        <h2>Production Process:</h2>
+        <h4>Production Process:</h4>
         <ul>
           <li>Material preparation (core and reinforcement selection).
           </li>
@@ -67,7 +67,7 @@ const Facility10 = () => {
           
         </ul>
             
-        <h2>Benefits for Rubber Producers:</h2>
+        <h4>Benefits for Rubber Producers:</h4>
         <ul>
           <li><b>Improved Performance: </b>Enhanced strength, flexibility, and durability.
           </li>
@@ -75,7 +75,7 @@ const Facility10 = () => {
           <li><b>Cost Efficiency:  </b> Increases product lifespan, reducing maintenance costs.</li>
           
         </ul>
-        <h2>Examples of Products:</h2>
+        <h4>Examples of Products:</h4>
         <ul>
           <li>High-pressure hydraulic hoses, reinforced automotive cables, seals, and gaskets.
           </li>
@@ -83,9 +83,9 @@ const Facility10 = () => {
           
         </ul>
 
-        <h2>Conclusion:
-        </h2>
-        <p><b>Braiding machines</b>are essential for producing high-performance, reinforced rubber products, offering versatility, strength, and durability across industries.</p>
+        <h4>Conclusion:
+        </h4>
+        <p><b>Braiding machines </b>are essential for producing high-performance, reinforced rubber products, offering versatility, strength, and durability across industries.</p>
       </div>
     </div>
   );

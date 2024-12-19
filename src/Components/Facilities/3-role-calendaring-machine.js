@@ -20,11 +20,11 @@ const Facility5 = () => {
       </div>
 
       <div className="facility-content5">
-      <h3>3-Roll Calendaring Machine Overview:</h3>
+      <h2>3-Roll Calendaring Machine Overview:</h2>
 <p><b>Purpose: </b>
 Shapes and finishes rubber sheets with precise thickness and uniformity.
 </p>
-<h2>Operation:</h2>
+<h4>Operation:</h4>
         <ul>
           <li>
             <b>Roller System:</b>Three horizontally aligned rollers compress and stretch rubber compounds into flat sheets.
@@ -33,14 +33,14 @@ Shapes and finishes rubber sheets with precise thickness and uniformity.
             <b>Uniformity</b>Ensures even distribution and desired properties.
           </li>
         </ul>
-         <h2>Advantages:</h2>
+         <h4>Advantages:</h4>
         <ul>
           <li><b>Uniform Thickness: </b>Guarantees consistent sheet thickness for quality products.</li>
           <li><b>Smooth Surface Finish:</b>Enhances both the look and functionality of rubber products.</li>
           <li><b>Versatility: </b>Suitable for various rubber compounds.</li>
           <li><b>High Efficiency: </b>Continuous operation for large-scale production.</li>
         </ul>
-        <h2>Applications:</h2>
+        <h4>Applications:</h4>
         <ul>
           <li><b>Rubber Sheets:  </b> Flooring, mats, and insulation.
           </li>
@@ -49,7 +49,7 @@ Shapes and finishes rubber sheets with precise thickness and uniformity.
           <li><b>Gaskets and Seals:  </b>Ensures thickness for effective sealing.</li>
         </ul>
         
-        <h2>Production Process:</h2>
+        <h4>Production Process:</h4>
         <ul>
           <li><b>Material Feeding: </b> Rubber compounds are fed into the machine.
           </li>
@@ -58,7 +58,7 @@ Shapes and finishes rubber sheets with precise thickness and uniformity.
           
         </ul>
             
-        <h2>Benefits:</h2>
+        <h4>Benefits:</h4>
         <ul>
           <li><b>Enhanced Quality: </b> Consistent thickness improves product performance.
           </li>
@@ -66,8 +66,8 @@ Shapes and finishes rubber sheets with precise thickness and uniformity.
           <li><b>Production Flexibility:  </b> Quick adjustments for varied requirements.</li>
           
         </ul>
-        <h2>Example Products:
-        </h2>
+        <h4>Example Products:
+        </h4>
         <ul>
           <li><b>Automotive: </b> Tires, gaskets, and weather stripping.
 
