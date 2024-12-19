@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
-import Marinewet from "../../Images/Marine-wet.png";
+import Marinewet1 from "../../Images/Marine-wet1.png";
 
 function Marine() {
   return (
@@ -27,7 +27,9 @@ function Marine() {
           animate={{ opacity: 1, x: 0 }}    // End position (center)
           transition={{ duration:1 }}      // Duration of animation
         >
-          <img src={Marinewet} alt="Assembly Hoses" />
+          <img src={Marinewet1} alt="Assembly Hoses" 
+          style={{marginTop:"-70px"}}
+          />
         </motion.div>
     
  {/* Right Side: Info */}

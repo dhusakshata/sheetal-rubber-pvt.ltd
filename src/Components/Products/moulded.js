@@ -1,7 +1,7 @@
 import React from "react";
 import "./product2.css";
 import { motion } from "framer-motion";
-import Moulded from "../../Images/Moulded.png";
+import Moulded1 from "../../Images/Moulded1.png";
 
 const moulded = () => {
   return (
@@ -28,7 +28,7 @@ const moulded = () => {
               transition={{ duration:1 }}      // Duration of animation
             >
   
-  <img src={Moulded} alt="Assembly Hoses" />
+  <img src={Moulded1} alt="Assembly Hoses" />
   </motion.div>
 
   

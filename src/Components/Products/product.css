@@ -50,7 +50,8 @@
   height: auto; /* Adjust if needed */
   transform: translateY(-100%); /* Start above the viewport */
   animation: slideInBox 1.5s ease-out forwards;
-
+margin-top: -10px;
+margin: 20px;
 }
   /* Animation Keyframes */
 @keyframes slideInBox {
@@ -116,7 +117,7 @@ Image Gallery */
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
   gap: 10px;
- margin-top: 10px;
+
   margin-bottom: 40px;
  
 }

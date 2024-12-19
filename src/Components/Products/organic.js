@@ -1,7 +1,7 @@
 import React from "react";
 import "./product2.css";
 import { motion } from "framer-motion";
-import Organic from "../../Images/organic-rubber.png";
+import Organic1 from "../../Images/organic-rubber1.png";
 
 const organic = () => {
   return (
@@ -28,7 +28,7 @@ const organic = () => {
               animate={{ opacity: 1, x: 0 }}    // End position (center)
               transition={{ duration:1 }}      // Duration of animation
             >
-<img src={Organic} alt="Assembly Hoses" />
+<img src={Organic1} alt="Assembly Hoses" />
 </motion.div>
 
 

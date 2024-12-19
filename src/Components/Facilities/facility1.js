@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';// Importing the CSS for styling
-import HotFeed from "../../Images/hot-feed-rubber-extruder-machine.png";
+import HotFeed from "../../Images/hot-feed-rubber-extruder-machine-removebg-preview.png";
 import ColdFeed from "../../Images/Cold_Feed_Extruder.png";
 import CoExtrusion from "../../Images/CO-EXTRUSION.webp";
 

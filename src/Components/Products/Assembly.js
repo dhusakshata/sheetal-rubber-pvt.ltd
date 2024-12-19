@@ -1,6 +1,6 @@
 import React from "react";
 import "./product2.css";
-import Assemblyy from "../../Images/Assembly-rubber.png";
+import Assemblyy1 from "../../Images/Assembly-rubber1.png";
 import { motion } from "framer-motion";
 
 const Assembly = () => {
@@ -25,7 +25,7 @@ const Assembly = () => {
           animate={{ opacity: 1, x: 0 }}    // End position (center)
           transition={{ duration:1 }}      // Duration of animation
         >
-          <img src={Assemblyy} alt="Assembly Hoses" />
+          <img src={Assemblyy1} alt="Assembly Hoses" />
         </motion.div>
 
         {/* Right Side: Info */}

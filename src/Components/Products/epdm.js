@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
-import EPDM from "../../Images/EPDM-rubber.png";
+import EPDM1 from "../../Images/EPDM-rubber1.png";
 
 const epdm = () => {
   return (
@@ -27,7 +27,7 @@ const epdm = () => {
                  animate={{ opacity: 1, x: 0 }}    // End position (center)
                  transition={{ duration:1 }}      // Duration of animation
                >
-                 <img src={EPDM} alt="Assembly Hoses" />
+                 <img src={EPDM1} alt="Assembly Hoses" />
                  </motion.div>
 
                  

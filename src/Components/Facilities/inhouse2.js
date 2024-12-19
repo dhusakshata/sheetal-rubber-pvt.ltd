@@ -1,5 +1,5 @@
 import React from "react";
-import Burst from "../../Images/burst pressure.jpg";
+import Burst from "../../Images/burst_pressure.png";
 import './inhousefacility.css';
 const Inhouse2 = () => {
   return (

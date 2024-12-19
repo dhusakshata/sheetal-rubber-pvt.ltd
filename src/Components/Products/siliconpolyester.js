@@ -1,6 +1,6 @@
 import React from "react";
  import "./product2.css";
-import Silicon from "../../Images/Silicon.png";
+import Silicon1 from "../../Images/Silicon1.png";
 import { motion } from 'framer-motion';
 
 function siliconpolyester() {
@@ -29,8 +29,8 @@ function siliconpolyester() {
           animate={{ opacity: 1, x: 0 }}    // End position (center)
           transition={{ duration:1 }}      // Duration of animation
         >
-          <img src={Silicon} alt="Assembly Hoses"
-          style={{height:"600px"}}
+          <img src={Silicon1} alt="Assembly Hoses"
+         style={{marginTop:"-140px"}}
           
           />
         </motion.div>

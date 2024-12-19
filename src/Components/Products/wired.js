@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
-import Wired from "../../Images/wired-reinforced.png";
+import Wired1 from "../../Images/wired-reinforced1.png";
 
 const wired = () => {
   return (
@@ -27,7 +27,7 @@ const wired = () => {
           animate={{ opacity: 1, x: 0 }}    // End position (center)
           transition={{ duration:1 }}      // Duration of animation
         >
-          <img src={Wired} alt="Assembly Hoses" />
+          <img src={Wired1} alt="Assembly Hoses" />
         </motion.div>
 
         {/* Right Side: Info */}

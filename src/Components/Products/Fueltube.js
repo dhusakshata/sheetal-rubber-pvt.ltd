@@ -2,7 +2,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import "./product2.css";
-import FuelTube from "../../Images/Fuel-Tubes.png";
+import FuelTube1 from "../../Images/Fuel-Tubes1.png";
 
 const fueltube = () => {
   return (
@@ -27,7 +27,7 @@ const fueltube = () => {
           animate={{ opacity: 1, x: 0 }}    // End position (center)
           transition={{ duration:1 }}      // Duration of animation
         >
-          <img src={FuelTube} alt="Assembly Hoses" />
+          <img src={FuelTube1} alt="Assembly Hoses" />
         </motion.div>
 
         

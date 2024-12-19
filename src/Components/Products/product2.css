@@ -84,23 +84,22 @@
 .content-image {
   flex: 1; /* Take equal space */
   max-width: 400px; /* Restrict maximum width */
-  
+  object-fit: cover;
+  top:-100px;
 }
 
 .content-image img {
   width: 100%;
-  max-width: 700px;
-  height: 400px; /* Maintain aspect ratio */
+  top:-70px;
   position: relative;
-  top:-50px;
-  border-radius: 10px; /* Add rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+ 
+  
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 /* Zoom-In and Out Effect on Hover */
 .content-image img:hover {
-  transform: scale(1.3); /* Zoom-in effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transform: scale(1.1); /* Zoom-in effect */
+  
 }
 
 

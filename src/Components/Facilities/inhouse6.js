@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import muffle from "../../Images/muffle furnace.jpg";
+import muffle from "../../Images/muffle_furnace-removebg-preview.png";
 import './inhousefacility.css';
 const Inhouse6 = () => {
   return (

@@ -9,6 +9,11 @@ import "./header.css";
 import twitter from "../../Images/twitter image.webp";
 import linkedin from "../../Images/linked in image.webp";
 
+// import HamburgerMenu from "../Hamburge/hambarge.js";
+
+
+
+
 const data = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Products", link: "/product" },
@@ -79,6 +84,9 @@ const handleToggleMenu = () => {
        <div className="logo">
           <img src={Logos} alt="Sheetal Rubber Industries" />
         </div>
+
+
+
         <div className="top-right">
           <div className="search-bar">
             <input
@@ -124,6 +132,8 @@ const handleToggleMenu = () => {
 
         
         <div className="Navbar">
+           {/* <!-- Hamburger Button Placeholder --> */}
+        {/* <div id="hamburger-container"><HamburgerMenu/></div> */}
         <nav className= "nav" >
           <Link to="/" onClick={handleLinkClick}>
             HOME

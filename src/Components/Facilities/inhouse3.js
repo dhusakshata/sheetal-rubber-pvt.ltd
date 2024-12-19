@@ -1,5 +1,5 @@
 import React from "react";
-import OzenTest from "../../Images/ozone test chamber.jpg";
+import OzenTest from "../../Images/ozone_test_chamber-removebg-preview.png";
 import './inhousefacility.css';
 const Inhouse3 = () => {
   return (

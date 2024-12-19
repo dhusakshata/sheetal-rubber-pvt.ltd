@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import Heatingoven from "../../Images/heating oven.jpg";
+import Heatingoven from "../../Images/heating oven.png";
 import './inhousefacility.css';
 const Inhouse5 = () => {
   return (
@@ -9,7 +9,7 @@ const Inhouse5 = () => {
          <div className="inhouse-header"> <h1>Heating Ovens</h1></div>
      <div className="inhouse-container">
      <div className="inhouse-image">
-          <img src={Heatingoven} alt="inhouse 1"style={{width:"400px",height:"330px"}} />
+          <img src={Heatingoven} alt="inhouse 1"style={{width:"450px",height:"350px"}} />
         </div>
       <div className="inhouse-paragrph">
       <p>

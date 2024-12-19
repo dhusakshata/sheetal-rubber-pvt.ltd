@@ -90,7 +90,10 @@ h1, h2, h3, h4, b {
   line-height: 1.6;
   color:black;
 }
-
+.facility-content3 p b{
+  color: #ff782b;
+ 
+}
 /* Content Overview Styling */
 .facility-content3 {
   display: flex;
@@ -120,7 +123,7 @@ h1, h2, h3, h4, b {
   gap: 15px;
   padding: 20px;
   background-color: #fdfdfd;
-  border: 2px solid #f28c38;
+  border: 2px solid#ff782b;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -132,7 +135,7 @@ h1, h2, h3, h4, b {
 
 .info-boxe3 h2 {
   font-size: 1.5rem;
-  color: #f28c38;
+  color: #ff782b;
   margin-bottom: 10px;
 }
 
@@ -154,7 +157,7 @@ h1, h2, h3, h4, b {
 }
 
 .info-boxe3 ul li b {
-  color: #f28c38;
+  color: #ff782b;
   font-weight: bold;
 }
 

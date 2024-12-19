@@ -14,7 +14,7 @@ import "./App.css";
 import Header from "./Components/Header/header.js";
 import Footer from "./Components/Footer/footer.js";
 import AboutUs from "./Components/About/about.js";
-// import HamburgerMenu from "./Components/Hamburge/hambarge.js";
+//  import HamburgerMenu from "./Components/Hamburge/hambarge.js";
 
 import Home from "./Components/Home/Home.js";
 import Product from "./Components/Products/product.js";
@@ -67,10 +67,10 @@ const App = () => {
   return (
     <Router>
         <ScrollToTop /> {/* Ensure it's placed above your routes */}
-        {/* <HamburgerMenu/> */}
+        
       <Header /> 
-       
       {/* <HamburgerMenu/> */}
+     
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />

@@ -1,99 +1,136 @@
-/* General Reset */
-body {
+/* Resetting styles */
+* {
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
 }
 
-/* Navbar Container */
-.navbar {
-  display: none;
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
+body {
+  background-color: #f4f4f4; /* Ensure there's a background color */
+}
+
+/* Navbar container styles */
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-}
-
-
-/* Hamburger Menu */
-.hamburger {
-  background: none;
-  border: none;
+  padding: 10px 20px;
+ 
   color: white;
-  font-size: 24px;
-  cursor: pointer;
-  display: none; /* Hidden by default */
-}
-
-/* Navbar Links */
-.navbar-links {
-  display: none;
-}
-
-.navbar-links ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar-links ul li {
   position: relative;
 }
 
-.navbar-links ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 5px 10px;
+/* Navbar links container */
+.navbar-links {
+  display: none;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+/* Make sure the hamburger menu is a fixed size */
+.hamburger-menu {
+  position: fixed; /* Keeps the menu fixed on the screen */
+  top: 0;
+  right: 0; /* Or use left: 0, depending on your design */
+
+  display: none; /* Initially hidden */
+  z-index: 9999; /* Ensure it stays on top of other content */
+}
+
+/* When the hamburger menu is toggled, make it visible */
+.hamburger-menu.open {
   display: block;
 }
 
-.navbar-links ul li .dropdown {
+/* Content outside the menu should have an opacity change when the menu is open */
+.overlay {
+  display: none;
+}
+
+.hamburger-menu.open + .overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+ 
+  
+ 
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #444;
+
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
   top: 30px;
-  left: 0;
-  padding: 10px 0;
-  list-style: none;
-  width: 150px;
-  z-index: 100;
 }
 
-.navbar-links ul li .dropdown li {
-  padding: 5px 10px;
+.dropdown-menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
 }
 
-.navbar-links ul li:hover .dropdown {
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
-/* Responsive Design */
+
+/* Media Query for Mobile */
 @media (max-width: 768px) {
-  .hamburger {
-      display: block; /* Show hamburger on small screens */
+ 
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
   }
 
-  .navbar-links {
-      display: none; /* Hide links by default */
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      padding: 10px 0;
+  .navbar-links a {
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .navbar-links.active {
-      display: flex; /* Show links when active */
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+   width: 50px;
+   height: 200px;
+    background-color: #333;
+    z-index: 100000;
+    padding-top: 60px;
   }
+}
 
-  .navbar-links ul {
-      flex-direction: column;
-      align-items: center;
-  }
+/* Dropdown hover handling for submenus */
+.sub-dropdown-menu {
+  display: none;
+  background-color: orangered;
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+
+.sub-dropdown-menu a {
+  color: white;
+  padding: 8px 10px;
+  display: block;
+}
+
+.sub-dropdown:hover .sub-dropdown-menu {
+  display: block;
 }

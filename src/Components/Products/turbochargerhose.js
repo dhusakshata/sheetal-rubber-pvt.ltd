@@ -1,6 +1,6 @@
 import React from "react";
 import "./product2.css";
-import Turbocharger from "../../Images/Turbo-charger.png";
+import Turbocharger1 from "../../Images/Turbo-charger1.png";
 import { motion } from "framer-motion";
 
 function turbocharger() {
@@ -29,7 +29,7 @@ function turbocharger() {
         animate={{ opacity: 1, x: 0 }}    // End position (center)
         transition={{ duration:1 }}      // Duration of animation
       >
-        <img src={Turbocharger} alt="Assembly Hoses" />
+        <img src={Turbocharger1} alt="Assembly Hoses" />
       </motion.div>
 
       {/* Right Side: Info */}

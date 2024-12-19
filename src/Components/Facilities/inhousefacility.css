@@ -15,7 +15,7 @@ h1, h2, h3, h4, b {
   text-align: center;
   margin-bottom: 10px; /* Reduced margin for less space below the heading */
   background-color:#0f5286;
-  margin-top: -20px;
+  margin-top: -10px;
   border-radius: 10px;
    padding: 30px;
    animation: slideDownEffect 1s ease-in-out;
@@ -88,7 +88,7 @@ h1, h2, h3, h4, b {
 /* Content Section */
 .inhouse-content {
   background-color: #fdfdfd;
-  border: 2px solid #f28c38; 
+  border: 2px solid#ff782b; 
   border-radius: 8px;
   padding: 20px; 
   line-height: 1.6;
@@ -104,7 +104,7 @@ h1, h2, h3, h4, b {
 }
 
  .inhouse-content h3 {
-  color: #f28c38; /* Orange for subheadings */
+  color:#ff782b; /* Orange for subheadings */
 }
 
 .inhouse-content h3 {
@@ -124,7 +124,10 @@ h1, h2, h3, h4, b {
   color: black;
   margin-bottom: 10px; /* Reduced space below paragraphs */
 }
-
+.inhouse-content p b{
+  color: #ff782b;
+ 
+}
 .inhouse-content ul {
   list-style-type: disc;
   padding-left: 16px;
@@ -136,7 +139,7 @@ h1, h2, h3, h4, b {
 }
 
 .inhouse-content ul li b {
-  color: #f28c38; /* Highlighted text in orange */
+  color: #ff782b; /* Highlighted text in orange */
   font-weight: bold;
 }
 
