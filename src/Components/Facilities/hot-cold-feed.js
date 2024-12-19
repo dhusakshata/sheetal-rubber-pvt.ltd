@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './SubFacility.css';// Importing the CSS for styling
 import HotFeed from "../../Images/hot-feed-rubber-extruder-machine-removebg-preview.png";
 import ColdFeed from "../../Images/Cold_Feed_Extruder.png";
-import CoExtrusion from "../../Images/CO-EXTRUSION.webp";
+import CoExtrusion from "../../Images/co-extursion.jpeg";
 
 const Facility1 = () => {
   return (
@@ -63,7 +63,7 @@ const Facility1 = () => {
                 
               
               </div>
-              <div className="info-box"><h4>Advantages:</h4>
+              <div className="info-box"><h4 >Advantages:</h4>
               <ul>
                 <li>
                 <b>Cost-Effective</b>: Optimized for continuous production of large volumes.
@@ -120,8 +120,9 @@ const Facility1 = () => {
               </div>
             </div>
             <div className="facility-info-right">
-              <h4>Advantages:</h4>
+            
               <div className="info-box">
+              <h4>Advantages:</h4>
                 <ul>
                   <li>
                   <b> Flexibility:</b> Capable of handling different materials and complex shapes. 
@@ -202,7 +203,7 @@ const Facility1 = () => {
              
               
               </div>
-              <div className="info-box"><h3>Advantages:</h3>
+              <div className="info-box"><h4>Advantages:</h4>
               <ul>
                 <li><b>Versatility: </b> Custom solutions for advanced performance characteristics in products.</li>
                 <li><b>Cost-Effective:</b> Single-step process for producing multi-layer products, reducing manufacturing complexity.</li>

@@ -13,15 +13,15 @@ const Facility2 = () => {
         <p>
         Our production line is equipped with dual head extruders for multi-layer extrusion, allowing for the simultaneous processing of multiple materials into a single, high-performance product. This advanced machinery ensures precise layering of different rubber compounds, each with unique properties, to create complex profiles tailored to specific applications. With the ability to extrude multiple layers in one continuous process, our dual head extruders enhance production efficiency while ensuring the highest level of consistency and quality. This capability is particularly advantageous for producing products like hoses, seals, and gaskets, where multi-layer construction improves durability, flexibility, and resistance to environmental factors.
         </p>
-      </div>
-
-      <div className="facility-content2">
-        {/* Left Side Image */}
         <div className="facility-image2">
           <img src={Dualhead} alt="Facility 1" />
         </div>
+        
+      </div>
 
-        <div className='dual-head'>
+      <div className="facility-content2">
+      
+      <div className='dual-head'>
           <h1>Dual Head Extruder Overview:</h1>
           <ul>
             <li>
@@ -89,8 +89,8 @@ const Facility2 = () => {
             
           </ul>
         </div>
-      </div>
     
+      </div>
       <h2>Comparison for a Rubber-Producing Company</h2>
 
 <table>
@@ -130,6 +130,7 @@ const Facility2 = () => {
    
     
     </div>
+   
   );
 };
 

@@ -1,17 +1,30 @@
 
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import utm from "../../Images/utm.png";
 import './inhousefacility.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Inhouse4 = () => {
+  // Initialize AOS
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,  // Animation duration
+        offset: 100,     // Trigger point from the top
+        once: false,     // Animates every time you scroll
+        mirror: true,    // Reverse animation when scrolling up
+      });
+      AOS.refresh(); // Refresh animations to sync with dynamic content
+    }, []);
   return (
     <div className="inhouse-facility-container">
          <div className="inhouse-header"> <h1>UTM -Tensile machine load 200kg to 5000kg</h1></div>
      <div className="inhouse-container">
-     <div className="inhouse-image">
-          <img src={utm} alt="inhouse 1"style={{width:"400px",height:"350px"}} />
+     <div className="inhouse-image" data-aos="fade-right" >
+          <img src={utm} alt="inhouse 1"style={{width:"400px",height:"350px"}}  />
         </div>
-      <div className="inhouse-paragrph">
+      <div className="inhouse-paragrph" data-aos="fade-left">
       <p>
       The <b>UTM-1 (Universal Testing Machine) </b>is a highly adaptable testing apparatus widely used in materials science and engineering to assess the mechanical properties of a variety of materials, including metals, plastics, rubber, and composites. Designed to perform a range of tests, including tensile, compressive, and flexural evaluations, it provides critical data on material behavior under stress. The machine features advanced load cells that ensure high accuracy in measuring forces, while its digital display offers real-time monitoring of load and elongation during testing.
 
@@ -22,14 +35,14 @@ The Universal Testing Machine (UTM) is a vital piece of equipment in rubber prod
       </div>
      </div>
      <div className="inhouse-content">
-      <h3>Overview of UTM – Tensile Machine:</h3>
+      <h2>Overview of UTM – Tensile Machine:</h2>
 <p><b>Purpose: </b>
 The <b>UTM</b> is used to determine the tensile strength, elongation, and other mechanical properties of materials under controlled conditions. This information is crucial for evaluating the performance of rubber products in real-world applications.
 </p>
 <p><b>Operation:</b>
 The machine operates by applying a uniaxial load to a material sample until failure occurs. The load is applied at a constant rate, and the machine measures the force exerted and the corresponding elongation of the sample.</p>
 
-<h2>Features and Specifications:</h2>
+<h4>Features and Specifications:</h4>
         <ul>
           <li><b>Load Capacity: </b>The UTM can handle loads from 200 kg to 5000 kg, allowing for testing of both lightweight and heavy-duty materials.
           </li>
@@ -38,7 +51,7 @@ The machine operates by applying a uniaxial load to a material sample until fail
           <li><b>Data Acquisition: </b> The machine typically includes software for data collection and analysis, allowing users to generate reports on material properties and performance.</li>
           
         </ul>
-         <h2>Advantages of UTM – Tensile Machine:</h2>
+         <h4>Advantages of UTM – Tensile Machine:</h4>
         <ul>
         <li><b>Comprehensive Testing:  </b>   The UTM can perform various tests (tensile, compression, and flexural), providing a complete profile of material properties.</li>
           <li><b>Quality Assurance:   </b> Regular testing with a UTM ensures that rubber products meet industry standards and specifications, minimizing the risk of product failure in applications.</li>
@@ -47,7 +60,7 @@ The machine operates by applying a uniaxial load to a material sample until fail
           
         </ul>
 
-        <h2>Applications:</h2>
+        <h4>Applications:</h4>
         <ul>
           <li><b>Rubber Testing:</b> Used to assess the tensile strength and elongation properties of rubber compounds, essential for quality control in production.
           </li>
@@ -56,8 +69,8 @@ The machine operates by applying a uniaxial load to a material sample until fail
           
         </ul>
         
-        <h2>Conclusion:
-        </h2>
+        <h4>Conclusion:
+        </h4>
         <p>The <b> UTM – Tensile Machine, </b> with its load capacity ranging from <b>200 kg to 5000 kg</b>, is a critical tool for rubber-producing companies. Its ability to accurately assess the mechanical properties of materials supports quality assurance, product development, and compliance with industry standards. By integrating UTM testing into the production process, manufacturers can ensure that their rubber products perform reliably in demanding applications.</p>
       </div>
     </div>

@@ -43,25 +43,25 @@ import ArrowToggle from "./Components/Arrowtoggle/arrowtoggle.js";
 
 
 //Facility pages
-import Facility1 from "./Components/Facilities/facility1.js";
-import Facility2 from "./Components/Facilities/facility2.js";
-import Facility3 from "./Components/Facilities/facility3.js";
-import Facility4 from "./Components/Facilities/facility4.js";
-import Facility5 from "./Components/Facilities/facility5.js";
-import Facility6 from "./Components/Facilities/facility6.js";
+import Facility1 from "./Components/Facilities/hot-cold-feed.js";
+import Facility2 from "./Components/Facilities/Dual-head-extruders.js";
+import Facility3 from "./Components/Facilities/Auto-clave-vulcanizer.js";
+import Facility4 from "./Components/Facilities/Dispersion-kneader.js";
+import Facility5 from "./Components/Facilities/3-role-calendaring-machine.js";
+import Facility6 from "./Components/Facilities/Compression-transfer-molding.js";
 // import Facility7 from "./Components/Facilities/facility7.js";
-import Facility8 from "./Components/Facilities/facility8.js";
-import Facility9 from "./Components/Facilities/facility9.js";
-import Facility10 from "./Components/Facilities/facility10.js";
-import Facility11 from "./Components/Facilities/facility11.js";
+import Facility8 from "./Components/Facilities/Rubber-mixing-mill.js";
+import Facility9 from "./Components/Facilities/Knitting-machine.js";
+import Facility10 from "./Components/Facilities/Braiding-Machines.js";
+import Facility11 from "./Components/Facilities/Conventional-machines.js";
 
 //Inhouse Facility
-import Inhouse1 from "./Components/Facilities/inhouse1.js";
-import Inhouse2 from "./Components/Facilities/inhouse2.js";
-import Inhouse3 from "./Components/Facilities/inhouse3.js";
-import Inhouse4 from "./Components/Facilities/inhouse4.js";
-import Inhouse5 from "./Components/Facilities/inhouse5.js";
-import Inhouse6 from "./Components/Facilities/inhouse6.js";
+import Inhouse1 from "./Components/Facilities/Moving-Die-Rheometer.js";
+import Inhouse2 from "./Components/Facilities/Burst-pressure-test-machines.js";
+import Inhouse3 from "./Components/Facilities/Ozone-test-chamber.js";
+import Inhouse4 from "./Components/Facilities/UTM-tensil.js";
+import Inhouse5 from "./Components/Facilities/Heating-oven.js";
+import Inhouse6 from "./Components/Facilities/Muffle-furnance.js";
 
 const App = () => {
   return (
@@ -94,24 +94,24 @@ const App = () => {
      
         
  {/* Facility Pages */}
- <Route path="/facility1" element={<Facility1 />} />
-        <Route path="/facility2" element={<Facility2 />} />
-        <Route path="/facility3" element={<Facility3 />} />
-        <Route path="/facility4" element={<Facility4 />} />
-        <Route path="/facility5" element={<Facility5 />} />
-        <Route path="/facility6" element={<Facility6 />} />
+ <Route path="/hot-cold-feed" element={<Facility1 />} />
+        <Route path="/Dual-head-extruders" element={<Facility2 />} />
+        <Route path="/Auto-clave-vulcanizer" element={<Facility3 />} />
+        <Route path="/Dispersion-kneader" element={<Facility4 />} />
+        <Route path="/3-role-calendaring-machine" element={<Facility5 />} />
+        <Route path="/Compression-transfer-molding" element={<Facility6 />} />
         {/* <Route path="/facility7" element={<Facility7 />} /> */}
-        <Route path="/facility8" element={<Facility8 />} />
-        <Route path="/facility9" element={<Facility9 />} />
-        <Route path="/facility10" element={<Facility10 />} />
-        <Route path="/facility11" element={<Facility11 />} />
+        <Route path="/Rubber-mixing-mill" element={<Facility8 />} />
+        <Route path="/Knitting-machine" element={<Facility9 />} />
+        <Route path="/Braiding-Machines" element={<Facility10 />} />
+        <Route path="/Conventional-machines" element={<Facility11 />} />
 
-        <Route path="/inhouse1" element={<Inhouse1 />} />
-        <Route path="/inhouse2" element={<Inhouse2 />} />
-        <Route path="/inhouse3" element={<Inhouse3 />} />
-        <Route path="/inhouse4" element={<Inhouse4 />} />
-        <Route path="/inhouse5" element={<Inhouse5 />} />
-        <Route path="/inhouse6" element={<Inhouse6 />} />
+        <Route path="/Moving-Die-Rheometer" element={<Inhouse1 />} />
+        <Route path="/Burst-pressure-test-machines" element={<Inhouse2 />} />
+        <Route path="/Ozone-test-chamber" element={<Inhouse3 />} />
+        <Route path="/UTM-tensil" element={<Inhouse4 />} />
+        <Route path="/Heating-oven" element={<Inhouse5 />} />
+        <Route path="/Muffle-furnance" element={<Inhouse6 />} />
         
       </Routes>
       <Footer/>

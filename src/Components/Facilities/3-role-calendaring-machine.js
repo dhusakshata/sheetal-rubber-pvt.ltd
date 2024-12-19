@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';
-import Role from "../../Images/3 Role Calendaring Machine.webp";
+import Role from "../../Images/3 role.jpeg";
 
 const Facility5 = () => {
   return (

@@ -68,7 +68,7 @@ h1, h2, h3, h4, b {
   border-radius: 10px;
  
   margin: 20px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.8s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 /* Zoom-In and Out Effect on Hover */
 .inhouse-image img:hover {
@@ -90,39 +90,48 @@ h1, h2, h3, h4, b {
   background-color: #fdfdfd;
   border: 2px solid#ff782b; 
   border-radius: 8px;
-  padding: 20px; 
+  padding: 40px; 
+ 
   line-height: 1.6;
   margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.9s ease, box-shadow 0.5s ease;
   margin-left: 30px;
-  padding: 40px;
+  
 }
 
 .inhouse-content:hover {
-  transform: translateY(-5px); /* Lift on hover */
+  transform: translateY(-50px); /* Lift on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
 }
 
  .inhouse-content h3 {
-  color:#ff782b; /* Orange for subheadings */
+  color:#ff782b;
 }
 
 .inhouse-content h3 {
   font-size: 1.5rem;
-  margin-bottom: 10px; /* Reduced space below h3 */
+  margin-bottom: 10px;
 }
 
 .inhouse-content h2 {
   font-size: 1.8rem;
   margin-bottom: 8px; 
   color: black;
+  font-weight: bold;
+}
+.inhouse-content h4 {
+  font-size: 18px;
+ padding-top: 20px;
+  color: black;
+  font-weight: bold;
 }
 
 .inhouse-content p {
   font-size: 16px; 
   line-height: 1.6; 
   color: black;
-  margin-bottom: 10px; /* Reduced space below paragraphs */
+  padding: 5px;
+  margin-bottom: 10px; 
 }
 .inhouse-content p b{
   color: #ff782b;
@@ -141,6 +150,18 @@ h1, h2, h3, h4, b {
 .inhouse-content ul li b {
   color: #ff782b; /* Highlighted text in orange */
   font-weight: bold;
+}
+.inhouse-container,
+.inhouse-content {
+  overflow: hidden; /* Avoid clipping animations */
+}
+
+.inhouse-image img {
+  transition: transform 0.5s ease-in-out; /* Smooth image movement */
+}
+
+.inhouse-paragraph {
+  transition: opacity 0.5s ease-in-out; /* Smooth fade */
 }
 
 /* Responsive Design */
@@ -171,3 +192,6 @@ h1, h2, h3, h4, b {
     font-size: 1.5rem;
   }
 }
+
+
+/* for Animations */

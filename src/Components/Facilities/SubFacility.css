@@ -121,8 +121,16 @@ h1, h2, h3, h4, b {
   margin-bottom: 15px;
   border-bottom: 2px solid #ff782b;
   display: inline-block;
+   font-weight: bold;
 }
-
+.cold-feed h2{
+  font-size: 1.8rem;
+  color: #ff782b;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff782b;
+  display: inline-block;
+   font-weight: bold;
+}
 .facility-info {
   display: flex;
   gap: 20px;
@@ -135,18 +143,17 @@ h1, h2, h3, h4, b {
 }
 
 .info-box {
-  background-color: whitesmoke;
+
   padding: 15px;
   margin-bottom: 20px;
-  border-radius: 8px;
-  border: 1px solid #ff782b;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .info-box h4 {
-  font-size: 1.2rem;
+  font-size: 18px;
   margin-bottom: 10px;
   color:black;
+  font-weight: bold;
 }
 
 .info-box p {
@@ -243,7 +250,7 @@ h1, h2, h3, h4, b {
 .facility-content2 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+
 }
 
 .facility-image2 {
@@ -260,16 +267,29 @@ h1, h2, h3, h4, b {
   
 }
 
+/* Content Section Styling */
+.facility-content2 {
+  background-color: #fdfdfd;
+  border: 2px solid #ff782b;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  margin-left: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.facility-content2:hover {
+  transform: translateY(-50px); /* Lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
 /* Section Styling */
 .dual-head,
 .dual-Application,
 .dual-advantages,
 .dual-production {
-  background-color: #fef8f3;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid#ff782b;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+  padding: 10px;
+  
 }
 
 .dual-head h1,
@@ -318,7 +338,7 @@ table th,
 table td {
   padding: 15px;
   text-align: left;
-  border: 1px solid whitesmoke;
+  border: 1px solid rgb(213, 211, 211);
 }
 
 table th {
@@ -603,7 +623,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content5:hover {
-  transform: translateY(-5px);
+  transform: translateY(-50px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -754,7 +774,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content6:hover {
-  transform: translateY(-5px);
+  transform: translateY(-50px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -906,7 +926,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content8:hover {
-  transform: translateY(-5px); /* Lift on hover */
+  transform: translateY(-50px); /* Lift on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
 }
 
@@ -1056,7 +1076,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content9:hover {
-  transform: translateY(-5px); /* Lift on hover */
+  transform: translateY(-50px); /* Lift on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
 }
 
@@ -1207,7 +1227,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content10:hover {
-  transform: translateY(-5px); /* Lift on hover */
+  transform: translateY(-50px); /* Lift on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
 }
 
@@ -1344,7 +1364,7 @@ table tr:nth-child(odd) {
 }
 
 .facility-content11:hover {
-  transform: translateY(-5px); /* Lift on hover */
+  transform: translateY(-50px); /* Lift on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
 }
 

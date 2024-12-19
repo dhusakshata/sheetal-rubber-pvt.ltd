@@ -96,14 +96,16 @@ h1, h2, h3, h4, b {
 }
 /* Content Overview Styling */
 .facility-content3 {
+
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding: 20px;
   background-color: #ffffff;
-  border: 1px solid #ddd;
+  border: 1px solid #ff782b;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .facility-content3 h1 {
@@ -115,33 +117,36 @@ h1, h2, h3, h4, b {
   display: inline-block;
   padding-bottom: 8px;
 }
+.facility-content3:hover {
+  transform: translateY(-50px); /* Lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
 
 /* Info Box Styling */
 .info-boxe3 {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 20px;
-  background-color: #fdfdfd;
-  border: 2px solid#ff782b;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+  
 }
 
-.info-boxe3:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
+
 
 .info-boxe3 h2 {
   font-size: 1.5rem;
   color: #ff782b;
   margin-bottom: 10px;
 }
-
+.info-boxe3 h4{
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 .info-boxe3 p,
 .info-boxe3 ul {
-  font-size: 1rem;
+  font-size: 16px;
   color:black;
   line-height: 1.6;
   margin: 0;

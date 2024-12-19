@@ -31,6 +31,33 @@ const data = [
   { id: 14, name: "Organic", link: "/organic" },
   { id: 15, name: "Silicon Polyester", link: "/siliconpolyester" },
   { id: 16, name: "Turbocharger", link: "/turbochargerhose" },
+
+  //Manufacturing facilities
+  { id: 17, name: "hot cold feed", link: "/hot-cold-feed" },
+  { id: 18, name: "Dual head extruders", link: "/Dual-head-extruders" },
+  { id: 19, name: "Auto clave vulcanizer", link: "/Auto-clave-vulcanizer" },
+  { id: 20, name: "Dispersion kneader", link: "/Dispersion-kneader" },
+  { id: 21, name: "3 role calendaring machine", link: "/3-role-calendaring-machine" },
+  { id: 22, name: "Compression transfer molding", link: "/Compression-transfer-molding" },
+  { id: 23, name: "Rubber mixing mill", link: "/Rubber-mixing-mill" },
+  { id: 24, name: "Knitting machine", link: "/Knitting-machine" },
+  { id: 25, name: "Braiding Machines", link: "/Braiding-Machines" },
+  { id: 26, name: "Conventional machines", link: "/Conventional-machines" },
+
+  //Inhouse facilities
+  { id: 27, name: "Moving Die Rheometer", link: "/Moving-Die-Rheometer" },
+  { id: 28, name: "Burst pressure test machines", link: "/Burst-pressure-test-machines" },
+  { id: 29, name: "Ozone test chamber", link: "/Ozone-test-chamber" },
+  { id: 30, name: "UTM tensil", link: "/UTM-tensil" },
+  { id: 31, name: "Heating oven", link: "/Heating-oven" },
+  { id: 32, name: "Muffle furnance", link: "/Muffle-furnance" },
+
+
+
+
+
+
+
 ];
 
 function Header() {
@@ -195,37 +222,37 @@ const handleToggleMenu = () => {
                     {manufacturingDropdown && (
                      
                      <div className="sub-dropdown-menu">
-      <Link to="/facility1" onClick={() => setManufacturingDropdown(false)}>
+      <Link to="/hot-cold-feed" onClick={() => setManufacturingDropdown(false)}>
         Hot Feed, Cold Feed & Co-Extrusion Extruders
       </Link>
-      <Link to="/facility2" onClick={() => setManufacturingDropdown(false)}>
+      <Link to="/Dual-head-extruders" onClick={() => setManufacturingDropdown(false)}>
         Dual Head Extruders for Multi-Layer Extrusion
       </Link>
-      <Link to="/facility3" onClick={() => setManufacturingDropdown(false)}>
+      <Link to="/Auto-clave-vulcanizer" onClick={() => setManufacturingDropdown(false)}>
         Auto Clave Vulcanizar (Quick Lock Type)
       </Link>
-      <Link to="/facility4" onClick={() => setManufacturingDropdown(false)}>
+      <Link to="/Dispersion-kneader" onClick={() => setManufacturingDropdown(false)}>
         Dispersion Kneader to Internal Mixer & Stock Blenders
       </Link>
-      <Link to="/facility5" onClick={() => setManufacturingDropdown(false)}>
+      <Link to="/3-role-calendaring-machine" onClick={() => setManufacturingDropdown(false)}>
         3 Role Calendaring Machine
       </Link>
-      <Link to="/facility6" onClick={() => setManufacturingDropdown(false)}>
+      <Link to="/Compression-transfer-molding" onClick={() => setManufacturingDropdown(false)}>
         Compression Transfer Molding
       </Link>
       {/* <Link to="/facility7" onClick={() => setManufacturingDropdown(false)}>
         Hydraulic Presses
       </Link> */}
-      <Link to="/facility8" onClick={() => setManufacturingDropdown(false)}>
+      <Link to="/Rubber-mixing-mill" onClick={() => setManufacturingDropdown(false)}>
         Rubber Mixing Mills
       </Link>
-      <Link to="/facility9" onClick={() => setManufacturingDropdown(false)}>
+      <Link to="/Knitting-machine" onClick={() => setManufacturingDropdown(false)}>
         Knitting Machines
       </Link>
-      <Link to="/facility10" onClick={() => setManufacturingDropdown(false)}>
+      <Link to="/Braiding-Machines" onClick={() => setManufacturingDropdown(false)}>
         Braiding Machines
       </Link>
-      <Link to="/facility11" onClick={() => setManufacturingDropdown(false)}>
+      <Link to="/Conventional-machines" onClick={() => setManufacturingDropdown(false)}>
         Other Conventional Machines
       </Link>
     </div>
@@ -245,22 +272,22 @@ const handleToggleMenu = () => {
                   </span>
                   {inhouseDropdown && (
                     <div className="sub-dropdown-menu">
-                      <Link to="/inhouse1" onClick={handleLinkClick}>
+                      <Link to="/Moving-Die-Rheometer" onClick={handleLinkClick}>
                       Moving Die Rheometer
                       </Link>
-                      <Link to="/inhouse2" onClick={handleLinkClick}>
+                      <Link to="/Burst-pressure-test-machines" onClick={handleLinkClick}>
                       Burst Pressure Test Machine (Horizontal) with Hydraulic testing facility
                       </Link>
-                      <Link to="/inhouse3" onClick={handleLinkClick}>
+                      <Link to="/Ozone-test-chamber" onClick={handleLinkClick}>
                       Ozone Test Chamber
                       </Link>
-                      <Link to="/inhouse4" onClick={handleLinkClick}>
+                      <Link to="/UTM-tensil" onClick={handleLinkClick}>
                       UTM-1
                       </Link>
-                      <Link to="/inhouse5" onClick={handleLinkClick}>
+                      <Link to="/Heating-oven" onClick={handleLinkClick}>
                       Heating Ovens
                       </Link>
-                      <Link to="/inhouse6" onClick={handleLinkClick}>
+                      <Link to="/Muffle-furnance" onClick={handleLinkClick}>
                       Muffle Furnace
                       </Link>
                     </div>
