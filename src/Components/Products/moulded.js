@@ -40,11 +40,7 @@ const moulded = () => {
             transition={{ duration: 1 }}      // Duration of animation
           >
 
-<p>
-        Engineered for safe and efficient fluid
-transfer in automotive and industrial
-systems, with inner diameters ranging from
-2 mm to 45 mm.We specialize in high-performance,
+<p>We specialize in high-performance,
 custom-moulded parts for various
 industries, using materials like SBR,
 EPDM, PVC/NBR, Silicone, Neoprene,

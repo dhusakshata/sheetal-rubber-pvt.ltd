@@ -45,20 +45,16 @@ environments, with a temperature range of
       
         <h3>Key Features and Benefits:</h3>
         <ul>
-          <li><b>Suction Hose:</b> Vacuum integrity
-for fluid/air transfer.
+          <li>The suction hose is designed to maintain vacuum integrity for the transfer of fluids and air.
 </li>
-          <li><b>Air Filter Hose: </b>Durable for clean
-engine air intake.
+          <li>The air filter hose is durable and ensures clean air intake for the engine.
 </li>
-          <li><b>Flexible Hose:</b> Versatile for fluids
-and gases.
+          <li>The flexible hose is versatile, making it suitable for the transfer of both fluids and gases.
 
           </li>
-          <li><b>Exhaust Hose:</b> Heat-resistant for
-          exhaust gases.
+          <li>These hoses have a good bend radius, for trickier connections, and is resistant to anti-freeze and corrosion inhibitors.
           </li>
-          
+          <li>	It is useful for air cleaner applications in automotive filters.</li>
         </ul>
         
         </p>

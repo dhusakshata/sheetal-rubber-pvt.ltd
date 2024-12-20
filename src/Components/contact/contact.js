@@ -44,9 +44,9 @@ const ContactPage = () => {
           {/* Info Column */}
           <div className="info-column">
             <p><strong>Sheetal Rubber Products (P) Ltd. </strong></p>
-            <p><b>Address : </b>  J-395, MIDC, Bhosari, Pune - 411026, INDIA</p>
+            <p><strong>Address : </strong>  J-395, MIDC, Bhosari, Pune - 411026, INDIA</p>
             <p><strong>Phone : </strong> +91 - (20) 27130244 ,+91 - (20) 27130794</p>
-            <p><strong>Email : </strong>     info@sheetalrubber.com</p>
+            <p><strong>Email : </strong> sheetalrubber@gmail.com</p>
           </div>
           
           {/* Map Column */}

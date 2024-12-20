@@ -6,7 +6,7 @@
   }
   .video-container {
     width: 100%; 
-    height: 75vh; 
+    height: 80vh; 
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -23,40 +23,41 @@
 .about-us-container {
   display: flex;
   flex-direction: column; 
-  margin: 0 auto; /* Center-align and reset margins */
-  padding: 20px; /* Add padding for better spacing */
+  margin: 0 auto; 
+  padding: 20px; 
   background-color: whitesmoke;
   color: black;
 }
 
 /* About Us Title */
 .about-us-title {
-  margin: 20px 0; /* Add controlled spacing */
+ 
   text-align: center;
 }
 
 .about-us-title h1 {
-  font-size: 2.5rem; /* Adjust for better spacing */
+  font-size: 2rem; 
   margin: 0 auto; 
   font-weight: bold;
-
   opacity: 0;
-  transform: translateY(-100%); /* Position the heading off-screen from the top */
-  transition: opacity 1s, transform 1s; /* Smooth transition for sliding down */
+  transform: translateY(-100%); 
+  transition: opacity 1s, transform 1s;
 }
-/* When the heading is in view, apply the 'in-view' class */
+
 .about-us-title h1.in-view {
   opacity: 1;
-  transform: translateY(0); /* Move the heading to its original position */
+  transform: translateY(0); 
 }
 
 
 /* Reduce Gap Between Video and About Section */
 .about-us-content {
   display: flex;
-  flex-wrap: wrap; /* Adjust for responsiveness */
-  gap: 10px; /* Reduce gap between info and video */
-  justify-content: space-around; /* Center items */
+  flex-wrap: wrap; 
+  gap: 10px; 
+  justify-content: space-around;
+  margin: 40px; 
+  margin-top: -10px;
 }
 
 /* Responsive Adjustments */
@@ -72,10 +73,9 @@
 .about-us-video {
   flex: 1; 
   padding: 20px;
-  border-radius: 8px;
+
   color: black;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
+ 
 }
 
 
@@ -136,7 +136,7 @@
   }
 
   .about-us-title h1 {
-    font-size: 2.5rem; /* Reduce heading size */
+    font-size: 2rem; /* Reduce heading size */
   }
 
   
@@ -186,8 +186,8 @@
   color: white; /* White text on hover */
 }
 
-/* Products Section */
-/*Annimation Effect*/
+
+
 /* Top-to-bottom animation */
 .animate-slide-top {
   opacity: 0; /* Initially hidden */
@@ -196,14 +196,12 @@
 }
 
 .animate-slide-top.visible {
-  opacity: 1; /* Make visible */
-  transform: translateY(0); /* End position at normal flow */
+  opacity: 1; 
+  transform: translateY(0); 
 }
 .animate-slide-top:nth-of-type(2) {
   transition-delay: 0.5s; /* 0.5s delay for the second element */
 }
-
-
 
 .our-products {
   background-color: #ff782b;
@@ -214,10 +212,10 @@
 }
 
 .our-products h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
-  margin-top: -10px;
+ margin-top: -40px;
   
 }
 
@@ -288,16 +286,12 @@
   justify-content: center;
 }
 
-/* .slick-dots {
-  bottom: -20px;
-} */
-/*style for arrow*/
-/* Hide the default "Prev" and "Next" text */
+
 .slick-prev:before, .slick-next:before {
   content: ""; /* Removes the text */
   font-size: 36px; /* Adjust size */
   color: #000; /* Color of the arrow */
-  /* Optional: add some padding to make the arrow appear bigger */
+  
   padding: 10px;
 }
 
@@ -335,23 +329,23 @@
 /*  client logo container */
 
 .logo-container {
-  margin-top: 20px;
+
   border: 1px solid gray;
   width: 100%;
   height: 100%;
   text-align: center;
   padding: 20px 0;
   background-color:#0f5286;
-
+margin-bottom: 30px;
 }
 
 .logo-container h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-top: -10px;
   color: white;
   padding: 20px;
-  
+
 }
 
 
@@ -371,14 +365,14 @@
   width: 250px; /* Set a fixed width */
   height: 150px; /* Set a fixed height */
   display: block;
-  margin: 0 auto; 
+  margin-bottom: 20px; 
   padding: 10px; 
   box-sizing: border-box; 
   border-radius: 15px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
   object-fit: contain; 
-  border: 3px solid #ddd; /* Beautiful light border */
-  background-color: white; /* White background for logo items */
+  border: 3px solid #ddd; 
+  background-color: white; 
 }
 
 /* Hover Effect: Scale, Shadow, and Border Color Change */
@@ -539,7 +533,7 @@
 .slideshow-container {
   position: relative;
   width: 100%;
-  max-width: 750px;
+  max-width: 800px;
   margin: 30px auto;
   overflow: hidden;
   border-radius: 15px;
@@ -556,7 +550,7 @@
 }
 
 .application-head h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: black;
   text-transform: uppercase;
   display: inline-block;

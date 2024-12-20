@@ -39,30 +39,21 @@ const epdm = () => {
                            transition={{ duration: 1 }}      // Duration of animation
                          >
    <p>
-          High-performance hoses for radiator and cooling
+   High-performance hoses for radiator and cooling
 systems, built to DIN73411 & SAEJ20 Class D
 standards for durability, flexibility, and heat
 resistance.
 </p>
           <h3>Key Features and Benefits:</h3>
           <ul>
-            <li><b>Nylon/Polyester:</b> Flexible.
+            <li>Available in reinforcement as well as non-reinforcement options.
            </li>
-            <li><b>Meets SAE J20 Class A standards.Aramid/Kevlar:</b> High-strength, heatresistant
+            <li>Nylon/polyester reinforcement gives flexibility and aramid / Kevlar gives high strength.
             </li>
-            <li><b>Peroxide-Cured:</b> Heat, ozone, and aging
-           resistant.
+            <li>Our EPDM hoses are designed to operate continuously in temperatures ranging from -30°C to 140°C.
             </li>
-            <li><b>Reinforced/Non-Reinforced:</b> High or lowpressure use.</li>
-            <li><b>Applications:</b>
-<b>Automotive: </b>Radiators and charge air
-coolers.
-<b>Industrial:</b> Cooling systems in generators
-and compressors.
-<b>Heavy Equipment: </b>Engines in
-construction, mining, and agriculture.
-            </li>
-           
+            <li>Also available in peroxide-cured hoses.</li>
+            
           </ul>
             </motion.div>
           </div>

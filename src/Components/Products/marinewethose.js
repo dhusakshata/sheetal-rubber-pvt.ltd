@@ -47,26 +47,15 @@ top performance in marine environments.
 
           <h3>Key Features and Benefits:</h3>
           <ul>
-            <li><b>Standard Hoses:</b> Operate up to +180°C.
+            <li>We are Manufacturing all hoses from only the highest quality rubber and reinforcement fabrics; they are designed to operate at temperatures up to + 180°C. 
 
            </li>
-            <li><b>HT Hoses:</b> Withstand up to +230°C for
-            turbocharged applications.
+            <li>Our High Temperature Wet Exhaust and Turbo hoses, will operate at temperatures up to 230°C.
             </li>
             <li>
-           <b> Standards Compliance:</b> SAE J2006 R3 (Wet
-Exhaust), SAE J2006 R2 (EPDM).
+           	We are tested our hoses and meet the requirements of SAE J2006 R3. Our EPDM hose meets the requirements of SAE J2006 R2.
 
-            </li>
-            <li><b>Heat Resistance:</b> Handles extreme
-            temperatures.
-            </li>
-            <li><b>Durability:</b> Resists water, salt, and
-chemicals.
-Ideal for reliable, high-performance marine
-systems.
-
-            </li>
+           </li>
           </ul>
           </p>
        </motion.div>

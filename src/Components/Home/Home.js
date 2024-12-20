@@ -360,7 +360,7 @@ Application Area */}
     </div> */}
 <div className="slideshow-container">
   <div className="application-head animate-slide-top">
-    <h1>OUR APPLICATIONS</h1>
+    <h1>APPLICATIONS</h1>
   </div>
   <div className="slideshow-wrapper">
     <img

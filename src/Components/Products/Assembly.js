@@ -40,13 +40,12 @@ const Assembly = () => {
           <h3>Key Features and Benefits:</h3>
           <ul>
             <li>
-            <b>  Crimping:</b> High-pressure durability.
+            A hose or multiple hoses connected to transfer media to or from a vehicle tank, portable tank, or storage receptacle.
             </li>
-            <li> <b> CPC Clamps:</b> Leak-free in high-vibration setups.</li>
-            <li><b>Oil Resistant:</b> For engines, fuel, and oil.</li>
-            <li><b>Engine:</b> Heat-resistant connections.</li>
-            <li><b>Suction:</b> Maintains vacuum integrity.</li>
-            <li><b>Radiator:</b> Heat and pressure-resistant for cooling.</li>
+            <li>Sheetal Rubber can assemble flexible hoses and couplings into hose assemblies.</li>
+            <li>Hose assembly applications include engine hoses, oil resistance, suction hoses, and radiators.</li>
+            <li>We have an in-house crimping machine facility for hose assemblies.</li>
+            
           </ul>
         </motion.div>
       </div>

@@ -55,17 +55,15 @@ function siliconpolyester() {
           
           <h3>Key Features and Benefits:</h3>
           <ul>
-            <li><b>Durable & Weather-Resistant:</b> Good resistance to weather and ozone and resists
-            deterioration from coolant and heat transfer.</li>
-            <li>deterioration from coolant and heat transfer.
-            Wide Temperature Range: Operates from -50°C to +180°C.</li>
-            <li><b>Coolant & Heat Resistant:</b> Prevents deterioration from fluids and heat.
+            <li>	Our Silicon Hoses are having good resistance to weather and ozone and resists deterioration from coolant and heat transfer</li>
+            <li>Silicon Polyester Hoses having wide temp range which operates from -50°C to 180°C.</li>
+            <li>It prevents deterioration caused by fluids and heat.
             </li>
-            <li>our Silicone Polyster Hoses meet / exceeds SAEJ20 CLASS A standard
+            <li>Our Silicon Hoses meet requirements of SAEJ20 class A.
             </li>
-            <li><b>Customized hoses with Liners: </b>Available with the option of Fluorosilicone lining for added oil/ acids/ fuel resistance, or FKM/ Viton® lining for diesel combustion by-products/ exhaust gas recycle.
+            <li>We offer with the options of Fluorosilicon for oil/fuel and FKM / Viton liner for diesel combustion bye products / exhaust gas recycle.
           </li>
-          <li>Also available in different RAL colors.</li>
+         
           </ul>
         
           </p>

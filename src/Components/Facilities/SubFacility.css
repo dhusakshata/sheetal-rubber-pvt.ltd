@@ -25,18 +25,13 @@ h1, h2, h3, h4, b {
   max-width: 1400px;
   margin: 20px auto;
   padding: 20px;
-  background-color: whitesmoke;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
   border-radius: 8px;
 }
 
 .facility-header {
   text-align: center;
-  margin-bottom: 30px;
-  background-color:#0f5286;
-  margin-top: -30px;
-  border-radius: 10px;
-   padding: 40px;
+ 
    animation: slideDownEffect 1s ease-in-out;
 }
 @keyframes slideDownEffect {
@@ -52,12 +47,9 @@ h1, h2, h3, h4, b {
 
 .facility-header h1 {
   font-size: 2.5rem;
-  color: white;
+  color: black;
   text-align: center;
-  display: inline-block;
-  padding-bottom: 10px;
-  display: inline-block;
-  padding-bottom: 10px;
+  display: inline-block; 
   font-weight: bold;
  
 }
@@ -75,9 +67,9 @@ h1, h2, h3, h4, b {
 
 .facility-paragraph {
   text-align: justify;
-  margin-bottom: 40px;
+ 
   line-height: 1.6;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .facility-paragraph p {
@@ -188,18 +180,12 @@ h1, h2, h3, h4, b {
   max-width: 1400px;
   margin: 20px auto;
   padding: 20px;
-  background-color:whitesmoke;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+
 }
 
 .facility-header2 {
   text-align: center;
-  margin-bottom: 30px;
-  background-color:#0f5286;
-  margin-top: -10px;
-  border-radius: 10px;
-   padding: 40px;
+   padding: 20px;
    animation: slideDownEffect 1s ease-in-out;
 }
 @keyframes slideDownEffect {
@@ -216,7 +202,7 @@ h1, h2, h3, h4, b {
 .facility-header2 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: white;
+  color: black;
   font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
@@ -399,11 +385,8 @@ table tr:nth-child(odd) {
 
 .facility-header4 {
   text-align: center;
-  margin-bottom: 20px;
-  background-color:#0f5286;
-
-  border-radius: 10px;
-   padding: 40px;
+ border-radius: 10px;
+   padding: 20px;
    animation: slideDownEffect 1s ease-in-out;
 }
 @keyframes slideDownEffect {
@@ -419,7 +402,7 @@ table tr:nth-child(odd) {
 .facility-header4 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: white;
+  color: black;
   font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
@@ -532,7 +515,7 @@ table tr:nth-child(odd) {
   }
 }
  /* Facility 5 */
- /* Main container styling */
+
 .facility-container5 {
   padding: 20px;
   background-color: #f8f9fa;
@@ -543,11 +526,8 @@ table tr:nth-child(odd) {
 /* Header Section */
 .facility-header5 {
   text-align: center;
-  margin-bottom: 20px;
-  background-color:#0f5286;
-  margin-top: -10px;
-  border-radius: 10px;
-   padding: 40px;
+ 
+   padding: 20px;
    animation: slideDownEffect 1s ease-in-out
 }
 
@@ -564,7 +544,7 @@ table tr:nth-child(odd) {
 .facility-header5 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: white;
+  color: black;
   font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
@@ -687,11 +667,9 @@ table tr:nth-child(odd) {
 /* Header Section */
 .facility-header6 {
   text-align: center;
-  margin-bottom: 20px;
-  background-color:#0f5286;
-  margin-top: -10px;
+  
   border-radius: 10px;
-   padding: 40px;
+   padding: 20px;
    animation: slideDownEffect 1s ease-in-out;
 }
 @keyframes slideDownEffect {
@@ -707,7 +685,7 @@ table tr:nth-child(odd) {
 .facility-header6 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: white;
+  color: black;
   font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
@@ -830,11 +808,8 @@ table tr:nth-child(odd) {
 /* Header Section */
 .facility-header8 {
   text-align: center;
-  margin-bottom: 20px;
-  background-color:#0f5286;
-  margin-top: -10px;
-  border-radius: 10px;
-   padding: 40px;
+ 
+   padding: 20px;
    animation: slideDownEffect 1s ease-in-out;
 }
 @keyframes slideDownEffect {
@@ -850,7 +825,7 @@ table tr:nth-child(odd) {
 .facility-header8 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: white;
+  color: black;
   font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
@@ -979,11 +954,9 @@ table tr:nth-child(odd) {
 /* Header Section */
 .facility-header9 {
   text-align: center;
-  margin-bottom: 20px;
-  background-color:#0f5286;
-  margin-top: -10px;
+ 
   border-radius: 10px;
-   padding: 40px;
+   padding: 20px;
    animation: slideDownEffect 1s ease-in-out;
 }
 @keyframes slideDownEffect {
@@ -998,7 +971,7 @@ table tr:nth-child(odd) {
 }
 .facility-header9 h1 {
   font-size: 2.5rem;
-  color:white;
+  color:black;
   font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
@@ -1100,7 +1073,7 @@ table tr:nth-child(odd) {
   }
 
   .facility-header9 h1 {
-    font-size: 2rem; /* Adjust header size for mobile */
+    font-size: 2rem;
   }
 
   .facility-content9 h3 {
@@ -1112,7 +1085,7 @@ table tr:nth-child(odd) {
   }
 }
 
-/* facility10 */
+
 /* Facility 10 */
 .facility-container10 {
   padding: 20px;
@@ -1124,11 +1097,7 @@ table tr:nth-child(odd) {
 /* Header Section */
 .facility-header10 {
   text-align: center;
-  margin-bottom: 20px;
-  background-color:#0f5286;
-  margin-top: -20px;
-  border-radius: 10px;
-   padding: 30px;
+  padding: 20px;
    animation: slideDownEffect 1s ease-in-out;
  
 }
@@ -1145,10 +1114,10 @@ table tr:nth-child(odd) {
 .facility-header10 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: white;
+  color: black;
   font-weight: bold;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 .facility-header10 h1::after {
   content: '';
@@ -1201,8 +1170,6 @@ table tr:nth-child(odd) {
   line-height: 1.6;
  
 }
-
-
 
 .facility-content10 h2 {
   font-size: 1.8rem;
@@ -1260,7 +1227,7 @@ table tr:nth-child(odd) {
     font-size: 1.5rem;
   }
 }
-/* facility11 */
+
 
 /* Facility 11 */
 .facility-container11 {
@@ -1273,11 +1240,8 @@ table tr:nth-child(odd) {
 /* Header Section */
 .facility-header11 {
   text-align: center;
-  margin-bottom: 20px;
-  background-color:#0f5286;
-  margin-top: -10px;
   border-radius: 10px;
-   padding: 40px;
+   padding: 30px;
    animation: slideDownEffect 1s ease-in-out;
 }
 @keyframes slideDownEffect {
@@ -1294,10 +1258,10 @@ table tr:nth-child(odd) {
 .facility-header11 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: white;
+  color: black;
   font-weight: bold;
   display: inline-block;
-  padding-bottom: 10px;
+ 
 }
 .facility-header11 h1::after {
   content: '';

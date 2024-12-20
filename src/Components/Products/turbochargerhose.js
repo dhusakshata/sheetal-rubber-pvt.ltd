@@ -46,20 +46,13 @@ function turbocharger() {
        
           <h3>Key Features and Benefits:</h3>
           <ul>
-            <li><b>Wide Temperature Range:</b> Operates from
-         -50°C to +230°C.
+            <li>Design to operate at Temperature range: -50°C to + 230°C.
            </li>
-            <li>our Turbocharger Hoses meet / exceeds SAEJ20 CLASS A standard
+            <li>Our turbocharger hoses meets/exceeds SAEJ20 Class A specifications.
             </li>
-            <li><b>Reinforced Options:</b>
-               Polyester: Standard flexibility and durability.
-               Aramid: High tensile strength and heat
-               resistance.
+            <li>Our hoses are specially engineered for use in turbocharger and intake systems across a variety of vehicles, including trucks, buses, passenger cars, and railway engines, as well as industrial applications.
             </li>
-            <li>
-                 <b>Fluorosilicone:</b> Resistant to oil, acids, and fuels.
-                 <b> FKM/Viton:</b> Withstands diesel by-products
-and exhaust gases.
+            <li>These hoses are designed to provide both rigid and flexible connections, ensuring reliable performance in demanding environments such as generators and other heavy-duty machinery.
             </li>
            
           </ul>

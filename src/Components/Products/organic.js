@@ -48,17 +48,16 @@ const organic = () => {
           
           <h3>Key Features and Benefits:</h3>
           <ul>
-            <li><b>Reinforcement:</b> Polyester/Nylon (standard),
-            Kevlar/Aramid (high-strength).</li>
+            <li>•	The reinforcement fabrics used in our hoses are typically made from Polyester and Nylon, with Kevlar/Aramid sometimes used for higher temperatures or based on customer specifications.</li>
             <li><b>Inner:</b> Nitrile (oil/fuel resistant).</li>
             <li><b>Outer:</b> Neoprene (weather/abrasion
               resistant).
             </li>
-            <li><b>Variants:</b> Reinforced (high pressure) or
-            non-reinforced (low pressure).
+            <li>•	The reinforcement fabrics used in our hoses are typically made from Polyester and Nylon, with Kevlar/Aramid sometimes used for higher temperatures or based on customer specifications.
             </li>
-            <li><b>Extruded:</b> Non-reinforced shapes for lowpressure use
+            <li>•	We offer the option of developing non-reinforced extruded tubes for applications where service pressure requirements are very low.
           </li>
+          <li>•	Our hoses are customizable to meet specific customer needs, with varying reinforcement and material combinations based on performance requirements.</li>
           </ul>
       
           </p>
