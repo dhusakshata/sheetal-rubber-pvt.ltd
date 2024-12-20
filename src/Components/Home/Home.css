@@ -207,7 +207,7 @@
 
 .our-products {
   background-color: #ff782b;
-  padding: 40px;
+  padding: 60px;
   margin-bottom: 40px;
   text-align: center;
   height: 100%;
@@ -217,13 +217,14 @@
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
+  margin-top: -10px;
   
 }
 
 .our-products h3 {
   position: relative;
-  top: -50px;
-  font-size: 18px;
+  top: -40px;
+  font-size: 16px;
   text-decoration: none;
   color: black;
 }
@@ -231,8 +232,8 @@
   color:white;
   font:18px;
   text-align:center;
-  padding:20px;
-  line-height:1.6;
+  padding:5px;
+  line-height:1.4;
 }
 
 .products-gallerys {
@@ -248,11 +249,11 @@
   padding: 10px;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+
   gap: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: calc(33.33% - 20px); 
+  height: 350px;
 }
 
 .product-cards:hover {
@@ -262,10 +263,11 @@
 
 .product-images {
   width: 100%; 
-
+  height: 380px;
+  background-color: white;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
-  border:1px solid black;
+ 
 }
 
 .product-cards:hover img {
@@ -286,9 +288,9 @@
   justify-content: center;
 }
 
-.slick-dots {
+/* .slick-dots {
   bottom: -20px;
-}
+} */
 /*style for arrow*/
 /* Hide the default "Prev" and "Next" text */
 .slick-prev:before, .slick-next:before {
@@ -437,7 +439,7 @@
 
 
 /* Application Area */
-.application-area {
+/* .application-area {
   margin: 20px;
   
   display: flex;
@@ -454,10 +456,10 @@
   
 }
 .application-head {
-  text-align: center; /* Center align the content */
-  padding: 20px 10px; /* Add padding for spacing */
-  color: black; /* White text color */
-  margin: 20px 0; /* Add margin to separate from other elements */
+  text-align: center; 
+  padding: 20px 10px; 
+  color: black;
+  margin: 20px 0; 
  
 }
 
@@ -499,7 +501,7 @@
 }
 
 .app-button.active {
-  background-color:#288bd7; /* Highlight active button */
+  background-color:#288bd7; 
 }
 
 .image-display {
@@ -519,7 +521,7 @@
   animation: slideIn 1s ease-out;
 }
 
-/* Slide-in animation from left */
+
 @keyframes slideIn {
   0% {
     transform: translateX(-100%);
@@ -529,7 +531,7 @@
     transform: translateX(0);
     opacity: 1;
   }
-}
+} */
 
 /*for Application*/
 

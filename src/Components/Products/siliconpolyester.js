@@ -61,10 +61,11 @@ function siliconpolyester() {
             Wide Temperature Range: Operates from -50°C to +180°C.</li>
             <li><b>Coolant & Heat Resistant:</b> Prevents deterioration from fluids and heat.
             </li>
-            <li><b>SAEJ20 Class A Compliant:</b> Meets high-quality standards.
+            <li>our Silicone Polyster Hoses meet / exceeds SAEJ20 CLASS A standard
             </li>
-            <li><b>Customized hoses with Liners: </b>Options for Fluorosilicone (oil/fuel) or FKM/Viton liner in column diesel combustion by product/exhaust gas recycle.
+            <li><b>Customized hoses with Liners: </b>Available with the option of Fluorosilicone lining for added oil/ acids/ fuel resistance, or FKM/ Viton® lining for diesel combustion by-products/ exhaust gas recycle.
           </li>
+          <li>Also available in different RAL colors.</li>
           </ul>
         
           </p>

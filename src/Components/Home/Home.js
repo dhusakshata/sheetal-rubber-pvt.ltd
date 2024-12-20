@@ -27,18 +27,18 @@ import logo6 from "../../Images/client6.png";
 import logo7 from "../../Images/client7.png";
 // Import the video file
 import rubberWorld from "../../video/about1.mp4";
-import ProductionNarrat from "../../video/production6.mp4";
+import ProductionNarrat from "../../video/production7.mp4";
  
 
-import Silicon from "../../Images/Silicon.png"
-import Turbocharger from "../../Images/Turbo-charger.png";
-import Marine from "../../Images/Marine-wet.png";
-import EPDM from "../../Images/EPDM-rubber.png";
-import Organic from "../../Images/organic-rubber.png";
-import Assembly from "../../Images/Assembly-rubber.png";
-import Wired from "../../Images/wired-reinforced.png";
-import FuelTube from "../../Images/Fuel-Tubes.png";
-import Moulded from "../../Images/Moulded.png";
+import Silicon from "../../Images/Silicon1.png"
+import Turbocharger from "../../Images/Turbo-charger1.png";
+import Marine from "../../Images/Marine-wet1.png";
+import EPDM from "../../Images/EPDM-rubber1.png";
+import Organic from "../../Images/organic-rubber1.png";
+import Assembly from "../../Images/Assembly-rubber1.png";
+import Wired from "../../Images/wired-reinforced1.png";
+import FuelTube from "../../Images/Fuel-Tubes1.png";
+import Moulded from "../../Images/Moulded1.png";
 
 
 // Application Area Images
@@ -266,7 +266,7 @@ useEffect(() => {
         <div className="product-cards">
           <Link to="/wired">
             <img src={Wired} alt="Wire Reinforced Hoses" className="product-images" 
-            style={{backgroundColor:"white"}}
+            
             />
             <h3>Wire Reinforced Hoses</h3>
           </Link>

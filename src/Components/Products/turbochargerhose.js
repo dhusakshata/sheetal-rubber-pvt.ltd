@@ -49,7 +49,7 @@ function turbocharger() {
             <li><b>Wide Temperature Range:</b> Operates from
          -50°C to +230°C.
            </li>
-            <li>Meets SAE J20 Class A standards.
+            <li>our Turbocharger Hoses meet / exceeds SAEJ20 CLASS A standard
             </li>
             <li><b>Reinforced Options:</b>
                Polyester: Standard flexibility and durability.

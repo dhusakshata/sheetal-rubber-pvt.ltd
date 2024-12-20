@@ -11,9 +11,6 @@ import linkedin from "../../Images/linked in image.webp";
 
 // import HamburgerMenu from "../Hamburge/hambarge.js";
 
-
-
-
 const data = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Products", link: "/product" },
@@ -53,11 +50,6 @@ const data = [
   { id: 32, name: "Muffle furnance", link: "/Muffle-furnance" },
 
 
-
-
-
-
-
 ];
 
 function Header() {
@@ -78,8 +70,6 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
 
   const handleInhouseHover = () => setInhouseDropdown(true); // Show sub-dropdown
   const handleInhouseLeave = () => setInhouseDropdown(false); // Hide sub-dropdown
-
-
 
 
   const handleSearch = () => {
@@ -111,10 +101,7 @@ const handleToggleMenu = () => {
        <div className="logo">
           <img src={Logos} alt="Sheetal Rubber Industries" />
         </div>
-
-
-
-        <div className="top-right">
+       <div className="top-right">
           <div className="search-bar">
             <input
               type="text"
