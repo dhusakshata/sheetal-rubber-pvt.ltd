@@ -87,11 +87,7 @@ const manufacturing = () => {
   >
     Cold Feed Vended Extruders
   </li>
-  <li
-    
-  >
-    Dual Head Extruders for Multi-Layer Extrusion
-  </li>
+ 
   <li
     
   >

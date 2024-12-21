@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './SubFacility.css';
+import './facility4.css';
 
 const Facility11 = () => {
    // Scroll-trigger animation logic
@@ -25,12 +25,12 @@ const Facility11 = () => {
       }, []);
       
   return (
-    <div className="facility-container">
+    <div className="facility-containers">
     <div className="facility-header">
       <h1>Other Conventional Machines</h1> {/* Main heading */}
     </div>
 
-    <div className="facility-paragraph">
+    <div className="facility-paragraph11">
       <p>
       Our production line includes a variety of Other Conventional Machines that support critical stages in rubber manufacturing. These machines enhance precision and efficiency in operations such as cutting, shaping, and finishing rubber components. Their integration ensures consistency in product quality while optimizing production speed, making them indispensable for producing high-performance rubber products across a range of applications.
       </p>

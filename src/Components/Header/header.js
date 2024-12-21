@@ -90,12 +90,6 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
   const handleLinkClick = () => setActiveDropdown(null);
 
  
-// for humbarg
-const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // Track mobile menu state
-
-const handleToggleMenu = () => {
-  setMobileMenuOpen(!mobileMenuOpen);
-};
 
   return (
   
@@ -149,8 +143,7 @@ const handleToggleMenu = () => {
 
         
         <div className="Navbar">
-           {/* <!-- Hamburger Button Placeholder --> */}
-        {/* <div id="hamburger-container"><HamburgerMenu/></div> */}
+         
         <nav className= "nav" >
           <Link to="/" onClick={handleLinkClick}>
             HOME
