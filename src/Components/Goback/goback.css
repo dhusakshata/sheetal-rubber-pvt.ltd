@@ -1,0 +1,37 @@
+.modern-go-back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 6px 12px; 
+  background-color:#0f5286; 
+  color: #fff; 
+  border: 2px solid #083252; 
+  border-radius: 4px; 
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.modern-go-back-button svg {
+  height: 16px; 
+  width: 10px;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modern-go-back-button:hover {
+  
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.modern-go-back-button:active {
+  transform: translateY(1px); /* Press effect */
+  background-color: #444; /* Darker background */
+}
+
+.modern-go-back-button svg:hover {
+  transform: scale(1.1); /* Slight zoom effect for icon */
+}

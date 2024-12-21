@@ -2,10 +2,14 @@ import React from "react";
 import "./product2.css";
 import { motion } from "framer-motion";
 import Moulded1 from "../../Images/Moulded1.png";
-
-const moulded = () => {
+import GoBackbutton from "../Goback/goback.js";
+const moulded = ({ children }) => {
   return (
     <div className="product-page">
+      <div>
+            <GoBackbutton />
+            {children}
+          </div>
           {/* Heading with Bounce Animation */}
           <motion.div
             className="product-head"
@@ -48,24 +52,16 @@ and more.
 
         <h3>Key Features and Benefits:</h3>
         <ul>
-          <li><b>Application:</b>
-Grommets: Wire and cable
-protection.
-Gaskets & Seals: Reliable sealing
-under pressure.
-Vibration Dampeners: Noise
-reduction and shock absorption.
+          <li>Sheetal Rubber offers a range of moulded parts.
 </li>
-          <li><b>Part Range: </b>0.5 grams to 5 kg, with
-          press sizes up to 480 mm.
+          <li>Grommet, Gaskets, Bellows, Mountings, Rubber to metal bonded component and custom moulded parts.
 </li>
           <li>
-        <b>  Facility: </b>In-house lab for quality and
-testing.
-
+          Transfer and compression moulding process available.
 
           </li>
-          
+          <li>Auto-weighing available from 0.5 grams to 5 kgs.</li>
+          <li>Auto-weighing available from 0.5 grams to 5 kgs.</li>
         </ul>
         
         </p>

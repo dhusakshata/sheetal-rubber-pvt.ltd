@@ -191,14 +191,11 @@ color:  #ff5722;
   max-width: 1000px;
   height: 500px;
   margin-top:40px;
+  position: relative;
  
   object-fit: cover;
   overflow: hidden;
-  /* opacity: 0;
-  transform: translateX(-150px); 
-  animation: fadeTop 1.5s ease-out forwards;
-  animation-delay: 0.5s;  */
- 
+
 }
 
 .building-image{
@@ -208,17 +205,6 @@ color:  #ff5722;
   margin: 0px;
 }
 
-/* 
-@keyframes fadeTop {
-  0% {
-    opacity: 0;
-    transform: translateX(-150px); 
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0); 
-  }
-} */
 
 
 
@@ -264,7 +250,6 @@ color:  #ff5722;
 .vision {
   width: 100%;
   max-width: 1000px;
-
   background-color:#0f5286;
   padding: 10px;
   border-radius: 8px;
@@ -275,9 +260,7 @@ color:  #ff5722;
   animation: bounceFade 2s ease-out forwards; 
   animation-fill-mode: forwards;   
 }
-/* .vision{
-  margin: 30px;
-} */
+
 .Mission:hover,
 .vision:hover {
 

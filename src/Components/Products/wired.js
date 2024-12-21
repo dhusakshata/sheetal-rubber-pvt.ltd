@@ -2,12 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
 import Wired1 from "../../Images/wired-reinforced1.png";
+import GoBackbutton from "../Goback/goback.js";
 
-const wired = () => {
+
+const wired = ({children}) => {
   return (
 
     <div className="product-page">
       {/* Heading with Bounce Animation */}
+      <div>
+            <GoBackbutton />
+            {children}
+          </div>
       <motion.div
         className="product-head"
         initial={{ opacity: 0, y: -100 }} // Start position (top)

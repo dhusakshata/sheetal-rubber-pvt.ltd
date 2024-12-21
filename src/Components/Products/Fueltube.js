@@ -3,10 +3,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
 import FuelTube1 from "../../Images/Fuel-Tubes1.png";
-
-const fueltube = () => {
+import GoBackbutton from "../Goback/goback.js";
+const fueltube = ({children}) => {
   return (
     <div className="product-page">
+        <div>
+            <GoBackbutton />
+            {children}
+          </div>
       {/* Heading with Bounce Animation */}
             <motion.div
               className="product-head"
@@ -46,23 +50,20 @@ systems, with inner diameters ranging from
         
         <h3>Key Features and Benefits:</h3>
         <ul>
-          <li><b>Multilayer Fuel Tubes:</b> Fuelresistant for automotive systems.
+          <li>Sheetal Rubber offers single or double layer for automotive to meet requirement.
 </li>
-          <li><b>Fuel Tubes with Sleeves: </b>Heat and
-          abrasion-resistant.
+          <li>All fuel tubes are very flexible to fit and get shape as per design.
 </li>
           <li>
-         <b> Fuel Flow Tubes: </b>Minimize pressure drop.
+          We offer all fuel tubes in multiple colors.
 
 
           </li>
-          <li><b>Oil Flow Tubes:</b> Durable for hightemp lubricants.
+          <li>Our fuel flow tubes to help minimize pressure drop.
 
           </li>
           <li>
-        <b>  Air Flow Tubes:</b> Reliable for intake
-and exhaust systems.
-
+          We also offer fuel tube with sleeves for heat and abrasion resistant.
           </li>
           
         </ul>

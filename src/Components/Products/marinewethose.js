@@ -2,10 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
 import Marinewet1 from "../../Images/Marine-wet1.png";
-
-function Marine() {
+import GoBackbutton from "../Goback/goback.js";
+function Marine({children}) {
   return (
     <div className="product-page">
+      <div>
+            <GoBackbutton />
+            {children}
+          </div>
           {/* Heading with Bounce Animation */}
           <motion.div
             className="product-head"

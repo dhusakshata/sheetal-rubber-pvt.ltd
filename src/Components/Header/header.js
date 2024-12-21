@@ -2,7 +2,10 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaSearch, FaPhoneAlt, FaEnvelope , FaBars, FaTimes } from "react-icons/fa";
+import { FaSearch, FaPhoneAlt, FaEnvelope , FaBars, FaTimes } from 
+"react-icons/fa";
+
+
 import { Link } from "react-router-dom";
 import Logos from "../../Images/logo1.png";
 import "./header.css";
@@ -97,6 +100,7 @@ const handleToggleMenu = () => {
   return (
   
       <header className="header">
+        
        <div className="main-header">
        <div className="logo">
           <img src={Logos} alt="Sheetal Rubber Industries" />
@@ -142,7 +146,6 @@ const handleToggleMenu = () => {
           {mobileMenuOpen ? <FaTimes /> : <FaBars />}
         </button> */}
        </div>
-
 
         
         <div className="Navbar">
@@ -204,7 +207,7 @@ const handleToggleMenu = () => {
                     onMouseLeave={handleManufacturingLeave}
                   >
                     <span className="dropdown-trigger">
-                      <Link>MANUFACTURING FACILITIES</Link>
+                      <Link to="/manufacturing" onClick={() => setManufacturingDropdown(false)}>MANUFACTURING FACILITIES</Link>
                     </span>
                     {manufacturingDropdown && (
                      
@@ -212,9 +215,9 @@ const handleToggleMenu = () => {
       <Link to="/hot-cold-feed" onClick={() => setManufacturingDropdown(false)}>
         Hot Feed, Cold Feed & Co-Extrusion Extruders
       </Link>
-      <Link to="/Dual-head-extruders" onClick={() => setManufacturingDropdown(false)}>
+      {/* <Link to="/Dual-head-extruders" onClick={() => setManufacturingDropdown(false)}>
         Dual Head Extruders for Multi-Layer Extrusion
-      </Link>
+      </Link> */}
       <Link to="/Auto-clave-vulcanizer" onClick={() => setManufacturingDropdown(false)}>
         Auto Clave Vulcanizar (Quick Lock Type)
       </Link>
@@ -225,7 +228,7 @@ const handleToggleMenu = () => {
         3 Role Calendaring Machine
       </Link>
       <Link to="/Compression-transfer-molding" onClick={() => setManufacturingDropdown(false)}>
-        Compression Transfer Molding
+        Compression Transfer Moulding
       </Link>
       {/* <Link to="/facility7" onClick={() => setManufacturingDropdown(false)}>
         Hydraulic Presses
@@ -255,7 +258,7 @@ const handleToggleMenu = () => {
                   onMouseLeave={handleInhouseLeave}
                 >
                   <span className="dropdown-trigger">
-                    <Link >INHOUSE TESTING FACILITIES</Link>
+                    <Link to="/inhouse" onClick={() => setManufacturingDropdown(false)} >INHOUSE TESTING FACILITIES</Link>
                   </span>
                   {inhouseDropdown && (
                     <div className="sub-dropdown-menu">

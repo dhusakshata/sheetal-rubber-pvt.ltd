@@ -1,35 +1,14 @@
 
 import React,{useEffect,useRef,useState} from "react";
 
-import Building from "../../Images/building2.jpeg";
+import Building from "../../Images/building3.jpeg";
 
 import "./about.css"; // Import styles
 
 
 
 function About() {
-// Function to handle scroll-triggered animations
-// const handleScroll = () => {
-//   const elements = document.querySelectorAll(".animate-on-scroll");
-//   elements.forEach((element) => {
-//     const rect = element.getBoundingClientRect();
-//     const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-//     if (isVisible) {
-//       element.classList.add("visible");
-//     } else {
-//       element.classList.remove("visible");
-//     }
-//   });
-// };
 
-// useEffect(() => {
-//   // Add scroll event listener
-//   window.addEventListener("scroll", handleScroll);
-//   handleScroll(); // Trigger animation on component load
-//   return () => window.removeEventListener("scroll", handleScroll); // Clean up event listener
-// }, []);
-
-// Scroll-triggered animations for the about section
 const handleScrollAbout = () => {
   const elements = document.querySelectorAll(".animate-on-scroll");
   elements.forEach((element) => {

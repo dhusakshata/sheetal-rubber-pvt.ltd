@@ -127,7 +127,7 @@ const Facility3 = () => {
   return (
     <div className="facility-container3">
       <div className="facility-header3">
-        <h1>Auto Clave Vulcanizer (Quick Lock Type)</h1>
+        <h1>Auto Clave Vulcanizer</h1>
       </div>
 
       <div className="facility-paragraph3">
@@ -173,7 +173,7 @@ const Facility3 = () => {
           <ul>
             <li><b>Hoses:</b> Improves flexibility and resistance to extreme conditions.</li>
             <li><b>Seals & Gaskets:</b> Enhances durability for automotive and industrial applications.</li>
-            <li><b>Tires & Conveyor Belts:</b> Strengthens products while maintaining flexibility.</li>
+           
           </ul>
         </div>
 

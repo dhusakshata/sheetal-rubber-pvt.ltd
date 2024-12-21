@@ -2,11 +2,17 @@ import React from "react";
 import "./product2.css";
 import Assemblyy1 from "../../Images/Assembly-rubber1.png";
 import { motion } from "framer-motion";
+import GoBackbutton from "../Goback/goback.js";
 
-const Assembly = () => {
+const Assembly = ({ children }) => {
   return (
     <div className="product-page">
       {/* Heading with Bounce Animation */}
+      
+      <div>
+            <GoBackbutton />
+            {children}
+          </div>
       <motion.div
         className="product-head"
         initial={{ opacity: 0, y: -100 }} // Start position (top)

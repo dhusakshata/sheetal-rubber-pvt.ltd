@@ -18,7 +18,7 @@ const Inhouse2 = () => {
     }, []);
   return (
     <div className="inhouse-facility-container">
-         <div className="inhouse-header"> <h1>Burst Pressure Test Machine (Horizontal) with Hydraulic testing facility</h1></div>
+         <div className="inhouse-header"> <h1>Burst Pressure Test Machine </h1></div>
      <div className="inhouse-container">
      <div className="inhouse-image"style={{width:"450px",height:"450px"}}  
      data-aos="fade-right">

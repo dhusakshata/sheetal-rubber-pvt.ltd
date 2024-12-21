@@ -44,7 +44,7 @@ import ArrowToggle from "./Components/Arrowtoggle/arrowtoggle.js";
 
 //Facility pages
 import Facility1 from "./Components/Facilities/hot-cold-feed.js";
-import Facility2 from "./Components/Facilities/Dual-head-extruders.js";
+// import Facility2 from "./Components/Facilities/Dual-head-extruders.js";
 import Facility3 from "./Components/Facilities/Auto-clave-vulcanizer.js";
 import Facility4 from "./Components/Facilities/Dispersion-kneader.js";
 import Facility5 from "./Components/Facilities/3-role-calendaring-machine.js";
@@ -95,7 +95,7 @@ const App = () => {
         
  {/* Facility Pages */}
  <Route path="/hot-cold-feed" element={<Facility1 />} />
-        <Route path="/Dual-head-extruders" element={<Facility2 />} />
+        {/* <Route path="/Dual-head-extruders" element={<Facility2 />} /> */}
         <Route path="/Auto-clave-vulcanizer" element={<Facility3 />} />
         <Route path="/Dispersion-kneader" element={<Facility4 />} />
         <Route path="/3-role-calendaring-machine" element={<Facility5 />} />

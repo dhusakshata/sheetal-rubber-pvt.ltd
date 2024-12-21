@@ -2,13 +2,17 @@ import React from "react";
  import "./product2.css";
 import Silicon1 from "../../Images/Silicon1.png";
 import { motion } from 'framer-motion';
-
-function siliconpolyester() {
+import GoBackbutton from "../Goback/goback.js";
+function siliconpolyester({children}) {
 
   
   return (
 
 <div className="product-page">
+<div>
+            <GoBackbutton />
+            {children}
+          </div>
       {/* Heading with Bounce Animation */}
       <motion.div
         className="product-head"

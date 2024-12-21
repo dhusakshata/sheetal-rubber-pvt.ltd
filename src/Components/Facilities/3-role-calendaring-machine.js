@@ -1,20 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';
 import Role from "../../Images/3 role.jpeg";
 
 const Facility5 = () => {
+    // Scroll-trigger animation logic
+    useEffect(() => {
+      const elements = document.querySelectorAll('.facility-content, .facility-header, .facility-paragraph');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible-black');
+            } else {
+              entry.target.classList.remove('visible-black');
+            }
+          });
+        },
+        { threshold: 0.2 } // Trigger animation when 10% of the element is visible
+      );
+  
+      elements.forEach((element) => observer.observe(element));
+  
+      return () => observer.disconnect(); // Cleanup observer on component unmount
+    }, []);
+    
   return (
-    <div className="facility-container5">
-      <div className="facility-header5">
+    <div className="facility-container">
+      <div className="facility-header">
         <h1>3 Role Calendaring Machine</h1> {/* Main heading */}
       </div>
 
-      <div className="facility-paragraph5">
+      <div className="facility-paragraph">
         <p>
         Our production line is equipped with 3-Roll Calendaring Machines that play a vital role in shaping and smoothing rubber sheets. These advanced machines utilize three precisely aligned rollers to compress and control the thickness of rubber compounds, ensuring uniformity and consistency across each sheet. This calendaring process is essential for producing high-quality rubber sheets used in various applications, including conveyor belts, seals, and gaskets. By maintaining stringent quality control, our calendaring machines enhance the performance and durability of our finished products while maximizing production efficiency.
         </p>
-        <div className="facility-image5">
+        <div className="facility-image">
           <img src={Role}alt="Facility 1" />
         </div>
       </div>
@@ -24,13 +45,15 @@ const Facility5 = () => {
 <p><b>Purpose: </b>
 Shapes and finishes rubber sheets with precise thickness and uniformity.
 </p>
-<h4>Operation:</h4>
+<h4>Operation:
+  
+</h4>
         <ul>
           <li>
             <b>Roller System:</b>Three horizontally aligned rollers compress and stretch rubber compounds into flat sheets.
           </li>
           <li>
-            <b>Uniformity</b>Ensures even distribution and desired properties.
+            <b>Uniformity:</b>Ensures even distribution and desired properties.
           </li>
         </ul>
          <h4>Advantages:</h4>
@@ -40,24 +63,7 @@ Shapes and finishes rubber sheets with precise thickness and uniformity.
           <li><b>Versatility: </b>Suitable for various rubber compounds.</li>
           <li><b>High Efficiency: </b>Continuous operation for large-scale production.</li>
         </ul>
-        <h4>Applications:</h4>
-        <ul>
-          <li><b>Rubber Sheets:  </b> Flooring, mats, and insulation.
-          </li>
-          <li><b>Tire Manufacturing: </b> Tread and sidewall materials.</li>
-          <li><b>Industrial Belts: </b>Rubber sheets for manufacturing belts.</li>
-          <li><b>Gaskets and Seals:  </b>Ensures thickness for effective sealing.</li>
-        </ul>
-        
-        <h4>Production Process:</h4>
-        <ul>
-          <li><b>Material Feeding: </b> Rubber compounds are fed into the machine.
-          </li>
-          <li><b>Rolling Process:</b>Rubber is compressed to desired thickness and texture.</li>
-          <li><b>Cooling & Finishing: </b>Sheets are cooled and stabilized for further use.</li>
-          
-        </ul>
-            
+       
         <h4>Benefits:</h4>
         <ul>
           <li><b>Enhanced Quality: </b> Consistent thickness improves product performance.
@@ -66,16 +72,7 @@ Shapes and finishes rubber sheets with precise thickness and uniformity.
           <li><b>Production Flexibility:  </b> Quick adjustments for varied requirements.</li>
           
         </ul>
-        <h4>Example Products:
-        </h4>
-        <ul>
-          <li><b>Automotive: </b> Tires, gaskets, and weather stripping.
-
-          </li>
-          <li><b>Industrial: </b>Conveyor belts, rubber goods.</li>
-          <li><b>Consumer Goods:  </b> Rubber flooring and mats.</li>
-          
-        </ul>
+       
       </div>
     </div>
   );

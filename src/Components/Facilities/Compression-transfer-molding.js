@@ -1,15 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';
 import Compression from "../../Images/Compression Molding.jpg";
 const Facility6 = () => {
+  // Scroll-trigger animation logic
+      useEffect(() => {
+        const elements = document.querySelectorAll('.facility-content, .facility-header, .facility-paragraph');
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible-black');
+              } else {
+                entry.target.classList.remove('visible-black');
+              }
+            });
+          },
+          { threshold: 0.2 } // Trigger animation when 10% of the element is visible
+        );
+    
+        elements.forEach((element) => observer.observe(element));
+    
+        return () => observer.disconnect(); // Cleanup observer on component unmount
+      }, []);
   return (
-    <div className="facility-container6">
-      <div className="facility-header6">
-        <h1>Compression Transfer Molding</h1> {/* Main heading */}
+    <div className="facility-container">
+      <div className="facility-header">
+        <h1>Compression Transfer Moulding</h1> {/* Main heading */}
       </div>
 
-      <div className="facility-paragraph6">
+      <div className="facility-paragraph">
         <p>
         Our production line utilizes Compression Transfer Molding, a highly efficient process for shaping rubber compounds into finished products. This method involves placing pre-measured rubber material into a heated mold, where it is subjected to pressure to achieve the desired shape and density. Compression transfer molding ensures uniform material distribution and optimal curing, resulting in high-quality rubber components with consistent properties. This process is ideal for producing complex shapes and larger quantities, enhancing production efficiency while maintaining rigorous quality standards in our finished products.
         </p>
@@ -18,9 +38,9 @@ const Facility6 = () => {
         </div>
       </div>
       <div className="facility-content6">
-      <h2>Compression Transfer Molding Overview:</h2>
+      <h2>Compression Transfer Moulding Overview:</h2>
 <p><b>Purpose: </b>
-Compression transfer molding is a vital process for shaping rubber compounds into high-quality, complex products using heat and pressure.
+Compression transfer moulding is a vital process for shaping rubber compounds into high-quality, complex products using heat and pressure.
 </p>
 <p><b>Process:</b>
 Pre-measured rubber material is placed in a transfer pot, heated, and forced into mold cavities through runners, ensuring even material distribution and curing.
@@ -44,15 +64,7 @@ Pre-measured rubber material is placed in a transfer pot, heated, and forced int
           <li><b>Electrical Insulation:  </b>Insulating components for safety and performance.</li>
         </ul>
         
-        <h4>Production Process:</h4>
-        <ul>
-          <li><b>Material Preparation: </b>  Pre-measured rubber compounds.
-          </li>
-          <li><b>Loading:</b>Rubber is placed into the transfer pot.</li>
-          <li><b>Molding: </b> The mold is closed, heat is applied, and pressure forces the rubber into cavities.</li>
-          <li><b>Cooling and Ejection:</b> Finished products are cooled and ejected for inspection.</li>
-          
-        </ul>
+       
             
         <h4>Benefits:</h4>
         <ul>
@@ -62,9 +74,7 @@ Pre-measured rubber material is placed in a transfer pot, heated, and forced int
           <li><b>Customization:  </b> Easily modified for different formulations and designs.</li>
           
         </ul>
-        <h4>Conclusion:
-        </h4>
-        <p><b>Compression Transfer Molding </b>is essential for producing efficient, precise, and high-quality rubber components, making it a key process in rubber manufacturing.</p>
+      
       </div>
     
     </div>

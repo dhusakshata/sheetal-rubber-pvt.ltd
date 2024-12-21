@@ -1,520 +1,211 @@
-/* SubFacility.css */
 
-/* General Styling */
 * {
   font-family: 'Arial', sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
- 
-  color: black;
-}
-/* Uppercase for all headings and bold text */
-h1, h2, h3, h4, b {
-  text-transform: uppercase;
-  font-weight: bold;
-}
+
 
 .facility-containers {
-  max-width: 1400px;
-  margin: 20px auto;
-  padding: 20px;
-  
-  border-radius: 8px;
+  margin: 20px;
 }
 
-.facility-header {
-  text-align: center;
- 
-   animation: slideDownEffect 1s ease-in-out;
+.facility-header,
+.facility-paragraph,
+.facility-content {
+  opacity: 0;
+  transform: translateY(30px);
+  color: black;
+  transition: all 0.8s ease-in-out;
 }
-@keyframes slideDownEffect {
-  from {
-    opacity: 0;
-    transform: translateY(-50px); /* Start slightly above the viewport */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* Final position in its natural place */
-  }
+
+.facility-content img {
+  width: 100%;
+  height: auto;
+}
+
+.visible-black {
+  opacity: 1;
+  transform: translateY(0);
+  color: black; /* Ensures color is black */
 }
 
 .facility-header h1 {
-  font-size: 2.5rem;
-  color: black;
   text-align: center;
-  display: inline-block; 
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 2.5rem;
   font-weight: bold;
- 
 }
-.facility-header h1::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  
-}
-
 
 .facility-paragraph {
-  text-align: justify;
- 
+  margin: 10px auto;
+  max-width: 950px;
   line-height: 1.6;
-  margin-top: 30px;
-}
-
-.facility-paragraph p {
-  font-size: 16px;
-}
-
-/* Facility Content Layout */
-.facility-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: flex-start;
-  margin-bottom: 40px;
+  text-align: justify;
 }
 
 .facility-image {
-  flex: 1 1 40%;
-  text-align: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
 }
-/* Zoom-In and Out Effect on Hover */
-.facility-image img:hover {
-  transform: scale(1.1); /* Zoom-in effect */
-  
+
+.facility-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.facility-content:nth-child(even) .facility-image {
+  order: 2;
+}
+.facility-header,
+.facility-paragraph,
+.facility-content {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1.1s ease-in-out;
+}
+
+.visible-black {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .facility-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
- 
+  opacity: 1;  /* Start off invisible */
+  transform: translateY(50px);  /* Start slightly below the viewport */
+  transition: opacity 1.5s ease, transform 1.5s ease;  /* Smooth fade-in and slide-up */
 }
 
-.facility-right {
-  flex: 1 1 55%;
-  padding: 10px;
-}
-
-.facility-right h2 {
-  font-size: 1.8rem;
-  color: #ff782b;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #ff782b;
-  display: inline-block;
-   font-weight: bold;
-}
-.cold-feed h2{
-  font-size: 1.8rem;
-  color: #ff782b;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #ff782b;
-  display: inline-block;
-   font-weight: bold;
-}
-.facility-info {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.facility-info-left,
-.facility-info-right {
-  flex: 1 1 45%;
-}
-
-.info-box {
-
-  padding: 15px;
-  margin-bottom: 20px;
- 
-}
-
-.info-box h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #ff782b;
-  font-weight: bold;
-}
-
-.info-box p {
-  font-size: 16px;
-  margin: 0;
-  color:black;
-  line-height: 1.5;
-}
-
-/* Styling for List Items (li) */
-.info-box ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 10px 0;
-}
-
-.info-box ul li {
-  font-size: 16px;
-  color: black;
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
-
-.info-box ul li b {
-  color: black;
+.image-visible {
+  opacity: 0;  /* Fully visible */
+  transform: translateY(0);  /* Move into original position */
 }
 
 
-/* Facility 2 */
-.facility-container2 {
-  max-width: 1400px;
-  margin: 20px auto;
+
+/**/
+/* General Container Styling */
+.dispenser, .internal-mixer, .stock-blender, .Importance {
+
   padding: 20px;
-
-}
-
-.facility-header2 {
-  text-align: center;
-   padding: 20px;
-   animation: slideDownEffect 1s ease-in-out;
-}
-@keyframes slideDownEffect {
-  from {
-    opacity: 0;
-    transform: translateY(-50px); /* Start slightly above the viewport */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* Final position in its natural place */
-  }
-}
-
-.facility-header2 h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: black;
-  font-weight: bold;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-.facility-header2 h1::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  
-}
-
-
-.facility-paragraph2 {
-  text-align: justify;
-  margin-bottom: 20px;
-  line-height: 1.6;
-  font-size: 16px;
-}
-
-.facility-paragraph2 p {
-  color: black;
-}
-.facility-content2 p b{
-  color: #ff782b;
+  margin: 20px 0;
  
-}
-/* Facility Content Layout */
-.facility-content2 {
-  display: flex;
-  flex-direction: column;
-
+  overflow: hidden;
+  position: relative; /* Ensures child elements are contained */
 }
 
-.facility-image2 {
-  text-align: center;
-}
-.facility-image2 img:hover {
-  transform: scale(1.1); /* Zoom-in effect */
-  
-}
-.facility-image2 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  
-}
-
-/* Content Section Styling */
-.facility-content2 {
-
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 30px;
-  line-height: 1.6;
-  margin-left: 30px;
-
-}
-
-/* Section Styling */
-.dual-head,
-.dual-Application,
-.dual-advantages,
-.dual-production {
- 
-  padding: 10px;
-  
-}
-.dual-head h2{
+/* Heading Styling */
+.dispenser h3, .internal-mixer h3, .stock-blender h3, .Importance h2 {
+  color: #000; /* Black text for headings */
   font-size: 1.8rem;
-  color:#ff782b;
-  margin-bottom: 15px;
-}
-
-.dual-Application h4,
-.dual-advantages h4,
-.dual-production h4 {
-  font-size: 18px;
-  color:#ff782b;
-  margin-bottom: 15px;
-}
-
-.dual-head ul,
-.dual-Application ul,
-.dual-advantages ul,
-.dual-production ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.dual-head ul li,
-.dual-Application ul li,
-.dual-advantages ul li,
-.dual-production ul li {
-  font-size: 16apx;
-  color: black;
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
-
-.dual-head ul li b,
-.dual-Application ul li b,
-.dual-advantages ul li b,
-.dual-production ul li b {
-  color: black;
-  font-size: 16px;
-}
-
-/* Comparison Table */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-table th,
-table td {
-  padding: 15px;
+  font-weight: bold;
   text-align: left;
-  border: 1px solid rgb(213, 211, 211);
+  margin-bottom: 15px;
+  border-left: 4px solid #0f5286; /* Accent line */
+  padding-left: 10px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-table th {
-  background-color:#ff782b;
-  color: #fff;
-  font-size: 1.2rem;
+/* Text Styling */
+.dispenser p, .internal-mixer p, .stock-blender p, .Importance ul li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #000; /* Black text */
+  margin-bottom: 10px;
 }
 
-table tr:nth-child(even) {
-  background-color:whitesmoke;
+/* Bullet Points */
+ul {
+  margin: 10px 0 10px 20px;
 }
 
-table tr:nth-child(odd) {
-  background-color: #fff;
+ul li {
+  margin-bottom: 8px;
 }
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .facility-content2 {
-    flex-direction: column;
-  }
-
-  .dual-head,
-  .dual-Application,
-  .dual-advantages,
-  .dual-production {
-    padding: 15px;
-  }
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-  .facility-content {
-    flex-direction: column;
-  }
-
-  .facility-info {
-    flex-direction: column;
-  }
-
-  .facility-info-left,
-  .facility-info-right {
-    flex: 1 1 100%;
-  }
+/* Images */
+.facility-image img {
+  width: 100%;
+  max-width: 350px; /* Ensures consistent size for all images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin: 15px 0;
 }
 
-/* Facility4 */
-
-/* Main container styling */
-.facility-container4 {
-  padding: 20px;
-  background-color: #f8f9fa;
-  font-family: Arial, sans-serif;
-  color:black;
+/* Fix for Overlapping Images */
+.facility-image {
+  text-align: center; /* Centers images */
+  margin-bottom: 20px; /* Adds space below images */
 }
 
-.facility-header4 {
-  text-align: center;
- border-radius: 10px;
-   padding: 20px;
-   animation: slideDownEffect 1s ease-in-out;
+/* Image Animation */
+.facility-image img:hover {
+  transform: scale(1.05);
 }
-@keyframes slideDownEffect {
+
+/* Animation for Fade In */
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-50px); /* Start slightly above the viewport */
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Final position in its natural place */
+    transform: translateY(0);
   }
 }
-.facility-header4 h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: black;
-  font-weight: bold;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-.facility-header4 h1::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  
-}
-/* Paragraph Section */
-.facility-paragraph4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: black;
-}
 
-.facility-image4 {
-  text-align: center;
-}
-
-.facility-image4 img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
-  
-}
-.facility-image4 img:hover {
-  transform: scale(1.1); /* Zoom-in effect */
-  
-}
-/* Dispenser, Internal Mixer, and Stock Blender Styling */
-.dispenser, .Internal-mixer, .stock-blender {
-  background-color: #fdfdfd;
- 
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 30px;
-  
-}
-
-
-.dispenser h3, .Internal-mixer h3, .stock-blender h3 {
-  font-size: 1.5rem;
-  color:#ff782b;
-  margin-bottom: 10px;
-}
-
-.dispenser p, .Internal-mixer p, .stock-blender p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: black;
-}
-
-/* Importance Section Styling */
-.Importance {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.Importance h2 {
-  font-size: 2rem;
-  text-align: center;
-  color: black;
-  margin-bottom: 10px;
-}
-
-.Importance ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: black;
-}
-
+/* Importance Section */
 .Importance ul li {
   margin-bottom: 10px;
 }
 
-.Importance ul li b {
-  color: #ff782b;
-  font-weight: bold;
+.Importance h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .facility-paragraph4 {
-    text-align: center;
-  }
+.Importance ul {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
 
-  .facility-header4 h1 {
-    font-size: 2rem;
-  }
+.Importance ul li {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border-left: 4px solid #0f5286;
+  font-weight: 500;
+}
 
-  .dispenser h3, .Internal-mixer h3, .stock-blender h3 {
-    font-size: 1.3rem;
+/* Smooth Animation on Scroll */
+.dispenser, .internal-mixer, .stock-blender, .Importance {
+  animation: slideIn 1.2s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
- /* Facility 5 */
+
+/**/
+/* Facility 5 */
 
 .facility-container5 {
   padding: 20px;
@@ -1405,3 +1096,5 @@ table tr:nth-child(odd) {
 
   color: black;
 }
+
+

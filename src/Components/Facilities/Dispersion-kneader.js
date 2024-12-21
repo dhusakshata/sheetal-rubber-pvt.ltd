@@ -137,51 +137,77 @@
 
 // export default Facility4;
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './SubFacility.css';
 import Dispenser from "../../Images/25-litres-rubber-dispersion-kneader-machine-250x250.jpg";
 import Stock from "../../Images/stock blender.jpg";
 
 const Facility4 = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentImage, setCurrentImage] = useState(null);
-
-  // Function to open the modal with a specific image
-  const openModal = (image) => {
-    setCurrentImage(image);
-    setIsModalOpen(true);
-  };
-
-  // Function to close the modal
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setCurrentImage(null);
-  };
-
+  // Scroll-trigger animation logic
+    useEffect(() => {
+      const elements = document.querySelectorAll('.facility-content, .facility-header, .facility-paragraph');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible-black');
+            } else {
+              entry.target.classList.remove('visible-black');
+            }
+          });
+        },
+        { threshold: 0.2 } // Trigger animation when 10% of the element is visible
+      );
+  
+      elements.forEach((element) => observer.observe(element));
+  
+      return () => observer.disconnect(); // Cleanup observer on component unmount
+    }, []);
+    useEffect(() => {
+      const images = document.querySelectorAll(".facility-image img");
+  
+      // Intersection Observer to detect when images come into the viewport
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("image-visible");  // Add the visible class to trigger the animation
+            }
+          });
+        },
+        { threshold: 0.5 }  // Trigger when 50% of the image is visible in the viewport
+      );
+  
+      images.forEach((image) => observer.observe(image));  // Observe each image
+  
+      return () => observer.disconnect();  // Clean up observer on component unmount
+    }, []);
+  
+  
   return (
-    <div className="facility-container4">
-      <div className="facility-header4">
+    <div className="facility-container">
+      <div className="facility-header">
         <h1>Dispersion Kneader to Internal Mixer & Stock Blenders</h1> {/* Main heading */}
       </div>
 
-      <div className="facility-paragraph4">
+      <div className="facility-paragraph">
         <p>
           Our production line features advanced dispersion kneaders and internal mixers that ensure the uniform blending of raw materials. This equipment is essential for achieving the desired consistency and properties of rubber compounds, allowing for optimal performance in our finished products. Stock blenders further enhance the mixing process by facilitating the preparation of large batches, ensuring efficient production while maintaining high quality.
         </p>
       </div>
 
-      <div className="facility-paragraph4">
+      <div className="facility-paragraph">
         <p>
           For a rubber-producing company, the sequence of using a Dispersion Kneader, Internal Mixer, and Stock Blenders is crucial in ensuring high-quality rubber compounds. Each piece of equipment plays a unique role in the processing of raw rubber, fillers, and other additives, ultimately affecting the physical and chemical properties of the final product.
         </p>
       </div>
 
       <div className="dispenser">
-        <div className="facility-image4" onClick={() => openModal(Dispenser)}>
+        <div className="facility-image">
           <img src={Dispenser} alt="Dispersion Kneader" />
         </div>
         <h3>Dispersion Kneader:</h3>
-        <p><b>Purpose:</b> The dispersion kneader is the first step in the rubber mixing process. It is responsible for pre-mixing the base rubber with various additives such as fillers (e.g., carbon black, silica), oils, accelerators, and other chemicals. This machine ensures that the materials are evenly distributed within the rubber matrix before moving to the next stage.</p>
+        <p>•	The dispersion kneader is the first step in the rubber mixing process. It is responsible for pre-mixing the base rubber with various additives. This machine ensures that the materials are evenly distributed within the rubber matrix before moving to the next stage.</p>
 
         <p><b>Functionality:</b>
           <ul>
@@ -195,7 +221,7 @@ const Facility4 = () => {
       </div>
 
       <div className="internal-mixer">
-        <h3>Internal Mixer (Banbury Mixer):</h3>
+        <h3>Internal Mixer:</h3>
         <p><b>Purpose:</b> The internal mixer is employed for more intensive mixing, refining the rubber compound by applying higher shear and pressure than a kneader. This is the core stage where the rubber, fillers, and all other components are fully homogenized.</p>
 
         <p><b>Functionality:</b>
@@ -207,7 +233,7 @@ const Facility4 = () => {
           </ul>
         </p>
 
-        <p><b>Application:</b> It is primarily used in the tire and rubber industry for the production of highly engineered rubber products that require consistency in performance.</p>
+        <p><b>Application:</b>To produce of highly engineered hoses that require consistency in performance.</p>
       </div>
 
       <div className="stock-blender">
@@ -222,9 +248,9 @@ const Facility4 = () => {
           </ul>
         </p>
 
-        <p><b>Application:</b> Stock blenders are especially useful in rubber processing plants where continuous mixing is required, ensuring uniform texture and quality in the finished product.</p>
+        <p><b>Application:</b> It helps to continuous mixing, ensuring uniform texture and quality in the finished product.</p>
 
-        <div className="facility-image4" onClick={() => openModal(Stock)}>
+        <div className="facility-image">
           <img src={Stock} alt="Stock Blender" />
         </div>
       </div>
@@ -233,27 +259,19 @@ const Facility4 = () => {
         <h2>Why This Sequence is Important for a Rubber-Producing Company?</h2>
         <ul>
           <li><b>Efficiency:</b> The use of dispersion kneaders, internal mixers, and stock blenders in sequence ensures that the rubber compound is efficiently mixed, with each stage optimizing different aspects of the material blending process.</li>
-          <li><b>Quality Control:</b> Proper mixing at each stage helps maintain the uniformity of the rubber’s mechanical properties, which is vital for ensuring consistent performance in the end products (e.g., tires, seals, hoses).</li>
+          <li><b>Quality Control:</b> Proper mixing at each stage helps maintain the uniformity of the rubber’s mechanical properties, which is vital for ensuring consistent performance in the end products </li>
           <li><b>Temperature Management:</b> The stock blender ensures that the rubber compound cools down properly after intensive mixing, which helps to avoid defects such as scorching or uneven curing.</li>
           <li><b>Cost Reduction:</b> By using these machines in sequence, a rubber-producing company can reduce wastage and improve the overall quality of their product, thus cutting down on rejects and optimizing production efficiency.</li>
+          <li>
+            <b>Improved Product Consistency: </b>
+            The sequential blending process helps achieve consistent material properties across batches, ensuring uniformity in the final rubber products and enhancing their reliability.
+          </li>
         </ul>
       </div>
 
-      <div className="facility-paragraph4">
-        <p>
-          In summary, for a rubber-producing company, the combination of a Dispersion Kneader, Internal Mixer, and Stock Blender ensures thorough, consistent, and efficient mixing of rubber compounds. This process is essential for producing high-quality rubber goods like tires, seals, hoses, and other rubber-based components that meet industry standards.
-        </p>
-      </div>
+      
 
-      {/* Image Modal */}
-      {isModalOpen && (
-        <div className="modal" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={currentImage} alt="Modal Image" className="modal-image" />
-            <button className="close-button" onClick={closeModal}>Close</button>
-          </div>
-        </div>
-      )}
+     
     </div>
   );
 };

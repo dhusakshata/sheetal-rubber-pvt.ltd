@@ -2,12 +2,17 @@ import React from "react";
 import "./product2.css";
 import Turbocharger1 from "../../Images/Turbo-charger1.png";
 import { motion } from "framer-motion";
-
-function turbocharger() {
+import GoBackbutton from "../Goback/goback.js";
+function turbocharger({children}) {
   return (
 
     <div className="product-page">
     {/* Heading with Bounce Animation */}
+          
+    <div>
+            <GoBackbutton />
+            {children}
+          </div>
     <motion.div
       className="product-head"
       initial={{ opacity: 0, y: -100 }} // Start position (top)

@@ -1,15 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './SubFacility.css';
 
 const Facility11 = () => {
+   // Scroll-trigger animation logic
+      useEffect(() => {
+        const elements = document.querySelectorAll('.facility-content, .facility-header, .facility-paragraph');
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible-black');
+              } else {
+                entry.target.classList.remove('visible-black');
+              }
+            });
+          },
+          { threshold: 0.2 } // Trigger animation when 10% of the element is visible
+        );
+    
+        elements.forEach((element) => observer.observe(element));
+    
+        return () => observer.disconnect(); // Cleanup observer on component unmount
+      }, []);
+      
   return (
-    <div className="facility-container11">
-    <div className="facility-header11">
+    <div className="facility-container">
+    <div className="facility-header">
       <h1>Other Conventional Machines</h1> {/* Main heading */}
     </div>
 
-    <div className="facility-paragraph11">
+    <div className="facility-paragraph">
       <p>
       Our production line includes a variety of Other Conventional Machines that support critical stages in rubber manufacturing. These machines enhance precision and efficiency in operations such as cutting, shaping, and finishing rubber components. Their integration ensures consistency in product quality while optimizing production speed, making them indispensable for producing high-performance rubber products across a range of applications.
       </p>

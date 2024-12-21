@@ -1,16 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SubFacility.css'; // Importing the CSS for styling
 import { Link } from 'react-router-dom';
 import Braiding from "../../Images/braiding-machine__1_-removebg-preview.png";
 
 const Facility10 = () => {
+   // Scroll-trigger animation logic
+      useEffect(() => {
+        const elements = document.querySelectorAll('.facility-content, .facility-header, .facility-paragraph');
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible-black');
+              } else {
+                entry.target.classList.remove('visible-black');
+              }
+            });
+          },
+          { threshold: 0.2 } // Trigger animation when 10% of the element is visible
+        );
+    
+        elements.forEach((element) => observer.observe(element));
+    
+        return () => observer.disconnect(); // Cleanup observer on component unmount
+      }, []);
   return (
-    <div className="facility-container10">
-      <div className="facility-header10">
+    <div className="facility-container">
+      <div className="facility-header">
         <h1>Braiding Machines</h1> {/* Main heading */}
       </div>
 
-      <div className="facility-paragraph10">
+      <div className="facility-paragraph">
         <p>
         Our production line includes advanced Braiding Machines that are vital for producing reinforced rubber components. These machines braid multiple strands of rubber or other materials to create durable, high-strength hoses, cables, and other products. Braiding enhances the structural integrity and flexibility of the rubber, ensuring superior performance under pressure. This technology allows for the production of customized braided designs, providing the perfect balance between flexibility and strength in products like hydraulic hoses, automotive cables, and industrial tubing, all while maintaining high production efficiency and consistent quality.
         </p>

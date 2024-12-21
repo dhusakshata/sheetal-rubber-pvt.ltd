@@ -2,11 +2,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
 import EPDM1 from "../../Images/EPDM-rubber1.png";
-
-const epdm = () => {
+import GoBackbutton from "../Goback/goback.js";
+const epdm = ({ children }) => {
   return (
     <div className="product-page">
+       <div>
+            <GoBackbutton />
+            {children}
+          </div>
       {/* Heading with Bounce Animation */}
+      
             <motion.div
               className="product-head"
               initial={{ opacity: 0, y: -100 }} // Start position (top)
@@ -39,10 +44,9 @@ const epdm = () => {
                            transition={{ duration: 1 }}      // Duration of animation
                          >
    <p>
-   High-performance hoses for radiator and cooling
-systems, built to DIN73411 & SAEJ20 Class D
-standards for durability, flexibility, and heat
-resistance.
+  
+High-performance hoses for radiator and cooling systems, built to DIN73411 & SAEJ20 Class D standards for durability, flexibility, and heat resistance.
+
 </p>
           <h3>Key Features and Benefits:</h3>
           <ul>

@@ -2,11 +2,15 @@ import React from "react";
 import "./product2.css";
 import { motion } from "framer-motion";
 import Organic1 from "../../Images/organic-rubber1.png";
-
-const organic = () => {
+import GoBackbutton from "../Goback/goback.js";
+const organic = ({ children }) => {
   return (
 
     <div className="product-page">
+      <div>
+            <GoBackbutton />
+            {children}
+          </div>
           {/* Heading with Bounce Animation */}
           <motion.div
             className="product-head"
@@ -48,16 +52,14 @@ const organic = () => {
           
           <h3>Key Features and Benefits:</h3>
           <ul>
-            <li>•	The reinforcement fabrics used in our hoses are typically made from Polyester and Nylon, with Kevlar/Aramid sometimes used for higher temperatures or based on customer specifications.</li>
-            <li><b>Inner:</b> Nitrile (oil/fuel resistant).</li>
-            <li><b>Outer:</b> Neoprene (weather/abrasion
-              resistant).
+            <li>The reinforcement fabrics used in our hoses are typically made from Polyester and Nylon, with Kevlar/Aramid sometimes used for higher temperatures or based on customer specifications.</li>
+            <li>The materials for the inner tube and outer cover can vary, such as inner nitrile and outer neoprene, available in both reinforced and non-reinforced options.
             </li>
-            <li>•	The reinforcement fabrics used in our hoses are typically made from Polyester and Nylon, with Kevlar/Aramid sometimes used for higher temperatures or based on customer specifications.
+            <li>We offer the option of developing non-reinforced extruded tubes for applications where service pressure requirements are very low.
             </li>
-            <li>•	We offer the option of developing non-reinforced extruded tubes for applications where service pressure requirements are very low.
+            <li>Our hoses are customizable to meet specific customer needs, with varying reinforcement and material combinations based on performance requirements.
           </li>
-          <li>•	Our hoses are customizable to meet specific customer needs, with varying reinforcement and material combinations based on performance requirements.</li>
+          
           </ul>
       
           </p>
