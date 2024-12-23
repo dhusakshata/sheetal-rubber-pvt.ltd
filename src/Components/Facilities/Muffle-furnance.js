@@ -22,7 +22,7 @@ const Inhouse6 = () => {
   return (
     <div className="inhouse-facility-container">
          <div className="inhouse-header"> <h1>Muffle Furnace</h1></div>
-     <div className="inhouse-container">
+     <div className="inhouse-container" style={{gap:"10px"}}>
      <div className="inhouse-image" data-aos="fade-right">
           <img src={muffle} alt="inhouse 1"style={{width:"400px",height:"325px"}}  />
         </div>

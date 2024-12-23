@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
-import Wired1 from "../../Images/wired-reinforced1.png";
+import Wired1 from "../../Images/wire.png";
 import GoBackbutton from "../Goback/goback.js";
 
 
@@ -25,7 +25,7 @@ const wired = ({children}) => {
       </motion.div>
       {/* <hr className="product-hr"/> */}
       
-      <div className="product-container">
+      <div className="product-container" style={{gap:"10px"}}>
         {/* Left Side: Image */}
         <motion.div
           className="content-image"
@@ -33,7 +33,7 @@ const wired = ({children}) => {
           animate={{ opacity: 1, x: 0 }}    // End position (center)
           transition={{ duration:1 }}      // Duration of animation
         >
-          <img src={Wired1} alt="Assembly Hoses" />
+          <img src={Wired1} alt="Assembly Hoses" style={{marginTop:"-200px",width:"300px", marginRight:"-100px"}}/>
         </motion.div>
 
         {/* Right Side: Info */}

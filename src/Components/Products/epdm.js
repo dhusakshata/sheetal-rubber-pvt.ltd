@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
-import EPDM1 from "../../Images/EPDM-rubber1.png";
+import EPDM1 from "../../Images/epdm11.png";
 import GoBackbutton from "../Goback/goback.js";
 const epdm = ({ children }) => {
   return (
@@ -27,18 +27,18 @@ const epdm = ({ children }) => {
       
        {/* Left Side: Image */}
                <motion.div
-                 className="content-image"
+                 className="content-image " style={{position:"relative",top:"-60px"}}
                  initial={{ opacity: 0, x: -100 }} // Start position (left)
                  animate={{ opacity: 1, x: 0 }}    // End position (center)
                  transition={{ duration:1 }}      // Duration of animation
                >
-                 <img src={EPDM1} alt="Assembly Hoses" />
+                 <img src={EPDM1} alt="Assembly Hoses"/>
                  </motion.div>
 
                  
                          {/* Right Side: Info */}
                   <motion.div
-                    className="content-info"
+                    className="content-info epdm-info"
                            initial={{ opacity: 0, x: 100 }} // Start position (right)
                            animate={{ opacity: 1, x: 0 }}    // End position (center)
                            transition={{ duration: 1 }}      // Duration of animation

@@ -32,7 +32,7 @@ const organic = ({ children }) => {
               animate={{ opacity: 1, x: 0 }}    // End position (center)
               transition={{ duration:1 }}      // Duration of animation
             >
-<img src={Organic1} alt="Assembly Hoses" />
+<img src={Organic1} alt="Assembly Hoses" style={{marginTop:"-60px"}} />
 </motion.div>
 
 

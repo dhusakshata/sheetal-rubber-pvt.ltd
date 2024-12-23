@@ -2,14 +2,23 @@
 import React from "react";
 import "./facilities.css";
 import { motion } from "framer-motion"; // For animation
-
+import { Link } from "react-router-dom"
 import Slider from "react-slick"; // Importing Slick Carousel
 import "slick-carousel/slick/slick.css"; // Slick CSS
 import "slick-carousel/slick/slick-theme.css"; // Slick Theme CSS
 
-import Facility4 from "../../Images/facility4.png"; // Replace with your image path
-import Facility5 from "../../Images/facility5.png"; // Replace with your image path
-import Facility6 from "../../Images/facility7.png"; // Replace with your image path
+import Facility4 from "../../Images/hot-feed-rubber-extruder-machine-removebg-preview.png"; 
+import Facility5 from "../../Images/coextrusion.png"; 
+import Facility6 from "../../Images/cold-feed.jpg"; 
+import Facility7 from "../../Images/Auto-clave-vulcanizer.jpeg"; 
+import Facility8 from "../../Images/25-litres-rubber-dispersion-kneader-machine-250x250.jpg"; 
+import Facility9 from "../../Images/stock blender.jpg"; 
+
+import Facility10 from "../../Images/3 role.jpeg"; 
+import Facility11 from "../../Images/Compression Molding.jpg"; 
+import Facility12 from "../../Images/uni-drive-rubber-mixing-mill-12x30-removebg-preview-1.webp"; 
+import Facility13 from "../../Images/knitting2.png"; 
+import Facility14 from "../../Images/braiding-machine__1_-removebg-preview.png"; 
 
 const manufacturing = () => {
   // Slider settings for react-slick
@@ -52,29 +61,62 @@ const manufacturing = () => {
 </motion.div>
 {/* <hr className="facility-hr"/> */}
       {/* Image Section */}
-     <motion.div className="facilities-images" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-       
-     <Slider {...settings}>
-     {/* Slider Images */}
-    <div className="products-card">
-    <h3>Cold Feed Extruder</h3>
-      <img src={Facility4} alt="Burst pressure" />
-     
-    </div>
-    <div className="products-card">
-    <h3>Auto Clave Vulcanizar
-    (Quick Lock Type)</h3>
-      <img src={Facility5} alt="heating ovens" />
-      
-    </div>
-    <div className="products-card">
-    <h3>Hydraulic Presses</h3>
-      <img src={Facility6} alt="UTM" />
-     
-    </div>
-    </Slider>
-    </motion.div>
+    
 
+      <motion.div
+  className="facilities-images"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+>
+  <Slider {...settings}>
+    {/* Slider Images with Links */}
+    <Link to="/hot-cold-feed" className="products-card">
+      <h3>Hot Feed Extruder</h3>
+      <img src={Facility4} alt="Burst pressure" />
+    </Link>
+    <Link to="/hot-cold-feed" className="products-card">
+      <h3>Co-Extrusion Extruder</h3>
+      <img src={Facility5} alt="heating ovens" />
+    </Link>
+    <Link to="/hot-cold-feed" className="products-card">
+      <h3>Cold Feed Extruder</h3>
+      <img src={Facility6} alt="UTM" />
+    </Link>
+    <Link to="/Auto-clave-vulcanizer" className="products-card">
+      <h3>Auto-Clave-Vulcanizer</h3>
+      <img src={Facility7} alt="UTM" />
+    </Link>
+    <Link to="/Dispersion-kneader" className="products-card">
+      <h3>Dispersion-Kneader</h3>
+      <img src={Facility8} alt="UTM" />
+    </Link>
+    <Link to="/Dispersion-kneader" className="products-card">
+      <h3>Stock Blender</h3>
+      <img src={Facility9} alt="UTM" />
+    </Link>
+    <Link to="/3-role-calendaring-machine" className="products-card">
+      <h3>3 Role Calendaring Machine</h3>
+      <img src={Facility10} alt="UTM" />
+    </Link>
+    <Link to="/Compression-transfer-molding" className="products-card">
+      <h3>Compression Moulding</h3>
+      <img src={Facility11} alt="UTM" />
+    </Link>
+    <Link to="/Rubber-mixing-mill" className="products-card">
+      <h3>Rubber Mixing Mill</h3>
+      <img src={Facility12} alt="UTM" />
+    </Link>
+    <Link to="/Knitting-machine" className="products-card">
+      <h3>Knitting Machine</h3>
+      <img src={Facility13} alt="UTM" />
+    </Link>
+    <Link to="/Braiding-Machines" className="products-card">
+      <h3>Braiding Machine</h3>
+      <img src={Facility14} alt="UTM" />
+    </Link>
+  </Slider>
+</motion.div>
       {/* Information Section */}
       <div className="facilities-info">
       <p 
@@ -122,13 +164,7 @@ const manufacturing = () => {
   >
     Compression Transfer Moulding
   </li>
-  <li
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1, delay: 0.9 }}
-  >
-    Hydraulic Presses
-  </li>
+ 
   <li
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}

@@ -17,9 +17,9 @@ const Inhouse5 = () => {
       AOS.refresh(); // Refresh animations to sync with dynamic content
     }, []);
   return (
-    <div className="inhouse-facility-container">
+    <div className="inhouse-facility-container" style={{gap:"0px"}}>
          <div className="inhouse-header"> <h1>Heating Ovens</h1></div>
-     <div className="inhouse-container">
+     <div className="inhouse-container"style={{gap:"10px"}}>
      <div className="inhouse-image" data-aos="fade-right">
           <img src={Heatingoven} alt="inhouse 1"style={{width:"450px",height:"350px"}} />
         </div>

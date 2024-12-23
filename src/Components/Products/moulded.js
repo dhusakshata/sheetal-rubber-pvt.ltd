@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./product2.css";
 import { motion } from "framer-motion";
-import Moulded1 from "../../Images/Moulded1.png";
+import Moulded11 from "../../Images/moulded11.png";
+import Moulded12 from "../../Images/moulded12.png";
+import Moulded13 from "../../Images/moulded13.png";
+import Moulded14 from "../../Images/moulded14.png";
 import GoBackbutton from "../Goback/goback.js";
-const moulded = ({ children }) => {
+const Moulded = ({ children }) => {
+  const images = [Moulded11, Moulded12,Moulded13,Moulded14]; // Images for the slideshow
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Automatically change images every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); 
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [images.length]);
+
   return (
     <div className="product-page">
       <div>
@@ -25,16 +40,23 @@ const moulded = ({ children }) => {
           
           <div className="product-container">
             {/* Left Side: Image */}
-            <motion.div
-              className="content-image"
-              initial={{ opacity: 0, x: -100 }} // Start position (left)
-              animate={{ opacity: 1, x: 0 }}    // End position (center)
-              transition={{ duration:1 }}      // Duration of animation
-            >
-  
-  <img src={Moulded1} alt="Assembly Hoses" />
-  </motion.div>
-
+            
+ <motion.div
+          className="content-image"
+          initial={{ opacity: 0, x: -100 }} // Start position (left)
+          animate={{ opacity: 1, x: 0 }} // End position (center)
+          transition={{ duration: 1 }} // Duration of animation
+        >
+          <div className="image-slider">
+            <div className="slider-image-wrapper">
+              <img
+                src={images[currentIndex]}
+                alt={`Slide ${currentIndex + 1}`}
+                className="slider-image"
+              />
+            </div>
+          </div>
+        </motion.div>
   
           {/* Right Side: Info */}
           <motion.div
@@ -71,4 +93,4 @@ and more.
   );
 };
 
-export default moulded;
+export default Moulded;

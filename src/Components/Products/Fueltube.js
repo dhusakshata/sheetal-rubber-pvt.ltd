@@ -2,7 +2,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import "./product2.css";
-import FuelTube1 from "../../Images/Fuel-Tubes1.png";
+import FuelTube1 from "../../Images/Fuel-Tubes11.png";
 import GoBackbutton from "../Goback/goback.js";
 const fueltube = ({children}) => {
   return (
@@ -23,15 +23,16 @@ const fueltube = ({children}) => {
             </motion.div>
             {/* <hr className="product-hr"/> */}
 
-  <div className="product-container">
+  <div className="product-container" >
         {/* Left Side: Image */}
         <motion.div
           className="content-image"
           initial={{ opacity: 0, x: -100 }} // Start position (left)
           animate={{ opacity: 1, x: 0 }}    // End position (center)
-          transition={{ duration:1 }}      // Duration of animation
+          transition={{ duration:1 }} 
+          style={{marginTop:"-50px"}}     // Duration of animation
         >
-          <img src={FuelTube1} alt="Assembly Hoses" />
+          <img src={FuelTube1} alt="Assembly Hoses" style={{marginTop:"-100px"}}/>
         </motion.div>
 
         

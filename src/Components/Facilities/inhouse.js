@@ -5,12 +5,15 @@ import { motion } from "framer-motion"; // For animation
 import Slider from "react-slick"; // Importing Slick Carousel
 import "slick-carousel/slick/slick.css"; // Slick CSS
 import "slick-carousel/slick/slick-theme.css"; // Slick Theme CSS
-
+import { Link } from "react-router-dom";
 import "./facilities.css"; // Your custom CSS
 
 import Facility1 from "../../Images/facility1.png";
 import Facility2 from "../../Images/facility2.png";
 import Facility3 from "../../Images/facility3.png";
+import Facility44 from "../../Images/Rheometer.png";
+import Facility55 from "../../Images/ozone_test_chamber-removebg-preview.png";
+import Facility66 from "../../Images/muffle_furnace-removebg-preview.png";
 
 const Inhouse = () => {
   // Slider settings for react-slick
@@ -57,36 +60,70 @@ const Inhouse = () => {
      {/* <hr className="facility-hr"/> */}
 
       {/* Image Section */}
-      <motion.div className="facilities-images" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        <Slider {...settings}>
-          {/* Slider Images */}
-          <div className="products-card">
-          <h3>Burst Pressure Test Machine</h3>
-            <img src={Facility1} alt="Burst Pressure" 
-            className="facility-image"
-            style={{height:"320px",width:"300px"}}
-            />
-            
-          </div>
-          <div className="products-card">
-          <h3>Heating Ovens</h3>
-            <img src={Facility2} alt="Heating Ovens" 
-            className="facility-image"
-            style={{height:"320px"}}
-            />
-            
-          </div>
-          <div className="products-card">
-          <h3>UTM - Universal Testing Machine</h3>
-            <img src={Facility3} alt="UTM" 
-            className="facility-image"
-           style={{height:"250px",width:"300px"}}
-           
-           />
-            
-          </div>
-        </Slider>
-      </motion.div>
+      <motion.div
+  className="facilities-images"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+>
+  <Slider {...settings}>
+    {/* Slider Images with Links */}
+    <Link to="/Burst-pressure-test-machines" className="products-card">
+      <h3>Burst Pressure Test Machine</h3>
+      <img
+        src={Facility1}
+        alt="Burst Pressure"
+        className="facility-image"
+        style={{ height: "320px", width: "300px" }}
+      />
+    </Link>
+    <Link to="/Heating-oven" className="products-card">
+      <h3>Heating Ovens</h3>
+      <img
+        src={Facility2}
+        alt="Heating Ovens"
+        className="facility-image"
+        style={{ height: "320px" }}
+      />
+    </Link>
+    <Link to="/UTM-tensil" className="products-card">
+      <h3>UTM - Universal Testing Machine</h3>
+      <img
+        src={Facility3}
+        alt="UTM"
+        className="facility-image"
+        style={{ height: "250px", width: "300px" }}
+      />
+    </Link>
+    <Link to="/Moving-Die-Rheometer" className="products-card">
+      <h3>Moving-Die-Rheometer</h3>
+      <img
+        src={Facility44}
+        alt="rhm"
+        className="facility-image"
+        style={{ height: "250px", width: "300px" }}
+      />
+    </Link>
+    <Link to="/Ozone-test-chamber" className="products-card">
+      <h3>Ozone-test-chamber</h3>
+      <img
+        src={Facility55}
+        alt="UTM"
+        className="facility-image"
+        style={{ height: "250px", width: "300px" }}
+      />
+    </Link>
+    <Link to="/Muffle-furnance" className="products-card">
+      <h3>Muffle-furnance</h3>
+      <img
+        src={Facility66}
+        alt="Muffle-furnance"
+        className="facility-image"
+        style={{ height: "250px", width: "300px" }}
+      />
+    </Link>
+  </Slider>
+</motion.div>
 
       {/* Information Section */}
       <div className="facilities-info">

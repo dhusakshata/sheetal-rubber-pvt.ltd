@@ -23,7 +23,8 @@ function Marine({children}) {
 </motion.div>
       {/* <hr className="product-hr"/> */}
       
-      <div className="product-container">
+      <div className="product-container"
+      >
         {/* Left Side: Image */}
         <motion.div
           className="content-image"

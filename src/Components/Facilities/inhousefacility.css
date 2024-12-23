@@ -13,7 +13,7 @@ h1, h2, h3, h4, b {
 
 /* Header Section with top center alignment */
 .inhouse-header {
-  text-align: center;
+
    animation: slideDownEffect 1s ease-in-out;
  
 }
@@ -54,9 +54,8 @@ padding: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  gap: 60px; /* Further reduced gap between image and text */
-  margin-bottom: 15px; /* Reduced bottom margin */
+  gap: 40px; /* Further reduced gap between image and text */
+  margin-bottom: 20px; /* Reduced bottom margin */
 }
 
 .inhouse-image img {

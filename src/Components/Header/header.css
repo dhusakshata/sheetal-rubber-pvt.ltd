@@ -514,8 +514,12 @@ margin-top: -20px;
   .dropdown {
     position: relative;
     display: block; 
+    
   }
-
+  .sub-dropdown-menu{
+    display: flex;
+    flex-direction: column;
+  }
   /* Dropdown styling on mobile */
   .dropdown-menu a, .sub-dropdown-menu a {
     padding: 10px;

@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./product2.css";
-import Turbocharger1 from "../../Images/Turbo-charger1.png";
+import Turbocharger11 from "../../Images/turbocharger11.png";
+import Turbocharger12 from "../../Images/turbocharger12.png";
 import { motion } from "framer-motion";
 import GoBackbutton from "../Goback/goback.js";
-function turbocharger({children}) {
+function Turbocharger({children}) {
+
+
+  const images = [Turbocharger11, Turbocharger12]; // Images for the slideshow
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Automatically change images every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); // 3000ms = 3 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [images.length]);
+
+
   return (
 
     <div className="product-page">
@@ -28,14 +44,22 @@ function turbocharger({children}) {
     
     <div className="product-container">
       {/* Left Side: Image */}
-      <motion.div
-        className="content-image"
-        initial={{ opacity: 0, x: -100 }} // Start position (left)
-        animate={{ opacity: 1, x: 0 }}    // End position (center)
-        transition={{ duration:1 }}      // Duration of animation
-      >
-        <img src={Turbocharger1} alt="Assembly Hoses" />
-      </motion.div>
+         <motion.div
+               className="content-image"
+               initial={{ opacity: 0, x: -100 }} // Start position (left)
+               animate={{ opacity: 1, x: 0 }} // End position (center)
+               transition={{ duration: 1 }} // Duration of animation
+             >
+               <div className="image-slider">
+                 <div className="slider-image-wrapper">
+                   <img
+                     src={images[currentIndex]}
+                     alt={`Slide ${currentIndex + 1}`}
+                     className="slider-image"
+                   />
+                 </div>
+               </div>
+             </motion.div>
 
       {/* Right Side: Info */}
       <motion.div
@@ -70,4 +94,4 @@ function turbocharger({children}) {
   );
 }
 
-export default turbocharger;
+export default Turbocharger;
