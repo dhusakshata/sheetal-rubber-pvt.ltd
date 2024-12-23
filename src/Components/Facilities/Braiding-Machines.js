@@ -63,14 +63,7 @@ const Facility10 = () => {
             <li><b>Durability:</b> Protects rubber core from damage, extending product lifespan.</li>
           </ul>
 
-          {/* Applications Section */}
-          <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Applications:</h4>
-          <ul>
-            <li><b>Hydraulic Hoses:</b> High-pressure hoses reinforced with steel or synthetic fibers.</li>
-            <li><b>Cables:</b> Electrical and automotive cables with added insulation and protection.</li>
-            <li><b>Seals and Gaskets:</b> Better pressure and environmental resistance.</li>
-            <li><b>Industrial Hoses:</b> For oil, gas, and chemical industries.</li>
-          </ul>
+         
 
           {/* Production Process Section */}
           <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Production Process:</h4>
@@ -88,11 +81,7 @@ const Facility10 = () => {
             <li><b>Cost Efficiency:</b> Increases product lifespan, reducing maintenance costs.</li>
           </ul>
 
-          {/* Examples Section */}
-          <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Examples of Products:</h4>
-          <ul>
-            <li>High-pressure hydraulic hoses, reinforced automotive cables, seals, and gaskets.</li>
-          </ul>
+        
 
           {/* Conclusion Section */}
           <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Conclusion:</h4>

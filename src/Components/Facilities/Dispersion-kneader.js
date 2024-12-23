@@ -30,11 +30,11 @@ const Facility4 = () => {
       {/* Equipment Sections */}
       <div className="equipment-section">
         <div className="equipment-image">
-          <img src={Dispenser} alt="Dispersion Kneader" />
+          <img src={Dispenser} alt="Dispersion Kneader" data-aos="fade-right" />
         </div>
-        <div className="equipment-info">
+        <div className="equipment-info"data-aos="fade-left">
           <h3>Dispersion Kneader</h3>
-          <p>
+          <p >
             The dispersion kneader is the first step in the rubber mixing process. It is responsible for pre-mixing the base rubber with various additives. This machine ensures that the materials are evenly distributed within the rubber matrix before moving to the next stage.
           </p>
           <p><b>Functionality:</b></p>
@@ -47,11 +47,11 @@ const Facility4 = () => {
         </div>
       </div>
 
-      <div className="equipment-section">
+      <div className="equipment-section"data-aos="fade-down">
         
         <div className="equipment-info">
           <h3>Internal Mixer</h3>
-          <p><b>Purpose:</b> The internal mixer is employed for more intensive mixing, refining the rubber compound by applying higher shear and pressure than a kneader. This is the core stage where the rubber, fillers, and all other components are fully homogenized.</p>
+          <p ><b>Purpose:</b> The internal mixer is employed for more intensive mixing, refining the rubber compound by applying higher shear and pressure than a kneader. This is the core stage where the rubber, fillers, and all other components are fully homogenized.</p>
           <p><b>Functionality:</b></p>
           <ul>
             <li>The internal mixer operates under higher temperature and pressure compared to the dispersion kneader.</li>
@@ -64,10 +64,10 @@ const Facility4 = () => {
       </div>
 
       <div className="equipment-section">
-        <div className="equipment-image">
-          <img src={Stock} alt="Stock Blender" />
+        <div className="equipment-image"data-aos="fade-right" >
+          <img src={Stock} alt="Stock Blender" data-aos="fade-right" />
         </div>
-        <div className="equipment-info">
+        <div className="equipment-info"  data-aos="fade-left">
           <h3>Stock Blender</h3>
           <p><b>Purpose:</b> After the rubber compound has been processed in the internal mixer, a stock blender is used to enhance the homogeneity of the mix and prevent temperature build-up, which could negatively impact the material properties.</p>
           <p><b>Functionality:</b></p>

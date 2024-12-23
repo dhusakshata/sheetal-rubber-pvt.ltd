@@ -1,6 +1,6 @@
 
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { FaSearch, FaPhoneAlt, FaEnvelope , FaBars, FaTimes } from 
 "react-icons/fa";
@@ -88,6 +88,29 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
   const handleInputChange = (e) => setSearchInput(e.target.value);
 
   const handleLinkClick = () => setActiveDropdown(null);
+//
+ // State to manage dropdown visibility (optional, but preferred for React)
+ const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+ useEffect(() => {
+   // Add click event listener for dropdown toggle
+   const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
+   dropdownTriggers.forEach(trigger => {
+     trigger.addEventListener('click', handleDropdownClick);
+   });
+
+   // Cleanup event listeners when component unmounts
+   return () => {
+     dropdownTriggers.forEach(trigger => {
+       trigger.removeEventListener('click', handleDropdownClick);
+     });
+   };
+ }, []);
+
+ const handleDropdownClick = (e) => {
+   const dropdown = e.target.closest('.dropdown');
+   dropdown.classList.toggle('open');
+ };
 
  
 

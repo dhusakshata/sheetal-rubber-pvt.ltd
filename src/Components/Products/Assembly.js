@@ -4,7 +4,7 @@ import Assemblyy1 from "../../Images/Assembly-rubber1.png";
 import { motion } from "framer-motion";
 import GoBackbutton from "../Goback/goback.js";
 
-const Assembly = ({ children }) => {
+const Assembly = ({children}) => {
   return (
     <div className="product-page">
       {/* Heading with Bounce Animation */}

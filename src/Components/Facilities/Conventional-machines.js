@@ -1,42 +1,25 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './facility4.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Facility11 = () => {
-   // Scroll-trigger animation logic
-      useEffect(() => {
-        const elements = document.querySelectorAll('.facility-content, .facility-header, .facility-paragraph');
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('visible-black');
-              } else {
-                entry.target.classList.remove('visible-black');
-              }
-            });
-          },
-          { threshold: 0.2 } // Trigger animation when 10% of the element is visible
-        );
-    
-        elements.forEach((element) => observer.observe(element));
-    
-        return () => observer.disconnect(); // Cleanup observer on component unmount
-      }, []);
-      
+     useEffect(() => {
+       AOS.init({ duration: 1000 }); // Initialize AOS for animations
+     }, []);
   return (
     <div className="facility-containers">
-    <div className="facility-header">
+    <div className="facility-header" data-aos="fade-down">
       <h1>Other Conventional Machines</h1> {/* Main heading */}
     </div>
 
-    <div className="facility-paragraph11">
+    <div className="facility-paragraph" data-aos="fade-down">
       <p>
       Our production line includes a variety of Other Conventional Machines that support critical stages in rubber manufacturing. These machines enhance precision and efficiency in operations such as cutting, shaping, and finishing rubber components. Their integration ensures consistency in product quality while optimizing production speed, making them indispensable for producing high-performance rubber products across a range of applications.
       </p>
       
     </div>
-    <div className="facility-content11">
+    <div className="facility-content  facility-text" data-aos="fade-out">
     <h2>Overview of Other Conventional Machines:</h2>
 <p><b>Purpose: </b>
 These machines are designed to perform specific tasks such as cutting, shaping, molding, and finishing rubber components. They help in refining the manufacturing process, contributing to overall product quality and performance.

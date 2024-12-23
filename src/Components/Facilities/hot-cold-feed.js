@@ -6,38 +6,20 @@ import './SubFacility.css'; // Importing the CSS for styling
 import HotFeed from "../../Images/hot-feed-rubber-extruder-machine-removebg-preview.png";
 import ColdFeed from "../../Images/cold-feed.jpg";
 import CoExtrusion from "../../Images/coextrusion.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Facility1 = () => {
-  useEffect(() => {
-    const elements = document.querySelectorAll('.facility-header, .facility-paragraph, .facility-item, .facility-image, .facility-text');
-  
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible-black');
-            entry.target.classList.add('image-visible'); // For images
-          } else {
-            entry.target.classList.remove('visible-black');
-            entry.target.classList.remove('image-visible'); // For images
-          }
-        });
-      },
-      { threshold: 0.2 } // Trigger when 20% of the element is visible
-    );
-  
-    elements.forEach((element) => observer.observe(element));
-  
-    return () => observer.disconnect();
-  }, []);
-  
+ 
+   useEffect(() => {
+      AOS.init({ duration: 1000 }); // Initialize AOS for animations
+    }, []);
 
   return (
     <div className="facility-container">
-      <header className="facility-header">
+      <header className="facility-header" data-aos="fade-down">
         <h1>Hot Feed, Cold Feed & Co-Extrusion Extruders</h1>
       </header>
-      <p className="facility-paragraph">
+      <p className="facility-paragraph" data-aos="fade-down">
         We utilize both hot feed and cold feed extruders, along with co-extrusion technology, 
         to manufacture a variety of rubber products with precision and efficiency. Hot feed 
         extruders allow for better control of material flow and temperature, while cold feed 
@@ -47,10 +29,10 @@ const Facility1 = () => {
       </p>
       <div className="facility-content">
         <div className="facility-item">
-          <div className="facility-image">
-            <img src={HotFeed} alt="Hot Feed Extruder" />
+          <div className="facility-image" >
+            <img src={HotFeed} alt="Hot Feed Extruder" data-aos="fade-right"/>
           </div>
-          <div className="facility-text">
+          <div className="facility-text"data-aos="fade-left">
             <h2>Hot Feed Extruder:</h2>
             <ul>
               <li>A hot feed extruder for rubber hoses shapes rubber into hoses by feeding heated rubber through a die.</li>
@@ -62,9 +44,9 @@ const Facility1 = () => {
         </div>
         <div className="facility-item">
           <div className="facility-image">
-            <img src={ColdFeed} alt="Cold Feed Extruder" />
+            <img src={ColdFeed} alt="Cold Feed Extruder" data-aos="fade-right"/>
           </div>
-          <div className="facility-text">
+          <div className="facility-text"data-aos="fade-left">
             <h2>Cold Feed Extruder:</h2>
             <ul>
               <li>Processes rubber compounds at ambient or slightly elevated temperatures without pre-heating, offering versatility in handling various compounds and profiles.</li>
@@ -76,10 +58,10 @@ const Facility1 = () => {
           </div>
         </div>
         <div className="facility-item">
-          <div className="facility-image">
+          <div className="facility-image"data-aos="fade-right">
             <img src={CoExtrusion} alt="Co-Extrusion Extruder" />
           </div>
-          <div className="facility-text">
+          <div className="facility-text"data-aos="fade-left">
             <h2>Co-Extrusion Extruder:</h2>
             <ul>
               <li>Simultaneously extrudes multiple layers of rubber or different materials to create complex profiles with varying properties in different sections.</li>

@@ -32,9 +32,6 @@
 
 }
 
-[data-aos="fade-down"] {
-  animation: fadeDown 1s ease-out forwards;
-}
 @keyframes fadeDown {
   0% {
     opacity: 0;
@@ -74,7 +71,7 @@
 .facility-content3 {
   width: 100px;
   flex: 2;
-  overflow-y: auto; /* This will make the content scrollable */
+ 
   height: 60vh; /* Let the text area expand with the content */
   padding-left: 20px;
   scroll-behavior: smooth;  

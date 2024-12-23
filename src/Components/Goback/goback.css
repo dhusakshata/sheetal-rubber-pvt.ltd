@@ -1,37 +1,30 @@
-.modern-go-back-button {
+.product-button {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 6px 12px; 
-  background-color:#0f5286; 
-  color: #fff; 
-  border: 2px solid #083252; 
-  border-radius: 4px; 
-  font-size: 12px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.modern-go-back-button svg {
-  height: 16px; 
-  width: 10px;
-  color: #fff;
-  transition: transform 0.3s ease-in-out;
-}
-
-.modern-go-back-button:hover {
+  align-items: center;
   
-  transform: translateY(-2px); /* Lift effect */
 }
 
-.modern-go-back-button:active {
-  transform: translateY(1px); /* Press effect */
-  background-color: #444; /* Darker background */
+.product-button button {
+margin-top: -10px;
+  font-size: 12px; 
+  background-color: #0f5286;
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer;
+  margin-right: 1250px;
+  transition: background-color 0.3s ease;
 }
 
-.modern-go-back-button svg:hover {
-  transform: scale(1.1); /* Slight zoom effect for icon */
+.product-button button:hover {
+  background-color: #0d3c5f; /* Darker blue on hover */
+}
+
+.product-button button:active {
+  background-color: #0f5286; /* Even darker blue on click */
+}
+
+.product-button a {
+  text-decoration: none; /* Remove underline from the link */
 }

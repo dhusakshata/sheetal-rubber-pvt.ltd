@@ -155,7 +155,9 @@ margin-top: -20px;
   gap: 2px;
   font-weight: bold;
   font-size: 14px;
-  justify-content: center 
+  justify-content: center ;
+  overflow: visible; /* Ensure dropdowns are not clipped */
+  z-index: 10; /* Dropdowns appear on top */
 }
 
 .nav a {
@@ -209,11 +211,10 @@ margin-top: -20px;
   position: absolute;
   top: 100%; 
   left: 0;
-  
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   z-index: 1050;
-  
+  display: none;
 }
 
 .dropdown-menu a {
@@ -227,6 +228,7 @@ margin-top: -20px;
 .dropdown-menu a:hover {
   background-color: whitesmoke;
   color: white;
+
 }
 
 /* Show dropdown on hover */
@@ -237,14 +239,14 @@ margin-top: -20px;
 /* Sub-Dropdown Menu Styling */
 .sub-dropdown-menu {
   position: absolute;
-  top: 0; /* Align with the top of the parent dropdown */
-  left: 100%; /* Move it to the right of the main dropdown */
+  top: 0; 
+  left: 100%; 
   background-color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  z-index: 1100; /* Ensure it appears above other elements */
-  display: none; /* Initially hidden */
-  min-width: 200px; /* Adjust width to fit content */
+  z-index: 11000; 
+  min-width: 200px; 
+  display: none;
 }
 
 .sub-dropdown-menu a {
@@ -258,7 +260,9 @@ margin-top: -20px;
 .sub-dropdown-menu a:hover {
   background-color: #f0f0f0;
 }
-
+.dropdown:hover .dropdown-menu, .sub-dropdown:hover .sub-dropdown-menu {
+  display: block; /* Show dropdown when parent is hovered */
+}
 /* Show sub-dropdown on hover */
 .sub-dropdown:hover .sub-dropdown-menu {
   display: block;
@@ -267,25 +271,24 @@ margin-top: -20px;
 
 @media screen and (max-width: 786px) {
   .header {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
-    gap: 10px; /* Add spacing between items */
-    padding: 10px 5px; /* Adjust padding */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px 5px; 
 
   }
 
   .logo img {
-    width: 120px; /* Reduce logo size for smaller screens */
-    height: auto; /* Maintain aspect ratio */
+    width: 120px; 
+    height: auto; 
   }
 
   .top-right {
     display: flex;
-    flex-direction: column; /* Stack search bar and contact info vertically */
-    align-items: center; /* Center-align the items */
-    gap: 10px; /* Add spacing between the elements */
-    width: 100%; /* Ensure it spans the width of the screen */
-  }
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+    width: 100%; }
 
   .search-bar {
     flex-direction: row; 
@@ -331,10 +334,16 @@ margin-top: -20px;
   }
 
   .nav {
-    font-size: 10px; /* Reduce font size for nav links */
-    gap: 10px; /* Adjust spacing between nav links */
-    justify-content: center; /* Center-align nav links */
+    font-size: 10px; 
+    gap: 10px; 
+    justify-content: center; 
   }
+  .nav {
+    flex-direction: column;
+  }
+
+  
+
 }
 
 
@@ -350,54 +359,54 @@ margin-top: -20px;
   }
 
   .logo img {
-    width: 120px; /* Reduce logo size for smaller screens */
-    height: auto; /* Maintain aspect ratio */
+    width: 120px; 
+    height: auto; 
   }
 
   .top-right {
    
     display: flex;
-    flex-direction: column; /* Stack search bar and contact info vertically */
-    align-items: center; /* Center-align the items */
-    gap: 10px; /* Add spacing between the elements */
-    width: 100%; /* Ensure it spans the width of the screen */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    width: 100%;
   }
 
   .search-bar {
-    flex-direction: row; /* Stack input and button vertically */
-    align-items: center; /* Center-align the elements */
-    width: 70%; /* Allow the search bar to adapt to screen width */
+    flex-direction: row;
+    align-items: center; 
+    width: 70%; 
     gap:0;
   }
 
   .search-bar input {
-    width: 90%; /* Take up most of the screen width */
-    font-size: 14px; /* Adjust font size for smaller screens */
+    width: 90%; 
+    font-size: 14px;
   }
 
   .search-bar button {
-    width: 30%; /* Adjust button width */
-    margin: 5px 0; /* Add spacing above and below the button */
+    width: 30%; 
+    margin: 5px 0; 
     padding: 8px;
-    font-size: 12px; /* Adjust font size for smaller screens */
+    font-size: 12px; 
   }
 
   .contact-info {
    
-    align-items: center; /* Center-align contact items */
-    text-align: center; /* Center-align text */
-    gap: 5px; /* Add spacing between contact items */
-    width: 100%; /* Ensure it spans the width of the screen */
+    align-items: center; 
+    text-align: center; 
+    gap: 5px; 
+    width: 100%; 
   }
 
   .contact-item {
-    justify-content: center; /* Center-align icons and text */
-    gap: 8px; /* Adjust spacing between icons and text */
+    justify-content: center; 
+    gap: 8px; 
   }
 
   .social-icons {
-    width: 24px; /* Reduce icon size */
-    height: 24px; /* Keep square aspect ratio */
+    width: 24px; 
+    height: 24px; 
   }
 
   .Navbar {
@@ -407,114 +416,144 @@ margin-top: -20px;
   }
 
   .nav {
-    font-size: 10px; /* Reduce font size for nav links */
-    gap: 10px; /* Adjust spacing between nav links */
+    font-size: 10px; 
+    gap: 10px; 
     justify-content: center; /* Center-align nav links */
   }
+  
+  
 }
 
 /*for smaller screen*/
 @media screen and (max-width: 320px) {
   .header {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
-    gap: 10px; /* Add spacing between items */
-    padding: 10px 5px; /* Adjust padding */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px 5px; 
   }
 
   .logo img {
-    width: 120px; /* Reduce logo size for smaller screens */
-    height: auto; /* Maintain aspect ratio */
+    width: 120px; 
+    height: auto; 
   }
 
   .top-right {
-    position: static; /* Remove absolute positioning */
+    position: static; 
     display: flex;
-    flex-direction: column; /* Stack search bar and contact info vertically */
-    align-items: center; /* Center-align the items */
-    gap: 10px; /* Add spacing between the elements */
-    width: 100%; /* Ensure it spans the width of the screen */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    width: 100%; 
   }
 
   .search-bar {
     
-    flex-direction: row; /* Stack input and button vertically */
-    align-items: center; /* Center-align the elements */
-    width: 70%; /* Allow the search bar to adapt to screen width */
+    flex-direction: row;
+    align-items: center; 
+    width: 70%; 
     gap:0;
   }
 
   .search-bar input {
-    width: 90%; /* Take up most of the screen width */
-    font-size: 14px; /* Adjust font size for smaller screens */
+    width: 90%; 
+    font-size: 14px; 
   }
 
   .search-bar button {
-    width: 30%; /* Adjust button width */
-    margin: 5px 0; /* Add spacing above and below the button */
+    width: 30%; 
+    margin: 5px 0; 
     padding: 8px;
-    font-size: 12px; /* Adjust font size for smaller screens */
+    font-size: 12px;
   }
 
   .contact-info {
    
-    align-items: center; /* Center-align contact items */
-    text-align: center; /* Center-align text */
-    gap: 5px; /* Add spacing between contact items */
-    width: 100%; /* Ensure it spans the width of the screen */
+    align-items: center; 
+    text-align: center; 
+    gap: 5px;
+    width: 100%; 
   }
 
   .contact-item {
-    justify-content: center; /* Center-align icons and text */
-    gap: 8px; /* Adjust spacing between icons and text */
+    justify-content: center; 
+    gap: 8px; 
   }
 
   .social-icons {
-    width: 24px; /* Reduce icon size */
-    height: 24px; /* Keep square aspect ratio */
+    width: 24px; 
+    height: 24px;
   }
 
   .Navbar {
-    padding: 5px 0; /* Adjust padding for navbar */
-    height: auto; /* Allow the navbar height to adapt */
+    padding: 5px 0;
+    height: auto; 
   }
 
   .nav {
-    font-size: 10px; /* Reduce font size for nav links */
-    gap: 10px; /* Adjust spacing between nav links */
-    justify-content: center; /* Center-align nav links */
+    font-size: 10px; 
+    gap: 10px; 
+    justify-content: center;
   }
+  
+
 }
 
-
-
-/* For smaller screens */
-@media (max-width: 768px) {
-  .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+/* Mobile devices - Dropdown behavior */
+@media screen and (max-width: 786px) {
+  .dropdown-menu, .sub-dropdown-menu {
+    position: relative;
+    width: auto;
+    left: 0;
+    top: auto;
+    box-shadow: none;
+    margin-top: 10px;
+    display: none;  /* Make dropdowns visible on mobile */
   }
 
-  .dropdown-menu,
-  .sub-dropdown-menu {
-    display: none;
-    flex-direction: column;
-    position: relative; /* No absolute positioning on mobile */
-    background-color: #fff; /* Optional: change background for better visibility */
-    width: 100%; /* Make it span the container */
-    border: 1px solid #ccc; /* Optional: add border for clarity */
+  .dropdown {
+    position: relative;
+    display: block; 
+  }
+
+  /* Dropdown styling on mobile */
+  .dropdown-menu a, .sub-dropdown-menu a {
     padding: 10px;
+    font-size: 12px;
   }
 
-  .dropdown.open > .dropdown-menu,
-  .sub-dropdown.open > .sub-dropdown-menu {
-    display: flex;
-  }
-
+  /* Optional: Change to a click event for dropdown */
   .dropdown-trigger {
-    display: flex;
-    justify-content: space-between;
     cursor: pointer;
   }
 }
+
+/* Mobile click-triggered dropdown */
+@media screen and (max-width: 480px) {
+  .dropdown-menu {
+    width: 100%;
+    left: 0;
+  }
+
+  .dropdown-menu a, .sub-dropdown-menu a {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  /* Optionally add styles for the dropdown trigger to make it more mobile-friendly */
+  .dropdown-trigger {
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    display: none; /* Hide the dropdown by default */
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block; /* Show the dropdown when clicked */
+  }
+}
+
+
