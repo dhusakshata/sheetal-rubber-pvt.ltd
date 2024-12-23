@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { FaSearch, FaPhoneAlt, FaEnvelope , FaBars, FaTimes } from 
+import { FaSearch, FaPhoneAlt, FaEnvelope , FaBars, FaTimes,FaChevronDown } from 
 "react-icons/fa";
 
 
@@ -180,7 +180,7 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
             onMouseLeave={() => setActiveDropdown(null)}
           >
             <span className="dropdown-trigger">
-              <Link to="/product">PRODUCTS</Link>
+              <Link to="/product">PRODUCTS<FaChevronDown style={{ fontSize: "15px", marginLeft: "5px" }} /></Link>
             </span>
             {activeDropdown === "products" && (
               <div className="dropdown-menu">
@@ -211,7 +211,7 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
  onMouseLeave={() => setActiveDropdown(null)} // Hide on mouse leave
   >
   <span className="dropdown-trigger">
-  <Link >FACILITIES</Link>
+  <Link >FACILITIES<FaChevronDown style={{ fontSize: "15px", marginLeft: "5px" }} /></Link>
   </span>
   {activeDropdown === "facilities" && (
 
