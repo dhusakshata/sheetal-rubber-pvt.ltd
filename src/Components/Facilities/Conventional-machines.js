@@ -20,7 +20,7 @@ const Facility11 = () => {
       
     </div>
     <div className="facility-content  facility-text" data-aos="fade-out">
-    <h2>Overview of Other Conventional Machines:</h2>
+    <h2 style={{fontWeight:"bold"}}>Overview of Other Conventional Machines:</h2>
 <p><b>Purpose: </b>
 These machines are designed to perform specific tasks such as cutting, shaping, molding, and finishing rubber components. They help in refining the manufacturing process, contributing to overall product quality and performance.
 </p>
@@ -28,7 +28,7 @@ These machines are designed to perform specific tasks such as cutting, shaping, 
 The machines typically operate using mechanical or hydraulic systems to exert force and shape rubber materials into desired forms. They are often user-friendly, allowing for quick adjustments to accommodate different product specifications.
 </p>
 
-       <h4>Advantages of Other Conventional Machines:</h4>
+       <h4 style={{fontWeight:"bold"}}>Advantages of Other Conventional Machines:</h4>
       <ul>
       <li><b>Precision: </b>These machines provide accurate cutting and shaping, which is crucial for ensuring uniformity and consistency in rubber products.</li>
         <li><b>Efficiency:  </b> Designed for high-speed operation, they reduce production time and increase throughput, enabling manufacturers to meet demand more effectively.</li>
@@ -36,7 +36,7 @@ The machines typically operate using mechanical or hydraulic systems to exert fo
      
       </ul>
 
-      <h4>Applications:</h4>
+      <h4 style={{fontWeight:"bold"}}>Applications:</h4>
       <ul>
         <li><b>Cutting Machines:   </b> Used to precisely cut rubber sheets or components to specified dimensions for further processing or assembly.
         </li>
@@ -47,7 +47,7 @@ The machines typically operate using mechanical or hydraulic systems to exert fo
         <li><b>Calendars </b>Used for producing rubber sheets by rolling out the rubber compound to the desired thickness.</li>
       </ul>
       
-      <h4>Production Process Using Other Conventional Machines:</h4>
+      <h4 style={{fontWeight:"bold"}}> Production Process Using Other Conventional Machines:</h4>
       <ul>
         <li><b>Material Preparation: </b> Rubber compounds are prepared and mixed to ensure consistency before processing.
         </li>
@@ -57,7 +57,7 @@ The machines typically operate using mechanical or hydraulic systems to exert fo
         
       </ul>
           
-      <h4>Benefits for Rubber-Producing Companies:</h4>
+      <h4 style={{fontWeight:"bold"}}>Benefits for Rubber-Producing Companies:</h4>
       <ul>
         <li><b>Improved Product Quality: </b>Enhanced precision in cutting and shaping leads to higher quality and more uniform products.
         </li>
@@ -65,7 +65,7 @@ The machines typically operate using mechanical or hydraulic systems to exert fo
         <li><b>Cost Efficiency:  </b> Reducing waste and optimizing the manufacturing process lowers production costs and increases profitability.</li>
         
       </ul>
-      <h4>Conclusion:
+      <h4 style={{fontWeight:"bold"}}>Conclusion:
       </h4>
       <p><b>Other Conventional Machines  </b> are integral to the rubber production process, providing essential support for shaping, cutting, and finishing rubber products. Their role in enhancing efficiency, precision, and product quality makes them indispensable in delivering high-performance rubber components tailored to various industrial applications. By incorporating these machines into the production line, rubber manufacturers can ensure a streamlined process that meets the stringent requirements of diverse markets.</p>
     </div>
