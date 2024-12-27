@@ -118,12 +118,12 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
   return (
   
       <header className="header">
-        
+         <Hamburger/>
        <div className="main-header">
        <div className="logo">
           <img src={Logos} alt="Sheetal Rubber Industries" />
         </div>
-        <Hamburger/>
+       
        <div className="top-right">
           <div className="search-bar">
             <input

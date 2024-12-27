@@ -13,8 +13,9 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
-color: orangered;
+color: #ff782b;
 }
+
 
 .Sidebar {
   position: fixed;

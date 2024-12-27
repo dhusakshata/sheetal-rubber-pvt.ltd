@@ -53,7 +53,7 @@ function Footer() {
 
 
       <div className="quick-links">
-        <h3><FaLink />Quick Links</h3>
+        <h3><FaLink  style={{ marginRight: '10px' }}/>Quick Links</h3>
         <ul>
           <li><Link to="/siliconpolyester">Silicone–Polyester Hoses</Link></li>
           <li><Link to="/turbochargerhose">Turbocharger and CAC Hoses</Link></li>
@@ -63,7 +63,7 @@ function Footer() {
           <li><Link to="/marinewethose">Marine Wet Exhaust Hoses</Link></li>
           <li><Link to="/Assembly">Assembly / Branch Hoses</Link></li>
           <li><Link to="/wired">Wire Reinforced Hoses</Link></li>
-          <li><Link to="/fueltube">Fuel Tubes / Hoses</Link></li>
+          <li><Link to="/fueltube">Fuel Hoses</Link></li>
           <li><Link to="/moulded">Moulded Hoses</Link></li>
         </ul>
       </div>
