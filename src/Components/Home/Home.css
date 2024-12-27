@@ -663,7 +663,7 @@ margin-bottom: 30px;
 @keyframes zoom-slide-mobile {
   0% {
     opacity: 0;
-    transform: scale(0.7) translateX(-30px); /* Start zoomed out with less slide */
+    transform: scale(0.7) translateX(-30px); 
   }
   50% {
     opacity: 0.7;
@@ -677,40 +677,19 @@ margin-bottom: 30px;
 
 /* Responsive Design for Products */
 @media screen and (max-width: 1200px) {
-  /* For larger tablets and desktops */
+ 
   .products-gallerys {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three products per row */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     justify-items: center;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  /* For tablets */
-  .products-gallerys {
-    grid-template-columns: repeat(2, 1fr); /* Two products per row */
-    gap: 15px;
-  }
-
-  .product-cards {
-    padding: 10px;
-  }
-
-  .product-images {
-    width: 150px;
-    height: auto;
-  }
-
-  .product-cards h3 {
-    font-size: 16px; /* Adjust font size for smaller screens */
   }
 }
 
 @media screen and (max-width: 768px) {
   /* For smaller tablets and large phones */
   .products-gallerys {
-    grid-template-columns: repeat(2, 1fr); /* Still two products per row */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 10px;
   }
 
@@ -719,52 +698,37 @@ margin-bottom: 30px;
   }
 
   .product-images {
-    width: 120px;
+    width: 250px;
     height: auto;
   }
 
   .product-cards h3 {
     font-size: 14px;
+    margin-bottom: -100px;
   }
 }
 
-@media screen and (max-width: 576px) {
-  /* For small phones */
-  .products-gallerys {
-    grid-template-columns: 2fr; /* Single column layout */
-    gap: 2px;
-  }
-
-  .product-cards {
-    text-align: center; /* Center-align text for better layout */
-  }
-
-  .product-images {
-    width: 100px;
-    height: auto;
-  }
-
-  .product-cards h3 {
-    font-size: 14px;
-  }
-}
 
 @media screen and (max-width: 360px) {
-  /* For very small screens */
+
   .products-gallerys {
     gap: 5px;
   }
 
+ 
+  .product-cards h3 {
+    font-size: 14px;
+    margin-bottom: -100px;
+  }
   .product-images {
-    width: 90px;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
   }
 
-  .product-cards h3 {
-    font-size: 12px;
-  }
 }
 
-/* for bigger screen */
+
 
 /* Responsive Adjustments */
 @media (max-width: 1440px) {
@@ -773,6 +737,7 @@ margin-bottom: 30px;
   }
 
   .product-cards {
-    flex: 1 1 calc(25% - 15px); /* 4 cards per row */
+    flex: 1 1 calc(25% - 15px); 
   }
 }
+
