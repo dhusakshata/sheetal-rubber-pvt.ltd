@@ -46,7 +46,7 @@ const Assembly = ({children}) => {
                transition={{ duration: 1 }} // Duration of animation
              >
                <div className="image-slider">
-                 <div className="slider-image-wrapper"style={{marginTop:"-90px"}}>
+                 <div className="slider-image-wrapper"style={{marginBottom:"-10px"}}>
                    <img
                      src={images[currentIndex]}
                      alt={`Slide ${currentIndex + 1}`}

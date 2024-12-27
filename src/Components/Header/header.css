@@ -5,16 +5,26 @@
   margin: 0; 
   padding: 0; 
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+ 
+}
 
 .header {
   width: 100%;
+ 
   display: flex;
   flex-direction: column;
   background-color:white;
   position: sticky;
   z-index: 10000;
    top: 0;
-  margin: 0px;
+ 
+  margin: 0; /* Remove any margins */
+  padding: 0; /* Remove any paddings */
  
 
 }
@@ -25,7 +35,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
- 
+  width: 100%;
+  box-sizing: border-box; 
 }
 
 /* Logo styling */
@@ -58,7 +69,6 @@
   height: 40px;
   padding: 0 8px;
   border: 1px solid gray;
-
   margin: 0;
   box-sizing: border-box;
 }
@@ -91,6 +101,7 @@
   margin-top: 10px;
   position: relative;
   top:-14px;
+  font-size: 14px;
 }
 
 .contact-item {
@@ -269,12 +280,13 @@ margin-top: -20px;
 }
 
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .header {
     flex-direction: column; 
     align-items: center; 
     gap: 10px; 
-    padding: 10px 5px; 
+    padding: 10px 10px; 
+margin: 10px;
 
   }
 
@@ -328,26 +340,25 @@ margin-top: -20px;
   }
 
   .Navbar {
-
+display: none;
     padding: 5px 0; 
     height: auto;
   }
 
   .nav {
+    display: none;
     font-size: 10px; 
     gap: 10px; 
     justify-content: center; 
   }
   .nav {
+    display: none;
     flex-direction: column;
   }
 
   
 
 }
-
-
-
 
 @media screen and (max-width: 480px) {
   .header {
@@ -561,3 +572,11 @@ margin-top: -20px;
 }
 
 
+@media (max-width: 768px) {
+  /* Show hamburger menu on smaller screens */
+  .hamburger-menu {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

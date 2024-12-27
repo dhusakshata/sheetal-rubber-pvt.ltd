@@ -32,7 +32,9 @@ const fueltube = ({children}) => {
           transition={{ duration:1 }} 
           style={{marginTop:"-50px"}}     // Duration of animation
         >
-          <img src={FuelTube1} alt="Assembly Hoses" style={{marginTop:"-100px"}}/>
+          <img src={FuelTube1} alt="Assembly Hoses" style={{marginTop:"-100px"}}
+          className="fulehose-img"
+          />
         </motion.div>
 
         

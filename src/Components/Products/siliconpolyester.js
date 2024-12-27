@@ -33,7 +33,7 @@ function SiliconPolyester({ children }) {
         animate={{ opacity: 1, y: 0 }} // End position (normal)
         transition={{ duration: 1 }} // Duration of animation
       >
-        <h1>SILICON-POLYESTER HOSES</h1>
+        <h1>SILICONE-POLYESTER HOSES</h1>
       </motion.div>
       <div className="product-container">
         {/* Left Side: Auto Image Slider */}
@@ -44,11 +44,12 @@ function SiliconPolyester({ children }) {
           transition={{ duration: 1 }} // Duration of animation
         >
           <div className="image-slider">
-            <div className="slider-image-wrapper">
+            <div className="slider-image-wrapper silicone-slider" style={{marginTop:"-90px"}}>
               <img
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
                 className="slider-image"
+                
               />
             </div>
           </div>
@@ -73,14 +74,14 @@ function SiliconPolyester({ children }) {
           <h3>Key Features and Benefits:</h3>
           <ul>
             <li>
-              Our Silicon Hoses are having good resistance to weather and ozone and resist
-              deterioration from coolant and heat transfer
+              Our Silicone Hoses are having good resistance to weather and ozone and resist
+              deterioration from coolant and heat transfer.
             </li>
             <li>
-              Silicon Polyester Hoses having wide temp range which operates from -50°C to 180°C.
+              Silicone Polyester Hoses having wide temp range which operates from -50°C to 180°C.
             </li>
             <li>It prevents deterioration caused by fluids and heat.</li>
-            <li>Our Silicon Hoses meet requirements of SAEJ20 class A.</li>
+            <li>Our Silicone Hoses meet requirements of SAEJ20 class A.</li>
             <li>
               We offer with the options of Fluorosilicon for oil/fuel and FKM / Viton liner for
               diesel combustion bye products / exhaust gas recycle.

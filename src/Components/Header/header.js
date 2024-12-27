@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { FaSearch, FaPhoneAlt, FaEnvelope , FaBars, FaTimes,FaChevronDown } from 
 "react-icons/fa";
+import Hamburger from "../Hamburge/hambarge.js"
 
 
 import { Link } from "react-router-dom";
@@ -42,7 +43,7 @@ const data = [
   { id: 23, name: "Rubber mixing mill", link: "/Rubber-mixing-mill" },
   { id: 24, name: "Knitting machine", link: "/Knitting-machine" },
   { id: 25, name: "Braiding Machines", link: "/Braiding-Machines" },
-  { id: 26, name: "Conventional machines", link: "/Conventional-machines" },
+
 
   //Inhouse facilities
   { id: 27, name: "Moving Die Rheometer", link: "/Moving-Die-Rheometer" },
@@ -122,6 +123,7 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
        <div className="logo">
           <img src={Logos} alt="Sheetal Rubber Industries" />
         </div>
+        <Hamburger/>
        <div className="top-right">
           <div className="search-bar">
             <input
@@ -136,14 +138,14 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
           </div>
           <div className="contact-info">
             <div className="contact-item">
-              <FaPhoneAlt />
-              <span className="landline">+91 – (20) 2713 0244 ,+91 – (20) 27130794</span>
+              
+              <span className="landline"><FaPhoneAlt  style={{ marginRight: '5px' }}/> +91–(20)27130244,+91–(20)27130794</span>
              
             </div>
             <div className="contact-item">
-              <FaEnvelope />
+             
               <a href="mailto:sheetalrubber@gmail.com" className="email-button">
-                sheetalrubber@gmail.com
+                <FaEnvelope style={{ marginRight: '8px' }}/> sheetalrubber@gmail.com
               </a>
            
            
@@ -255,12 +257,10 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
       <Link to="/Knitting-machine" onClick={() => setManufacturingDropdown(false)}>
         Knitting Machines
       </Link>
-      <Link to="/Braiding-Machines" onClick={() => setManufacturingDropdown(false)}>
+      {/* <Link to="/Braiding-Machines" onClick={() => setManufacturingDropdown(false)}>
         Braiding Machines
-      </Link>
-      <Link to="/Conventional-machines" onClick={() => setManufacturingDropdown(false)}>
-        Other Conventional Machines
-      </Link>
+      </Link> */}
+     
     </div>
                     )}
   </div>

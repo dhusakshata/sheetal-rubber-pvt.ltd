@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 const Facility9 = () => {
   useEffect(() => {
-        AOS.init({ duration: 1000 }); // Initialize AOS for animations
+        AOS.init({ duration: 800 }); // Initialize AOS for animations
       }, []);
   return (
     <div className="facility-container3">
@@ -18,12 +18,14 @@ const Facility9 = () => {
       <div className="facility-main3">
         {/* Image Section */}
         <div className="facility-image3" data-aos="fade-right">
-          <img src={Knitting} alt="Knitting Machines" style={{ width: "500px", height: "350px", marginTop: "-20px" }} />
+          <img src={Knitting} alt="Knitting Machines" style={{ width: "500px", height: "350px", marginTop: "-220px" }} 
+          className='knitting-img'
+          />
         </div>
 
         {/* Text Section */}
-        <div className="facility-content3" >
-          <div className="facility-paragraph3"style={{marginRight:"20px"}} >
+        <div className="facility-content" data-aos="fade-left">
+          <div className="facility-paragraph"style={{marginRight:"20px"}} >
             <p>
               Our production line includes advanced Knitting Machines that play a crucial role in the production of
               knitted rubber components. These machines utilize precise knitting techniques to create strong and
@@ -49,14 +51,7 @@ const Facility9 = () => {
             </ul>
           </div>
 
-          <div className="info-box3" >
-          <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Benefits:</h4>
-            <ul>
-              <li><b>High Quality:</b> Ensures stringent standards.</li>
-              <li><b>Efficiency:</b> Rapid production.</li>
-              <li><b>Innovation:</b> Supports unique product development.</li>
-            </ul>
-          </div>
+         
         </div>
       </div>
     </div>

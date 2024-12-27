@@ -33,7 +33,7 @@ function product() {
             <div className="image-info">
 
             
-            <h3>Silicon-Polyester Hoses</h3>
+            <h3>Silicone-Polyester Hoses</h3>
           
               <p>
               Silicone-Polyester hoses are designed specifically for use in demanding radiator, heater,and coolant transfer applications. 

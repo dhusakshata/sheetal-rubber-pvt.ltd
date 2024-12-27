@@ -14,7 +14,7 @@ import "./App.css";
 import Header from "./Components/Header/header.js";
 import Footer from "./Components/Footer/footer.js";
 import AboutUs from "./Components/About/about.js";
-//  import HamburgerMenu from "./Components/Hamburge/hambarge.js";
+  // import HamburgerMenu from "./Components/Hamburge/hambarge.js";
 
 import Home from "./Components/Home/Home.js";
 import Product from "./Components/Products/product.js";
@@ -52,8 +52,8 @@ import Facility6 from "./Components/Facilities/Compression-transfer-molding.js";
 // import Facility7 from "./Components/Facilities/facility7.js";
 import Facility8 from "./Components/Facilities/Rubber-mixing-mill.js";
 import Facility9 from "./Components/Facilities/Knitting-machine.js";
-import Facility10 from "./Components/Facilities/Braiding-Machines.js";
-import Facility11 from "./Components/Facilities/Conventional-machines.js";
+// import Facility10 from "./Components/Facilities/Braiding-Machines.js";
+
 
 //Inhouse Facility
 import Inhouse1 from "./Components/Facilities/Moving-Die-Rheometer.js";
@@ -69,7 +69,7 @@ const App = () => {
         <ScrollToTop /> {/* Ensure it's placed above your routes */}
         
       <Header /> 
-      {/* <HamburgerMenu/> */}
+      {/* <HamburgerMenu/>  */}
      
       <Routes>
       <Route path="/" element={<Home />} />
@@ -103,8 +103,8 @@ const App = () => {
         {/* <Route path="/facility7" element={<Facility7 />} /> */}
         <Route path="/Rubber-mixing-mill" element={<Facility8 />} />
         <Route path="/Knitting-machine" element={<Facility9 />} />
-        <Route path="/Braiding-Machines" element={<Facility10 />} />
-        <Route path="/Conventional-machines" element={<Facility11 />} />
+        {/* <Route path="/Braiding-Machines" element={<Facility10 />} /> */}
+      
 
         <Route path="/Moving-Die-Rheometer" element={<Inhouse1 />} />
         <Route path="/Burst-pressure-test-machines" element={<Inhouse2 />} />

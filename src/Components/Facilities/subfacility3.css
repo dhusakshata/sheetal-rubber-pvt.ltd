@@ -72,7 +72,7 @@
   width: 100px;
   flex: 2;
  
-  height: 60vh; /* Let the text area expand with the content */
+  height: 60vh; 
   padding-left: 20px;
   scroll-behavior: smooth;  
   overflow-y: auto;
@@ -108,5 +108,66 @@
   margin-bottom: 10px;
  
   font-family: Arial, sans-serif;
+}
+
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .facility-main3 {
+    flex-direction: column;
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .facility-image3 {
+    position: relative; /* Remove sticky behavior */
+    height: auto; /* Let the height adjust dynamically */
+    margin-top: 80px;
+    width: 250px;
+   margin-left: 60px;
+  }
+
+  .facility-content3 {
+    width: 100%; /* Full width for text content */
+    margin: 0; /* Remove extra margins */
+    padding-left: 0; /* Align content properly */
+    height: auto; /* Let height adjust dynamically */
+    overflow-y: visible; /* Remove scroll for smaller screens */
+  }
+
+  .facility-header3 h1 {
+    font-size: 2rem; /* Reduce font size for headings */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .info-boxe3 h4,
+  .info-boxe3 b {
+    font-size: 16px; /* Adjust font size for readability */
+    margin: 10px 0; /* Add spacing for better layout */
+  }
+
+  .facility-content3 p,
+  .facility-content3 ul {
+    font-size: 14px; /* Slightly smaller font for smaller screens */
+  }
+  .roll-img{
+  width: 150px;
+  margin-left: 100px;
+  margin-top: -120px;
+  padding: 20px;
+  }
+  .compression-img{
+    margin-top: -120px;
+    padding: 20px;
+  }
+  .rubbermixing-img{
+  
+    padding: 40px;
+  }
+  .knitting-img{
+    width: 150px;
+ 
+  margin-top: -120px;
+  padding: 50px;
+  }
 }
 

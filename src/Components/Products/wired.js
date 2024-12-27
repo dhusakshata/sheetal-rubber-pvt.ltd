@@ -33,7 +33,9 @@ const wired = ({children}) => {
           animate={{ opacity: 1, x: 0 }}    // End position (center)
           transition={{ duration:1 }}      // Duration of animation
         >
-          <img src={Wired1} alt="Assembly Hoses" style={{marginTop:"-200px",width:"300px", marginRight:"-100px"}}/>
+          <img src={Wired1} alt="Assembly Hoses" style={{marginTop:"-200px",width:"300px", marginRight:"-100px"}}
+          className="wirehose-img"
+          />
         </motion.div>
 
         {/* Right Side: Info */}

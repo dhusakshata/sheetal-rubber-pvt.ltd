@@ -38,7 +38,7 @@ const Inhouse1 = () => {
       </li>
       <li>
       MDRs are equipped with precise temperature control, replicating real-world curing conditions for accurate predictions of processing and end-use performance.
-Remove rest of the data
+
 
       </li>
      </ul>

@@ -30,14 +30,14 @@ const Facility1 = () => {
       <div className="facility-content">
         <div className="facility-item">
           <div className="facility-image" >
-            <img src={HotFeed} alt="Hot Feed Extruder" data-aos="fade-right"/>
+            <img src={HotFeed} alt="Hot Feed Extruder" data-aos="fade-right" />
           </div>
           <div className="facility-text"data-aos="fade-left">
             <h2>Hot Feed Extruder:</h2>
             <ul>
               <li>A hot feed extruder for rubber hoses shapes rubber into hoses by feeding heated rubber through a die.</li>
               <li>The extruder applies controlled heat and pressure to maintain consistent quality and dimensions.</li>
-              <li>This process ensures the rubber is molded to the desired shape with properties like flexibility and durability.</li>
+              <li>This process ensures the rubber is moulded to the desired shape with properties like flexibility and durability.</li>
               <li>It is optimized for continuous production of large volumes.</li>
             </ul>
           </div>
@@ -64,13 +64,13 @@ const Facility1 = () => {
           <div className="facility-text"data-aos="fade-left">
             <h2>Co-Extrusion Extruder:</h2>
             <ul>
-              <li>Simultaneously extrudes multiple layers of rubber or different materials to create complex profiles with varying properties in different sections.</li>
+           
               <li><b>Multi-Extruder System:</b> Two or more extruders feed different materials into a single die.</li>
               <li><b>Layering:</b> Materials with different properties (hardness, color, composition) are extruded together to form a multi-layered or multi-component product.</li>
               <li><b>Versatility:</b> Custom solutions for advanced performance characteristics in products.</li>
               <li><b>Cost-Effective:</b> Single-step process for producing multi-layer products, reducing manufacturing complexity.</li>
               <li><b>Industry Use:</b> Popular in automotive, construction, and manufacturing for creating durable and functional multi-layered rubber products.</li>
-              <li>Allows integration of different rubber compounds or materials into one profile.</li>
+             
             </ul>
           </div>
         </div>

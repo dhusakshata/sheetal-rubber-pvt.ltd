@@ -64,6 +64,7 @@
 
 
 .about-section {
+  width: 1200px;
   position: relative;
   width: 100%;
   overflow: visible;
@@ -132,13 +133,12 @@
   flex-direction: row; 
   align-items: flex-start;
   justify-content: space-between;
-
-   width: 1400px;
+  width: 1200px;
   border-radius: 10px;
- gap:30px;
- overflow: hidden; 
- flex-wrap: wrap; 
- margin-bottom: 30px;
+  gap:50px;
+  overflow: hidden; 
+  flex-wrap: wrap; 
+  margin-bottom: 30px;
 }
 .about-content p{
   font-size: 16px;
@@ -146,6 +146,7 @@
 }
 .about-content li{
   font-size: 16px;
+  margin-left: -20px;
  
 }
 .about-content h6{
@@ -160,49 +161,34 @@ color:  #ff5722;
   padding: 20px;
   color:black; /* White text */
   padding: 40px;
-  margin-top: 40px;
-  /* transform: translateX(-150px); 
-  opacity: 0;
-  animation: slideFromLeft 1.2s ease-out forwards, rotate3D 2s infinite ease-in-out 1.2s; */
+  margin-top: 20px;
+  width: 400px;
+  
 }
-
-/* Keyframes for Slide-in from Top Animation */
-/* @keyframes slideFromLeft {
-  0% {
-    transform: translateX(150px); 
-    opacity: 0; 
-  }
-  100% {
-    transform: translateX(0); 
-    opacity: 1; 
-  }
-}
- */
-
-
 
 /* Image container */
 .about-image {
+ 
   flex: 1; 
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width:100%;
-  max-width: 1000px;
-  height: 500px;
+  width:1200px;
   margin-top:40px;
   position: relative;
- 
   object-fit: cover;
   overflow: hidden;
+  right: -50px;
+
 
 }
 
 .building-image{
-  width: 800px; 
-  height: 100%;
+  width: 1200px; 
+  height: 400px;
   transition: transform 1s ease, box-shadow 0.5s ease;
   margin: 0px;
+  border-radius: 10px;
 }
 
 
@@ -306,52 +292,6 @@ hr {
   text-align: left;
 }
 
-/* Bounce Fade Animation */
- /* @keyframes bounceFade {
-  0% {
-    opacity: 0;
-    transform: translateY(-80px);
-  }
-  50% {
-    opacity: 0.7;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}  */
-
-/* Responsiveness */
-@media screen and (max-width: 768px) {
-  .misson-vision {
-    padding: 1rem;
-  }
-
-  .Mission h2,
-  .vision h2 {
-    font-size: 1.5rem;
-  }
-
-  .Mission p,
-  .vision p {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .Mission,
-  .vision {
-    padding: 1rem;
-  }
-
-  .Mission h2,
-  .vision h2 {
-    font-size: 1.3rem;
-  }
-}
-
-
 
 
 /* Responsiveness */
@@ -369,19 +309,33 @@ hr {
   .vision p {
     font-size: 0.9rem;
   }
+  .vision{
+    height: 400px;
+    padding: 30px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .Mission,
   .vision {
     padding: 40px;
-    height: 350px;
-    
+   height: 350px;
+    width: 100%; /* Full width for small screens */
+    text-align: center; /* Center text for smaller screens */
   }
-
+.vision{
+  height: 400px;
+  padding: 30px;
+}
   .Mission h2,
   .vision h2 {
     font-size: 1.3rem;
+  
+  }
+  .Mission p, .vision p {
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.2;
   }
 }
 
@@ -428,10 +382,7 @@ hr {
     margin-bottom: 20px;
   }
 
-  .Mission, .vision {
-    width: 100%;
-    font-size: 1.1em;
-  }
+ 
 
   hr {
     width: 40%;
@@ -454,25 +405,6 @@ hr {
   .about-image {
     width: 100%;
     margin-bottom: 15px;
-  }
-
-  .Mission h2, .vision h2 {
-    font-size: 1.8em;
-  }
-
-  .misson-vision {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Mission, .vision {
-    width: 100%;
-    font-size: 1em;
-    margin-bottom: 20px;
-  }
-
-  hr {
-    width: 60%;
   }
 }
 
@@ -515,6 +447,17 @@ hr {
     font-size: 12px;
     margin-bottom: 30px;
   }
+  .Mission,
+  .vision {
+    padding: 40px;
+   height: 400px;
+    width: 100%; /* Full width for small screens */
+    text-align: center; /* Center text for smaller screens */
+  }
+.vision{
+  height: 500px;
+  padding: 30px;
+}
 }
 
 

@@ -20,17 +20,19 @@ const Facility6 = () => {
       <div className="facility-main3">
         {/* Sticky Image Section */}
         <div className="facility-image3" data-aos="fade-right">
-          <img src={Compression} alt="Compression Transfer Moulding" style={{ width: "500px" }} />
+          <img src={Compression} alt="Compression Transfer Moulding" style={{ width: "500px" }} 
+          className='compression-img'
+          />
         </div>
 
         {/* Scrollable Text Section */}
         <div className="facility-content3">
           <div className="facility-paragraph3">
             <p>
-              Our production line utilizes Compression Transfer Molding, a highly efficient process for shaping rubber
+              Our production line utilizes Compression Transfer Moulding, a highly efficient process for shaping rubber
               compounds into finished products. This method involves placing pre-measured rubber material into a heated
-              mold, where it is subjected to pressure to achieve the desired shape and density. Compression transfer
-              molding ensures uniform material distribution and optimal curing, resulting in high-quality rubber
+              mould, where it is subjected to pressure to achieve the desired shape and density. Compression transfer
+              moulding ensures uniform material distribution and optimal curing, resulting in high-quality rubber
               components with consistent properties. This process is ideal for producing complex shapes and larger
               quantities, enhancing production efficiency while maintaining rigorous quality standards in our finished
               products.

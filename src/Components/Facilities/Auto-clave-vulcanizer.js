@@ -21,11 +21,11 @@ const Facility3 = () => {
       <div className="facility-main3">
         {/* Sticky Image Section */}
         <div className="facility-image3" data-aos="fade-right">
-          <img src={Autoclave} alt="Auto Clave Vulcanizer" style={{width:"500px"}} />
+          <img src={Autoclave} alt="Auto Clave Vulcanizer" style={{width:"500px" ,marginTop: "-100px" }} />
         </div>
 
         {/* Scrollable Text Section */}
-        <div className="facility-content3">
+        <div className="facility-content3 " style={{margin:"30px" }}>
           <div className="facility-paragraph3">
             <p>
               Our production line features Auto Clave Vulcanizers (Quick Lock Type), designed for precise and efficient vulcanization of rubber products. These advanced vulcanizers utilize high pressure and heat to cure rubber compounds, ensuring optimal strength, elasticity, and durability in the finished products. The Quick Lock mechanism enables fast and secure loading and unloading of materials, significantly reducing cycle times while maintaining stringent quality control.
@@ -55,24 +55,6 @@ const Facility3 = () => {
             </ul>
           </p>
           </div>
-
-          <div className="info-boxe3">
-            <h4>Applications:</h4>
-            <ul>
-              <li><b>Hoses:</b> Improves flexibility and resistance to extreme conditions.</li>
-              <li><b>Seals & Gaskets:</b> Enhances durability for automotive and industrial applications.</li>
-            </ul>
-          </div>
-
-          <div className="info-boxe3">
-            <h4>Production Process:</h4>
-            <ul>
-              <li><b>Loading:</b> Quick Lock mechanism seals products in the autoclave.</li>
-              <li><b>Curing:</b> Rubber is vulcanized under heat and pressure.</li>
-              <li><b>Unloading:</b> Quick release for fast cooling and processing.</li>
-            </ul>
-          </div>
-
           <div className="info-boxe3">
             <h4>Benefits:</h4>
             <ul>

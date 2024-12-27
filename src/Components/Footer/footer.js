@@ -55,7 +55,7 @@ function Footer() {
       <div className="quick-links">
         <h3><FaLink />Quick Links</h3>
         <ul>
-          <li><Link to="/siliconpolyester">Silicon–Polyester Hoses</Link></li>
+          <li><Link to="/siliconpolyester">Silicone–Polyester Hoses</Link></li>
           <li><Link to="/turbochargerhose">Turbocharger and CAC Hoses</Link></li>
           <li><Link to="/coolant-air-charger-hoses">Coolant Air Charger Hoses</Link></li>
           <li><Link to="/epdm">EPDM Rubber Hoses</Link></li>

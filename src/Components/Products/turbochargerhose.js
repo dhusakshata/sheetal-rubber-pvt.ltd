@@ -51,7 +51,7 @@ function Turbocharger({children}) {
                transition={{ duration: 1 }} // Duration of animation
              >
                <div className="image-slider">
-                 <div className="slider-image-wrapper">
+                 <div className="slider-image-wrapper"style={{marginTop:"-100px"}}>
                    <img
                      src={images[currentIndex]}
                      alt={`Slide ${currentIndex + 1}`}

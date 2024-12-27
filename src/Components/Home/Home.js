@@ -42,7 +42,7 @@ import Moulded from "../../Images/Moulded1.png";
 
 
 // Application Area Images
-import Img1 from "../../Images/Image1.png";
+import Img1 from "../../Images/Truck.png";
 import Img2 from "../../Images/marine.jpeg";
 import Img3 from "../../Images/Image3.jpg";
 import Img4 from "../../Images/Image4.png";
@@ -219,7 +219,7 @@ useEffect(() => {
      <div className="product-h1 animate-slide-top"> <h1>OUR PRODUCTS</h1></div>
 <div className="product-info animate-slide-top">
   <p >
-  At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including <b> Silicon Polyester Hoses,Turbocharger Hoses,Marin Wet Exhaust Hoses,EPDM Rubber Hoses,Organic Rubber Hoses,Assembly Hoses,Wire Reinforced Hoses,Fuel Hoses,Moulded Hoses .</b> Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications. Our commitment to quality and precision engineering ensures reliable performance, even in the most demanding environments.
+  At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including <b> Silicone Polyester Hoses,Turbocharger Hoses,Marin Wet Exhaust Hoses,EPDM Rubber Hoses,Organic Rubber Hoses,Assembly Hoses,Wire Reinforced Hoses,Fuel Hoses,Moulded Hoses .</b> Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications. Our commitment to quality and precision engineering ensures reliable performance, even in the most demanding environments.
 
   </p>
 </div>
@@ -229,7 +229,7 @@ useEffect(() => {
         <div className="product-cards">
           <Link to="/siliconpolyester">
             <img src={Silicon} alt="Silicon-Polyester Hoses" className="product-images" />
-            <h3>Silicon-Polyester Hoses</h3>
+            <h3>Silicone-Polyester Hoses</h3>
           </Link>
         </div>
         <div className="product-cards">

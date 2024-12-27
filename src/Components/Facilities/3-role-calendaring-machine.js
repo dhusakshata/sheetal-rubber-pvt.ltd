@@ -19,16 +19,15 @@ const Facility5 = () => {
       <div className="facility-main3">
         {/* Sticky Image Section */}
         <div className="facility-image3" data-aos="fade-right">
-          <img src={Role} alt="3-Roll Calendaring Machine" style={{ width: "500px" }} />
+          <img src={Role} alt="3-Roll Calendaring Machine" style={{ width: "500px" }}
+          className='roll-img' />
         </div>
 
         {/* Scrollable Text Section */}
         <div className="facility-content3">
           <div className="facility-paragraph3">
             <p>
-             This
-              calendaring process is essential for producing high-quality rubber sheets used in various applications,
-              including conveyor belts, seals, and gaskets. By maintaining stringent quality control, our calendaring
+            The calendaring process is essential for producing high quality rubber products which are used in various applications. By maintaining stringent quality control, our calendaring
               machines enhance the performance and durability of our finished products while maximizing production
               efficiency.
             </p>

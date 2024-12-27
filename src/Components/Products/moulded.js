@@ -79,11 +79,11 @@ and more.
           <li>Grommet, Gaskets, Bellows, Mountings, Rubber to metal bonded component and custom moulded parts.
 </li>
           <li>
-          Transfer and compression moulding process available.
+          Transfer and compression moulding presses available.
 
           </li>
           <li>Auto-weighing available from 0.5 grams to 5 kgs.</li>
-          <li>Auto-weighing available from 0.5 grams to 5 kgs.</li>
+         
         </ul>
         
         </p>

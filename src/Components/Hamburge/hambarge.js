@@ -1,198 +1,145 @@
-import React, { useState } from "react";
-import "./hambarge.css";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FaChevronDown, FaBars, FaTimes } from 'react-icons/fa';
+import './hambarge.css';
 
-const Navbar = () => {
-
+const Sidebar = () => {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  
-//dropdown for manufacturing
-const [manufacturingDropdown, setManufacturingDropdown] = useState(false);
-//dropdown for Inhouse
-const [inhouseDropdown, setInhouseDropdown] = useState(false);
+  const [manufacturingDropdown, setManufacturingDropdown] = useState(false);
+  const [inhouseDropdown, setInhouseDropdown] = useState(false);
 
-const handleHover = (menu) => setActiveDropdown(menu);
-const handleLeave = () => setActiveDropdown(null); // Hide dropdown
+  const handleSidebarToggle = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
 
-  const handleManufacturingHover = () => setManufacturingDropdown(true); // Show sub-dropdown
-  const handleManufacturingLeave = () => setManufacturingDropdown(false);
+  const handleHover = (dropdown) => {
+    setActiveDropdown(dropdown);
+  };
 
-  const handleInhouseHover = () => setInhouseDropdown(true); // Show sub-dropdown
-  const handleInhouseLeave = () => setInhouseDropdown(false); // Hide sub-dropdown
+  const handleLinkClick = () => {
+    setSidebarOpen(false);
+  };
 
+  const handleManufacturingHover = () => {
+    setManufacturingDropdown(true);
+  };
 
+  const handleManufacturingLeave = () => {
+    setManufacturingDropdown(false);
+  };
 
+  const handleInhouseHover = () => {
+    setInhouseDropdown(true);
+  };
 
-
-
-  const handleLinkClick = () => setActiveDropdown(null);
-
- 
-
-
-
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const handleInhouseLeave = () => {
+    setInhouseDropdown(false);
   };
 
   return (
-		<div className="Navbar">
-		<nav className="navbar-container">
-			
-			<button className="hamburger" onClick={toggleMenu}>
-          {isMenuOpen ? "✖" : "☰"} {/* Toggles between hamburger and close icon */}
-        </button>
-			<div className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
-			<Link to="/" onClick={handleLinkClick}>
-				HOME
-			</Link>
-			<Link to="/about" onClick={handleLinkClick}>
-				ABOUT US
-			</Link>
-			<div
-				className="dropdown"
-				onMouseEnter={() => handleHover("products")}
-				onMouseLeave={() => setActiveDropdown(null)}
-			>
-				<span className="dropdown-trigger">
-					<Link to="/product">PRODUCTS</Link>
-				</span>
-				{activeDropdown === "products" && (
-					<div className="dropdown-menu">
-						<Link to="/siliconpolyester" onClick={handleLinkClick}>
-							SILICONE - POLYESTER HOSES
-						</Link>
-						<Link to="/turbochargerhose" onClick={handleLinkClick}>
-							TURBOCHARGER AND CAC HOSES
-						</Link>
-						<Link to="/marinewethose" onClick={handleLinkClick}>
-							MARINE WET EXHAUST HOSES
-						</Link>
-						<Link to="/epdm" onClick={handleLinkClick}>
-							EPDM RUBBER HOSES
-						</Link>
-						<Link to="/organic" onClick={handleLinkClick}>ORGANIC RUBBER HOSES</Link>
-<Link to="/Assembly" onClick={handleLinkClick}>ASSEMBLY HOSES</Link>
-<Link to="/wired" onClick={handleLinkClick}>WIRE REINFORCED HOSES</Link>
-<Link to="/fueltube" onClick={handleLinkClick}>FUEL HOSES</Link>
-<Link to="/moulded" onClick={handleLinkClick}>MOULDED HOSES</Link>
-					</div>
-				)}
-			</div>
-{/* Dropdown Menu for Facilities */}
-<div
-className="dropdown"
-onMouseEnter={() => handleHover("facilities")} // Show on hover
-onMouseLeave={() => setActiveDropdown(null)} // Hide on mouse leave
->
-<span className="dropdown-trigger">
-<Link >FACILITIES</Link>
-</span>
-{activeDropdown === "facilities" && (
+    <div className="SidebarContainer">
+      <button className="HamburgerIcon" onClick={handleSidebarToggle}>
+        {isSidebarOpen ? <FaTimes /> : <FaBars />}
+      </button>
+      <div className={`Sidebar ${isSidebarOpen ? 'open' : ''}`}>
+        <nav className="navs">
+          <Link to="/" onClick={handleLinkClick}>HOME</Link>
+          <Link to="/about" onClick={handleLinkClick}>ABOUT US</Link>
+          <div
+            className="dropdowns"
+            onMouseEnter={() => handleHover("products")}
+            onMouseLeave={() => setActiveDropdown(null)}
+          >
+          
+              <Link to="/product" className="dropdown-triggers" >PRODUCTS<FaChevronDown style={{ fontSize: "15px", marginLeft: "5px" }} /></Link>
+         
+            {activeDropdown === "products" && (
+              <div className="dropdown-menus">
+                <Link to="/siliconpolyester" onClick={handleLinkClick}>SILICONE - POLYESTER HOSES</Link>
+                <Link to="/turbochargerhose" onClick={handleLinkClick}>TURBOCHARGER AND CAC HOSES</Link>
+                <Link to="/marinewethose" onClick={handleLinkClick}>MARINE WET EXHAUST HOSES</Link>
+                <Link to="/epdm" onClick={handleLinkClick}>EPDM RUBBER HOSES</Link>
+                <Link to="/organic" onClick={handleLinkClick}>ORGANIC RUBBER HOSES</Link>
+                <Link to="/Assembly" onClick={handleLinkClick}>ASSEMBLY HOSES</Link>
+                <Link to="/wired" onClick={handleLinkClick}>WIRE REINFORCED HOSES</Link>
+                <Link to="/fueltube" onClick={handleLinkClick}>FUEL HOSES</Link>
+                <Link to="/moulded" onClick={handleLinkClick}>MOULDED HOSES</Link>
+              </div>
+            )}
+          </div>
+          <div
+            className="dropdowns"
+            onMouseEnter={() => handleHover("facilities")}
+            onMouseLeave={() => setActiveDropdown(null)}
+          >
+            <span className="dropdown-triggers">
+              <Link className="dropdown-triggers" >FACILITIES<FaChevronDown style={{ fontSize: "15px", marginLeft: "5px" }} /></Link>
+            </span>
+            {activeDropdown === "facilities" && (
+              <div className="dropdown-menus">
+                <div
+                  className="sub-dropdowns"
+                  onMouseEnter={handleManufacturingHover}
+                  onMouseLeave={handleManufacturingLeave}
+                >
+                 
+                    <Link to="/manufacturing" className="dropdown-triggers" onClick={() => 
+                    {
+                    
+                      setInhouseDropdown(false)
+                    }
+                    
+                      
+                    }>MANUFACTURING FACILITIES</Link>
+                 
+                  {manufacturingDropdown && (
+                    <div className="sub-dropdown-menus submenus">
+                      <Link to="/hot-cold-feed"onClick={handleLinkClick}>Hot Feed, Cold Feed & Co-Extrusion Extruders</Link>
+                      <Link to="/Auto-clave-vulcanizer"onClick={handleLinkClick}>Auto Clave Vulcanizer (Quick Lock Type)</Link>
+                      <Link to="/Dispersion-kneader" onClick={handleLinkClick}>Dispersion Kneader to Internal Mixer & Stock Blenders</Link>
+                      <Link to="/3-role-calendaring-machine" onClick={handleLinkClick}>3 Role Calendaring Machine</Link>
+                      <Link to="/Compression-transfer-molding" onClick={handleLinkClick}>Compression Transfer Moulding</Link>
+                      <Link to="/Rubber-mixing-mill"onClick={handleLinkClick}>Rubber Mixing Mills</Link>
+                      <Link to="/Knitting-machine" onClick={handleLinkClick}>Knitting Machines</Link>
+                      <Link to="/Braiding-Machines"onClick={handleLinkClick}>Braiding Machines</Link>
+                      <Link to="/Conventional-machines" onClick={handleLinkClick}>Other Conventional Machines</Link>
+                    </div>
+                  )}
+                </div>
+                <div
+                  className="sub-dropdowns"
+                  onMouseEnter={handleInhouseHover}
+                  onMouseLeave={handleInhouseLeave}
+                >
+              
+                    <Link to="/inhouse" className="dropdown-triggers" onClick={() => {
+                    
+                      setManufacturingDropdown(false)}}S
 
-<div className="dropdown-menu">
-
-<div
-								className="sub-dropdown"
-								onMouseEnter={handleManufacturingHover}
-								onMouseLeave={handleManufacturingLeave}
-							>
-								<span className="dropdown-trigger">
-									<Link>MANUFACTURING FACILITIES</Link>
-								</span>
-								{manufacturingDropdown && (
-								 
-								 <div className="sub-dropdown-menu">
-	<Link to="/facility1" onClick={() => setManufacturingDropdown(false)}>
-		Hot Feed, Cold Feed & Co-Extrusion Extruders
-	</Link>
-	<Link to="/facility2" onClick={() => setManufacturingDropdown(false)}>
-		Dual Head Extruders for Multi-Layer Extrusion
-	</Link>
-	<Link to="/facility3" onClick={() => setManufacturingDropdown(false)}>
-		Auto Clave Vulcanizar (Quick Lock Type)
-	</Link>
-	<Link to="/facility4" onClick={() => setManufacturingDropdown(false)}>
-		Dispersion Kneader to Internal Mixer & Stock Blenders
-	</Link>
-	<Link to="/facility5" onClick={() => setManufacturingDropdown(false)}>
-		3 Role Calendaring Machine
-	</Link>
-	<Link to="/facility6" onClick={() => setManufacturingDropdown(false)}>
-		Compression Transfer Molding
-	</Link>
-	{/* <Link to="/facility7" onClick={() => setManufacturingDropdown(false)}>
-		Hydraulic Presses
-	</Link> */}
-	<Link to="/facility8" onClick={() => setManufacturingDropdown(false)}>
-		Rubber Mixing Mills
-	</Link>
-	<Link to="/facility9" onClick={() => setManufacturingDropdown(false)}>
-		Knitting Machines
-	</Link>
-	<Link to="/facility10" onClick={() => setManufacturingDropdown(false)}>
-		Braiding Machines
-	</Link>
-	<Link to="/facility11" onClick={() => setManufacturingDropdown(false)}>
-		Other Conventional Machines
-	</Link>
-</div>
-								)}
-</div>
-
-{/* <Link to="/inhouse" onClick={handleLinkClick}>INHOUSE TESTING FACILITIES</Link>
-*/}
-{/* Inhouse Testing Facilities */}
-<div
-							className="sub-dropdown"
-							onMouseEnter={handleInhouseHover}
-							onMouseLeave={handleInhouseLeave}
-						>
-							<span className="dropdown-trigger">
-								<Link >INHOUSE TESTING FACILITIES</Link>
-							</span>
-							{inhouseDropdown && (
-								<div className="sub-dropdown-menu">
-									<Link to="/inhouse1" onClick={handleLinkClick}>
-									Moving Die Rheometer
-									</Link>
-									<Link to="/inhouse2" onClick={handleLinkClick}>
-									Burst Pressure Test Machine (Horizontal) with Hydraulic testing facility
-									</Link>
-									<Link to="/inhouse3" onClick={handleLinkClick}>
-									Ozone Test Chamber
-									</Link>
-									<Link to="/inhouse4" onClick={handleLinkClick}>
-									UTM-1
-									</Link>
-									<Link to="/inhouse5" onClick={handleLinkClick}>
-									Heating Ovens
-									</Link>
-									<Link to="/inhouse6" onClick={handleLinkClick}>
-									Muffle Furnace
-									</Link>
-								</div>
-							)}
-						</div>
-
-</div>
-
-)}
-
-</div>
-<Link to="/news" onClick={handleLinkClick}>NEWS & BLOGS</Link>
-<Link to="/career" onClick={handleLinkClick}>CAREERS</Link>
-<Link to="/contact" onClick={handleLinkClick}>CONTACT US</Link>
-
-			</div>
-
-
-		</nav>
-	</div>
+                    >INHOUSE TESTING FACILITIES</Link>
+                
+                  {inhouseDropdown && (
+                    <div className="sub-dropdown-menus submenus">
+                      <Link to="/Moving-Die-Rheometer" onClick={handleLinkClick}>Moving Die Rheometer</Link>
+                      <Link to="/Burst-pressure-test-machines" onClick={handleLinkClick}>Burst Pressure Test Machine (Horizontal) with Hydraulic testing facility</Link>
+                      <Link to="/Ozone-test-chamber" onClick={handleLinkClick}>Ozone Test Chamber</Link>
+                      <Link to="/UTM-tensil" onClick={handleLinkClick}>UTM-1</Link>
+                      <Link to="/Heating-oven" onClick={handleLinkClick}>Heating Ovens</Link>
+                      <Link to="/Muffle-furnance" onClick={handleLinkClick}>Muffle Furnace</Link>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+          <Link to="/news" onClick={handleLinkClick}>NEWS & BLOGS</Link>
+          <Link to="/career" onClick={handleLinkClick}>CAREERS</Link>
+          <Link to="/contact" onClick={handleLinkClick}>CONTACT US</Link>
+        </nav>
+      </div>
+    </div>
   );
 };
 
-export default Navbar;
+export default Sidebar;

@@ -20,7 +20,8 @@ const Facility8 = () => {
       <div className="facility-main3">
         {/* Sticky Image Section */}
         <div className="facility-image3" data-aos="fade-right">
-          <img src={RubberMixing} alt="Rubber Mixing Mills" style={{ width: "500px" }} />
+          <img src={RubberMixing} alt="Rubber Mixing Mills"style={{ marginTop: "-200px" }}
+          className='rubbermixing-img'/>
         </div>
 
         {/* Scrollable Text Section */}
@@ -57,7 +58,7 @@ const Facility8 = () => {
           <div className="info-box3">
           <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Applications:</h4>
             <ul>
-              <li><b>Rubber Compounding:</b> Producing compounds for tires, hoses, belts, and seals.</li>
+              <li><b>Rubber Compounding:</b> Producing multiple compounds for multiple types of hoses.</li>
               <li><b>Color Mixing:</b> Blending color concentrates into rubber for aesthetic products.</li>
               <li><b>Additive Incorporation:</b> Uniformly distributing additives for enhanced performance.</li>
             </ul>

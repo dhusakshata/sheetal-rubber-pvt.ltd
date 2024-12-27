@@ -1,136 +1,241 @@
-/* Resetting styles */
-* {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
+
+.SidebarContainer {
+  position: relative;
+  margin: 0px;
 }
 
-body {
-  background-color: #f4f4f4; /* Ensure there's a background color */
+.HamburgerIcon {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000001;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+color: orangered;
 }
 
-/* Navbar container styles */
-.navbar-container {
+.Sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 450px;
+  height: 100%;
+  background-color: #0f5286;
+  color: #fff;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 999999;
+}
+
+.Sidebar.open  .HamburgerIcon{
+  left: 0;
+  color: #fff; 
+}
+
+.navs {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
- 
-  color: white;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.navs a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navs a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdowns {
   position: relative;
 }
 
-/* Navbar links container */
-.navbar-links {
-  display: none;
-  gap: 20px;
-  list-style: none;
-  flex-wrap: wrap;
-}
-
-/* Make sure the hamburger menu is a fixed size */
-.hamburger-menu {
-  position: fixed; /* Keeps the menu fixed on the screen */
-  top: 0;
-  right: 0; /* Or use left: 0, depending on your design */
-
-  display: none; /* Initially hidden */
-  z-index: 9999; /* Ensure it stays on top of other content */
-}
-
-/* When the hamburger menu is toggled, make it visible */
-.hamburger-menu.open {
-  display: block;
-}
-
-/* Content outside the menu should have an opacity change when the menu is open */
-.overlay {
-  display: none;
-}
-
-.hamburger-menu.open + .overlay {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20%;
- 
-  
- 
-}
-
-/* Dropdown menu styles */
-.dropdown-menu {
-  display: none;
+.dropdown-menus {
   position: absolute;
-
-  width: 200px;
+  top: 0;
+  left: 100%; /* Align dropdown menus to the right of parent */
+  background-color: #0f5286;
   padding: 10px;
-  border-radius: 5px;
-  top: 30px;
+  display: none;
+  z-index: 999999;
+  min-width: 200px; /* Consistent width for dropdowns */
 }
 
-.dropdown-menu a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 8px 10px;
-}
-
-.dropdown:hover .dropdown-menu {
+.dropdowns:hover .dropdown-menus {
   display: block;
 }
 
+.sub-dropdowns {
+  position: relative;
+}
 
-/* Media Query for Mobile */
+.sub-dropdown-menus {
+  position: absolute;
+  top: 0;
+  left: 100%; /* Align sub-dropdown menus to the right of parent */
+  background-color: #0f5286;
+  padding: 10px;
+  display: none;
+  z-index: 9999999;
+  min-width: 200px; /* Consistent width for sub-dropdowns */
+}
+
+.sub-dropdowns:hover .sub-dropdown-menus {
+  display: block;
+}
+
+/* Adjust dropdown triggers for better clickability */
+.dropdown-triggers,
+.sub-dropdowns > .dropdown-triggers {
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+}
+
+/* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
- 
-  .navbar-links {
-    display: none;
+  .HamburgerIcon {
+    display: block; /* Show the hamburger icon */
+  }
+
+  .Sidebar {
+    left: -250px; /* Hide sidebar by default */
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #0f5286;
+    transition: left 0.3s ease;
+  }
+
+  .Sidebar.open {
+    left: 0; /* Show sidebar when open */
+  }
+  .navs {
+    display: flex;
     flex-direction: column;
+    padding: 20px;
+    font-size: 14px; /* Slightly larger text for readability */
+  }
+
+  .navs a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: block;
+    text-align: left; /* Align text to the left */
+  }
+  .navs a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .dropdown-menus a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .dropdowns {
+    position: relative;
+    width: 100%;
+  }
+  .dropdown-triggers {
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    padding: 15px 10px;
+    cursor: pointer;
+  }
+  .dropdown-menus {
+    position: relative;
+    left: 0;
+    width: 100%; 
+    background-color: #0f5286;
+    display: none;
+    z-index: 999999;
     width: 100%;
   }
 
-  .navbar-links a {
-    display: block;
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    
-  }
-
-  .hamburger {
+  .dropdowns:hover .dropdown-menus {
     display: block;
   }
+  .sub-dropdowns {
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+  }
 
-  .navbar-links.active {
-    display: block;
-    position: fixed;
-    top: 0;
+  .sub-dropdown-menus {
+    display: none;
+    flex-direction: column;
+    background-color: #0f5286;
+    width: 100%;
+    padding: 0;
+  }
+
+  .sub-dropdowns.active .sub-dropdown-menus {
+    display: flex; /* Show sub-dropdown menus when active */
+  }
+
+  .sub-dropdown-menus a {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .sub-dropdown-menus a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .sub-dropdown-menus {
+    position: relative;
     left: 0;
-   width: 50px;
-   height: 200px;
-    background-color: #333;
-    z-index: 100000;
-    padding-top: 60px;
+    width: 100%; /* Full width on smaller screens */
+    background-color: #0f5286;
+    display: none;
+    z-index: 9999999;
+  }
+
+  .sub-dropdowns:hover .sub-dropdown-menus {
+    display: block;
+  }
+
+  .dropdowns .dropdown-triggers {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+  .dropdown-menus a {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .dropdowns.active .dropdown-menus {
+    display: flex; /* Show dropdown menus when active */
+  }
+
+  .sub-dropdowns .dropdown-triggers {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .sub-dropdowns.active .sub-dropdown-menus {
+    display: block; /* Show sub-dropdown menus when active */
   }
 }
 
-/* Dropdown hover handling for submenus */
-.sub-dropdown-menu {
-  display: none;
-  background-color: orangered;
-  position: absolute;
-  left: 200px;
-  top: 0;
-}
+@media (min-width: 769px) {
+  .HamburgerIcon {
+    display: none; /* Hide hamburger icon on larger screens */
+  }
 
-.sub-dropdown-menu a {
-  color: white;
-  padding: 8px 10px;
-  display: block;
-}
-
-.sub-dropdown:hover .sub-dropdown-menu {
-  display: block;
+  .Sidebar {
+    display: none;
+  }
 }
