@@ -63,13 +63,7 @@ function SiliconPolyester({ children }) {
           transition={{ duration: 1 }} // Duration of animation
         >
           <p>
-            Silicone-Polyester hoses are designed specifically for use in demanding radiator, heater,
-            and coolant transfer applications. Constructed from high-quality silicone reinforced
-            with durable polyester fabric, these hoses offer excellent resilience and reliable
-            performance in harsh conditions. This combination of versatility, durability, and
-            adaptability to extreme environments makes Silicone-Polyester hoses a premium choice for
-            automotive, industrial, and other applications requiring reliable coolant and heat
-            transfer solutions.
+          <b>Silicone-Polyester hoses </b>are designed specifically for use in demanding radiator, heater, and coolant transfer applications. Constructed from high-quality silicone reinforced with durable polyester fabric, these hoses offer excellent resilience and reliable performance in harsh conditions. This combination of versatility, durability, and adaptability to extreme environments makes Silicone-Polyester hoses a premium choice for automotive, industrial, and other applications requiring reliable coolant and heat transfer solutions.
           </p>
           <h3>Key Features and Benefits:</h3>
           <ul>

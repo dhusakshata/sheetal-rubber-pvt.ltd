@@ -97,7 +97,7 @@ useEffect(() => {
 <h2>OUR MISSION</h2>
 <hr></hr>
 <p>
-To become the leading manufacturer of elastomeric products supplying to world’s prominent industries, aspiring to be the “preferred OEM” to all Tire I and II suppliers, committing to superior service and high quality
+To become the leading manufacturer of elastomeric products supplying to world’s prominent industries, aspiring to be the “preferred OEM” to all Tire I and II suppliers, committing to superior service and high quality.
 </p>
 </div>
 
@@ -113,7 +113,7 @@ To become the leading manufacturer of elastomeric products supplying to world’
     </p>
     <p>
     •	Firmly practice environmental friendly processes reflecting our strong belief to optimally contribute to society, promoting development of our country.
-he vision aahe 3 points
+
     </p>
 </div>
     </div>
