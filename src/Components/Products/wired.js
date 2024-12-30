@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./product2.css";
 import Wired1 from "../../Images/wire.png";
+import Wired11 from "../../Images/wired11.png";
 import GoBackbutton from "../Goback/goback.js";
 
 
-const wired = ({children}) => {
+const Wired = ({children}) => {
+
+  const images = [Wired1, Wired11]; // Images for the slideshow
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Automatically change images every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); 
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [images.length]);
+
   return (
 
     <div className="product-page">
@@ -27,17 +41,24 @@ const wired = ({children}) => {
       
       <div className="product-container" style={{gap:"10px"}}>
         {/* Left Side: Image */}
-        <motion.div
-          className="content-image"
-          initial={{ opacity: 0, x: -100 }} // Start position (left)
-          animate={{ opacity: 1, x: 0 }}    // End position (center)
-          transition={{ duration:1 }}      // Duration of animation
-        >
-          <img src={Wired1} alt="Assembly Hoses" style={{marginTop:"-200px",width:"300px", marginRight:"-100px"}}
-          className="wirehose-img"
-          />
-        </motion.div>
-
+      <motion.div
+               className="content-image"
+               initial={{ opacity: 0, x: -100 }} // Start position (left)
+               animate={{ opacity: 1, x: 0 }} // End position (center)
+               transition={{ duration: 1 }} // Duration of animation
+             >
+               <div className="image-slider">
+                 <div className="slider-image-wrapper silicone-slider" style={{marginTop:"-90px"}}>
+                   <img
+                     src={images[currentIndex]}
+                     alt={`Slide ${currentIndex + 1}`}
+                     className="slider-image"
+                     
+                   />
+                 </div>
+               </div>
+             </motion.div>
+     
         {/* Right Side: Info */}
         <motion.div
           className="content-info"
@@ -74,4 +95,4 @@ environments, with a temperature range of
   );
 };
 
-export default wired;
+export default Wired;

@@ -115,7 +115,7 @@ useEffect(() => {
   const options = {
     root: null, // Observing relative to the viewport
     rootMargin: "0px",
-    threshold: 0.5, // Trigger when 50% of the element is in view
+    threshold: 0.2, // Trigger when 50% of the element is in view
   };
 
   const handleIntersection = (entries) => {
@@ -129,11 +129,8 @@ useEffect(() => {
         textElement.classList.add('in-view');
         videoElement.classList.add('in-view');
         headingElement.classList.add('in-view');
-      } else {
-       
-        textElement.classList.remove('in-view');
-        videoElement.classList.remove('in-view');
-        headingElement.classList.remove('in-view');
+        
+        observer.unobserve(entry.target);
       }
     });
   };
