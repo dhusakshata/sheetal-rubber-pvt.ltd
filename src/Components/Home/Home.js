@@ -67,16 +67,7 @@ function Home() {
    return () => clearInterval(interval); // Cleanup on component unmount
  }, [images.length]);
 
-  // const buttons = [
-  //   { label: "Vehicle", img: Img1 },
-  //    { label: "Marine", img: Img2 },
-  //    { label: "Automobile", img: Img3 },
-  //    { label: "Construction", img: Img4 },
-  //    { label: "Industrial", img: Img5 },
-  //  { label: "Agriculture", img: Img6 },
-  //  ];
- //  const [selectedImage, setSelectedImage] = useState(buttons[0].img);
-  // // State to track the selected logo images 
+ 
  
    const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 

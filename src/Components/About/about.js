@@ -3,7 +3,7 @@ import React,{useEffect,useRef,useState} from "react";
 
 import Building from "../../Images/building6.png";
 
-import "./about.css"; // Import styles
+import "./about.css"; 
 
 
 

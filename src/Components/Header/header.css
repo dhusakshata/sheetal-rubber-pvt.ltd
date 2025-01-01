@@ -59,8 +59,8 @@ body, html {
 }
 /* Search bar styling */
 .search-bar {
-  display: flex; /* Align input and button in a row */
-  gap: 10px; /* Space between input and button */
+  display: flex; 
+  gap: 10px; 
   align-items: center;
   margin-top: -30px;
 }
@@ -95,10 +95,10 @@ body, html {
 
 /* Contact info styling */
 .contact-info {
-  display: flex; /* Arrange contact items in a column */
-  flex-direction: column; /* Stack phone and email vertically */
-  align-items: flex-start; /* Align items to the right */
-  gap: 5px; /* Space between phone and email */
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px; 
   margin-top: 10px;
   position: relative;
   top:-14px;
@@ -122,13 +122,11 @@ body, html {
   color: black;
   margin-left: 5px;
   padding: 2px;
-  border: 2px solid transparent; 
-  border-radius: 4px; /* Optional, to make the edges rounded */
-  transition: all 0.3s ease; /* Smooth transition for the hover effect */
+  transition: all 0.3s ease; 
 }
 
 .email-button:hover {
-  color:  #ff782b; ; /* Change text color to white */
+  color:  #ff782b; ; 
   
 }
 
@@ -151,9 +149,9 @@ body, html {
   background-color:#ff782b; 
   color: #fff; 
   display: flex;
-  justify-content: center; /* Center the nav links */
+  justify-content: center; 
   align-items: center;
-margin-top: -20px;
+  margin-top: -20px;
   width: 100%;
   height: 50px;
   position: sticky;
@@ -168,17 +166,17 @@ margin-top: -20px;
   font-weight: bold;
   font-size: 14px;
   justify-content: center ;
-  overflow: visible; /* Ensure dropdowns are not clipped */
-  z-index: 10; /* Dropdowns appear on top */
+  overflow: visible;
+  z-index: 10; 
 }
 
 .nav a {
   text-decoration: none;
   color: #fff;
-  position: relative; /* For the hover effect */
+  position: relative; 
   padding: 0.5rem 1rem; 
   transition: color 0.3s ease;
-  z-index: 1; /*  text stays on top of the box */
+  z-index: 1;
 }
 
 .nav a::before {
@@ -189,19 +187,19 @@ margin-top: -20px;
   right: 0;
   bottom: 0;
   background-color: #ff782b; 
-  border-radius: 8px; /* Rounded corners for the box */
-  transform: scaleX(0); /* Initial state: box is collapsed horizontally */
-  transform-origin: left; /* Animate from left to right */
+  border-radius: 8px;
+  transform: scaleX(0); 
+  transform-origin: left; 
   transition: transform 0.4s ease; 
-  z-index: -1; /* Place the box behind the text */
+  z-index: -1;
 }
 
 .nav a:hover {
-  color: #000; /* Text changes to black on hover for contrast */
+  color: #000;
 }
 
 .nav a:hover::before {
-  transform: scaleX(1); /* Expand the box fully on hover */
+  transform: scaleX(1); 
 }
 
 .dropdown {
@@ -273,7 +271,7 @@ margin-top: -20px;
   background-color: #f0f0f0;
 }
 .dropdown:hover .dropdown-menu, .sub-dropdown:hover .sub-dropdown-menu {
-  display: block; /* Show dropdown when parent is hovered */
+  display: block; 
 }
 /* Show sub-dropdown on hover */
 .sub-dropdown:hover .sub-dropdown-menu {
@@ -285,9 +283,7 @@ margin-top: -20px;
   .header {
     flex-direction: column; 
     align-items: center; 
-  
-   
-  margin-top: 10px;
+    margin-top: 10px;
 
   }
 
@@ -341,15 +337,15 @@ margin-top: -20px;
   }
 
   .Navbar {
-display: none;
-margin: 0;
-padding: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
   }
 
   .nav {
-    display: none;
-      margin: 0;
-    padding: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
   }
  
   
@@ -358,10 +354,10 @@ padding: 0;
 
 @media screen and (max-width: 480px) {
   .header {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
-    gap: 10px; /* Add spacing between items */
-    padding: 10px 5px; /* Adjust padding */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px 5px; 
     position: sticky;
   }
 
