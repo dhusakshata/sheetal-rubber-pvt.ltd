@@ -510,6 +510,13 @@ body, html {
   .dropdown-trigger {
     cursor: pointer;
   }
+  .pflinks{
+    margin-left: -5px;
+  }
+ .facilities-link {
+    margin-left: -10px !important; 
+  }
+ 
 }
 
 /* Mobile click-triggered dropdown */
@@ -537,6 +544,12 @@ body, html {
 
   .dropdown.open .dropdown-menu {
     display: block; /* Show the dropdown when clicked */
+  }
+  .pflinks{
+    margin-left: -5px;
+  }
+  .flinks.facilities-link {
+    margin-left: -5px !important; 
   }
 }
 

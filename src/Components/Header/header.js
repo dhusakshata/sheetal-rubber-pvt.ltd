@@ -161,9 +161,7 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
           </div>
         </div>
 
-        {/* <button className="hamburger-menu" onClick={handleToggleMenu}>
-          {mobileMenuOpen ? <FaTimes /> : <FaBars />}
-        </button> */}
+     
        </div>
 
         
@@ -182,7 +180,7 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
             onMouseLeave={() => setActiveDropdown(null)}
           >
             <span className="dropdown-trigger">
-              <Link to="/product">PRODUCTS<FaChevronDown style={{ fontSize: "15px", marginLeft: "5px" }} /></Link>
+              <Link to="/product" className='pflinks'>PRODUCTS<FaChevronDown style={{ fontSize: "15px", marginLeft: "5px" }} /></Link>
             </span>
             {activeDropdown === "products" && (
               <div className="dropdown-menu">
@@ -208,12 +206,12 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
           </div>
 {/* Dropdown Menu for Facilities */}
   <div
- className="dropdown"
+ className="dropdown "
   onMouseEnter={() => handleHover("facilities")} // Show on hover
  onMouseLeave={() => setActiveDropdown(null)} // Hide on mouse leave
   >
-  <span className="dropdown-trigger">
-  <Link >FACILITIES<FaChevronDown style={{ fontSize: "15px", marginLeft: "5px" }} /></Link>
+  <span className="dropdown-trigger  ">
+  <Link className="flinks facilities-link">FACILITIES<FaChevronDown style={{ fontSize: "15px", marginLeft: "5px" }} /></Link>
   </span>
   {activeDropdown === "facilities" && (
 
@@ -305,6 +303,7 @@ const handleLeave = () => setActiveDropdown(null); // Hide dropdown
   )}
 
   </div>
+
   <Link to="/news" onClick={handleLinkClick}>NEWS & BLOGS</Link>
  <Link to="/career" onClick={handleLinkClick}>CAREERS</Link>
   <Link to="/contact" onClick={handleLinkClick}>CONTACT US</Link>
